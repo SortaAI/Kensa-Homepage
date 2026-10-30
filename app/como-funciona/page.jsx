@@ -1,4 +1,4 @@
-import ComoFunciona from '@/components/site/ComoFunciona';
+import CostaComoFunciona from '@/components/site/CostaComoFunciona';
 
 export const metadata = {
   title: 'Kensa · Cómo funciona',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <ComoFunciona />;
+  return <CostaComoFunciona />;
 }

@@ -1,5 +1,5 @@
 'use client';
-// Generated from the design canvas (Comp-Dropdown-2jly.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (Costa-Dropdown-cs11.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
 
@@ -12,7 +12,7 @@ class Logic extends DCLogic {
         {
           name: 'Preguntas frecuentes',
           line: 'Lo que más nos preguntan las clínicas.',
-          href: 'Precios.dc.html',
+          href: 'Costa-Precios-cs04.dc.html',
           icon: 'M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3m.08 4h.01M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10Z',
         },
         {
@@ -30,7 +30,7 @@ class Logic extends DCLogic {
         {
           name: 'Quién lo hace',
           line: 'Quién fundó Kensa y por qué.',
-          href: 'QuienLoHace.dc.html',
+          href: 'Costa-QuienLoHace-cs07.dc.html',
           icon: 'M22 21v-2a4.002 4.002 0 0 0-3-3.874M15.5 3.291a4.001 4.001 0 0 1 0 7.418M17 21c0-1.864 0-2.796-.305-3.53a4 4 0 0 0-2.164-2.165C13.796 15 12.864 15 11 15H8c-1.864 0-2.796 0-3.53.305a4 4 0 0 0-2.166 2.164C2 18.204 2 19.136 2 21M13.5 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z',
         },
       ],
@@ -38,7 +38,7 @@ class Logic extends DCLogic {
   }
 }
 
-export default class CompDropdown extends Logic {
+export default class CostaDropdown extends Logic {
   render() {
     const v = this.renderVals() || {};
     return (
@@ -47,13 +47,13 @@ export default class CompDropdown extends Logic {
         <div
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
+            color: '#0E2A3B',
             width: '100%',
             boxSizing: 'border-box',
             background: '#FFFFFF',
-            border: '1px solid #E6E6E8',
+            border: '1px solid #E8DFDA',
             borderRadius: '20px',
-            boxShadow: '0 24px 60px rgba(20,20,22,0.14)',
+            boxShadow: '0 24px 60px rgba(14,42,59,0.14)',
             padding: '8px',
           }}
         >
@@ -83,7 +83,7 @@ export default class CompDropdown extends Logic {
                       padding: '12px',
                       borderRadius: '12px',
                       textDecoration: 'none',
-                      color: '#141416',
+                      color: '#0E2A3B',
                     }}
                   >
                     {' '}
@@ -93,7 +93,7 @@ export default class CompDropdown extends Logic {
                         width: '36px',
                         height: '36px',
                         borderRadius: '10px',
-                        border: '1px solid #E0E0E3',
+                        border: '1px solid #E3D9D3',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -115,7 +115,7 @@ export default class CompDropdown extends Logic {
                     </span>{' '}
                     <span style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: '0' }}>
                       <span style={{ fontSize: '14px', fontWeight: '500' }}>{it?.name}</span>
-                      <span style={{ fontSize: '13px', lineHeight: '1.4', color: '#5A5A61' }}>{it?.line}</span>
+                      <span style={{ fontSize: '13px', lineHeight: '1.4', color: '#5F707B' }}>{it?.line}</span>
                     </span>{' '}
                   </a>
                 </li>{' '}
@@ -123,7 +123,7 @@ export default class CompDropdown extends Logic {
             ))}{' '}
           </ul>{' '}
           <a
-            href={link('Contacto.dc.html')}
+            href={link('Costa-Contacto-cs06.dc.html')}
             style={{
               margin: '6px 4px 4px',
               display: 'flex',
@@ -132,9 +132,9 @@ export default class CompDropdown extends Logic {
               gap: '12px',
               padding: '12px 14px',
               borderRadius: '12px',
-              background: '#F2F2F3',
+              background: '#F2E9E5',
               textDecoration: 'none',
-              color: '#141416',
+              color: '#0E2A3B',
               fontSize: '14px',
               fontWeight: '500',
             }}

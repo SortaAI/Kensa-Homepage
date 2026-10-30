@@ -1,4 +1,4 @@
-import Precios from '@/components/site/Precios';
+import CostaPrecios from '@/components/site/CostaPrecios';
 
 export const metadata = {
   title: 'Kensa · Precios',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Precios />;
+  return <CostaPrecios />;
 }

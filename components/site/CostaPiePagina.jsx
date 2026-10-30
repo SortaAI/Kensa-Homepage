@@ -1,5 +1,5 @@
 'use client';
-// Generated from the design canvas (Comp-PiePagina-uqhk.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (Costa-PiePagina-cs12.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
 
@@ -12,10 +12,10 @@ class Logic extends DCLogic {
         {
           title: 'Producto',
           links: [
-            { t: 'Funciones', href: 'Funciones.dc.html' },
-            { t: 'Cómo funciona', href: 'ComoFunciona.dc.html' },
-            { t: 'Precios', href: 'Precios.dc.html' },
-            { t: 'Seguridad', href: 'Seguridad.dc.html' },
+            { t: 'Funciones', href: 'Costa-Funciones-cs02.dc.html' },
+            { t: 'Cómo funciona', href: 'Costa-ComoFunciona-cs03.dc.html' },
+            { t: 'Precios', href: 'Costa-Precios-cs04.dc.html' },
+            { t: 'Seguridad', href: 'Costa-Seguridad-cs05.dc.html' },
           ],
         },
         {
@@ -31,16 +31,16 @@ class Logic extends DCLogic {
         {
           title: 'Kensa',
           links: [
-            { t: 'Clínicas fundadoras', href: 'Contacto.dc.html' },
-            { t: 'Quién lo hace', href: 'QuienLoHace.dc.html' },
+            { t: 'Clínicas fundadoras', href: 'Costa-Contacto-cs06.dc.html' },
+            { t: 'Quién lo hace', href: 'Costa-QuienLoHace-cs07.dc.html' },
             { t: 'Recursos para clínicas', href: '#' },
-            { t: 'Preguntas frecuentes', href: 'Precios.dc.html' },
+            { t: 'Preguntas frecuentes', href: 'Costa-Precios-cs04.dc.html' },
           ],
         },
         {
           title: 'Conversemos',
           links: [
-            { t: 'Contacto', href: 'Contacto.dc.html' },
+            { t: 'Contacto', href: 'Costa-Contacto-cs06.dc.html' },
             { t: 'WhatsApp', href: 'https://wa.me/message/3JRJUFH6UNNLA1', ext: true },
             { t: 'contacto@holakensa.com', href: 'mailto:contacto@holakensa.com' },
           ],
@@ -50,7 +50,7 @@ class Logic extends DCLogic {
   }
 }
 
-export default class CompPiePagina extends Logic {
+export default class CostaPiePagina extends Logic {
   render() {
     const v = this.renderVals() || {};
     return (
@@ -59,7 +59,7 @@ export default class CompPiePagina extends Logic {
         <footer
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
+            color: '#0E2A3B',
             width: '100%',
             boxSizing: 'border-box',
             maxWidth: '1200px',
@@ -68,7 +68,7 @@ export default class CompPiePagina extends Logic {
           }}
         >
           {' '}
-          <div style={{ background: '#F2F2F3', borderRadius: '32px', padding: 'clamp(28px,5vw,56px)' }}>
+          <div style={{ background: '#F2E9E5', borderRadius: '32px', padding: 'clamp(28px,5vw,56px)' }}>
             {' '}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '40px 56px' }}>
               {' '}
@@ -77,30 +77,26 @@ export default class CompPiePagina extends Logic {
               >
                 {' '}
                 <a
-                  href={link('Main.dc.html')}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '10px',
-                    textDecoration: 'none',
-                    color: '#141416',
-                  }}
+                  href={link('Costa-Inicio-cs01.dc.html')}
+                  aria-label={'Kensa, inicio'}
+                  style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
                 >
-                  <span
-                    aria-hidden={'true'}
-                    style={{ width: '30px', height: '30px', borderRadius: '9px', background: '#141416' }}
-                  ></span>
-                  <span translate={'no'} style={{ fontWeight: '600', fontSize: '18px' }}>
-                    {'Kensa'}
-                  </span>
+                  <img
+                    src={'/img/kensa-logo-azul.svg'}
+                    width={'111'}
+                    height={'26'}
+                    alt={'Kensa'}
+                    style={{ display: 'block', height: '26px', width: 'auto' }}
+                  />
                 </a>{' '}
-                <p style={{ margin: '0', fontSize: '15px', lineHeight: '1.6', color: '#3D3D42' }}>
+                <p style={{ margin: '0', fontSize: '15px', lineHeight: '1.6', color: '#4B5D69' }}>
                   {
                     'El flujo de tu clínica, del primer mensaje por WhatsApp al expediente firmado. Hecho para clínicas en México.'
                   }
                 </p>{' '}
                 <a
-                  href={link('Contacto.dc.html')}
+                  className={'kn-btn'}
+                  href={link('Costa-Contacto-cs06.dc.html')}
                   style={{
                     alignSelf: 'flex-start',
                     marginTop: '6px',
@@ -109,7 +105,7 @@ export default class CompPiePagina extends Logic {
                     fontWeight: '500',
                     padding: '11px 18px',
                     borderRadius: '999px',
-                    background: '#141416',
+                    background: '#18648A',
                     color: '#FFFFFF',
                   }}
                 >
@@ -131,7 +127,7 @@ export default class CompPiePagina extends Logic {
                     {' '}
                     <div>
                       {' '}
-                      <h2 style={{ margin: '0 0 12px', fontSize: '13px', fontWeight: '500', color: '#5A5A61' }}>
+                      <h2 style={{ margin: '0 0 12px', fontSize: '13px', fontWeight: '500', color: '#5F707B' }}>
                         {c?.title}
                       </h2>{' '}
                       <ul
@@ -153,7 +149,7 @@ export default class CompPiePagina extends Logic {
                                 href={link(l?.href)}
                                 style={{
                                   textDecoration: 'none',
-                                  color: '#141416',
+                                  color: '#0E2A3B',
                                   display: 'inline-flex',
                                   alignItems: 'center',
                                   gap: '6px',
@@ -191,13 +187,13 @@ export default class CompPiePagina extends Logic {
               style={{
                 marginTop: '48px',
                 paddingTop: '20px',
-                borderTop: '1px solid #DCDCE0',
+                borderTop: '1px solid #DED3CD',
                 display: 'flex',
                 flexWrap: 'wrap',
                 justifyContent: 'space-between',
                 gap: '12px',
                 fontSize: '13px',
-                color: '#3D3D42',
+                color: '#4B5D69',
               }}
             >
               {' '}
@@ -207,18 +203,18 @@ export default class CompPiePagina extends Logic {
                 {'. Todos los derechos reservados.'}
               </span>{' '}
               <span style={{ display: 'flex', flexWrap: 'wrap', gap: '18px' }}>
-                <a href={link('#')} style={{ color: '#3D3D42' }}>
+                <a href={link('#')} style={{ color: '#4B5D69' }}>
                   {'Privacidad'}
                 </a>
-                <a href={link('#')} style={{ color: '#3D3D42' }}>
+                <a href={link('#')} style={{ color: '#4B5D69' }}>
                   {'Términos'}
                 </a>
-                <a href={link('#')} style={{ color: '#3D3D42' }}>
+                <a href={link('#')} style={{ color: '#4B5D69' }}>
                   {'Cookies'}
                 </a>
               </span>{' '}
             </div>{' '}
-            <p style={{ margin: '12px 0 0', fontSize: '12px', color: '#5A5A61' }}>
+            <p style={{ margin: '12px 0 0', fontSize: '12px', color: '#5F707B' }}>
               {'Kensa trata los datos por cuenta de cada clínica. La clínica sigue siendo la responsable de ellos.'}
             </p>{' '}
           </div>{' '}

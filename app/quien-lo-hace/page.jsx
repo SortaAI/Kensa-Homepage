@@ -1,4 +1,4 @@
-import QuienLoHace from '@/components/site/QuienLoHace';
+import CostaQuienLoHace from '@/components/site/CostaQuienLoHace';
 
 export const metadata = {
   title: 'Kensa · Quién lo hace',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <QuienLoHace />;
+  return <CostaQuienLoHace />;
 }

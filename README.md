@@ -34,6 +34,32 @@ npm run build    # escribe el sitio completo en out/
 - `app/`: una carpeta por ruta, con su título y descripción para buscadores.
 - `public/img/`: las capturas y mockups del producto.
 
+## Diseño: paleta Costa
+
+Colores tomados del logo nuevo:
+
+| Nombre | Hex | Uso |
+|---|---|---|
+| Tinta | `#0E2A3B` | Texto y títulos |
+| Azul Kensa | `#18648A` | Logo, botones, palabras de acento |
+| Azul profundo | `#114E6C` | Botón al pasar el cursor |
+| Coral | `#E0987A` | El punto del logo y los puntos finales de los títulos. Nunca como texto. |
+| Arena | `#F2E9E5` | Paneles cálidos |
+| Marfil | `#F9F4F0` | Fondo de las páginas |
+| Niebla | `#F6F6F6` | Tarjetas neutras |
+| Noche | `#0E2A3B` | Bandas oscuras |
+
+- Logo: `public/img/kensa-logo-*.svg` y `kensa-mark-azul.svg` (también es el favicon). Se trazaron a partir de una imagen; cuando exista el SVG original del diseñador, reemplázalos.
+- Tipografía: Poppins, la familia más cercana al logotipo. Los títulos terminan con el punto coral del logo.
+
+## Movimiento
+
+- Inicio: los fragmentos de la portada llegan una vez al cargar; los cinco trabajos de recepción se iluminan uno por uno al hacer scroll (sigue al scroll, nunca se reproduce solo).
+- Funciones: la laptop fija cambia de pantalla en los pasos 1 a 5.
+- En todo el sitio: las secciones aparecen suavemente al entrar, los botones y tarjetas se elevan un poco al pasar el cursor y los menús caen con suavidad.
+- Solo se animan `transform` y `opacity` (y el color en cambios de estado). Con "reducir movimiento" activado no se mueve ni se oculta nada.
+- Los efectos usan clases (`kn-btn`, `kn-ghost`, `kn-card`, `data-rv`) en lugar de selectores por estilo en línea.
+
 ## Pendiente antes de publicar
 
 - Los formularios (demo en Inicio y la solicitud en Contacto) todavía no envían datos a ningún lado: muestran "Recibimos tu solicitud", pero nada llega. Hay que conectarlos (por ejemplo, Formspree, un webhook o el backend de Kensa).

@@ -1,5 +1,5 @@
 'use client';
-// Generated from the design canvas (Comp-MegaMenu-wnw1.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (Costa-MegaMenu-cs10.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
 
@@ -77,7 +77,7 @@ class Logic extends DCLogic {
   }
 }
 
-export default class CompMegaMenu extends Logic {
+export default class CostaMegaMenu extends Logic {
   render() {
     const v = this.renderVals() || {};
     return (
@@ -86,13 +86,13 @@ export default class CompMegaMenu extends Logic {
         <div
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
+            color: '#0E2A3B',
             width: '100%',
             boxSizing: 'border-box',
             background: '#FFFFFF',
-            border: '1px solid #E6E6E8',
+            border: '1px solid #E8DFDA',
             borderRadius: '24px',
-            boxShadow: '0 24px 60px rgba(20,20,22,0.14)',
+            boxShadow: '0 24px 60px rgba(14,42,59,0.14)',
             padding: '20px',
             display: 'flex',
             flexWrap: 'wrap',
@@ -116,7 +116,7 @@ export default class CompMegaMenu extends Logic {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                   {' '}
                   <h2
-                    style={{ margin: '0', padding: '8px 10px', fontSize: '13px', fontWeight: '500', color: '#5A5A61' }}
+                    style={{ margin: '0', padding: '8px 10px', fontSize: '13px', fontWeight: '500', color: '#5F707B' }}
                   >
                     {g?.title}
                   </h2>{' '}
@@ -145,7 +145,7 @@ export default class CompMegaMenu extends Logic {
                               padding: '10px',
                               borderRadius: '12px',
                               textDecoration: 'none',
-                              color: '#141416',
+                              color: '#0E2A3B',
                             }}
                           >
                             {' '}
@@ -155,7 +155,7 @@ export default class CompMegaMenu extends Logic {
                                 width: '36px',
                                 height: '36px',
                                 borderRadius: '10px',
-                                border: '1px solid #E0E0E3',
+                                border: '1px solid #E3D9D3',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -178,7 +178,7 @@ export default class CompMegaMenu extends Logic {
                             </span>{' '}
                             <span style={{ display: 'flex', flexDirection: 'column', gap: '2px', minWidth: '0' }}>
                               <span style={{ fontSize: '14px', fontWeight: '500' }}>{it?.name}</span>
-                              <span style={{ fontSize: '13px', lineHeight: '1.4', color: '#5A5A61' }}>{it?.line}</span>
+                              <span style={{ fontSize: '13px', lineHeight: '1.4', color: '#5F707B' }}>{it?.line}</span>
                             </span>{' '}
                           </a>
                         </li>{' '}
@@ -193,8 +193,8 @@ export default class CompMegaMenu extends Logic {
             style={{
               flex: '1 1 260px',
               minWidth: '0',
-              background: '#18181B',
-              color: '#FAFAFA',
+              background: '#0E2A3B',
+              color: '#F7F2EF',
               borderRadius: '18px',
               padding: '24px',
               display: 'flex',
@@ -208,11 +208,11 @@ export default class CompMegaMenu extends Logic {
             >
               {'Un solo flujo, 6 pasos.'}
             </p>{' '}
-            <p style={{ margin: '0', fontSize: '14px', lineHeight: '1.55', color: '#C9C9CF' }}>
+            <p style={{ margin: '0', fontSize: '14px', lineHeight: '1.55', color: '#B9C7D0' }}>
               {'Del primer mensaje por WhatsApp al expediente firmado. Cada función le pasa su trabajo a la siguiente.'}
             </p>{' '}
             <a
-              href={link('ComoFunciona.dc.html')}
+              href={link('Costa-ComoFunciona-cs03.dc.html')}
               style={{
                 marginTop: 'auto',
                 alignSelf: 'flex-start',
@@ -222,12 +222,15 @@ export default class CompMegaMenu extends Logic {
                 padding: '11px 18px',
                 borderRadius: '999px',
                 background: '#FFFFFF',
-                color: '#141416',
+                color: '#0E2A3B',
               }}
             >
               {'Ve cómo funciona'}
             </a>{' '}
-            <a href={link('Funciones.dc.html')} style={{ alignSelf: 'flex-start', fontSize: '14px', color: '#FAFAFA' }}>
+            <a
+              href={link('Costa-Funciones-cs02.dc.html')}
+              style={{ alignSelf: 'flex-start', fontSize: '14px', color: '#F7F2EF' }}
+            >
               {'Todas las funciones'}
             </a>{' '}
           </div>{' '}

@@ -1,4 +1,4 @@
-import Contacto from '@/components/site/Contacto';
+import CostaContacto from '@/components/site/CostaContacto';
 
 export const metadata = {
   title: 'Kensa · Contacto',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Contacto />;
+  return <CostaContacto />;
 }

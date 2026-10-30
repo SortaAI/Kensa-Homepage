@@ -5,7 +5,7 @@ export const metadata = {
   openGraph: { siteName: 'Kensa', locale: 'es_MX', type: 'website', images: ['/img/hero-laptop-agenda.webp'] },
 };
 
-export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#FFFFFF' };
+export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#F9F4F0' };
 
 export default function RootLayout({ children }) {
   return (

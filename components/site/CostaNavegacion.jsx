@@ -1,11 +1,12 @@
 'use client';
-// Generated from the design canvas (Comp-Navegacion-en5w.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (Costa-Navegacion-cs09.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
-import CompMegaMenu from './CompMegaMenu';
-import CompDropdown from './CompDropdown';
+import CostaMegaMenu from './CostaMegaMenu';
+import CostaDropdown from './CostaDropdown';
 
-const CSS = 'body{margin:0}';
+const CSS =
+  'body{margin:0}\n@keyframes kn-drop{from{opacity:0;transform:translateY(-6px)}}\n#menu-funciones,#menu-recursos,#menu-movil{animation:kn-drop .22s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){#menu-funciones,#menu-recursos,#menu-movil{animation:none}}';
 
 class Logic extends DCLogic {
   constructor(props) {
@@ -27,8 +28,8 @@ class Logic extends DCLogic {
       mClosed: o !== 'm',
       fRot: o === 'f' ? 180 : 0,
       rRot: o === 'r' ? 180 : 0,
-      fBg: o === 'f' ? '#F2F2F3' : 'transparent',
-      rBg: o === 'r' ? '#F2F2F3' : 'transparent',
+      fBg: o === 'f' ? '#F2E9E5' : 'transparent',
+      rBg: o === 'r' ? '#F2E9E5' : 'transparent',
       mLabel: o === 'm' ? 'Cerrar menú' : 'Abrir menú',
       fCtl: o === 'f' ? 'menu-funciones' : undefined,
       rCtl: o === 'r' ? 'menu-recursos' : undefined,
@@ -43,7 +44,7 @@ class Logic extends DCLogic {
   }
 }
 
-export default class CompNavegacion extends Logic {
+export default class CostaNavegacion extends Logic {
   render() {
     const v = this.renderVals() || {};
     return (
@@ -52,7 +53,7 @@ export default class CompNavegacion extends Logic {
         <div
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
+            color: '#0E2A3B',
             width: '100%',
             boxSizing: 'border-box',
             position: 'relative',
@@ -72,24 +73,25 @@ export default class CompNavegacion extends Logic {
               justifyContent: 'space-between',
               gap: '12px',
               background: '#FFFFFF',
-              border: '1px solid #E6E6E8',
+              border: '1px solid #E8DFDA',
               borderRadius: '999px',
               padding: '8px 8px 8px 20px',
-              boxShadow: '0 8px 24px rgba(20,20,22,0.06)',
+              boxShadow: '0 8px 24px rgba(14,42,59,0.06)',
             }}
           >
             {' '}
             <a
-              href={link('Main.dc.html')}
-              style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: '#141416' }}
+              href={link('Costa-Inicio-cs01.dc.html')}
+              aria-label={'Kensa, inicio'}
+              style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
             >
-              <span
-                aria-hidden={'true'}
-                style={{ width: '30px', height: '30px', borderRadius: '9px', background: '#141416' }}
-              ></span>
-              <span translate={'no'} style={{ fontWeight: '600', fontSize: '18px' }}>
-                {'Kensa'}
-              </span>
+              <img
+                src={'/img/kensa-logo-azul.svg'}
+                width={'111'}
+                height={'26'}
+                alt={'Kensa'}
+                style={{ display: 'block', height: '26px', width: 'auto' }}
+              />
             </a>{' '}
             <ul
               className={'navlinks'}
@@ -114,7 +116,7 @@ export default class CompNavegacion extends Logic {
                   style={{
                     border: '0',
                     background: v.fBg,
-                    color: '#141416',
+                    color: '#0E2A3B',
                     borderRadius: '999px',
                     padding: '10px 12px 10px 14px',
                     display: 'flex',
@@ -143,11 +145,11 @@ export default class CompNavegacion extends Logic {
               <li>
                 <a
                   className={'kn-trigger'}
-                  href={link('ComoFunciona.dc.html')}
+                  href={link('Costa-ComoFunciona-cs03.dc.html')}
                   style={{
                     display: 'block',
                     textDecoration: 'none',
-                    color: '#141416',
+                    color: '#0E2A3B',
                     borderRadius: '999px',
                     padding: '10px 14px',
                   }}
@@ -158,11 +160,11 @@ export default class CompNavegacion extends Logic {
               <li>
                 <a
                   className={'kn-trigger'}
-                  href={link('Seguridad.dc.html')}
+                  href={link('Costa-Seguridad-cs05.dc.html')}
                   style={{
                     display: 'block',
                     textDecoration: 'none',
-                    color: '#141416',
+                    color: '#0E2A3B',
                     borderRadius: '999px',
                     padding: '10px 14px',
                   }}
@@ -173,11 +175,11 @@ export default class CompNavegacion extends Logic {
               <li>
                 <a
                   className={'kn-trigger'}
-                  href={link('Precios.dc.html')}
+                  href={link('Costa-Precios-cs04.dc.html')}
                   style={{
                     display: 'block',
                     textDecoration: 'none',
-                    color: '#141416',
+                    color: '#0E2A3B',
                     borderRadius: '999px',
                     padding: '10px 14px',
                   }}
@@ -195,7 +197,7 @@ export default class CompNavegacion extends Logic {
                   style={{
                     border: '0',
                     background: v.rBg,
-                    color: '#141416',
+                    color: '#0E2A3B',
                     borderRadius: '999px',
                     padding: '10px 12px 10px 14px',
                     display: 'flex',
@@ -229,7 +231,7 @@ export default class CompNavegacion extends Logic {
                 className={'hide-sm kn-trigger'}
                 style={{
                   textDecoration: 'none',
-                  color: '#141416',
+                  color: '#0E2A3B',
                   fontSize: '15px',
                   padding: '11px 14px',
                   borderRadius: '999px',
@@ -238,14 +240,15 @@ export default class CompNavegacion extends Logic {
                 {'Iniciar sesión'}
               </a>{' '}
               <a
-                href={link('Contacto.dc.html')}
+                className={'kn-btn'}
+                href={link('Costa-Contacto-cs06.dc.html')}
                 style={{
                   textDecoration: 'none',
                   fontSize: '15px',
                   fontWeight: '500',
                   padding: '11px 20px',
                   borderRadius: '999px',
-                  background: '#141416',
+                  background: '#18648A',
                   color: '#FFFFFF',
                   whiteSpace: 'nowrap',
                 }}
@@ -254,7 +257,7 @@ export default class CompNavegacion extends Logic {
               </a>{' '}
               <button
                 type={'button'}
-                className={'show-sm'}
+                className={'kn-ghost show-sm'}
                 aria-label={v.mLabel}
                 aria-expanded={v.mOpen}
                 aria-controls={v.mCtl}
@@ -263,10 +266,10 @@ export default class CompNavegacion extends Logic {
                   display: 'none',
                   width: '44px',
                   height: '44px',
-                  border: '1px solid #E0E0E3',
+                  border: '1px solid #E3D9D3',
                   borderRadius: '999px',
                   background: '#FFFFFF',
-                  color: '#141416',
+                  color: '#0E2A3B',
                   alignItems: 'center',
                   justifyContent: 'center',
                 }}
@@ -323,7 +326,7 @@ export default class CompNavegacion extends Logic {
                 }}
               >
                 {' '}
-                <CompMegaMenu />{' '}
+                <CostaMegaMenu />{' '}
               </div>{' '}
             </>
           ) : null}{' '}
@@ -342,7 +345,7 @@ export default class CompNavegacion extends Logic {
                 }}
               >
                 {' '}
-                <CompDropdown />{' '}
+                <CostaDropdown />{' '}
               </div>{' '}
             </>
           ) : null}{' '}
@@ -354,9 +357,9 @@ export default class CompNavegacion extends Logic {
                 style={{
                   marginTop: '8px',
                   background: '#FFFFFF',
-                  border: '1px solid #E6E6E8',
+                  border: '1px solid #E8DFDA',
                   borderRadius: '24px',
-                  boxShadow: '0 24px 60px rgba(20,20,22,0.14)',
+                  boxShadow: '0 24px 60px rgba(14,42,59,0.14)',
                   padding: '12px',
                   overscrollBehavior: 'contain',
                 }}
@@ -367,13 +370,13 @@ export default class CompNavegacion extends Logic {
                   <li>
                     <a
                       className={'kn-item'}
-                      href={link('Funciones.dc.html')}
+                      href={link('Costa-Funciones-cs02.dc.html')}
                       style={{
                         display: 'block',
                         padding: '14px 12px',
                         borderRadius: '12px',
                         textDecoration: 'none',
-                        color: '#141416',
+                        color: '#0E2A3B',
                         fontSize: '16px',
                       }}
                     >
@@ -383,13 +386,13 @@ export default class CompNavegacion extends Logic {
                   <li>
                     <a
                       className={'kn-item'}
-                      href={link('ComoFunciona.dc.html')}
+                      href={link('Costa-ComoFunciona-cs03.dc.html')}
                       style={{
                         display: 'block',
                         padding: '14px 12px',
                         borderRadius: '12px',
                         textDecoration: 'none',
-                        color: '#141416',
+                        color: '#0E2A3B',
                         fontSize: '16px',
                       }}
                     >
@@ -399,13 +402,13 @@ export default class CompNavegacion extends Logic {
                   <li>
                     <a
                       className={'kn-item'}
-                      href={link('Seguridad.dc.html')}
+                      href={link('Costa-Seguridad-cs05.dc.html')}
                       style={{
                         display: 'block',
                         padding: '14px 12px',
                         borderRadius: '12px',
                         textDecoration: 'none',
-                        color: '#141416',
+                        color: '#0E2A3B',
                         fontSize: '16px',
                       }}
                     >
@@ -415,13 +418,13 @@ export default class CompNavegacion extends Logic {
                   <li>
                     <a
                       className={'kn-item'}
-                      href={link('Precios.dc.html')}
+                      href={link('Costa-Precios-cs04.dc.html')}
                       style={{
                         display: 'block',
                         padding: '14px 12px',
                         borderRadius: '12px',
                         textDecoration: 'none',
-                        color: '#141416',
+                        color: '#0E2A3B',
                         fontSize: '16px',
                       }}
                     >
@@ -431,13 +434,13 @@ export default class CompNavegacion extends Logic {
                   <li>
                     <a
                       className={'kn-item'}
-                      href={link('Contacto.dc.html')}
+                      href={link('Costa-Contacto-cs06.dc.html')}
                       style={{
                         display: 'block',
                         padding: '14px 12px',
                         borderRadius: '12px',
                         textDecoration: 'none',
-                        color: '#141416',
+                        color: '#0E2A3B',
                         fontSize: '16px',
                       }}
                     >
@@ -453,7 +456,7 @@ export default class CompNavegacion extends Logic {
                         padding: '14px 12px',
                         borderRadius: '12px',
                         textDecoration: 'none',
-                        color: '#141416',
+                        color: '#0E2A3B',
                         fontSize: '16px',
                       }}
                     >

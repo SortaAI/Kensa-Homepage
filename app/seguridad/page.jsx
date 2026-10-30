@@ -1,4 +1,4 @@
-import Seguridad from '@/components/site/Seguridad';
+import CostaSeguridad from '@/components/site/CostaSeguridad';
 
 export const metadata = {
   title: 'Kensa · Seguridad y privacidad',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Seguridad />;
+  return <CostaSeguridad />;
 }

@@ -1,4 +1,4 @@
-import Main from '@/components/site/Main';
+import CostaInicio from '@/components/site/CostaInicio';
 
 export const metadata = {
   title: 'Kensa · WhatsApp, agenda y documentos para tu clínica',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Main />;
+  return <CostaInicio />;
 }

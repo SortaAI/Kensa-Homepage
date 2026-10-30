@@ -1,13 +1,44 @@
 'use client';
-// Generated from the design canvas (FuncionPlantilla-ifzy.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (FuncionPlantilla-ifzy.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
-import CompEncabezado from './CompEncabezado';
-import CompPiePagina from './CompPiePagina';
+import CostaEncabezado from './CostaEncabezado';
+import CostaPiePagina from './CostaPiePagina';
 
-const CSS = 'body{margin:0}';
+const CSS =
+  'body{margin:0}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}';
 
 class Logic extends DCLogic {
+  // Sections below the fold ease in as they enter. Visible by default; skipped under reduced motion.
+  knReveal() {
+    if (typeof IntersectionObserver === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+      return;
+    var els = [].slice.call(document.querySelectorAll('[data-rv]'));
+    var io = (this.knIo = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.setAttribute('data-rv', 'in');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -8% 0px' },
+    ));
+    els.forEach(function (el) {
+      if (el.getBoundingClientRect().top > window.innerHeight * 0.92) {
+        el.setAttribute('data-rv', 'pre');
+        io.observe(el);
+      }
+    });
+  }
+
+  componentDidMount() {
+    this.knReveal();
+  }
+  componentWillUnmount() {
+    if (this.knIo) this.knIo.disconnect();
+  }
   renderVals() {
     // Íconos de Untitled UI (@untitledui/icons, MIT), trazos de 24×24
     var IC = {
@@ -118,7 +149,7 @@ class Logic extends DCLogic {
       ['recepcion', 'Hoy y Pacientes', 'Funcion-Recepcion.dc.html', 'home'],
       ['equipo', 'Equipo y roles', 'Funcion-Equipo.dc.html', 'users'],
       ['configuracion', 'Configuración guiada', 'Funcion-Configuracion.dc.html', 'settings'],
-      ['seguridad', 'Seguridad y privacidad', 'Seguridad.dc.html', 'lock'],
+      ['seguridad', 'Seguridad y privacidad', 'Costa-Seguridad-cs05.dc.html', 'lock'],
     ];
     var L = function (slug) {
       for (var i = 0; i < order.length; i++)
@@ -546,22 +577,22 @@ class Logic extends DCLogic {
     var dark = idx % 2 === 1;
     var t = dark
       ? {
-          bg: '#18181B',
-          fg: '#FAFAFA',
-          sub: '#C9C9CF',
+          bg: '#0E2A3B',
+          fg: '#F7F2EF',
+          sub: '#B9C7D0',
           btnBg: '#FFFFFF',
-          btnFg: '#141416',
+          btnFg: '#18648A',
           badgeBg: '#FFFFFF',
-          badgeFg: '#141416',
+          badgeFg: '#18648A',
           dir: 'row-reverse',
         }
       : {
-          bg: '#F2F2F3',
-          fg: '#141416',
-          sub: '#3D3D42',
-          btnBg: '#141416',
+          bg: '#F2E9E5',
+          fg: '#0E2A3B',
+          sub: '#4B5D69',
+          btnBg: '#18648A',
           btnFg: '#FFFFFF',
-          badgeBg: '#141416',
+          badgeBg: '#18648A',
           badgeFg: '#FFFFFF',
           dir: 'row',
         };
@@ -584,6 +615,9 @@ class Logic extends DCLogic {
       hasNote: !!f.note,
       links: f.links.map(L),
       maxw: f.maxw || '100%',
+      // the logo's coral period on the headline
+      h1Body: /\.$/.test(f.h1) ? f.h1.slice(0, -1) : f.h1,
+      h1Dot: /\.$/.test(f.h1) ? '.' : '',
     });
     return {
       f: full,
@@ -612,8 +646,8 @@ export default class FuncionPlantilla extends Logic {
         <div
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
-            background: '#FFFFFF',
+            color: '#0E2A3B',
+            background: '#F9F4F0',
             width: '100%',
             overflowX: 'hidden',
           }}
@@ -622,7 +656,7 @@ export default class FuncionPlantilla extends Logic {
           <a href={link('#contenido')} className={'skip'}>
             {'Saltar al contenido'}
           </a>{' '}
-          <CompEncabezado />{' '}
+          <CostaEncabezado />{' '}
           <div
             id={'contenido'}
             style={{ maxWidth: '1200px', margin: '0 auto', padding: '16px clamp(16px,4vw,40px) 0' }}
@@ -645,7 +679,7 @@ export default class FuncionPlantilla extends Logic {
               <div style={{ flex: '1 1 380px', minWidth: '0', display: 'flex', flexDirection: 'column', gap: '18px' }}>
                 {' '}
                 <nav aria-label={'Ruta'} style={{ fontSize: '14px', color: v.t?.sub }}>
-                  <a href={link('Funciones.dc.html')} style={{ color: v.t?.sub }}>
+                  <a href={link('Costa-Funciones-cs02.dc.html')} style={{ color: v.t?.sub }}>
                     {'Funciones'}
                   </a>
                   {' / '}
@@ -693,13 +727,14 @@ export default class FuncionPlantilla extends Logic {
                     textWrap: 'balance',
                   }}
                 >
-                  {v.f?.h1}
+                  {v.f?.h1Body}
+                  <span style={{ color: '#E0987A' }}>{v.f?.h1Dot}</span>
                 </h1>{' '}
                 <p style={{ margin: '0', fontSize: '17px', lineHeight: '1.6', color: v.t?.sub, maxWidth: '480px' }}>
                   {v.f?.sub}
                 </p>{' '}
                 <a
-                  href={link('Contacto.dc.html')}
+                  href={link('Costa-Contacto-cs06.dc.html')}
                   style={{
                     alignSelf: 'flex-start',
                     marginTop: '8px',
@@ -741,8 +776,8 @@ export default class FuncionPlantilla extends Logic {
                         maxWidth: v.f?.maxw,
                         height: 'auto',
                         borderRadius: '14px',
-                        border: '1px solid #DCDCE0',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        border: '1px solid #DED3CD',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                         background: '#FFFFFF',
                       }}
                     />{' '}
@@ -762,7 +797,7 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: v.f?.maxw,
                         height: 'auto',
-                        filter: 'drop-shadow(0 20px 32px rgba(20,20,22,0.14))',
+                        filter: 'drop-shadow(0 20px 32px rgba(14,42,59,0.14))',
                       }}
                     />{' '}
                   </>
@@ -776,14 +811,14 @@ export default class FuncionPlantilla extends Logic {
                       style={{
                         width: '280px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '8px solid #141416',
+                        color: '#0E2A3B',
+                        border: '8px solid #0E2A3B',
                         borderRadius: '36px',
                         padding: '18px 14px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '9px',
-                        boxShadow: '0 20px 44px rgba(20,20,22,0.18)',
+                        boxShadow: '0 20px 44px rgba(14,42,59,0.18)',
                       }}
                     >
                       {' '}
@@ -792,7 +827,7 @@ export default class FuncionPlantilla extends Logic {
                           fontSize: '13px',
                           fontWeight: '600',
                           paddingBottom: '8px',
-                          borderBottom: '1px solid #ECECEE',
+                          borderBottom: '1px solid #EEE6E2',
                         }}
                       >
                         {'Clínica Vida'}
@@ -800,7 +835,7 @@ export default class FuncionPlantilla extends Logic {
                       <span
                         style={{
                           alignSelf: 'flex-end',
-                          background: '#3D3D42',
+                          background: '#4B5D69',
                           color: '#FFFFFF',
                           borderRadius: '12px 12px 4px 12px',
                           padding: '7px 10px',
@@ -813,7 +848,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           alignSelf: 'flex-start',
                           maxWidth: '90%',
-                          background: '#F2F2F3',
+                          background: '#F2E9E5',
                           borderRadius: '12px 12px 12px 4px',
                           padding: '7px 10px',
                           fontSize: '12px',
@@ -826,7 +861,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           fontSize: '12px',
                           textAlign: 'center',
-                          border: '1px solid #D4D4D8',
+                          border: '1px solid #D6CBC4',
                           borderRadius: '8px',
                           padding: '6px',
                         }}
@@ -837,7 +872,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           fontSize: '12px',
                           textAlign: 'center',
-                          border: '1px solid #141416',
+                          border: '1px solid #0E2A3B',
                           borderRadius: '8px',
                           padding: '6px',
                           fontWeight: '600',
@@ -849,7 +884,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           fontSize: '12px',
                           textAlign: 'center',
-                          border: '1px solid #D4D4D8',
+                          border: '1px solid #D6CBC4',
                           borderRadius: '8px',
                           padding: '6px',
                         }}
@@ -860,7 +895,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           alignSelf: 'flex-start',
                           maxWidth: '90%',
-                          background: '#F2F2F3',
+                          background: '#F2E9E5',
                           borderRadius: '12px 12px 12px 4px',
                           padding: '7px 10px',
                           fontSize: '12px',
@@ -872,7 +907,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           alignSelf: 'flex-start',
                           fontSize: '12px',
-                          border: '1px solid #D4D4D8',
+                          border: '1px solid #D6CBC4',
                           borderRadius: '8px',
                           padding: '6px 12px',
                         }}
@@ -882,7 +917,7 @@ export default class FuncionPlantilla extends Logic {
                       <span
                         style={{
                           alignSelf: 'flex-end',
-                          background: '#3D3D42',
+                          background: '#4B5D69',
                           color: '#FFFFFF',
                           borderRadius: '12px 12px 4px 12px',
                           padding: '7px 10px',
@@ -904,37 +939,37 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: '480px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '1px solid #DCDCE0',
+                        color: '#0E2A3B',
+                        border: '1px solid #DED3CD',
                         borderRadius: '16px',
                         padding: '20px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '10px',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                       }}
                     >
                       {' '}
                       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
                         <span style={{ fontWeight: '600' }}>{'Preparar visitas'}</span>
-                        <span style={{ fontSize: '12px', color: '#5A5A61' }}>{'Mañana · 4 citas'}</span>
+                        <span style={{ fontSize: '12px', color: '#5F707B' }}>{'Mañana · 4 citas'}</span>
                       </div>{' '}
                       <div
                         style={{
                           display: 'flex',
                           alignItems: 'center',
                           gap: '12px',
-                          border: '1px solid #ECECEE',
+                          border: '1px solid #EEE6E2',
                           borderRadius: '12px',
                           padding: '10px 12px',
                           fontSize: '13px',
                         }}
                       >
-                        <span style={{ width: '44px', color: '#5A5A61' }}>{'9:00'}</span>
+                        <span style={{ width: '44px', color: '#5F707B' }}>{'9:00'}</span>
                         <span style={{ flex: '1' }}>{'Regina Ayala'}</span>
                         <span
                           style={{
-                            background: '#141416',
+                            background: '#0E2A3B',
                             color: '#FFFFFF',
                             borderRadius: '999px',
                             padding: '3px 9px',
@@ -949,17 +984,17 @@ export default class FuncionPlantilla extends Logic {
                           display: 'flex',
                           alignItems: 'center',
                           gap: '12px',
-                          border: '1px solid #ECECEE',
+                          border: '1px solid #EEE6E2',
                           borderRadius: '12px',
                           padding: '10px 12px',
                           fontSize: '13px',
                         }}
                       >
-                        <span style={{ width: '44px', color: '#5A5A61' }}>{'9:30'}</span>
+                        <span style={{ width: '44px', color: '#5F707B' }}>{'9:30'}</span>
                         <span style={{ flex: '1' }}>{'Tomás Cervantes'}</span>
                         <span
                           style={{
-                            border: '1px solid #141416',
+                            border: '1px solid #0E2A3B',
                             borderRadius: '999px',
                             padding: '3px 9px',
                             fontSize: '11px',
@@ -973,16 +1008,16 @@ export default class FuncionPlantilla extends Logic {
                           display: 'flex',
                           alignItems: 'center',
                           gap: '12px',
-                          border: '1px solid #ECECEE',
+                          border: '1px solid #EEE6E2',
                           borderRadius: '12px',
                           padding: '10px 12px',
                           fontSize: '13px',
                         }}
                       >
-                        <span style={{ width: '44px', color: '#5A5A61' }}>{'10:30'}</span>
+                        <span style={{ width: '44px', color: '#5F707B' }}>{'10:30'}</span>
                         <span style={{ flex: '1' }}>{'Ana Rodríguez'}</span>
                         <span
-                          style={{ background: '#F2F2F3', borderRadius: '999px', padding: '3px 9px', fontSize: '11px' }}
+                          style={{ background: '#F2E9E5', borderRadius: '999px', padding: '3px 9px', fontSize: '11px' }}
                         >
                           {'Esperando paciente'}
                         </span>
@@ -992,13 +1027,13 @@ export default class FuncionPlantilla extends Logic {
                           display: 'flex',
                           alignItems: 'center',
                           gap: '12px',
-                          border: '1px solid #ECECEE',
+                          border: '1px solid #EEE6E2',
                           borderRadius: '12px',
                           padding: '10px 12px',
                           fontSize: '13px',
                         }}
                       >
-                        <span style={{ width: '44px', color: '#5A5A61' }}>{'11:00'}</span>
+                        <span style={{ width: '44px', color: '#5F707B' }}>{'11:00'}</span>
                         <span style={{ flex: '1' }}>{'Lucía Márquez'}</span>
                         <span style={{ textDecoration: 'underline', fontSize: '12px' }}>{'Preparar documentos'}</span>
                       </div>{' '}
@@ -1014,23 +1049,23 @@ export default class FuncionPlantilla extends Logic {
                       style={{
                         width: '280px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '8px solid #141416',
+                        color: '#0E2A3B',
+                        border: '8px solid #0E2A3B',
                         borderRadius: '36px',
                         padding: '22px 16px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '12px',
-                        boxShadow: '0 20px 44px rgba(20,20,22,0.18)',
+                        boxShadow: '0 20px 44px rgba(14,42,59,0.18)',
                       }}
                     >
                       {' '}
-                      <span style={{ fontSize: '12px', color: '#5A5A61' }}>{'Tus documentos · 2 de 3'}</span>{' '}
+                      <span style={{ fontSize: '12px', color: '#5F707B' }}>{'Tus documentos · 2 de 3'}</span>{' '}
                       <span style={{ fontSize: '16px', fontWeight: '600' }}>{'Aviso de privacidad'}</span>{' '}
-                      <span style={{ fontSize: '12px', color: '#3D3D42' }}>{'Nombre completo'}</span>{' '}
+                      <span style={{ fontSize: '12px', color: '#4B5D69' }}>{'Nombre completo'}</span>{' '}
                       <span
                         style={{
-                          border: '1px solid #D4D4D8',
+                          border: '1px solid #D6CBC4',
                           borderRadius: '10px',
                           padding: '9px 10px',
                           fontSize: '13px',
@@ -1038,7 +1073,7 @@ export default class FuncionPlantilla extends Logic {
                       >
                         {'Ana Rodríguez López'}
                       </span>{' '}
-                      <span style={{ fontSize: '12px', color: '#3D3D42' }}>{'Firma'}</span>{' '}
+                      <span style={{ fontSize: '12px', color: '#4B5D69' }}>{'Firma'}</span>{' '}
                       <div
                         style={{
                           border: '1px dashed #8A8A92',
@@ -1055,7 +1090,7 @@ export default class FuncionPlantilla extends Logic {
                           height={'36'}
                           viewBox={'0 0 140 36'}
                           fill={'none'}
-                          stroke={'#141416'}
+                          stroke={'#0E2A3B'}
                           strokeWidth={'1.8'}
                           strokeLinecap={'round'}
                         >
@@ -1067,7 +1102,7 @@ export default class FuncionPlantilla extends Logic {
                           textAlign: 'center',
                           fontSize: '13px',
                           fontWeight: '500',
-                          background: '#141416',
+                          background: '#0E2A3B',
                           color: '#FFFFFF',
                           borderRadius: '999px',
                           padding: '11px',
@@ -1075,7 +1110,7 @@ export default class FuncionPlantilla extends Logic {
                       >
                         {'Siguiente documento'}
                       </span>{' '}
-                      <span style={{ textAlign: 'center', fontSize: '12px', color: '#3D3D42' }}>
+                      <span style={{ textAlign: 'center', fontSize: '12px', color: '#4B5D69' }}>
                         {'Guardar y seguir después'}
                       </span>{' '}
                     </div>{' '}
@@ -1091,19 +1126,19 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: '420px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '1px solid #DCDCE0',
+                        color: '#0E2A3B',
+                        border: '1px solid #DED3CD',
                         borderRadius: '16px',
                         padding: '22px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '14px',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                       }}
                     >
                       {' '}
                       <span style={{ fontWeight: '600' }}>{'Enviar al paciente'}</span>{' '}
-                      <span style={{ fontSize: '13px', color: '#3D3D42' }}>
+                      <span style={{ fontSize: '13px', color: '#4B5D69' }}>
                         {'Para: Ana Rodríguez · +52 55 5555 0142'}
                       </span>{' '}
                       <div
@@ -1116,14 +1151,14 @@ export default class FuncionPlantilla extends Logic {
                         }}
                       >
                         <span
-                          style={{ background: '#141416', color: '#FFFFFF', borderRadius: '10px', padding: '10px 4px' }}
+                          style={{ background: '#0E2A3B', color: '#FFFFFF', borderRadius: '10px', padding: '10px 4px' }}
                         >
                           {'WhatsApp'}
                         </span>
-                        <span style={{ border: '1px solid #D4D4D8', borderRadius: '10px', padding: '10px 4px' }}>
+                        <span style={{ border: '1px solid #D6CBC4', borderRadius: '10px', padding: '10px 4px' }}>
                           {'Correo'}
                         </span>
-                        <span style={{ border: '1px solid #D4D4D8', borderRadius: '10px', padding: '10px 4px' }}>
+                        <span style={{ border: '1px solid #D6CBC4', borderRadius: '10px', padding: '10px 4px' }}>
                           {'Copiar enlace'}
                         </span>
                       </div>{' '}
@@ -1131,8 +1166,8 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           fontSize: '12px',
                           fontWeight: '500',
-                          color: '#5A5A61',
-                          borderTop: '1px solid #ECECEE',
+                          color: '#5F707B',
+                          borderTop: '1px solid #EEE6E2',
                           paddingTop: '12px',
                         }}
                       >
@@ -1140,11 +1175,11 @@ export default class FuncionPlantilla extends Logic {
                       </span>{' '}
                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
                         <span>{'WhatsApp · mié 4:02 p.m.'}</span>
-                        <span style={{ color: '#3D3D42' }}>{'Enviado'}</span>
+                        <span style={{ color: '#4B5D69' }}>{'Enviado'}</span>
                       </div>{' '}
                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
                         <span>{'Correo · mar 6:40 p.m.'}</span>
-                        <span style={{ color: '#3D3D42' }}>{'Aceptado por el proveedor'}</span>
+                        <span style={{ color: '#4B5D69' }}>{'Aceptado por el proveedor'}</span>
                       </div>{' '}
                     </div>{' '}
                   </>
@@ -1159,14 +1194,14 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: '420px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '1px solid #DCDCE0',
+                        color: '#0E2A3B',
+                        border: '1px solid #DED3CD',
                         borderRadius: '16px',
                         padding: '24px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '14px',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                       }}
                     >
                       {' '}
@@ -1177,7 +1212,7 @@ export default class FuncionPlantilla extends Logic {
                         <span
                           style={{
                             fontSize: '12px',
-                            border: '1px solid #141416',
+                            border: '1px solid #0E2A3B',
                             borderRadius: '999px',
                             padding: '3px 10px',
                             whiteSpace: 'nowrap',
@@ -1186,17 +1221,17 @@ export default class FuncionPlantilla extends Logic {
                           {'Firmado y bloqueado'}
                         </span>
                       </div>{' '}
-                      <div style={{ fontSize: '13px', color: '#3D3D42', lineHeight: '1.7' }}>
+                      <div style={{ fontSize: '13px', color: '#4B5D69', lineHeight: '1.7' }}>
                         {'Firmado por Dra. [Nombre]'}
                         <br />
                         {'Cédula verificada · jue 10:58 a.m.'}
                       </div>{' '}
                       <div
-                        style={{ border: '1px solid #ECECEE', borderRadius: '12px', padding: '12px', fontSize: '13px' }}
+                        style={{ border: '1px solid #EEE6E2', borderRadius: '12px', padding: '12px', fontSize: '13px' }}
                       >
                         <span style={{ fontWeight: '500' }}>{'Nota posterior'}</span>
                         <br />
-                        <span style={{ color: '#3D3D42' }}>
+                        <span style={{ color: '#4B5D69' }}>
                           {'Se agrega indicación de seguimiento. Firmada · jue 12:40 p.m.'}
                         </span>
                       </div>{' '}
@@ -1204,7 +1239,7 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           textAlign: 'center',
                           fontSize: '13px',
-                          border: '1px solid #D4D4D8',
+                          border: '1px solid #D6CBC4',
                           borderRadius: '999px',
                           padding: '10px',
                         }}
@@ -1224,23 +1259,23 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: '420px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '1px solid #DCDCE0',
+                        color: '#0E2A3B',
+                        border: '1px solid #DED3CD',
                         borderRadius: '16px',
                         padding: '24px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '12px',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                       }}
                     >
                       {' '}
                       <span style={{ fontWeight: '600' }}>{'Documento sellado'}</span>{' '}
-                      <span style={{ fontSize: '12px', color: '#5A5A61' }}>{'Huella digital (SHA-256)'}</span>{' '}
+                      <span style={{ fontSize: '12px', color: '#5F707B' }}>{'Huella digital (SHA-256)'}</span>{' '}
                       <span
                         style={{
                           fontSize: '12px',
-                          background: '#F2F2F3',
+                          background: '#F2E9E5',
                           borderRadius: '8px',
                           padding: '10px',
                           wordBreak: 'break-all',
@@ -1254,7 +1289,7 @@ export default class FuncionPlantilla extends Logic {
                           textAlign: 'center',
                           fontSize: '13px',
                           fontWeight: '500',
-                          background: '#141416',
+                          background: '#0E2A3B',
                           color: '#FFFFFF',
                           borderRadius: '999px',
                           padding: '11px',
@@ -1266,8 +1301,8 @@ export default class FuncionPlantilla extends Logic {
                         style={{
                           fontSize: '12px',
                           fontWeight: '500',
-                          color: '#5A5A61',
-                          borderTop: '1px solid #ECECEE',
+                          color: '#5F707B',
+                          borderTop: '1px solid #EEE6E2',
                           paddingTop: '12px',
                         }}
                       >
@@ -1275,11 +1310,11 @@ export default class FuncionPlantilla extends Logic {
                       </span>{' '}
                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
                         <span>{'Recepción · vio'}</span>
-                        <span style={{ color: '#3D3D42' }}>{'jue 11:02'}</span>
+                        <span style={{ color: '#4B5D69' }}>{'jue 11:02'}</span>
                       </div>{' '}
                       <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '13px' }}>
                         <span>{'Dra. [Nombre] · descargó'}</span>
-                        <span style={{ color: '#3D3D42' }}>{'jue 12:45'}</span>
+                        <span style={{ color: '#4B5D69' }}>{'jue 12:45'}</span>
                       </div>{' '}
                     </div>{' '}
                   </>
@@ -1294,14 +1329,14 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: '440px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '1px solid #DCDCE0',
+                        color: '#0E2A3B',
+                        border: '1px solid #DED3CD',
                         borderRadius: '16px',
                         padding: '20px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '10px',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                       }}
                     >
                       {' '}
@@ -1311,23 +1346,23 @@ export default class FuncionPlantilla extends Logic {
                           display: 'flex',
                           alignItems: 'center',
                           gap: '10px',
-                          borderTop: '1px solid #ECECEE',
+                          borderTop: '1px solid #EEE6E2',
                           paddingTop: '10px',
                           fontSize: '13px',
                         }}
                       >
                         <span
                           aria-hidden={'true'}
-                          style={{ width: '30px', height: '30px', borderRadius: '999px', background: '#D4D4D8' }}
+                          style={{ width: '30px', height: '30px', borderRadius: '999px', background: '#D6CBC4' }}
                         ></span>
                         <span style={{ flex: '1' }}>
                           {'Dra. [Nombre]'}
                           <br />
-                          <span style={{ color: '#5A5A61' }}>{'Administrador'}</span>
+                          <span style={{ color: '#5F707B' }}>{'Administrador'}</span>
                         </span>
                         <span
                           style={{
-                            border: '1px solid #141416',
+                            border: '1px solid #0E2A3B',
                             borderRadius: '999px',
                             padding: '3px 9px',
                             fontSize: '11px',
@@ -1341,22 +1376,22 @@ export default class FuncionPlantilla extends Logic {
                           display: 'flex',
                           alignItems: 'center',
                           gap: '10px',
-                          borderTop: '1px solid #ECECEE',
+                          borderTop: '1px solid #EEE6E2',
                           paddingTop: '10px',
                           fontSize: '13px',
                         }}
                       >
                         <span
                           aria-hidden={'true'}
-                          style={{ width: '30px', height: '30px', borderRadius: '999px', background: '#D4D4D8' }}
+                          style={{ width: '30px', height: '30px', borderRadius: '999px', background: '#D6CBC4' }}
                         ></span>
                         <span style={{ flex: '1' }}>
                           {'Dr. [Nombre]'}
                           <br />
-                          <span style={{ color: '#5A5A61' }}>{'Personal'}</span>
+                          <span style={{ color: '#5F707B' }}>{'Personal'}</span>
                         </span>
                         <span
-                          style={{ background: '#F2F2F3', borderRadius: '999px', padding: '3px 9px', fontSize: '11px' }}
+                          style={{ background: '#F2E9E5', borderRadius: '999px', padding: '3px 9px', fontSize: '11px' }}
                         >
                           {'Por verificar'}
                         </span>
@@ -1366,19 +1401,19 @@ export default class FuncionPlantilla extends Logic {
                           display: 'flex',
                           alignItems: 'center',
                           gap: '10px',
-                          borderTop: '1px solid #ECECEE',
+                          borderTop: '1px solid #EEE6E2',
                           paddingTop: '10px',
                           fontSize: '13px',
                         }}
                       >
                         <span
                           aria-hidden={'true'}
-                          style={{ width: '30px', height: '30px', borderRadius: '999px', background: '#D4D4D8' }}
+                          style={{ width: '30px', height: '30px', borderRadius: '999px', background: '#D6CBC4' }}
                         ></span>
                         <span style={{ flex: '1' }}>
                           {'recepcion@vida.mx'}
                           <br />
-                          <span style={{ color: '#5A5A61' }}>{'Personal'}</span>
+                          <span style={{ color: '#5F707B' }}>{'Personal'}</span>
                         </span>
                         <span style={{ fontSize: '12px', textDecoration: 'underline' }}>
                           {'Restablecer contraseña'}
@@ -1397,14 +1432,14 @@ export default class FuncionPlantilla extends Logic {
                         width: '100%',
                         maxWidth: '420px',
                         background: '#FFFFFF',
-                        color: '#141416',
-                        border: '1px solid #DCDCE0',
+                        color: '#0E2A3B',
+                        border: '1px solid #DED3CD',
                         borderRadius: '16px',
                         padding: '22px',
                         display: 'flex',
                         flexDirection: 'column',
                         gap: '10px',
-                        boxShadow: '0 18px 40px rgba(20,20,22,0.16)',
+                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
                       }}
                     >
                       {' '}
@@ -1413,7 +1448,7 @@ export default class FuncionPlantilla extends Logic {
                         <span
                           style={{
                             fontSize: '12px',
-                            border: '1px solid #D4D4D8',
+                            border: '1px solid #D6CBC4',
                             borderRadius: '999px',
                             padding: '3px 9px',
                           }}
@@ -1430,7 +1465,7 @@ export default class FuncionPlantilla extends Logic {
                               alignItems: 'center',
                               gap: '10px',
                               fontSize: '13px',
-                              borderTop: '1px solid #ECECEE',
+                              borderTop: '1px solid #EEE6E2',
                               paddingTop: '10px',
                             }}
                           >
@@ -1443,7 +1478,7 @@ export default class FuncionPlantilla extends Logic {
                                   height={'18'}
                                   viewBox={'0 0 24 24'}
                                   fill={'none'}
-                                  stroke={'#141416'}
+                                  stroke={'#0E2A3B'}
                                   strokeWidth={'2'}
                                   strokeLinecap={'round'}
                                   strokeLinejoin={'round'}
@@ -1502,7 +1537,7 @@ export default class FuncionPlantilla extends Logic {
                       display: 'flex',
                       alignItems: 'center',
                       gap: '14px',
-                      borderTop: '1px solid #E6E6E8',
+                      borderTop: '1px solid #E8DFDA',
                       paddingTop: '18px',
                     }}
                   >
@@ -1513,7 +1548,7 @@ export default class FuncionPlantilla extends Logic {
                         width: '40px',
                         height: '40px',
                         borderRadius: '12px',
-                        border: '1px solid #E0E0E3',
+                        border: '1px solid #E3D9D3',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
@@ -1563,7 +1598,7 @@ export default class FuncionPlantilla extends Logic {
                   {' '}
                   <li
                     style={{
-                      borderTop: '2px solid #141416',
+                      borderTop: '2px solid #0E2A3B',
                       paddingTop: '16px',
                       display: 'flex',
                       flexDirection: 'column',
@@ -1571,9 +1606,9 @@ export default class FuncionPlantilla extends Logic {
                     }}
                   >
                     {' '}
-                    <span style={{ fontSize: '13px', color: '#5A5A61' }}>{s?.n}</span>{' '}
+                    <span style={{ fontSize: '13px', color: '#5F707B' }}>{s?.n}</span>{' '}
                     <span style={{ fontSize: '17px', fontWeight: '500' }}>{s?.t}</span>{' '}
-                    <span style={{ fontSize: '14px', lineHeight: '1.55', color: '#3D3D42' }}>{s?.d}</span>{' '}
+                    <span style={{ fontSize: '14px', lineHeight: '1.55', color: '#4B5D69' }}>{s?.d}</span>{' '}
                   </li>{' '}
                 </React.Fragment>
               ))}{' '}
@@ -1585,8 +1620,8 @@ export default class FuncionPlantilla extends Logic {
               {' '}
               <div
                 style={{
-                  background: '#18181B',
-                  color: '#FAFAFA',
+                  background: '#0E2A3B',
+                  color: '#F7F2EF',
                   borderRadius: '24px',
                   padding: '32px',
                   display: 'flex',
@@ -1596,7 +1631,7 @@ export default class FuncionPlantilla extends Logic {
               >
                 {' '}
                 <span
-                  style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#C9C9CF' }}
+                  style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#B9C7D0' }}
                 >
                   <svg
                     aria-hidden={'true'}
@@ -1618,7 +1653,7 @@ export default class FuncionPlantilla extends Logic {
               </div>{' '}
               <div
                 style={{
-                  background: '#F2F2F3',
+                  background: '#F2E9E5',
                   borderRadius: '24px',
                   padding: '32px',
                   display: 'flex',
@@ -1628,7 +1663,7 @@ export default class FuncionPlantilla extends Logic {
               >
                 {' '}
                 <span
-                  style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#5A5A61' }}
+                  style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#5F707B' }}
                 >
                   <svg
                     aria-hidden={'true'}
@@ -1658,10 +1693,10 @@ export default class FuncionPlantilla extends Logic {
                     maxWidth: '760px',
                     fontSize: '14px',
                     lineHeight: '1.6',
-                    color: '#3D3D42',
+                    color: '#4B5D69',
                   }}
                 >
-                  <span style={{ fontWeight: '600', color: '#141416' }}>{'Con claridad: '}</span>
+                  <span style={{ fontWeight: '600', color: '#0E2A3B' }}>{'Con claridad: '}</span>
                   {v.f?.note}
                 </p>{' '}
               </>
@@ -1677,16 +1712,17 @@ export default class FuncionPlantilla extends Logic {
               }}
             >
               {' '}
-              <span style={{ color: '#5A5A61' }}>{'Se conecta con'}</span>{' '}
+              <span style={{ color: '#5F707B' }}>{'Se conecta con'}</span>{' '}
               {(v.f?.links || []).map((l, $index) => (
                 <React.Fragment key={$index}>
                   {' '}
                   <a
+                    className={'kn-ghost'}
                     href={link(l?.href)}
                     style={{
                       textDecoration: 'none',
-                      color: '#141416',
-                      border: '1px solid #E0E0E3',
+                      color: '#0E2A3B',
+                      border: '1px solid #E3D9D3',
                       borderRadius: '999px',
                       padding: '8px 14px 8px 10px',
                       display: 'flex',
@@ -1725,7 +1761,7 @@ export default class FuncionPlantilla extends Logic {
                 flexWrap: 'wrap',
                 justifyContent: 'space-between',
                 gap: '16px',
-                borderTop: '1px solid #E6E6E8',
+                borderTop: '1px solid #E8DFDA',
                 paddingTop: '24px',
               }}
             >
@@ -1734,13 +1770,13 @@ export default class FuncionPlantilla extends Logic {
                 href={link(v.prev?.href)}
                 style={{
                   textDecoration: 'none',
-                  color: '#141416',
+                  color: '#0E2A3B',
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '4px',
                 }}
               >
-                <span style={{ fontSize: '13px', color: '#5A5A61', display: 'flex', alignItems: 'center', gap: '6px' }}>
+                <span style={{ fontSize: '13px', color: '#5F707B', display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <svg
                     aria-hidden={'true'}
                     width={'14'}
@@ -1762,7 +1798,7 @@ export default class FuncionPlantilla extends Logic {
                 href={link(v.next?.href)}
                 style={{
                   textDecoration: 'none',
-                  color: '#141416',
+                  color: '#0E2A3B',
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '4px',
@@ -1772,7 +1808,7 @@ export default class FuncionPlantilla extends Logic {
                 <span
                   style={{
                     fontSize: '13px',
-                    color: '#5A5A61',
+                    color: '#5F707B',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'flex-end',
@@ -1798,7 +1834,7 @@ export default class FuncionPlantilla extends Logic {
               </a>{' '}
             </div>{' '}
           </nav>{' '}
-          <CompPiePagina />{' '}
+          <CostaPiePagina />{' '}
         </div>{' '}
       </>
     );

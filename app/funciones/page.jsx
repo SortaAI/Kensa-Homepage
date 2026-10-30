@@ -1,4 +1,4 @@
-import Funciones from '@/components/site/Funciones';
+import CostaFunciones from '@/components/site/CostaFunciones';
 
 export const metadata = {
   title: 'Kensa · Funciones',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <Funciones />;
+  return <CostaFunciones />;
 }

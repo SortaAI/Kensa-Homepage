@@ -1,14 +1,44 @@
 'use client';
-// Generated from the design canvas (Contacto-2ibd.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (Costa-Contacto-cs06.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
-import CompEncabezado from './CompEncabezado';
-import CompPiePagina from './CompPiePagina';
+import CostaEncabezado from './CostaEncabezado';
+import CostaPiePagina from './CostaPiePagina';
 
 const CSS =
-  'body{margin:0;background:#FFFFFF}\n*{box-sizing:border-box}\na{color:#141416;text-underline-offset:3px}a:hover{color:#3D3D42}\n:root{color-scheme:light}\n::selection{background:#141416;color:#FFFFFF}\n:focus-visible{outline:2px solid #141416;outline-offset:3px;border-radius:6px}\n[id]{scroll-margin-top:24px}\nh1,h2,h3{text-wrap:balance}\np{text-wrap:pretty}\ninput,textarea{caret-color:#141416}\ninput::placeholder,textarea::placeholder{color:#6B6B72}\ninput:focus,textarea:focus{border-color:#141416 !important}\nbutton{font:inherit;cursor:pointer}\na,button,input,label,textarea{touch-action:manipulation;-webkit-tap-highlight-color:rgba(20,20,22,0.08)}\na,button,label{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,box-shadow .15s ease-out}\n:is(a,button)[style*="background: #141416"]:hover{background:#34343A !important}\n:is(a,button)[style*="border: 1px solid #D4D4D8"]:hover{background:#F2F2F3 !important;border-color:#141416 !important}\nlabel[data-choice]:hover{border-color:#141416 !important}\n.kn-item:hover,.kn-trigger:hover{background:#F2F2F3 !important}\n.skip{position:absolute;left:-9999px;top:12px;z-index:60;background:#141416;color:#FFFFFF;padding:10px 16px;border-radius:999px;text-decoration:none}\n.skip:focus{left:16px}\n.show-sm{display:none}\n@media (max-width:820px){.navlinks,.hide-sm{display:none !important}.show-sm{display:flex !important}}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}';
+  'body{margin:0;background:#F9F4F0}\n*{box-sizing:border-box}\na{color:#0E2A3B;text-underline-offset:3px}a:hover{color:#4B5D69}\n:root{color-scheme:light}\n::selection{background:#0E2A3B;color:#FFFFFF}\n:focus-visible{outline:2px solid #0E2A3B;outline-offset:3px;border-radius:6px}\n[id]{scroll-margin-top:24px}\nh1,h2,h3{text-wrap:balance}\np{text-wrap:pretty}\ninput,textarea{caret-color:#0E2A3B}\ninput::placeholder,textarea::placeholder{color:#6B6B72}\ninput:focus,textarea:focus{border-color:#0E2A3B !important}\nbutton{font:inherit;cursor:pointer}\na,button,input,label,textarea{touch-action:manipulation;-webkit-tap-highlight-color:rgba(14,42,59,0.08)}\na,button,label{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,box-shadow .15s ease-out}\n:is(a,button)[style*="background: #18648A"]:hover{background:#114E6C !important}\n:is(a,button)[style*="border: 1px solid #D6CBC4"]:hover{background:#F2E9E5 !important;border-color:#0E2A3B !important}\nlabel[data-choice]:hover{border-color:#0E2A3B !important}\n.kn-item:hover,.kn-trigger:hover{background:#F2E9E5 !important}\n.skip{position:absolute;left:-9999px;top:12px;z-index:60;background:#0E2A3B;color:#FFFFFF;padding:10px 16px;border-radius:999px;text-decoration:none}\n.skip:focus{left:16px}\n.show-sm{display:none}\n@media (max-width:820px){.navlinks,.hide-sm{display:none !important}.show-sm{display:flex !important}}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}';
 
 class Logic extends DCLogic {
+  // Sections below the fold ease in as they enter. Visible by default; skipped under reduced motion.
+  knReveal() {
+    if (typeof IntersectionObserver === 'undefined' || window.matchMedia('(prefers-reduced-motion: reduce)').matches)
+      return;
+    var els = [].slice.call(document.querySelectorAll('[data-rv]'));
+    var io = (this.knIo = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.setAttribute('data-rv', 'in');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -8% 0px' },
+    ));
+    els.forEach(function (el) {
+      if (el.getBoundingClientRect().top > window.innerHeight * 0.92) {
+        el.setAttribute('data-rv', 'pre');
+        io.observe(el);
+      }
+    });
+  }
+
+  componentDidMount() {
+    this.knReveal();
+  }
+  componentWillUnmount() {
+    if (this.knIo) this.knIo.disconnect();
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -77,11 +107,11 @@ class Logic extends DCLogic {
         a: I[o[3]][0],
         b: I[o[3]][1],
         on: sel,
-        bc: sel ? '#141416' : '#D4D4D8',
-        sh: sel ? 'inset 0 0 0 1px #141416' : 'none',
-        dot: sel ? '#141416' : 'transparent',
-        ib: sel ? '#141416' : '#F2F2F3',
-        ic: sel ? '#FFFFFF' : '#141416',
+        bc: sel ? '#18648A' : '#D6CBC4',
+        sh: sel ? 'inset 0 0 0 1px #0E2A3B' : 'none',
+        dot: sel ? '#18648A' : 'transparent',
+        ib: sel ? '#18648A' : '#F2E9E5',
+        ic: sel ? '#FFFFFF' : '#18648A',
         pick: function () {
           setV('interes', o[0]);
         },
@@ -107,7 +137,7 @@ class Logic extends DCLogic {
         bad: bad,
         msg: errs[d[0]],
         eid: 'e-' + d[0],
-        border: bad ? '2px solid #141416' : '1px solid #D4D4D8',
+        border: bad ? '2px solid #0E2A3B' : '1px solid #D6CBC4',
         set: function (e) {
           setV(d[0], e.target.value);
         },
@@ -125,10 +155,10 @@ class Logic extends DCLogic {
         v: o[0],
         t: o[1],
         on: sel,
-        bc: sel ? '#141416' : '#D4D4D8',
+        bc: sel ? '#18648A' : '#D6CBC4',
         sh: 'none',
-        bg: sel ? '#141416' : '#FFFFFF',
-        fg: sel ? '#FFFFFF' : '#141416',
+        bg: sel ? '#18648A' : '#FFFFFF',
+        fg: sel ? '#FFFFFF' : '#0E2A3B',
         pick: function () {
           setV('formatos', o[0]);
         },
@@ -161,9 +191,9 @@ class Logic extends DCLogic {
         n: n,
         t: t,
         cur: cur && !st.sent ? 'step' : undefined,
-        bar: cur || done ? '#141416' : '#E0E0E3',
+        bar: cur || done ? '#18648A' : '#E3D9D3',
         weight: cur ? 600 : 400,
-        color: cur || done ? '#141416' : '#5A5A61',
+        color: cur || done ? '#18648A' : '#5F707B',
       };
     });
     return {
@@ -205,7 +235,7 @@ class Logic extends DCLogic {
   }
 }
 
-export default class Contacto extends Logic {
+export default class CostaContacto extends Logic {
   render() {
     const v = this.renderVals() || {};
     return (
@@ -214,8 +244,8 @@ export default class Contacto extends Logic {
         <div
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
-            background: '#FFFFFF',
+            color: '#0E2A3B',
+            background: '#F9F4F0',
             width: '100%',
             overflowX: 'hidden',
           }}
@@ -224,18 +254,18 @@ export default class Contacto extends Logic {
           <a href={link('#contenido')} className={'skip'}>
             {'Saltar al contenido'}
           </a>{' '}
-          <CompEncabezado />{' '}
+          <CostaEncabezado />{' '}
           <main
             id={'contenido'}
             style={{ maxWidth: '1200px', margin: '0 auto', padding: '32px clamp(16px,4vw,40px) 0' }}
           >
             {' '}
-            <nav aria-label={'Ruta'} style={{ fontSize: '14px', color: '#3D3D42' }}>
-              <a href={link('Main.dc.html')} style={{ color: '#3D3D42' }}>
+            <nav aria-label={'Ruta'} style={{ fontSize: '14px', color: '#4B5D69' }}>
+              <a href={link('Costa-Inicio-cs01.dc.html')} style={{ color: '#4B5D69' }}>
                 {'Inicio'}
               </a>
               {' / '}
-              <span aria-current={'page'} style={{ color: '#141416', fontWeight: '500' }}>
+              <span aria-current={'page'} style={{ color: '#0E2A3B', fontWeight: '500' }}>
                 {'Contacto'}
               </span>
             </nav>{' '}
@@ -256,14 +286,17 @@ export default class Contacto extends Logic {
                   flex: '1 1 520px',
                   fontSize: 'clamp(36px,4.8vw,58px)',
                   lineHeight: '1.05',
-                  letterSpacing: '-0.035em',
+                  letterSpacing: '-0.03em',
                   fontWeight: '600',
                 }}
               >
                 {'Conoce Kensa para tu clínica. '}
-                <span style={{ color: '#6E6E76' }}>{'Empieza con una demo.'}</span>
+                <span style={{ color: '#18648A' }}>
+                  {'Empieza con una demo'}
+                  <span style={{ color: '#E0987A' }}>{'.'}</span>
+                </span>
               </h1>{' '}
-              <p style={{ margin: '0', flex: '0 1 380px', fontSize: '16px', lineHeight: '1.6', color: '#3D3D42' }}>
+              <p style={{ margin: '0', flex: '0 1 380px', fontSize: '16px', lineHeight: '1.6', color: '#4B5D69' }}>
                 {
                   'Llena tu solicitud una vez y mira cómo se arma sola, igual que los formatos de tus pacientes en Kensa.'
                 }
@@ -273,7 +306,7 @@ export default class Contacto extends Logic {
               aria-label={'Solicitud'}
               style={{
                 marginTop: '40px',
-                background: '#F2F2F3',
+                background: '#F2E9E5',
                 borderRadius: '32px',
                 padding: 'clamp(12px,2vw,20px)',
                 display: 'flex',
@@ -413,7 +446,7 @@ export default class Contacto extends Logic {
                                   </span>{' '}
                                   <span style={{ flex: '1', display: 'flex', flexDirection: 'column', gap: '4px' }}>
                                     <span style={{ fontSize: '17px', fontWeight: '500' }}>{o?.t}</span>
-                                    <span style={{ fontSize: '14px', lineHeight: '1.5', color: '#3D3D42' }}>
+                                    <span style={{ fontSize: '14px', lineHeight: '1.5', color: '#4B5D69' }}>
                                       {o?.d}
                                     </span>
                                   </span>{' '}
@@ -500,7 +533,7 @@ export default class Contacto extends Logic {
                                         padding: '13px 14px',
                                         border: f?.border,
                                         borderRadius: '12px',
-                                        color: '#141416',
+                                        color: '#0E2A3B',
                                         background: '#FFFFFF',
                                       }}
                                     />{' '}
@@ -643,7 +676,7 @@ export default class Contacto extends Logic {
                               }}
                             >
                               {'¿Qué parte les quita más tiempo? '}
-                              <span style={{ fontWeight: '400', color: '#5A5A61' }}>{'Opcional'}</span>{' '}
+                              <span style={{ fontWeight: '400', color: '#5F707B' }}>{'Opcional'}</span>{' '}
                               <textarea
                                 name={'tiempo'}
                                 rows={'3'}
@@ -655,9 +688,9 @@ export default class Contacto extends Logic {
                                   fontWeight: '400',
                                   fontSize: '16px',
                                   padding: '13px 14px',
-                                  border: '1px solid #D4D4D8',
+                                  border: '1px solid #D6CBC4',
                                   borderRadius: '12px',
-                                  color: '#141416',
+                                  color: '#0E2A3B',
                                   resize: 'vertical',
                                 }}
                               ></textarea>
@@ -680,12 +713,13 @@ export default class Contacto extends Logic {
                         {v.canBack ? (
                           <>
                             <button
+                              className={'kn-ghost'}
                               type={'button'}
                               onClick={v.back}
                               style={{
-                                border: '1px solid #D4D4D8',
+                                border: '1px solid #D6CBC4',
                                 background: '#FFFFFF',
-                                color: '#141416',
+                                color: '#0E2A3B',
                                 borderRadius: '999px',
                                 padding: '14px 22px',
                                 fontSize: '15px',
@@ -714,15 +748,16 @@ export default class Contacto extends Logic {
                         ) : null}{' '}
                         {v.noBack ? (
                           <>
-                            <span style={{ fontSize: '13px', color: '#5A5A61' }}>{'Toma menos de un minuto.'}</span>
+                            <span style={{ fontSize: '13px', color: '#5F707B' }}>{'Toma menos de un minuto.'}</span>
                           </>
                         ) : null}{' '}
                         <button
+                          className={'kn-btn'}
                           type={'submit'}
                           style={{
                             border: '0',
                             borderRadius: '999px',
-                            background: '#141416',
+                            background: '#18648A',
                             color: '#FFFFFF',
                             fontSize: '16px',
                             fontWeight: '500',
@@ -748,9 +783,9 @@ export default class Contacto extends Logic {
                           </svg>
                         </button>{' '}
                       </div>{' '}
-                      <p style={{ margin: '16px 0 0', fontSize: '13px', lineHeight: '1.55', color: '#5A5A61' }}>
+                      <p style={{ margin: '16px 0 0', fontSize: '13px', lineHeight: '1.55', color: '#5F707B' }}>
                         {'Comparte solo datos de contacto de tu equipo, sin información de pacientes. Consulta el '}
-                        <a href={link('#')} style={{ color: '#3D3D42' }}>
+                        <a href={link('#')} style={{ color: '#4B5D69' }}>
                           {'aviso de privacidad'}
                         </a>
                         {'.'}
@@ -772,7 +807,7 @@ export default class Contacto extends Logic {
                         {v.firstName}
                         {'. Recibimos tu solicitud.'}
                       </p>{' '}
-                      <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6', color: '#3D3D42' }}>
+                      <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6', color: '#4B5D69' }}>
                         {'Te escribimos por WhatsApp al '}
                         {v.v?.whatsapp}
                         {' para coordinar la plática. Si prefieres, escríbenos tú primero.'}
@@ -780,6 +815,7 @@ export default class Contacto extends Logic {
                       <div style={{ marginTop: 'auto', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                         {' '}
                         <a
+                          className={'kn-btn'}
                           href={link('https://wa.me/message/3JRJUFH6UNNLA1')}
                           style={{
                             textDecoration: 'none',
@@ -787,22 +823,23 @@ export default class Contacto extends Logic {
                             fontSize: '15px',
                             padding: '13px 22px',
                             borderRadius: '999px',
-                            background: '#141416',
+                            background: '#18648A',
                             color: '#FFFFFF',
                           }}
                         >
                           {'Abrir WhatsApp'}
                         </a>{' '}
                         <a
-                          href={link('Funciones.dc.html')}
+                          className={'kn-ghost'}
+                          href={link('Costa-Funciones-cs02.dc.html')}
                           style={{
                             textDecoration: 'none',
                             fontWeight: '500',
                             fontSize: '15px',
                             padding: '13px 22px',
                             borderRadius: '999px',
-                            border: '1px solid #D4D4D8',
-                            color: '#141416',
+                            border: '1px solid #D6CBC4',
+                            color: '#0E2A3B',
                           }}
                         >
                           {'Mientras, ve las funciones'}
@@ -831,7 +868,7 @@ export default class Contacto extends Logic {
                     gap: '8px',
                     fontSize: '13px',
                     fontWeight: '500',
-                    color: '#3D3D42',
+                    color: '#4B5D69',
                   }}
                 >
                   <svg
@@ -859,7 +896,7 @@ export default class Contacto extends Logic {
                     flex: '1',
                     background: '#FFFFFF',
                     borderRadius: '6px 6px 18px 18px',
-                    boxShadow: '0 1px 0 #E6E6E8, 0 20px 40px rgba(20,20,22,0.10)',
+                    boxShadow: '0 1px 0 #E8DFDA, 0 20px 40px rgba(14,42,59,0.10)',
                     padding: '28px 28px 24px',
                     display: 'flex',
                     flexDirection: 'column',
@@ -874,7 +911,7 @@ export default class Contacto extends Logic {
                       alignItems: 'flex-start',
                       gap: '12px',
                       paddingBottom: '16px',
-                      borderBottom: '2px solid #141416',
+                      borderBottom: '2px solid #0E2A3B',
                     }}
                   >
                     {' '}
@@ -882,7 +919,7 @@ export default class Contacto extends Logic {
                       <div style={{ fontSize: '18px', fontWeight: '600', letterSpacing: '-0.01em' }}>
                         {'Solicitud de clínica'}
                       </div>
-                      <div style={{ fontSize: '12px', color: '#5A5A61', marginTop: '2px' }}>
+                      <div style={{ fontSize: '12px', color: '#5F707B', marginTop: '2px' }}>
                         <span translate={'no'}>{'Kensa'}</span>
                         {' · '}
                         {v.today}
@@ -895,7 +932,7 @@ export default class Contacto extends Logic {
                             fontSize: '12px',
                             fontWeight: '600',
                             letterSpacing: '0.04em',
-                            border: '2px solid #141416',
+                            border: '2px solid #0E2A3B',
                             borderRadius: '8px',
                             padding: '5px 10px',
                             transform: 'rotate(-4deg)',
@@ -910,8 +947,8 @@ export default class Contacto extends Logic {
                         <span
                           style={{
                             fontSize: '12px',
-                            color: '#5A5A61',
-                            border: '1px dashed #A1A1AA',
+                            color: '#5F707B',
+                            border: '1px dashed #9AAAB5',
                             borderRadius: '8px',
                             padding: '5px 10px',
                           }}
@@ -933,11 +970,11 @@ export default class Contacto extends Logic {
                             gap: '12px',
                             alignItems: 'baseline',
                             padding: '12px 0',
-                            borderBottom: '1px solid #ECECEE',
+                            borderBottom: '1px solid #EEE6E2',
                           }}
                         >
                           {' '}
-                          <dt style={{ fontSize: '12px', color: '#5A5A61' }}>{r?.k}</dt>{' '}
+                          <dt style={{ fontSize: '12px', color: '#5F707B' }}>{r?.k}</dt>{' '}
                           {r?.has ? (
                             <>
                               <dd
@@ -951,7 +988,7 @@ export default class Contacto extends Logic {
                             <>
                               <dd
                                 aria-label={'Sin llenar'}
-                                style={{ margin: '0', height: '14px', borderBottom: '1.5px dotted #A1A1AA' }}
+                                style={{ margin: '0', height: '14px', borderBottom: '1.5px dotted #9AAAB5' }}
                               ></dd>
                             </>
                           ) : null}{' '}
@@ -965,7 +1002,7 @@ export default class Contacto extends Logic {
                       paddingTop: '16px',
                       fontSize: '12px',
                       lineHeight: '1.5',
-                      color: '#5A5A61',
+                      color: '#5F707B',
                     }}
                   >
                     {
@@ -997,52 +1034,52 @@ export default class Contacto extends Logic {
                   {' '}
                   <li
                     style={{
-                      borderTop: '2px solid #141416',
+                      borderTop: '2px solid #0E2A3B',
                       paddingTop: '14px',
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '6px',
                     }}
                   >
-                    <span style={{ fontSize: '13px', color: '#5A5A61' }}>{'1'}</span>
+                    <span style={{ fontSize: '13px', color: '#5F707B' }}>{'1'}</span>
                     <span style={{ fontSize: '15px', lineHeight: '1.5' }}>
                       {'Coordinamos la plática por WhatsApp.'}
                     </span>
                   </li>{' '}
                   <li
                     style={{
-                      borderTop: '2px solid #141416',
+                      borderTop: '2px solid #0E2A3B',
                       paddingTop: '14px',
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '6px',
                     }}
                   >
-                    <span style={{ fontSize: '13px', color: '#5A5A61' }}>{'2'}</span>
+                    <span style={{ fontSize: '13px', color: '#5F707B' }}>{'2'}</span>
                     <span style={{ fontSize: '15px', lineHeight: '1.5' }}>
                       {'Revisamos el flujo y los documentos que tu equipo ya usa.'}
                     </span>
                   </li>{' '}
                   <li
                     style={{
-                      borderTop: '2px solid #141416',
+                      borderTop: '2px solid #0E2A3B',
                       paddingTop: '14px',
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '6px',
                     }}
                   >
-                    <span style={{ fontSize: '13px', color: '#5A5A61' }}>{'3'}</span>
+                    <span style={{ fontSize: '13px', color: '#5F707B' }}>{'3'}</span>
                     <span style={{ fontSize: '15px', lineHeight: '1.5' }}>
                       {'Si hay encaje y un lugar disponible, arranca tu piloto de 45 días sin costo.'}
                     </span>
                   </li>{' '}
                 </ol>{' '}
-                <p style={{ margin: '24px 0 0', fontSize: '14px', lineHeight: '1.6', color: '#3D3D42' }}>
+                <p style={{ margin: '24px 0 0', fontSize: '14px', lineHeight: '1.6', color: '#4B5D69' }}>
                   {
                     'Como clínica fundadora usas Kensa completo en un piloto de 45 días sin costo. Después pagas un precio fundador reducido por sede, fijo mientras sigas con Kensa. '
                   }
-                  <a href={link('Precios.dc.html')}>{'Consulta el programa'}</a>
+                  <a href={link('Costa-Precios-cs04.dc.html')}>{'Consulta el programa'}</a>
                   {'.'}
                 </p>{' '}
               </div>{' '}
@@ -1050,7 +1087,7 @@ export default class Contacto extends Logic {
                 style={{
                   flex: '1 1 320px',
                   minWidth: '0',
-                  borderTop: '2px solid #141416',
+                  borderTop: '2px solid #0E2A3B',
                   paddingTop: '14px',
                   display: 'flex',
                   flexDirection: 'column',
@@ -1061,12 +1098,13 @@ export default class Contacto extends Logic {
                 <h2 style={{ margin: '0', fontSize: '18px', fontWeight: '600' }}>
                   {'¿Prefieres mandar mensaje directo?'}
                 </h2>{' '}
-                <p style={{ margin: '0', fontSize: '15px', lineHeight: '1.55', color: '#3D3D42' }}>
+                <p style={{ margin: '0', fontSize: '15px', lineHeight: '1.55', color: '#4B5D69' }}>
                   {'Escríbenos desde el teléfono del consultorio o sigue por correo.'}
                 </p>{' '}
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                   {' '}
                   <a
+                    className={'kn-btn'}
                     href={link('https://wa.me/message/3JRJUFH6UNNLA1')}
                     style={{
                       textDecoration: 'none',
@@ -1074,13 +1112,14 @@ export default class Contacto extends Logic {
                       fontSize: '15px',
                       padding: '12px 20px',
                       borderRadius: '999px',
-                      background: '#141416',
+                      background: '#18648A',
                       color: '#FFFFFF',
                     }}
                   >
                     {'Abrir WhatsApp'}
                   </a>{' '}
                   <a
+                    className={'kn-ghost'}
                     href={link('mailto:contacto@holakensa.com')}
                     style={{
                       textDecoration: 'none',
@@ -1088,8 +1127,8 @@ export default class Contacto extends Logic {
                       fontSize: '15px',
                       padding: '12px 20px',
                       borderRadius: '999px',
-                      border: '1px solid #D4D4D8',
-                      color: '#141416',
+                      border: '1px solid #D6CBC4',
+                      color: '#0E2A3B',
                     }}
                   >
                     {'contacto@holakensa.com'}
@@ -1098,7 +1137,7 @@ export default class Contacto extends Logic {
               </div>{' '}
             </section>{' '}
           </main>{' '}
-          <CompPiePagina />{' '}
+          <CostaPiePagina />{' '}
         </div>{' '}
       </>
     );

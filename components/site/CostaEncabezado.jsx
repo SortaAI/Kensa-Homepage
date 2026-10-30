@@ -1,8 +1,8 @@
 'use client';
-// Generated from the design canvas (Comp-Encabezado-2gft.dc.html), then edited by hand where noted.
+// Generated from the design canvas, Costa palette (Costa-Encabezado-cs08.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
-import CompNavegacion from './CompNavegacion';
+import CostaNavegacion from './CostaNavegacion';
 
 const CSS = 'body{margin:0}';
 
@@ -12,7 +12,7 @@ class Logic extends DCLogic {
   }
 }
 
-export default class CompEncabezado extends Logic {
+export default class CostaEncabezado extends Logic {
   render() {
     const v = this.renderVals() || {};
     return (
@@ -21,7 +21,7 @@ export default class CompEncabezado extends Logic {
         <header
           style={{
             fontFamily: "'Poppins', system-ui, sans-serif",
-            color: '#141416',
+            color: '#0E2A3B',
             width: '100%',
             position: 'relative',
             zIndex: '40',
@@ -30,8 +30,8 @@ export default class CompEncabezado extends Logic {
           {' '}
           <div
             style={{
-              background: '#141416',
-              color: '#FAFAFA',
+              background: '#0E2A3B',
+              color: '#F7F2EF',
               fontSize: '13px',
               textAlign: 'center',
               padding: '10px 16px',
@@ -44,13 +44,13 @@ export default class CompEncabezado extends Logic {
             {' '}
             <span>{'Clínicas fundadoras: piloto de 45 días sin costo y precio fundador reducido.'}</span>{' '}
             <a
-              href={link('Contacto.dc.html')}
+              href={link('Costa-Contacto-cs06.dc.html')}
               style={{ color: '#FFFFFF', fontWeight: '500', textUnderlineOffset: '3px' }}
             >
               {'Solicita tu lugar'}
             </a>{' '}
           </div>{' '}
-          <CompNavegacion />{' '}
+          <CostaNavegacion />{' '}
         </header>{' '}
       </>
     );
