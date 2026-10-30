@@ -42,14 +42,14 @@ class Logic extends DCLogic {
   renderVals() {
     var hf = "'Poppins', system-ui, sans-serif";
     var practices = [
-      { t: 'Datos separados por clínica', d: 'La información de tu clínica nunca se mezcla con la de otra.' },
-      { t: 'Enlaces que vencen', d: 'Personales, con fecha de vencimiento y se cierran al enviarse.' },
-      { t: 'WhatsApp cifrado', d: 'Tus credenciales se guardan cifradas. Cada clínica conecta su cuenta.' },
-      { t: 'Archivos privados', d: 'Acceso temporal y nada de enlaces públicos.' },
-      { t: 'Respaldos cifrados', d: 'Y restauraciones probadas por separado.' },
-      { t: 'Monitoreo', d: 'Alertas si algo deja de funcionar.' },
-      { t: 'Aviso y consentimiento', d: 'Aviso de privacidad en el primer mensaje y consentimiento registrado.' },
-      { t: 'Derechos del paciente', d: 'Exporta sus documentos, borra su chat o lo das de baja de ofertas.' },
+      { t: 'Datos separados por clínica', i: 'M4 4h7v7H4z M13 13h7v7h-7z', d: 'La información de tu clínica nunca se mezcla con la de otra.' },
+      { t: 'Enlaces que vencen', i: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18z M12 7v5l3 2', d: 'Personales, con fecha de vencimiento y se cierran al enviarse.' },
+      { t: 'WhatsApp cifrado', i: 'M5 11h14v10H5z M8 11V7a4 4 0 0 1 8 0v4', d: 'Tus credenciales se guardan cifradas. Cada clínica conecta su cuenta.' },
+      { t: 'Archivos privados', i: 'M14 3H6v18h12V7z M14 3v4h4 M9 13h6 M9 17h4', d: 'Acceso temporal y nada de enlaces públicos.' },
+      { t: 'Respaldos cifrados', i: 'M3 12a9 9 0 1 0 2.6-6.4L3 8 M3 3v5h5', d: 'Y restauraciones probadas por separado.' },
+      { t: 'Monitoreo', i: 'M3 12h4l3-8 4 16 3-8h4', d: 'Alertas si algo deja de funcionar.' },
+      { t: 'Aviso y consentimiento', i: 'M4 5h16v11H9l-5 4z M9 10.5l2 2 4-4', d: 'Aviso de privacidad en el primer mensaje y consentimiento registrado.' },
+      { t: 'Derechos del paciente', i: 'M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z', d: 'Exporta sus documentos, borra su chat o lo das de baja de ofertas.' },
     ];
     return { hf: hf, practices: practices };
   }
@@ -116,15 +116,43 @@ export default class CostaSeguridad extends Logic {
                   <div
                     className={'kn-card'}
                     style={{
-                      background: '#F6F6F6',
+                      background: '#FFFFFF',
+                      border: '1px solid rgba(14,42,59,0.08)',
+                      boxShadow: '0 1px 2px rgba(14,42,59,0.04), 0 8px 24px rgba(14,42,59,0.05)',
                       borderRadius: '18px',
-                      padding: '22px',
+                      padding: '24px',
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '8px',
                     }}
                   >
-                    {' '}
+                    <span
+                      aria-hidden="true"
+                      style={{
+                        width: '40px',
+                        height: '40px',
+                        borderRadius: '12px',
+                        background: '#E3EEF4',
+                        color: '#18648A',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        marginBottom: '10px',
+                      }}
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.8"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d={p?.i} />
+                      </svg>
+                    </span>{' '}
                     <span style={{ fontSize: '16px', fontWeight: '600' }}>{p?.t}</span>{' '}
                     <span style={{ fontSize: '14px', lineHeight: '1.5', color: '#4B5D69' }}>{p?.d}</span>{' '}
                   </div>{' '}
