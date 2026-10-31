@@ -191,6 +191,15 @@ class Logic extends DCLogic {
         if (st.sending) return;
         var fd = new FormData(e.currentTarget);
         self.setState({ sending: true, error: '' });
+        // the confirmation takes the form's place at the same height, so nothing below moves
+        var box = e.currentTarget.parentElement;
+        var cap = e.currentTarget.nextElementSibling;
+        var h = e.currentTarget.offsetHeight;
+        while (cap && cap.tagName === 'P') {
+          h += cap.offsetHeight + parseFloat(getComputedStyle(cap).marginTop);
+          cap = cap.nextElementSibling;
+        }
+        if (box) box.style.setProperty('--kn-form-h', h + 'px');
         sendForm(FORMS.demoInicio, {
           clinica: fd.get('clinica'),
           whatsapp: fd.get('whatsapp'),
@@ -467,172 +476,213 @@ export default class CostaInicio extends Logic {
               >
                 {'WhatsApp, agenda, lista de espera y documentos de tu clínica, en un solo flujo.'}
               </p>{' '}
-              {v.notSent ? (
-                <>
-                  {' '}
-                  <form
-                    onSubmit={v.submit}
+              <>
+                {v.notSent ? (
+                  <>
+                    {' '}
+                    <form
+                      onSubmit={v.submit}
+                      style={{
+                        position: 'relative',
+                        marginTop: '32px',
+                        width: '100%',
+                        maxWidth: '640px',
+                        display: 'flex',
+                        flexWrap: 'wrap',
+                        gap: '6px',
+                        background: '#FFFFFF',
+                        border: '1px solid #E3D9D3',
+                        borderRadius: '22px',
+                        padding: '6px',
+                        textAlign: 'left',
+                        boxShadow: '0 10px 30px rgba(14,42,59,0.07)',
+                      }}
+                    >
+                      {' '}
+                      <label
+                        style={{
+                          flex: '1 1 170px',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: '2px',
+                          padding: '8px 14px',
+                          fontSize: '12px',
+                          color: '#5F707B',
+                        }}
+                      >
+                        {'Clínica'}
+                        <input
+                          name={'clinica'}
+                          autoComplete={'organization'}
+                          required={true}
+                          placeholder={'Clínica Vida…'}
+                          style={{
+                            border: '0',
+                            background: 'transparent',
+                            font: 'inherit',
+                            fontSize: '15px',
+                            color: '#0E2A3B',
+                            padding: '2px 0',
+                          }}
+                        />
+                      </label>{' '}
+                      <label
+                        style={{
+                          flex: '1 1 170px',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: '2px',
+                          padding: '8px 14px',
+                          fontSize: '12px',
+                          color: '#5F707B',
+                          borderLeft: '1px solid #EEE6E2',
+                        }}
+                      >
+                        {'WhatsApp'}
+                        <input
+                          name={'whatsapp'}
+                          type={'tel'}
+                          inputMode={'tel'}
+                          autoComplete={'tel'}
+                          required={true}
+                          placeholder={'+52 656 123 4567…'}
+                          style={{
+                            border: '0',
+                            background: 'transparent',
+                            font: 'inherit',
+                            fontSize: '15px',
+                            color: '#0E2A3B',
+                            padding: '2px 0',
+                          }}
+                        />
+                      </label>{' '}
+                      <input
+                        type={'text'}
+                        name={'_gotcha'}
+                        tabIndex={-1}
+                        autoComplete={'off'}
+                        aria-hidden={'true'}
+                        style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+                      />
+                      <button
+                        className={'kn-btn'}
+                        type={'submit'}
+                        disabled={v.sending}
+                        aria-busy={v.sending}
+                        style={{
+                          cursor: v.sending ? 'progress' : 'pointer',
+                          opacity: v.sending ? 0.75 : 1,
+                          flex: '0 0 auto',
+                          border: '0',
+                          borderRadius: '16px',
+                          background: '#18648A',
+                          color: '#FFFFFF',
+                          fontSize: '15px',
+                          fontWeight: '500',
+                          padding: '0 22px',
+                          minHeight: '52px',
+                        }}
+                      >
+                        {v.btnLabel}
+                      </button>{' '}
+                    </form>
+                    {v.error ? (
+                      <p role={'alert'} style={{ margin: '12px 0 0', fontSize: '14px', color: '#9E4A29' }}>
+                        {v.error}
+                      </p>
+                    ) : null}{' '}
+                    <p style={{ margin: '12px 0 0', fontSize: '13px', color: '#5F707B' }}>
+                      {'Recibes un WhatsApp para coordinar. Sin compromiso.'}
+                    </p>
+                  </>
+                ) : (
+                  <div
+                    role={'status'}
+                    aria-live={'polite'}
+                    className={'kn-sent'}
                     style={{
-                      position: 'relative',
-                      marginTop: '32px',
+                      boxSizing: 'border-box',
+                      margin: '32px 0 0',
                       width: '100%',
                       maxWidth: '640px',
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      gap: '6px',
+                      minHeight: 'var(--kn-form-h, 130px)',
                       background: '#FFFFFF',
                       border: '1px solid #E3D9D3',
                       borderRadius: '22px',
-                      padding: '6px',
+                      padding: '20px 24px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '16px',
                       textAlign: 'left',
                       boxShadow: '0 10px 30px rgba(14,42,59,0.07)',
                     }}
                   >
-                    {' '}
-                    <label
-                      style={{
-                        flex: '1 1 170px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '2px',
-                        padding: '8px 14px',
-                        fontSize: '12px',
-                        color: '#5F707B',
-                      }}
-                    >
-                      {'Clínica'}
-                      <input
-                        name={'clinica'}
-                        autoComplete={'organization'}
-                        required={true}
-                        placeholder={'Clínica Vida…'}
-                        style={{
-                          border: '0',
-                          background: 'transparent',
-                          font: 'inherit',
-                          fontSize: '15px',
-                          color: '#0E2A3B',
-                          padding: '2px 0',
-                        }}
-                      />
-                    </label>{' '}
-                    <label
-                      style={{
-                        flex: '1 1 170px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '2px',
-                        padding: '8px 14px',
-                        fontSize: '12px',
-                        color: '#5F707B',
-                        borderLeft: '1px solid #EEE6E2',
-                      }}
-                    >
-                      {'WhatsApp'}
-                      <input
-                        name={'whatsapp'}
-                        type={'tel'}
-                        inputMode={'tel'}
-                        autoComplete={'tel'}
-                        required={true}
-                        placeholder={'+52 656 123 4567…'}
-                        style={{
-                          border: '0',
-                          background: 'transparent',
-                          font: 'inherit',
-                          fontSize: '15px',
-                          color: '#0E2A3B',
-                          padding: '2px 0',
-                        }}
-                      />
-                    </label>{' '}
-                    <input
-                      type={'text'}
-                      name={'_gotcha'}
-                      tabIndex={-1}
-                      autoComplete={'off'}
+                    <span
                       aria-hidden={'true'}
-                      style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
-                    />
-                    <button
-                      className={'kn-btn'}
-                      type={'submit'}
-                      disabled={v.sending}
-                      aria-busy={v.sending}
                       style={{
-                        cursor: v.sending ? 'progress' : 'pointer',
-                        opacity: v.sending ? 0.75 : 1,
-                        flex: '0 0 auto',
-                        border: '0',
-                        borderRadius: '16px',
-                        background: '#18648A',
-                        color: '#FFFFFF',
-                        fontSize: '15px',
-                        fontWeight: '500',
-                        padding: '0 22px',
-                        minHeight: '52px',
+                        flex: 'none',
+                        width: '44px',
+                        height: '44px',
+                        borderRadius: '999px',
+                        background: '#E3EEF4',
+                        color: '#18648A',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                       }}
                     >
-                      {v.btnLabel}
-                    </button>{' '}
-                  </form>
-                  {v.error ? (
-                    <p role={'alert'} style={{ margin: '12px 0 0', fontSize: '14px', color: '#9E4A29' }}>
-                      {v.error}
-                    </p>
-                  ) : null}{' '}
-                  <p style={{ margin: '12px 0 0', fontSize: '13px', color: '#5F707B' }}>
-                    {'Recibes un WhatsApp para coordinar. Sin compromiso.'}
-                  </p>
-                  <div style={{ position: 'relative', marginTop: '64px', width: '100%', maxWidth: '1040px' }}>
-                    {' '}
-                    <div style={{ boxSizing: 'border-box', paddingBottom: '40px' }}>
-                      <img
-                        src={'/img/hero-laptop-agenda.webp'}
-                        width={'1792'}
-                        height={'1084'}
-                        fetchPriority={'high'}
-                        alt={'Kensa en una laptop: la agenda semanal con citas confirmadas y por confirmar'}
-                        style={{ display: 'block', width: '100%', height: 'auto' }}
-                      />
-                      <img
-                        className={'hide-sm'}
-                        src={'/img/hero-iphone-paciente.webp'}
-                        width={'543'}
-                        height={'1117'}
-                        alt={'Kensa en el celular del paciente: completa tus documentos'}
-                        style={{
-                          position: 'absolute',
-                          left: '-3%',
-                          bottom: '30px',
-                          width: '21%',
-                          height: 'auto',
-                          filter: 'drop-shadow(0 24px 40px rgba(14,42,59,0.22))',
-                        }}
-                      />
-                    </div>{' '}
-                  </div>{' '}
-                </>
-              ) : null}{' '}
-              {v.sent ? (
-                <>
+                      <svg
+                        width={'22'}
+                        height={'22'}
+                        viewBox={'0 0 24 24'}
+                        fill={'none'}
+                        stroke={'currentColor'}
+                        strokeWidth={'2.2'}
+                        strokeLinecap={'round'}
+                        strokeLinejoin={'round'}
+                      >
+                        <path d={'m5 12 5 5 9-10'} />
+                      </svg>
+                    </span>
+                    <span style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+                      <span style={{ fontSize: '17px', fontWeight: '600', color: '#0E2A3B' }}>
+                        {'Listo, recibimos tu solicitud.'}
+                      </span>
+                      <span style={{ fontSize: '15px', lineHeight: '1.5', color: '#4B5D69' }}>
+                        {'En breve recibes un WhatsApp para agendar tu demo.'}
+                      </span>
+                    </span>
+                  </div>
+                )}
+                <div style={{ position: 'relative', marginTop: '64px', width: '100%', maxWidth: '1040px' }}>
                   {' '}
-                  <p
-                    role={'status'}
-                    aria-live={'polite'}
-                    style={{
-                      margin: '32px 0 0',
-                      background: '#FFFFFF',
-                      border: '1px solid #E3D9D3',
-                      borderRadius: '18px',
-                      padding: '16px 22px',
-                      fontSize: '15px',
-                    }}
-                  >
-                    {'Listo. En breve recibes un WhatsApp para agendar tu demo.'}
-                  </p>{' '}
-                </>
-              ) : null}{' '}
+                  <div style={{ boxSizing: 'border-box', paddingBottom: '40px' }}>
+                    <img
+                      src={'/img/hero-laptop-agenda.webp'}
+                      width={'1792'}
+                      height={'1084'}
+                      fetchPriority={'high'}
+                      alt={'Kensa en una laptop: la agenda semanal con citas confirmadas y por confirmar'}
+                      style={{ display: 'block', width: '100%', height: 'auto' }}
+                    />
+                    <img
+                      className={'hide-sm'}
+                      src={'/img/hero-iphone-paciente.webp'}
+                      width={'543'}
+                      height={'1117'}
+                      alt={'Kensa en el celular del paciente: completa tus documentos'}
+                      style={{
+                        position: 'absolute',
+                        left: '-3%',
+                        bottom: '30px',
+                        width: '21%',
+                        height: 'auto',
+                        filter: 'drop-shadow(0 24px 40px rgba(14,42,59,0.22))',
+                      }}
+                    />
+                  </div>{' '}
+                </div>{' '}
+              </>{' '}
             </section>{' '}
           </div>{' '}
           <div data-rv={'1'} className={'wrap'} style={{ paddingTop: '28px' }}>
