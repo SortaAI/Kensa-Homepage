@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Contacto-cs06.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { FORMS, sendForm } from '@/lib/forms';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
@@ -44,6 +45,8 @@ class Logic extends DCLogic {
     this.state = {
       step: 1,
       sent: false,
+      sending: false,
+      error: '',
       tried: {},
       v: {
         interes: 'demo',
@@ -208,7 +211,9 @@ class Logic extends DCLogic {
       is3: st.step === 3,
       canBack: st.step > 1,
       noBack: st.step === 1,
-      cta: st.step === 3 ? 'Enviar solicitud' : 'Continuar',
+      cta: st.step === 3 ? (st.sending ? 'Enviando…' : 'Enviar solicitud') : 'Continuar',
+      sending: st.sending,
+      error: st.error,
       badFormatos: !!(st.tried[3] && errs.formatos),
       sent: st.sent,
       notSent: !st.sent,
@@ -228,8 +233,23 @@ class Logic extends DCLogic {
           self.setState({ tried: tried });
           return;
         }
-        if (st.step < 3) self.setState({ step: st.step + 1, tried: tried });
-        else self.setState({ sent: true, tried: tried });
+        if (st.step < 3) return self.setState({ step: st.step + 1, tried: tried });
+        if (st.sending) return;
+        var gotcha = new FormData(e.currentTarget).get('_gotcha') || '';
+        var payload = { _subject: 'Nueva solicitud · ' + labelOf(interestList, v.interes) + ' · ' + (v.consultorio || v.nombre) };
+        rowsSrc.forEach(function (r) {
+          payload[r[0]] = r[1] || '';
+        });
+        payload._gotcha = gotcha;
+        self.setState({ sending: true, error: '', tried: tried });
+        sendForm(FORMS.contacto, payload).then(
+          function () {
+            self.setState({ sending: false, sent: true });
+          },
+          function (err) {
+            self.setState({ sending: false, error: err.message });
+          },
+        );
       },
     };
   }
@@ -751,10 +771,22 @@ export default class CostaContacto extends Logic {
                             <span style={{ fontSize: '13px', color: '#5F707B' }}>{'Toma menos de un minuto.'}</span>
                           </>
                         ) : null}{' '}
+                        <input
+                          type={'text'}
+                          name={'_gotcha'}
+                          tabIndex={-1}
+                          autoComplete={'off'}
+                          aria-hidden={'true'}
+                          style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+                        />
                         <button
                           className={'kn-btn'}
                           type={'submit'}
+                          disabled={v.sending}
+                          aria-busy={v.sending}
                           style={{
+                            cursor: v.sending ? 'progress' : 'pointer',
+                            opacity: v.sending ? 0.75 : 1,
                             border: '0',
                             borderRadius: '999px',
                             background: '#18648A',
@@ -783,6 +815,11 @@ export default class CostaContacto extends Logic {
                           </svg>
                         </button>{' '}
                       </div>{' '}
+                      {v.error ? (
+                        <p role={'alert'} style={{ margin: '14px 0 0', fontSize: '14px', color: '#9E4A29' }}>
+                          {v.error}
+                        </p>
+                      ) : null}
                       <p style={{ margin: '16px 0 0', fontSize: '13px', lineHeight: '1.55', color: '#5F707B' }}>
                         {'Comparte solo datos de contacto de tu equipo, sin información de pacientes. Consulta el '}
                         <a href={'/privacidad/'} style={{ color: '#4B5D69' }}>

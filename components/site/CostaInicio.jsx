@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Inicio-cs01.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { FORMS, sendForm } from '@/lib/forms';
 import { FAQ_INICIO } from '@/lib/faqs';
 import { G } from '@/lib/gradients';
 import CostaEncabezado from './CostaEncabezado';
@@ -60,7 +61,7 @@ class Logic extends DCLogic {
   }
   constructor(props) {
     super(props);
-    this.state = { step: 0, sent: false, faq: 0, job: 2 };
+    this.state = { step: 0, sent: false, sending: false, error: '', faq: 0, job: 2 };
   }
   renderVals() {
     var self = this,
@@ -182,9 +183,28 @@ class Logic extends DCLogic {
       shot: data[st.step].shot,
       sent: st.sent,
       notSent: !st.sent,
+      sending: st.sending,
+      error: st.error,
+      btnLabel: st.sending ? 'Enviando…' : 'Agenda una demo',
       submit: function (e) {
         e.preventDefault();
-        self.setState({ sent: true });
+        if (st.sending) return;
+        var fd = new FormData(e.currentTarget);
+        self.setState({ sending: true, error: '' });
+        sendForm(FORMS.demoInicio, {
+          clinica: fd.get('clinica'),
+          whatsapp: fd.get('whatsapp'),
+          origen: 'Inicio · formulario de la portada',
+          _subject: 'Nueva solicitud de demo · ' + (fd.get('clinica') || 'Inicio'),
+          _gotcha: fd.get('_gotcha') || '',
+        }).then(
+          function () {
+            self.setState({ sending: false, sent: true });
+          },
+          function (err) {
+            self.setState({ sending: false, error: err.message });
+          },
+        );
       },
     };
   }
@@ -526,10 +546,22 @@ export default class CostaInicio extends Logic {
                         }}
                       />
                     </label>{' '}
+                    <input
+                      type={'text'}
+                      name={'_gotcha'}
+                      tabIndex={-1}
+                      autoComplete={'off'}
+                      aria-hidden={'true'}
+                      style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', opacity: 0 }}
+                    />
                     <button
                       className={'kn-btn'}
                       type={'submit'}
+                      disabled={v.sending}
+                      aria-busy={v.sending}
                       style={{
+                        cursor: v.sending ? 'progress' : 'pointer',
+                        opacity: v.sending ? 0.75 : 1,
                         flex: '0 0 auto',
                         border: '0',
                         borderRadius: '16px',
@@ -541,9 +573,14 @@ export default class CostaInicio extends Logic {
                         minHeight: '52px',
                       }}
                     >
-                      {'Agenda una demo'}
+                      {v.btnLabel}
                     </button>{' '}
-                  </form>{' '}
+                  </form>
+                  {v.error ? (
+                    <p role={'alert'} style={{ margin: '12px 0 0', fontSize: '14px', color: '#9E4A29' }}>
+                      {v.error}
+                    </p>
+                  ) : null}{' '}
                   <p style={{ margin: '12px 0 0', fontSize: '13px', color: '#5F707B' }}>
                     {'Recibes un WhatsApp para coordinar. Sin compromiso.'}
                   </p>
