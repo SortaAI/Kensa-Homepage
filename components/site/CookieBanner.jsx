@@ -7,7 +7,7 @@ import React from 'react';
 const KEY = 'kensa_cookie_consent_v1';
 const GA_ID = ''; // Google Analytics 4, e.g. 'G-XXXXXXX'
 const CLARITY_ID = ''; // Microsoft Clarity project id
-const PRODUCTION = 'holakensa.com';
+const PRODUCTION = ['www.holakensa.com', 'holakensa.com'];
 
 function read() {
   try {
@@ -18,7 +18,7 @@ function read() {
 }
 
 function loadAnalytics() {
-  if (location.hostname !== PRODUCTION || window.__kensaAnalyticsLoaded) return;
+  if (!PRODUCTION.includes(location.hostname) || window.__kensaAnalyticsLoaded) return;
   window.__kensaAnalyticsLoaded = true;
   if (GA_ID) {
     window.dataLayer = window.dataLayer || [];
