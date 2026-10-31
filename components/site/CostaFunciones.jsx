@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Funciones-cs02.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { G } from '@/lib/gradients';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
@@ -114,8 +115,10 @@ class Logic extends DCLogic {
       return { name: name, line: line, href: href || '#', ic: { a: p[0], b: p[1] || '' } };
     };
     // I: a floating screen (white card). Ib: a device mockup or composite, shown without a frame.
+    var gi = 0;
     var I = function (src, alt, maxw, w, h) {
       return {
+        bg: G[gi++ % G.length],
         isImg: true,
         isBare: false,
         isSeal: false,
@@ -356,6 +359,7 @@ class Logic extends DCLogic {
         i: String(i),
         src: shots[i][0],
         alt: shots[i][1],
+        bg: G[i % G.length],
         w: 1920,
         h: 1440,
         on: i === active ? 'yes' : 'no',
@@ -579,7 +583,7 @@ export default class CostaFunciones extends Logic {
                           height={s?.h}
                           loading={'lazy'}
                           alt={s?.alt}
-                          style={{ display: 'block', width: '100%', height: 'auto' }}
+                          style={{ display: 'block', width: '100%', height: 'auto', background: s?.bg }}
                         />{' '}
                       </div>{' '}
                     </div>{' '}
@@ -627,6 +631,7 @@ export default class CostaFunciones extends Logic {
                           height: '100%',
                           objectFit: 'cover',
                           objectPosition: 'left bottom',
+                          background: s?.bg,
                           opacity: s?.shown,
                           transition: 'opacity .45s ease-out',
                         }}
@@ -794,9 +799,9 @@ export default class CostaFunciones extends Logic {
                             maxWidth: s?.maxw,
                             height: 'auto',
                             borderRadius: '14px',
-                            border: '1px solid #DED3CD',
+                            border: '1px solid #E6DCD6',
                             boxShadow: '0 14px 36px rgba(14,42,59,0.10)',
-                            background: '#FFFFFF',
+                            background: s?.bg,
                           }}
                         />{' '}
                       </>

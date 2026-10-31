@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-ComoFunciona-cs03.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { G } from '@/lib/gradients';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
@@ -137,7 +138,7 @@ class Logic extends DCLogic {
         },
       };
     });
-    return { week: week, tabs: tabs, persona: personas[this.state.tab] };
+    return { week: week, tabs: tabs, persona: Object.assign({}, personas[this.state.tab], { bg: G[this.state.tab % G.length] }) };
   }
 }
 
@@ -402,9 +403,10 @@ export default class CostaComoFunciona extends Logic {
                     width: '100%',
                     height: 'auto',
                     borderRadius: '14px',
-                    border: '1px solid #DED3CD',
+                    border: '1px solid #E6DCD6',
                     boxShadow: '0 14px 36px rgba(14,42,59,0.10)',
-                    background: '#FFFFFF',
+                    background: v.persona?.bg,
+                    transition: 'background .4s ease-out',
                   }}
                 />{' '}
               </div>{' '}

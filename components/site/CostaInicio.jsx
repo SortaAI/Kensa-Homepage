@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Inicio-cs01.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { G } from '@/lib/gradients';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
@@ -63,8 +64,9 @@ class Logic extends DCLogic {
   renderVals() {
     var self = this,
       st = this.state;
+    var gi = 0;
     var img = function (src, alt, w, h) {
-      return { isImg: true, isSeal: false, isOffer: false, src: src, alt: alt, w: w, h: h };
+      return { isImg: true, isSeal: false, isOffer: false, src: src, alt: alt, w: w, h: h, bg: G[gi++ % G.length] };
     };
     var jobNames = [
       'Contesta WhatsApp',
@@ -979,9 +981,10 @@ export default class CostaInicio extends Logic {
                         maxHeight: '520px',
                         objectFit: 'contain',
                         borderRadius: '14px',
-                        border: '1px solid #DED3CD',
+                        border: '1px solid #E6DCD6',
                         boxShadow: '0 14px 36px rgba(14,42,59,0.10)',
-                        background: '#FFFFFF',
+                        background: v.shot?.bg,
+                        transition: 'background .4s ease-out',
                       }}
                     />{' '}
                   </>
