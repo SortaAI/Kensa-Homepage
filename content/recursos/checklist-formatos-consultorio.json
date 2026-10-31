@@ -1,0 +1,49 @@
+{
+ "slug": "checklist-formatos-consultorio",
+ "label": "Preparación del consultorio",
+ "title": "Checklist para digitalizar los formatos de tu consultorio",
+ "lead": "Qué reunir, revisar y probar antes de automatizar el papeleo de una clínica en México. Una lista operativa para recepción, usando los documentos que ya tienen.",
+ "description": "Checklist para digitalizar formatos de consultorio: inventario, versiones, campos compartidos, responsables y prueba. Descarga gratis la lista en texto.",
+ "dates": [
+  {
+   "iso": "2026-09-15",
+   "text": "15 de septiembre de 2026"
+  },
+  {
+   "iso": "2026-10-06",
+   "text": "Actualizado el 6 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía práctica"
+ ],
+ "toc": [
+  [
+   "#inventario",
+   "Haz un inventario"
+  ],
+  [
+   "#versiones",
+   "Confirma las versiones"
+  ],
+  [
+   "#campos",
+   "Identifica campos compartidos"
+  ],
+  [
+   "#responsables",
+   "Define responsables"
+  ],
+  [
+   "#prueba",
+   "Prueba el paquete"
+  ],
+  [
+   "#descarga",
+   "Descarga la checklist"
+  ]
+ ],
+ "actions": "",
+ "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Antes de digitalizar: cinco puntos para revisar</h2><p>Reúne los formatos vigentes, identifica los datos compartidos, asigna responsables, define dónde conservarás los documentos y prueba una visita con datos ficticios.</p><a href=\"/recursos/ficha-identificacion-paciente/\">Empieza por la ficha de identificación en Word y PDF →</a></section><p>Digitalizar los formatos de un consultorio funciona mejor cuando el equipo sabe qué documentos utiliza, qué versión está vigente y quién revisa cada resultado. Empezar con un PDF cualquiera puede trasladar al sistema los mismos problemas que ya existen en papel.</p>\n<p>Esta checklist sirve para preparar una prueba de automatización con recepción. No es una lista de documentos obligatorios ni una guía para redactar contenido clínico o legal: trabaja sobre los formatos que tu consultorio haya definido para su operación.</p>\n<h2 id=\"inventario\">1. Haz el inventario de una visita habitual</h2>\n<p>Escoge un tipo de visita que se repita con frecuencia. Sigue el recorrido completo del paciente y anota qué hojas se llenan, cuáles se imprimen y cuáles se guardan. Reúne las versiones en blanco, evitando incluir datos reales en los archivos de prueba.</p>\n<p>Para cada formato, registra su nombre, cuándo se utiliza y quién lo completa. Si hay dos documentos con nombres parecidos, pregunta al equipo cuál se usa realmente. Esa conversación suele revelar copias antiguas y pasos que cada persona resuelve de una manera distinta.</p>\n<ul><li>Nombre del formato y tipo de visita al que corresponde.</li><li>Archivo original en blanco y ubicación de la versión vigente.</li><li>Persona que lo llena, revisa o firma.</li><li>Destino del documento al terminar la visita.</li></ul>\n<h2 id=\"versiones\">2. Confirma qué versión se debe usar</h2>\n<p>Antes de configurar un formato, verifica con la persona responsable que su contenido, logo y estructura sean los correctos. Revisa si el equipo usa el mismo documento en todas las computadoras o si circulan versiones diferentes por correo y WhatsApp.</p>\n<p>Si el archivo viene de un escaneo, comprueba que el texto sea legible, que las páginas estén completas y que los bordes no corten campos. Un archivo en blanco bien preparado facilita ubicar cada dato. En <a href=\"/recursos/digitalizar-formatos-medicos/\">cómo digitalizar formatos sin cambiar de sistema</a> explicamos cómo conservar la presentación que recepción ya conoce.</p>\n<h2 id=\"campos\">3. Identifica la información compartida</h2>\n<p>Compara dos o tres formatos de la misma visita. Marca los datos que se repiten y acuerda un nombre común para cada campo. Por ejemplo, “nombre completo” y “nombre del paciente” pueden referirse al mismo dato, mientras que la fecha de nacimiento y la fecha de visita son cosas distintas.</p>\n<div class=\"article-checklist\"><div><span>✓</span><p>Los datos compartidos tienen el mismo significado en cada documento.</p></div><div><span>✓</span><p>Los campos exclusivos de un formato están identificados.</p></div><div><span>✓</span><p>El equipo sabe qué información se puede reutilizar y qué debe confirmar de nuevo.</p></div><div><span>✓</span><p>Está definido qué ocurre cuando falta un dato o se necesita corregirlo.</p></div></div>\n<p>La automatización debe reducir recaptura, no completar por su cuenta información que el equipo desconoce. Una prueba útil incluye campos vacíos, nombres largos y acentos para comprobar que el resultado se mantiene legible.</p>\n<h2 id=\"responsables\">4. Define quién revisa y dónde queda el paquete</h2>\n<p>Asigna la revisión del resultado a una persona o rol concreto. Esa persona verifica que los datos pertenezcan al paciente correcto y que estén todos los documentos previstos antes de continuar con la firma o el archivo.</p>\n<p>Acuerden también quién puede acceder a los formatos, dónde se guarda el paquete final y cómo se distingue una nueva visita de una anterior. Estas decisiones son parte del proceso del consultorio; una carpeta digital por sí sola no las resuelve.</p>\n<p>Si usarán WhatsApp, definan el canal de recepción y qué información manejarán ahí. Puedes consultar <a href=\"/recursos/automatizar-formatos-medicos-whatsapp/\">el flujo de formatos médicos por WhatsApp</a> para preparar esa conversación.</p>\n<h2 id=\"prueba\">5. Prueba una visita de principio a fin</h2>\n<p>Usa un paciente ficticio y recorre el proceso completo. No te detengas cuando el documento se vea bien en pantalla: revisa la impresión si forma parte del trabajo diario, comprueba el orden del paquete y localiza después la versión final.</p>\n<ol><li>Captura los datos ficticios una vez y prepara todos los formatos elegidos.</li><li>Compara los campos compartidos entre documentos.</li><li>Corrige un dato y comprueba el resultado actualizado.</li><li>Revisa las páginas, firmas pendientes y nombres de archivo.</li><li>Pide a alguien de recepción que repita el flujo siguiendo las instrucciones acordadas.</li></ol>\n<p>Anota cada duda que aparezca. Si el equipo no sabe qué hacer cuando falta un campo o hay que corregir un apellido, mejora ese paso antes de ampliar la prueba. Para medir la recaptura inicial, consulta <a href=\"/recursos/reducir-papeleo-consultorio/\">la guía para reducir papeleo en el consultorio</a>.</p>\n<h2 id=\"descarga\">Descarga la checklist y úsala con tu equipo</h2>\n<p>La versión en texto se puede imprimir, copiar a un documento o completar junto con recepción. Incluye un inventario y puntos de revisión; no necesita datos de pacientes.</p>\n<p><a class=\"button\" download=\"\" href=\"/recursos/descargas/checklist-formatos-consultorio.txt\">Descargar checklist <svg><use href=\"#arrow\"></use></svg></a></p>\n<p>Cuando tengas los formatos en blanco y un flujo de visita elegido, <a href=\"/contacto/\">podemos revisar juntos cómo automatizarlos con Kensa</a>. El punto de partida es la operación que tu equipo ya conoce.</p>",
+ "related": "<p>El siguiente paso</p><h2 id=\"related-title\">Tus formatos de siempre.<br/><em>Una forma más sencilla de llenarlos.</em></h2><p>Conoce cómo Kensa prepara los documentos de la visita a partir de una sola captura.</p><a class=\"text-link\" href=\"/como-funciona/\">Cómo funciona Kensa <svg><use href=\"#arrow\"></use></svg></a>"
+}

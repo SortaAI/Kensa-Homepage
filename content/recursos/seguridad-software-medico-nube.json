@@ -1,0 +1,53 @@
+{
+ "slug": "seguridad-software-medico-nube",
+ "label": "Evaluar software",
+ "title": "Software médico en la nube: qué pedir antes de subir datos de pacientes",
+ "lead": "Evalúa accesos, enlaces de pacientes, respaldos, exportación y registros de un software médico en la nube. Checklist práctica para clínicas en México.",
+ "description": "Evalúa accesos, enlaces de pacientes, respaldos, exportación y registros de un software médico en la nube. Checklist práctica para clínicas en México.",
+ "dates": [
+  {
+   "iso": "2026-10-09",
+   "text": "Publicado el 9 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía práctica para clínicas"
+ ],
+ "toc": [
+  [
+   "#evidencia",
+   "Pide evidencia que puedas revisar"
+  ],
+  [
+   "#accesos",
+   "1. Usuarios, permisos y salida del equipo"
+  ],
+  [
+   "#enlaces",
+   "2. Alcance de los enlaces al paciente"
+  ],
+  [
+   "#registros",
+   "3. Originales, firmas y cambios posteriores"
+  ],
+  [
+   "#respaldo",
+   "4. Respaldos y recuperación"
+  ],
+  [
+   "#proveedores",
+   "5. Tratamiento de datos e incidentes"
+  ],
+  [
+   "#salida",
+   "6. Exportación y fin del servicio"
+  ],
+  [
+   "#kensa",
+   "Qué puedes revisar en Kensa"
+  ]
+ ],
+ "actions": "",
+ "body": "<div class=\"resource-download\"><strong>Hoja de evaluación de seguridad</strong><p>Archivo de texto para editar o imprimir. Gratis y sin registro; registra resultados y responsables con datos ficticios.</p><a class=\"button\" download=\"\" href=\"/recursos/descargas/evaluacion-seguridad-software.txt\">Descargar checklist editable →</a></div><h2 id=\"evidencia\">Pide evidencia que puedas revisar</h2><p>En una demo, todos los proveedores pueden decir que cuidan la información. La diferencia aparece cuando pides ver qué ocurre con un enlace vencido, un usuario que dejó la clínica o un documento firmado que alguien intenta modificar.</p><p>Usa esta guía para preparar preguntas y pruebas con datos ficticios. Distingue lo que puedes comprobar en pantalla de lo que requiere documentación del proveedor: una demo no prueba por sí sola cómo funcionan los respaldos o quién accede a la infraestructura.</p>\n<h2 id=\"accesos\">1. Usuarios, permisos y salida del equipo</h2><p>Pide cuentas separadas para cada integrante y una explicación de los permisos. Comprueba quién administra usuarios, quién puede ver documentos y quién puede firmar.</p><ul><li>Solicita una prueba con dos clínicas ficticias: una cuenta no debe acceder a los registros de la otra.</li><li>Revisa qué sucede cuando se desactiva a un colaborador y si sus sesiones existentes dejan de funcionar.</li><li>Pregunta qué accesos tiene el personal de soporte y cómo se autorizan y registran.</li></ul><p>No compartas una contraseña de recepción con todo el equipo. Si todos entran como la misma persona, identificar responsabilidades se vuelve más difícil.</p>\n<h2 id=\"enlaces\">2. Alcance de los enlaces al paciente</h2><p>Abre un enlace de prueba y revisa exactamente qué expone. Debe corresponder al paciente y paquete seleccionados, sin permitir navegar por documentos internos de la clínica.</p><ul><li>¿Cuándo vence y cómo se reemplaza si se envió al destinatario equivocado?</li><li>¿Puede el paciente editar secciones reservadas al personal?</li><li>¿Qué pasa al completar los documentos o finalizar la visita?</li><li>¿El enlace permite entrar a quien lo posea o exige otra verificación?</li></ul><p>Un enlace privado sigue siendo una vía de acceso. Comprueba el contacto antes de enviarlo y evita compartirlo en grupos.</p>\n<h2 id=\"registros\">3. Originales, firmas y cambios posteriores</h2><p>Pide que firmen un paquete ficticio, intenten editarlo y muestren el mecanismo para añadir una aclaración. El historial debe ayudarte a distinguir el original de los documentos posteriores.</p><p>Pregunta qué acredita la firma del sistema, cómo verifica al firmante y qué significa su sello digital. Una imagen de firma, una comprobación de integridad, una e.firma y una certificación son conceptos diferentes; el proveedor debe explicar qué ofrece.</p><p>La NOM-004 establece requisitos sobre fecha, hora, autoría y firma de las notas, además de su conservación y confidencialidad. Eso no convierte cualquier PDF firmado en cumplimiento automático. Revisa los numerales 5.4, 5.7, 5.10 y 5.11 en la <a href=\"https://sidof.segob.gob.mx/notas/docFuente/5272787\" rel=\"noopener\" target=\"_blank\">norma oficial</a> con quien supervise la documentación de tu clínica.</p>\n<h2 id=\"respaldo\">4. Respaldos y recuperación</h2><p>Pregunta cuándo se hizo la última prueba de restauración, qué información cubre y cuánto podría tardar la recuperación. “Hay respaldos diarios” no explica qué pasa si el sistema falla a media jornada.</p><ul><li>Frecuencia de respaldo y posible intervalo de datos no recuperables.</li><li>Tiempo objetivo de recuperación y limitaciones del compromiso.</li><li>Quién puede acceder a las copias y cuánto tiempo se conservan.</li><li>Evidencia de una restauración con datos de prueba.</li></ul><p>Define también cómo trabajará recepción durante una interrupción y quién reconciliará la información cuando vuelva el servicio.</p>\n<h2 id=\"proveedores\">5. Tratamiento de datos e incidentes</h2><p>Solicita por escrito dónde se almacena la información, qué proveedores la procesan, si algún servicio de IA recibe documentos y bajo qué condiciones. Aclara responsabilidades y el contacto para reportar incidentes.</p><p>La LFPDPPP considera sensibles los datos de salud. Sus artículos 18 a 20 abordan medidas de seguridad, notificación de vulneraciones significativas y confidencialidad. Consulta el <a href=\"https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf\" rel=\"noopener\" target=\"_blank\">texto vigente</a>; la clínica debe revisar el aviso, las finalidades y la base aplicable al tratamiento. El consentimiento para tratar datos es distinto del consentimiento informado para un procedimiento médico.</p><p>Si el proveedor menciona una certificación, pide el documento, la vigencia y el alcance del producto evaluado. No asumas que un logotipo cubre todas sus funciones.</p>\n<h2 id=\"salida\">6. Exportación y fin del servicio</h2><p>Descarga una visita ficticia completa y ábrela fuera de la aplicación. Revisa todas las páginas, firmas, fechas y archivos adjuntos que el proveedor afirma incluir.</p><p>Pregunta cómo obtendrías la información de toda la clínica, en qué formato, con qué coste y dentro de qué plazo. Aclara qué se conserva después de terminar el servicio y cómo se gestionan solicitudes de acceso, corrección o eliminación junto con las obligaciones de conservación.</p><p>Exportar un documento no demuestra que exista una exportación masiva. Haz ambas preguntas por separado.</p>\n<h2 id=\"kensa\">Qué puedes revisar en Kensa</h2><p>Kensa ofrece cuentas de personal vinculadas a la clínica, paquetes seleccionados, separación de campos del paciente y del equipo, y conservación de originales firmados con notas posteriores. Consulta los detalles en <a href=\"/funciones/firmar-y-bloquear/\">documentos firmados</a>.</p><p>En los paquetes de biblioteca, el enlace vence a los siete días; completar las respuestas o cerrar el paquete impide nuevas ediciones del paciente. Reemplazarlo explícitamente invalida el anterior. Revisa el alcance completo en <a href=\"/seguridad/\">seguridad</a>.</p><p>Estos controles no equivalen a una certificación, a la e.firma ni a una garantía de cumplimiento. Pide evidencia del entorno que usará tu clínica antes de incorporar información real.</p>",
+ "related": "<p>REVÍSALO EN EL PRODUCTO</p><h2>Un flujo que tu equipo<br/><em>puede comprobar.</em></h2><a class=\"button\" href=\"/seguridad/\">Revisar los controles y límites de Kensa →</a>"
+}

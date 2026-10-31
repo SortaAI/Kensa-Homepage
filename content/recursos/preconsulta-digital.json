@@ -1,0 +1,49 @@
+{
+ "slug": "preconsulta-digital",
+ "label": "Preparación antes de la cita",
+ "title": "Preconsulta digital: qué puede completar el paciente antes de llegar",
+ "lead": "La primera visita puede empezar con los datos ordenados. Recepción prepara el paquete, el paciente completa su parte y el profesional revisa la información.",
+ "description": "Organiza la preparación antes de la consulta: documentos seleccionados, enlace al paciente, revisión y datos compartidos. Guía práctica para recepción en México.",
+ "dates": [
+  {
+   "iso": "2026-10-09",
+   "text": "Publicado el 9 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía para clínicas en México"
+ ],
+ "toc": [
+  [
+   "#que-es",
+   "Qué significa aquí preconsulta digital"
+  ],
+  [
+   "#documentos",
+   "Qué pedir antes de llegar"
+  ],
+  [
+   "#pasos",
+   "El flujo en cinco pasos"
+  ],
+  [
+   "#ejemplo",
+   "Un ejemplo de primera visita"
+  ],
+  [
+   "#checklist",
+   "Qué revisar antes de enviar"
+  ],
+  [
+   "#mensaje",
+   "Mensaje al paciente"
+  ],
+  [
+   "#kensa",
+   "Cómo se prepara en Kensa"
+  ]
+ ],
+ "actions": "",
+ "body": "<div class=\"resource-download\"><strong>Checklist de preparación antes del envío</strong><p>Archivo de texto para editar o imprimir. Gratis y sin registro; registra resultados y responsables con datos ficticios.</p><a class=\"button\" download=\"\" href=\"/recursos/descargas/checklist-preconsulta.txt\">Descargar checklist editable →</a></div><h2 id=\"que-es\">Qué significa aquí preconsulta digital</h2>\n<p>En esta guía hablamos de la preparación administrativa antes de una cita: verificar identificación y contacto, seleccionar documentos y recibir información que el equipo revisará. No es una consulta médica, un diagnóstico ni una valoración a distancia.</p><p>El término también se usa para servicios clínicos, por lo que conviene explicar al paciente exactamente qué hará. “Completa estos documentos antes de tu cita” suele ser más claro que pedirle una “preconsulta” sin contexto.</p><p>El objetivo es llegar con menos pendientes de captura. Si la persona no puede usar el enlace, recepción necesita una alternativa asistida; la entrega digital no debe convertirse en una barrera para comunicarse con la clínica.</p>\n<h2 id=\"documentos\">Qué pedir antes de llegar</h2>\n<ul><li><strong>Identificación y contacto:</strong> los campos necesarios para reconocer al paciente y comunicarse con él. Puedes revisar nuestra <a href=\"/recursos/ficha-identificacion-paciente/\">ficha gratuita en Word y PDF</a>.</li><li><strong>Cuestionario de antecedentes:</strong> información que reporta el paciente, claramente pendiente de revisión profesional.</li><li><strong>Documentación de privacidad:</strong> el aviso de la clínica y el registro del consentimiento aplicable, previamente configurados y revisados.</li></ul><p>La historia clínica profesional, la nota de evolución y otras secciones de autoría clínica permanecen a cargo del equipo. Un consentimiento informado para un procedimiento específico requiere su propio proceso de explicación y decisión; no se agrega como autorización universal a cada visita.</p><p>En una consulta de seguimiento, selecciona solo lo necesario para esa nueva visita. No hagas repetir un paquete completo por defecto ni sustituyas registros anteriores.</p>\n<h2 id=\"pasos\">El flujo en cinco pasos</h2>\n<ol><li><strong>Revisa al destinatario.</strong> Confirma paciente, contacto y visita. Un teléfono compartido por una familia no identifica por sí solo a una persona.</li><li><strong>Selecciona los documentos.</strong> Utiliza las versiones aprobadas por la clínica y separa lo que completa el paciente de lo que completa el profesional.</li><li><strong>Entrega el enlace.</strong> Usa el canal acordado: WhatsApp, correo o enlace copiado. Comprueba el estado del envío.</li><li><strong>Recibe la captura.</strong> El paciente completa su parte y envía los documentos. Mientras el enlace siga vigente y el paquete no se haya enviado, puede retomar trabajo guardado.</li><li><strong>Revisa antes de cerrar.</strong> El equipo resuelve datos contradictorios, completa lo clínico y firma cuando corresponde.</li></ol><p>Enviar, recibir y revisar son pasos distintos. Al entregar el turno, deja claro cuál falta y quién lo atiende.</p>\n<h2 id=\"ejemplo\">Un ejemplo de primera visita</h2>\n<p><strong>Ejemplo ficticio:</strong> Ana tiene cita el jueves. Recepción verifica su contacto y selecciona identificación, antecedentes y la documentación de privacidad ya configurada. Ana guarda sus respuestas el martes y termina el miércoles.</p><p>El jueves, el equipo revisa los antecedentes reportados y corrige una diferencia en su domicilio. Los datos de identificación aprobados pueden reutilizarse en los campos correspondientes de los documentos configurados. El profesional completa su nota; los hallazgos y las firmas no se copian entre documentos de forma automática.</p><figure class=\"guide-product-image\"><img alt=\"Vista de marketing de recepción de Kensa con datos del paciente y formatos en español\" height=\"1440\" loading=\"lazy\" src=\"/img/laptop-preparar-visitas-fondo.webp\" width=\"1920\"/><figcaption>Vista de marketing del producto · Datos ficticios. La presentación puede variar según la versión.</figcaption></figure>\n<h2 id=\"checklist\">Qué revisar antes de enviar</h2>\n<ul><li>Paciente y destinatario correctos, incluyendo representantes cuando corresponda.</li><li>Documentos vigentes, configurados y aprobados por la clínica.</li><li>Solo los documentos y campos que debe completar el paciente.</li><li>Instrucciones breves y un contacto de recepción para resolver dudas.</li><li>Un procedimiento para enlaces vencidos, errores de envío o personas que necesitan ayuda.</li><li>Responsable de revisar las respuestas antes de utilizarlas en la atención.</li></ul><p>El enlace permite acceder al paquete seleccionado: trátalo como privado y no lo publiques en grupos. Si se compartió por error, sigue el proceso de reemplazo para invalidar el acceso anterior.</p>\n<h2 id=\"mensaje\">Instrucciones para enviar al paciente</h2><section class=\"message-example\"><blockquote id=\"mensaje-preconsulta\">Hola, [nombre]. Para preparar tu visita con [clínica] el [fecha], te compartimos los documentos seleccionados: [enlace privado]. Completa la parte que te corresponde y envía tus respuestas al terminar. El equipo las revisará antes de utilizarlas. Si necesitas ayuda o no puedes abrir el enlace, escríbenos a [contacto de recepción]. No compartas el enlace con otras personas.</blockquote></section><p>Adapta el texto al canal autorizado. Es un ejemplo, no una plantilla de WhatsApp aprobada por Meta.</p><h2 id=\"kensa\">Cómo se prepara en Kensa</h2>\n<p>El flujo de preparación guía al equipo por paciente, documentos y revisión. La biblioteca aporta formatos que la clínica configura y aprueba; instalar una plantilla no envía todos los documentos al paciente.</p><p>El llenado automático reutiliza campos de identificación autorizados dentro del paquete. “Todos los formatos” significa los documentos configurados con campos correspondientes, no cualquier PDF ni cualquier dato clínico.</p><p>Tras la revisión, el profesional habilitado puede firmar y cerrar el paquete. El original firmado se conserva; una aclaración posterior se registra por separado. <a href=\"/funciones/firmar-y-bloquear/\">Conoce la firma y conservación de documentos</a>.</p><p>Para probarlo, sigue la <a href=\"/funciones/biblioteca-de-documentos/\">demostración de llenado automático</a> y revisa los <a href=\"/seguridad/\">controles de acceso y alcance del producto</a>. Si tu principal pendiente es la conversación inicial, consulta la <a href=\"/recursos/asistente-virtual-consultorios/\">guía de asistentes para recepción</a>.</p>",
+ "related": "<p>DE LA GUÍA A TU OPERACIÓN</p><h2>Así se ve<br/><em>en Kensa.</em></h2><p>Revisa el flujo del producto y qué necesita tu clínica para ponerlo en práctica.</p><a class=\"button\" href=\"/funciones/biblioteca-de-documentos/\">Ver el llenado automático en Kensa →</a>"
+}

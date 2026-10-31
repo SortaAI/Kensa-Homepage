@@ -1,0 +1,45 @@
+{
+ "slug": "cubrir-cancelaciones-citas-medicas",
+ "label": "Agenda y recepción",
+ "title": "Cómo cubrir cancelaciones de citas con una lista de espera por WhatsApp",
+ "lead": "Organiza una lista de espera para citas médicas: autorización, horarios, ofertas por WhatsApp y confirmación. Incluye un mensaje para adaptar y métricas.",
+ "description": "Organiza una lista de espera para citas médicas: autorización, horarios, ofertas por WhatsApp y confirmación. Incluye un mensaje para adaptar y métricas.",
+ "dates": [
+  {
+   "iso": "2026-10-09",
+   "text": "Publicado el 9 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía práctica para clínicas"
+ ],
+ "toc": [
+  [
+   "#empezar",
+   "Empieza por un horario concreto"
+  ],
+  [
+   "#lista",
+   "Qué guardar en la lista de espera"
+  ],
+  [
+   "#flujo",
+   "Cómo ofrecer el espacio sin duplicarlo"
+  ],
+  [
+   "#mensaje",
+   "Mensaje de oferta para adaptar"
+  ],
+  [
+   "#medir",
+   "Qué medir durante una semana"
+  ],
+  [
+   "#kensa",
+   "Cómo funciona en Kensa"
+  ]
+ ],
+ "actions": "",
+ "body": "<h2 id=\"empezar\">Empieza por un horario concreto</h2><p>Se cancela la cita de las once y recepción tiene otras cinco tareas pendientes. Una lista de espera permite identificar a quién le serviría ese espacio sin enviar el mismo mensaje a todos los pacientes.</p><p>Para cubrir una cancelación, necesitas confirmar tres cosas: que el horario realmente está disponible, que la persona puede acudir y que la nueva reserva quedó registrada. Un mensaje enviado no completa ese recorrido.</p><p>Esta guía propone un proceso administrativo para un consultorio. La prioridad clínica, la duración adecuada y la pertinencia de la atención corresponden al equipo profesional.</p>\n<h2 id=\"lista\">Qué guardar en la lista de espera</h2><ul><li><strong>Paciente y contacto verificado.</strong> Un teléfono puede pertenecer a una familia; comprueba quién recibirá la oferta.</li><li><strong>Autorización para recibir avisos.</strong> Registra cuándo y cómo aceptó, y permite que deje de recibirlos.</li><li><strong>Días y rangos de horario.</strong> Pregunta cuándo podría venir, no solo si quiere una cita más pronto.</li><li><strong>Tiempo mínimo de aviso.</strong> La persona necesita margen para trasladarse y organizarse.</li><li><strong>Cita existente, si la hay.</strong> Distingue una primera reserva de un cambio a un horario anterior.</li><li><strong>Estado.</strong> Activa, pausada o retirada, con revisión periódica de los datos.</li></ul><p>Evita incluir diagnósticos en el mensaje de oferta. Guarda solo la información administrativa necesaria para organizarla.</p>\n<h2 id=\"flujo\">Cómo ofrecer el espacio sin duplicarlo</h2><ol><li><strong>Valida el horario.</strong> Comprueba fecha, zona horaria, duración, personal disponible y bloqueos del calendario.</li><li><strong>Elige candidatos.</strong> Cruza disponibilidad y tiempo de aviso. Define un orden transparente y revisa su idoneidad con el equipo.</li><li><strong>Ofrece a una persona.</strong> Explica hasta cuándo puede responder y cómo aceptar o rechazar.</li><li><strong>Registra la respuesta.</strong> Si acepta, valida de nuevo el espacio antes de confirmar. Si rechaza o vence el plazo, continúa con la siguiente persona.</li><li><strong>Cierra el pendiente.</strong> Confirma el resultado y conserva la cita anterior hasta que el cambio se complete.</li></ol><p>Define quién puede reservar manualmente mientras hay una oferta activa. Una hoja compartida puede ayudar a empezar, pero necesita un responsable que controle los cambios. Aquí tienes una <a href=\"/recursos/agenda-citas-medicas-excel/\">agenda gratuita en Excel</a>.</p>\n<h2 id=\"mensaje\">Mensaje de oferta para adaptar</h2><section class=\"message-example\"><blockquote id=\"oferta-horario\">Hola, [nombre]. Somos [clínica]. Como solicitaste avisos de disponibilidad, te ofrecemos una cita el [fecha] a las [hora y zona horaria]. Puedes revisar la oferta y responder antes de [hora límite] aquí: [enlace privado]. Si ya tienes cita, conserva tu horario actual hasta recibir la confirmación del cambio. Desde el enlace también puedes indicar que no quieres recibir más ofertas.</blockquote></section><p>Es un ejemplo de redacción, no una plantilla aprobada por Meta. Verifica destinatario, horario, enlace y vigencia antes de usarlo.</p><p>En WhatsApp Business Platform, iniciar conversaciones exige respetar las reglas de autorización y plantillas; fuera de la ventana de atención se utilizan plantillas aprobadas. La persona debe poder dejar de recibir mensajes. Consulta la <a href=\"https://whatsappbusiness.com/policy/\" rel=\"noopener\" target=\"_blank\">política oficial de WhatsApp</a>.</p>\n<h2 id=\"medir\">Qué medir durante una semana</h2><ul><li>Cancelaciones con tiempo suficiente para ofrecer el horario.</li><li>Ofertas enviadas y ofertas con entrega confirmada, por separado.</li><li>Aceptaciones válidas y citas recuperadas.</li><li>Tiempo desde la cancelación hasta la nueva reserva.</li><li>Intervenciones de recepción y solicitudes de baja.</li><li>Asistencia posterior, separada de la reserva.</li></ul><p>Si recuperaste dos de cinco espacios elegibles, registra 2/5 y el periodo observado. No atribuyas ese resultado a todas las cancelaciones ni confundas una reserva con un paciente que asistió.</p>\n<h2 id=\"kensa\">Cómo funciona en Kensa</h2><p>Recepción selecciona hasta cinco candidatos de la lista de espera y ordena las ofertas. Kensa las procesa una a la vez; cada oferta tiene diez minutos para responder. Abrir el enlace no reserva una cita.</p><p>Durante la campaña, el espacio queda reservado. Una aceptación válida completa la reserva y detiene las ofertas posteriores. Si se adelanta una cita, el cambio conserva la original hasta que puede realizarse correctamente. Recepción puede detener la campaña.</p><p>Se requiere activación de recuperación de horarios para la clínica, zona horaria y horario de atención configurados, conexión de WhatsApp verificada y una plantilla específica de oferta aprobada. La plantilla del enlace de admisión no la sustituye.</p><p>El proceso usa reglas de disponibilidad y autorización; no decide prioridad clínica mediante IA ni garantiza llenar cada hueco. Para revisar la conversación inicial, consulta <a href=\"/recursos/asistente-virtual-consultorios/\">qué automatizar en recepción</a>.</p>",
+ "related": "<p>REVÍSALO EN EL PRODUCTO</p><h2>Un flujo que tu equipo<br/><em>puede comprobar.</em></h2><a class=\"button\" href=\"/funciones/lista-de-espera/\">Conocer la lista de espera de Kensa →</a>"
+}

@@ -1,0 +1,137 @@
+{
+ "groups": [
+  {
+   "id": "herramientas",
+   "title": "Herramientas gratuitas",
+   "intro": "Descargas y mensajes para usar hoy, sin registro.",
+   "entries": [
+    {
+     "slug": "ficha-identificacion-paciente",
+     "title": "Ficha de identificación del paciente: formato en Word y PDF",
+     "summary": "Descarga gratis una ficha de identificación del paciente en Word editable y PDF para imprimir. Sin registro, con campos y ejemplo de llenado ficticio.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "agenda-citas-medicas-excel",
+     "title": "Agenda de citas médicas en Excel: plantilla gratis para recepción",
+     "summary": "Descarga gratis una agenda de citas médicas en Excel: 200 filas, estados, filtros y duración automática. Sin macros ni registro, con ejemplo e instrucciones.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "mensajes-confirmar-citas-whatsapp",
+     "title": "8 mensajes para confirmar y reagendar citas médicas por WhatsApp",
+     "summary": "Copia 8 mensajes para confirmar, recordar, cancelar y reagendar citas médicas por WhatsApp. Ejemplos gratis para adaptar con fecha, hora y respuesta del paciente.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "checklist-recepcion-clinica",
+     "title": "Checklist de recepción para clínicas",
+     "summary": "Descarga una checklist PDF y una bitácora Excel para recepción: tareas, responsables, estados y entrega de turno con ejemplos ficticios.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "checklist-formatos-consultorio",
+     "title": "Checklist para digitalizar formatos",
+     "summary": "Checklist para digitalizar formatos de consultorio: inventario, versiones, campos compartidos, responsables y prueba. Descarga gratis la lista en texto.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "checklist-teleconsulta",
+     "title": "Checklist administrativa para teleconsulta",
+     "summary": "Prepara citas en línea con una checklist administrativa gratuita en PDF: horario, conexión, formularios y seguimiento de pendientes para recepción.",
+     "meta": "Publicado · 29/09/2026",
+     "iso": "2026-09-29"
+    }
+   ]
+  },
+  {
+   "id": "recepcion",
+   "title": "Agenda y recepción",
+   "intro": "Del primer mensaje a la preparación de la visita.",
+   "entries": [
+    {
+     "slug": "asistente-virtual-consultorios",
+     "title": "Asistente virtual para consultorios: qué automatizar y cuándo debe intervenir recepción",
+     "summary": "Evalúa un asistente virtual para tu consultorio: citas, documentos y atención humana. Incluye una checklist para probar el flujo antes de contratar.",
+     "meta": "Publicado · 09/10/2026",
+     "iso": "2026-10-09"
+    },
+    {
+     "slug": "preconsulta-digital",
+     "title": "Preconsulta digital: qué puede completar el paciente antes de llegar",
+     "summary": "Organiza la preparación antes de la consulta: documentos seleccionados, enlace al paciente, revisión y datos compartidos. Guía práctica para recepción en México.",
+     "meta": "Publicado · 09/10/2026",
+     "iso": "2026-10-09"
+    },
+    {
+     "slug": "cubrir-cancelaciones-citas-medicas",
+     "title": "Cómo cubrir cancelaciones de citas con una lista de espera por WhatsApp",
+     "summary": "Organiza una lista de espera para citas médicas: autorización, horarios, ofertas por WhatsApp y confirmación. Incluye un mensaje para adaptar y métricas.",
+     "meta": "Publicado · 09/10/2026",
+     "iso": "2026-10-09"
+    },
+    {
+     "slug": "automatizar-formatos-medicos-whatsapp",
+     "title": "Formatos médicos por WhatsApp",
+     "summary": "Cómo automatizar formatos médicos por WhatsApp en un consultorio de México: prepara tus PDFs, confirma datos una vez y revisa el paquete antes de firmar.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "reducir-papeleo-consultorio",
+     "title": "Reducir papeleo en recepción",
+     "summary": "Detecta dónde se repiten los datos del paciente y reduce el papeleo de recepción. Guía para consultorios en México que quieren mejorar sin cambiar todo su sistema.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    }
+   ]
+  },
+  {
+   "id": "documentos",
+   "title": "Documentos y revisión",
+   "intro": "Organiza la captura y conserva la revisión profesional.",
+   "entries": [
+    {
+     "slug": "digitalizar-formatos-medicos",
+     "title": "Digitalizar formatos médicos",
+     "summary": "Aprende a digitalizar los formatos médicos de tu consultorio en México: conserva tus PDFs, identifica datos compartidos y prueba una captura única por visita.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    },
+    {
+     "slug": "llenado-formatos-nom-004",
+     "title": "Llenado de formatos y NOM-004",
+     "summary": "Revisa tus formatos médicos con una checklist descargable de puntos de la NOM-004. Identificación, notas, revisión profesional y alcance del llenado automático.",
+     "meta": "Revisado · 06/10/2026",
+     "iso": "2026-10-06"
+    }
+   ]
+  },
+  {
+   "id": "evaluacion",
+   "title": "Elegir software",
+   "intro": "Preguntas y pruebas para evaluar una herramienta con tu equipo.",
+   "entries": [
+    {
+     "slug": "elegir-software-clinica",
+     "title": "Cómo elegir software para una clínica",
+     "summary": "Compara funciones documentadas de Doctoralia, Nimbo y Kensa. Descarga una hoja de evaluación y revisa agenda, formatos, configuración y límites.",
+     "meta": "Revisado · 09/10/2026",
+     "iso": "2026-10-09"
+    },
+    {
+     "slug": "seguridad-software-medico-nube",
+     "title": "Software médico en la nube: qué pedir antes de subir datos de pacientes",
+     "summary": "Evalúa accesos, enlaces de pacientes, respaldos, exportación y registros de un software médico en la nube. Checklist práctica para clínicas en México.",
+     "meta": "Publicado · 09/10/2026",
+     "iso": "2026-10-09"
+    }
+   ]
+  }
+ ]
+}

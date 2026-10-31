@@ -1,0 +1,54 @@
+{
+ "slug": "reducir-papeleo-consultorio",
+ "label": "Operación de recepción",
+ "title": "Cómo reducir el papeleo repetido en la recepción de un consultorio",
+ "lead": "El problema no siempre es que exista papel. Es que el mismo nombre, teléfono y fecha vuelvan a escribirse en hojas distintas durante la misma visita.",
+ "description": "Detecta dónde se repiten los datos del paciente y reduce el papeleo de recepción. Guía para consultorios en México que quieren mejorar sin cambiar todo su sistema.",
+ "dates": [
+  {
+   "iso": "2026-10-06",
+   "text": "Actualizado el 6 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía práctica",
+  "8 minutos de lectura"
+ ],
+ "toc": [
+  [
+   "#donde-se-repite",
+   "Encuentra la repetición"
+  ],
+  [
+   "#separa-datos",
+   "Separa los datos"
+  ],
+  [
+   "#captura-unica",
+   "Diseña una captura"
+  ],
+  [
+   "#mantener-formatos",
+   "Conserva tus formatos"
+  ],
+  [
+   "#prueba",
+   "Prueba una visita"
+  ],
+  [
+   "#medir",
+   "Mide la fricción"
+  ],
+  [
+   "#kensa",
+   "Dónde entra Kensa"
+  ],
+  [
+   "#firma",
+   "Más claridad sobre quién firmó"
+  ]
+ ],
+ "actions": "",
+ "body": "\n<p>Reducir el papeleo no significa quitar cada hoja ni comprar un sistema enorme. El primer avance suele ser más sencillo: dejar de capturar varias veces la información que ya llegó bien desde el principio.</p><p>Para empezar con los datos compartidos, descarga nuestra <a href=\"/recursos/ficha-identificacion-paciente/\">ficha de identificación del paciente en Word y PDF</a>. Incluye un ejemplo ficticio y una guía para revisar la información en recepción.</p>\n<h2 id=\"donde-se-repite\">Primero: encuentra dónde se repite el dato</h2>\n<p>Sigue una visita común desde que el paciente llega hasta que el paquete queda archivado. No empieces con el caso más complicado. Una consulta habitual deja ver mejor el trabajo que el equipo repite todos los días.</p>\n<p>Anota cada lugar donde aparecen nombre, fecha de nacimiento, teléfono, domicilio, contacto de emergencia y motivo de consulta. Incluye mensajes, libretas, hojas impresas, archivos y sistemas. El objetivo no es juzgar el proceso; es ver el recorrido completo del dato.</p>\n<div class=\"article-callout\">\n<div class=\"article-callout__icon\"><svg fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 2-3 3M12 17h.01\"></path></svg></div>\n<div><strong>Una pregunta útil</strong><p>Si este dato ya está escrito correctamente, ¿por qué alguien tiene que volver a escribirlo aquí?</p></div>\n</div>\n<h2 id=\"separa-datos\">Separa los datos repetidos de las decisiones clínicas</h2>\n<p>No todo campo debe automatizarse. El nombre del paciente puede repetirse en varios documentos. Una nota clínica, una indicación o la decisión de firmar un consentimiento requieren el criterio y la revisión de la persona responsable.</p>\n<p>Esta separación mantiene el alcance claro: la automatización puede preparar el papeleo, pero no sustituye una decisión clínica, la verificación del consultorio ni la firma que corresponda.</p>\n<div class=\"article-checklist\">\n<div><span>01</span><p><strong>Datos repetidos:</strong> información que debe coincidir en varias hojas.</p></div>\n<div><span>02</span><p><strong>Datos propios de la visita:</strong> información que cambia según el motivo y el momento.</p></div>\n<div><span>03</span><p><strong>Decisiones y firmas:</strong> acciones que permanecen bajo responsabilidad del equipo.</p></div>\n</div>\n<h2 id=\"captura-unica\">Diseña una sola captura para la visita</h2>\n<p>Cuando ya sabes qué se repite, define un punto de entrada. Puede ser la computadora de recepción, un formulario para pacientes o un mensaje de WhatsApp. Lo importante es que exista una fuente clara para preparar los documentos de esa visita.</p>\n<p>Pide únicamente lo necesario. Cada campo adicional crea otra oportunidad de abandono, duda o corrección. Si el equipo no usa un dato para preparar, revisar o resguardar la visita, vale la pena preguntar por qué se solicita.</p>\n<h2 id=\"mantener-formatos\">Conserva los formatos que el equipo ya conoce</h2>\n<p>Automatizar el papeleo de un consultorio no exige inventar una plantilla nueva. Muchas veces conviene trabajar sobre los PDFs actuales: con su logo, su orden y sus espacios de revisión.</p>\n<p>Eso reduce el cambio para recepción. El equipo reconoce el documento que recibe y puede revisar si cada dato cayó en el lugar correcto antes de imprimir, firmar o guardar.</p>\n<h2 id=\"prueba\">Prueba con una visita antes de cambiar toda la operación</h2>\n<p>Configura un solo tipo de visita con datos ficticios o desidentificados. Recorre el proceso junto con la persona que normalmente recibe al paciente y deja que señale lo que falta, sobra o aparece en el lugar equivocado.</p>\n<div class=\"article-checklist\">\n<div><span>✓</span><p>¿Todos los documentos esperados están en el paquete?</p></div>\n<div><span>✓</span><p>¿El dato se ve igual en cada hoja donde debe aparecer?</p></div>\n<div><span>✓</span><p>¿La persona que revisa sabe qué sigue y quién corrige?</p></div>\n<div><span>✓</span><p>¿La versión final conserva la presentación del consultorio?</p></div>\n</div>\n<h2 id=\"medir\">Mide la fricción, no las promesas</h2>\n<p>No necesitas una cifra espectacular para saber si el cambio ayuda. Cuenta cuántas veces se recaptura un dato, cuántas correcciones aparecen entre documentos y cuántos lugares debe revisar recepción para terminar una visita.</p>\n<p>Compara esos puntos antes y después de la prueba. La señal útil es que el flujo sea más claro y consistente para el equipo, no que una herramienta prometa transformar todo el consultorio.</p>\n<h2 id=\"kensa\">Dónde entra Kensa</h2>\n<p>Kensa recibe los datos mediante un formulario de captura y los reutiliza en los campos correspondientes de los documentos configurados. El equipo revisa los PDFs en Kensa. Está pensado para reducir recaptura alrededor de la visita.</p>\n<p>No es una agenda ni un expediente clínico electrónico. No reemplaza el criterio del equipo. Es una capa de papeleo para que la información que ya llegó no tenga que empezar de nuevo en cada hoja.</p>\n<p><a class=\"button\" href=\"https://wa.me/message/3JRJUFH6UNNLA1\" rel=\"noopener\" target=\"_blank\">Cuéntanos cómo trabajan hoy</a></p>\n<nav aria-label=\"Guías relacionadas\" class=\"related-guides\"><h2>Continúa con el flujo de tu consultorio</h2><a href=\"/recursos/automatizar-formatos-medicos-whatsapp/\">Cómo automatizar formatos médicos por WhatsApp <span>→</span></a><a href=\"/recursos/checklist-formatos-consultorio/\">Checklist para digitalizar los formatos de tu consultorio <span>→</span></a></nav><h2 id=\"firma\">Menos repetición, más claridad sobre quién firmó</h2><p>Reducir el papeleo repetido también es dejar claro qué se firmó, quién lo firmó y cuándo. En Kensa, cada paquete firmado queda bloqueado con el nombre y la cédula del doctor y un sello digital. Conoce <a href=\"/funciones/firmar-y-bloquear/\">documentos firmados</a>.</p>",
+ "related": "\n<p>Siguiente guía</p>\n<h2 id=\"related-title\">Digitaliza tus formatos sin cambiar todo el sistema.</h2>\n<p>Un proceso para inventariar documentos, mapear campos y probar versiones antes de mover la operación.</p>\n<a class=\"text-link\" href=\"/recursos/digitalizar-formatos-medicos/\">Leer la guía <span>→</span></a>\n"
+}

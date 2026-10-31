@@ -1,0 +1,47 @@
+{
+ "slug": "llenado-formatos-nom-004",
+ "label": "GUÍA PARA CONSULTORIOS EN MÉXICO",
+ "title": "Llenado de formatos médicos. Qué aporta frente a la NOM-004.",
+ "lead": "Una captura compartida puede ahorrar recapturas. La revisión de los documentos sigue siendo parte del trabajo del consultorio.",
+ "description": "Revisa tus formatos médicos con una checklist descargable de puntos de la NOM-004. Identificación, notas, revisión profesional y alcance del llenado automático.",
+ "dates": [
+  {
+   "iso": "2026-10-06",
+   "text": "Actualizado el 6 de octubre de 2026"
+  },
+  {
+   "iso": "2026-10-06",
+   "text": "Actualizado el 6 de octubre de 2026"
+  }
+ ],
+ "metaText": [],
+ "toc": [
+  [
+   "#captura",
+   "Una captura, varios documentos"
+  ],
+  [
+   "#nom",
+   "Identificación y revisión"
+  ],
+  [
+   "#privacidad",
+   "Privacidad y consentimiento"
+  ],
+  [
+   "#checklist",
+   "Checklist descargable"
+  ],
+  [
+   "#prueba",
+   "Una prueba en recepción"
+  ],
+  [
+   "#firma",
+   "Después de revisar: firmar y conservar"
+  ]
+ ],
+ "actions": "",
+ "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Empieza por los datos que se repiten</h2><p>Identifica qué datos administrativos aparecen en varios formatos y revisa que correspondan a la misma persona y visita. El contenido clínico y la firma requieren su propia revisión.</p><a href=\"/recursos/ficha-identificacion-paciente/\">Revisa los campos de la ficha de identificación →</a></section><h2 id=\"captura\">Una captura, varios documentos</h2><p>El nombre del paciente puede aparecer en su registro, en la historia clínica y en un consentimiento. Escribirlo por separado obliga a recepción a repetir el trabajo y revisar cada transcripción. Con campos vinculados, una captura proporciona la misma información a cada destino configurado.</p><p>En Kensa, el flujo es capturar, sincronizar y revisar los PDFs. La configuración inicial determina qué datos comparten los documentos. Un dato que no corresponde a un formato no necesita copiarse ahí.</p><h2 id=\"nom\">Identificación consistente y revisión profesional</h2><p>La NOM-004 aplica también a consultorios. Sus apartados 5.2 y 5.9 especifican datos generales y de identificación; el 5.10 exige fecha, hora, autor y firma en las notas. El apartado 5.13 permite elaborar formatos propios considerando los requisitos mínimos. <a href=\"https://sidof.segob.gob.mx/notas/docFuente/5272787\" rel=\"noopener\" target=\"_blank\">Consulta la NOM-004</a>.</p><p>El llenado ayuda a preparar campos repetidos. No elabora por sí mismo una evaluación clínica ni acredita que un expediente esté completo. Cada consultorio debe revisar los documentos que corresponden a la atención prestada.</p><p>El consentimiento informado requiere información y aceptación del acto médico; su contenido y firmas tienen requisitos propios en el apartado 10.1. Rellenar los datos de identificación no obtiene ese consentimiento. <a href=\"https://sidof.segob.gob.mx/notas/docFuente/5272787\" rel=\"noopener\" target=\"_blank\">NOM-004, apartado 10.1</a>.</p><h2 id=\"privacidad\">Dos consentimientos con propósitos distintos</h2><p>La LFPDPPP considera sensibles los datos de salud. Su artículo 8 establece el consentimiento expreso y por escrito para tratar datos sensibles, con las excepciones del artículo 9. Los artículos 14–16 regulan la información y el aviso de privacidad. <a href=\"https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf\" rel=\"noopener\" target=\"_blank\">Consulta la ley vigente</a>.</p><p>Autorizar un procedimiento médico y autorizar el tratamiento de datos son cuestiones distintas. Compartir una captura entre documentos no sustituye las obligaciones de privacidad, confidencialidad ni el análisis del consentimiento aplicable.</p><p>Usa el aviso de privacidad correspondiente al tratamiento real de tu consultorio. Limita la información a lo que necesita cada documento y define quién puede consultarla. Estas decisiones forman parte del proceso de la clínica; el autofill no garantiza cumplimiento.</p><h2 id=\"checklist\">Checklist de revisión documental</h2><p>Usa esta lista para preparar una revisión interna. Es una selección de puntos, no una auditoría completa ni una certificación. Marca cada punto como Revisado, Pendiente o No aplica y asigna a alguien su seguimiento.</p><div class=\"resource-download\"><strong>Checklist para recepción y el responsable clínico</strong><p>Versión imprimible con espacio para observaciones y responsables.</p><a class=\"button\" download=\"\" href=\"/recursos/descargas/checklist-revision-nom-004.pdf\">Descargar checklist PDF</a></div><ul><li><strong>Identificación:</strong> revisar datos del establecimiento y del paciente (5.2 y 5.9).</li><li><strong>Notas:</strong> verificar fecha, hora, autor y firma conforme al caso (5.10).</li><li><strong>Legibilidad:</strong> revisar presentación y conservación de los registros (5.11).</li><li><strong>Contenido:</strong> el responsable clínico revisa los apartados aplicables a la atención (6–10).</li><li><strong>Consentimientos:</strong> revisar contenido y firmas cuando correspondan (10.1).</li><li><strong>Resguardo:</strong> revisar conservación y confidencialidad (5.4–5.7).</li></ul><p><a href=\"https://sidof.segob.gob.mx/notas/docFuente/5272787\" rel=\"noopener\" target=\"_blank\">Fuente: NOM-004-SSA3-2012</a>. El llenado automático puede preparar campos compartidos; las decisiones clínicas y la validación del documento requieren revisión profesional.</p><h3>Convierte cada pendiente en una acción</h3><p>Evita una casilla genérica que diga “todo completo”. Si falta una fecha, registra en qué documento y quién la revisará. Si dos documentos muestran información distinta, verifica primero el dato correcto antes de copiarlo a otros campos.</p><p>Para empezar por lo administrativo, utiliza la <a href=\"/recursos/ficha-identificacion-paciente/\">ficha de identificación editable</a>. Después prueba el <a href=\"/funciones/biblioteca-de-documentos/\">ejemplo de llenado automático</a> con datos ficticios.</p><h2 id=\"prueba\">Prueba el flujo con datos ficticios</h2><ol><li>Elige los formatos vigentes de una visita habitual.</li><li>Identifica los campos compartidos y quién revisa cada documento.</li><li>Captura un nombre y una fecha de nacimiento ficticios.</li><li>Sincroniza y compara cada campo de los PDFs resultantes.</li><li>Comprueba que el contenido clínico y las firmas pendientes estén claramente identificados.</li></ol><p>Así puedes evaluar la recaptura que se evita sin usar datos de pacientes en una demostración. El alcance final depende de los formatos configurados para tu consultorio.</p><p><a href=\"/funciones/biblioteca-de-documentos/\">Prueba el ejemplo de llenado automático de Kensa</a> o <a href=\"/contacto/\">muéstranos tus formatos</a> para revisar el flujo con el equipo.</p><p>Esta guía ofrece contexto general para organizar documentos; no sustituye la evaluación de las obligaciones aplicables a cada clínica.</p><h2 id=\"firma\">Después de revisar: firmar y conservar</h2><p>Cuando el documento está revisado, un doctor con su cédula verificada puede firmarlo y bloquearlo en Kensa: queda con su nombre, la fecha y un sello digital, y cualquier aclaración posterior se agrega como nota firmada, sin tocar el original. Conoce <a href=\"/funciones/firmar-y-bloquear/\">cómo funcionan los documentos firmados</a>.</p>",
+ "related": ""
+}

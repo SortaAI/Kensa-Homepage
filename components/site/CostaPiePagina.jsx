@@ -33,7 +33,7 @@ class Logic extends DCLogic {
           links: [
             { t: 'Clínicas fundadoras', href: 'Costa-Contacto-cs06.dc.html' },
             { t: 'Quién lo hace', href: 'Costa-QuienLoHace-cs07.dc.html' },
-            { t: 'Recursos para clínicas', href: '#' },
+            { t: 'Recursos para clínicas', href: '/recursos/' },
             { t: 'Preguntas frecuentes', href: 'Costa-Precios-cs04.dc.html' },
           ],
         },
@@ -203,13 +203,13 @@ export default class CostaPiePagina extends Logic {
                 {'. Todos los derechos reservados.'}
               </span>{' '}
               <span style={{ display: 'flex', flexWrap: 'wrap', gap: '18px' }}>
-                <a href={link('#')} style={{ color: '#4B5D69' }}>
+                <a href={'/privacidad/'} style={{ color: '#4B5D69' }}>
                   {'Privacidad'}
                 </a>
-                <a href={link('#')} style={{ color: '#4B5D69' }}>
+                <a href={'/terminos/'} style={{ color: '#4B5D69' }}>
                   {'Términos'}
                 </a>
-                <a href={link('#')} style={{ color: '#4B5D69' }}>
+                <a href={'/privacidad/#cookies'} data-cookie-preferences={''} style={{ color: '#4B5D69' }}>
                   {'Cookies'}
                 </a>
               </span>{' '}

@@ -1,0 +1,45 @@
+{
+ "slug": "asistente-virtual-consultorios",
+ "label": "Automatización de recepción",
+ "title": "Asistente virtual para consultorios: qué automatizar y cuándo debe intervenir recepción",
+ "lead": "Una respuesta rápida ayuda. Una solicitud que llega a la agenda correcta, con un responsable y un siguiente paso, ayuda más.",
+ "description": "Evalúa un asistente virtual para tu consultorio: citas, documentos y atención humana. Incluye una checklist para probar el flujo antes de contratar.",
+ "dates": [
+  {
+   "iso": "2026-10-09",
+   "text": "Publicado el 9 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía para clínicas en México"
+ ],
+ "toc": [
+  [
+   "#alcance",
+   "Qué debe resolver"
+  ],
+  [
+   "#tareas",
+   "Qué automatizar primero"
+  ],
+  [
+   "#personas",
+   "Cuándo interviene recepción"
+  ],
+  [
+   "#prueba",
+   "Checklist para la demo"
+  ],
+  [
+   "#kensa",
+   "Cómo encaja Kensa"
+  ],
+  [
+   "#contexto",
+   "Por qué evaluar este tema ahora"
+  ]
+ ],
+ "actions": "",
+ "body": "<div class=\"resource-download\"><strong>Hoja editable para evaluar la demo</strong><p>Archivo de texto para editar o imprimir. Gratis y sin registro; registra resultados y responsables con datos ficticios.</p><a class=\"button\" download=\"\" href=\"/recursos/descargas/evaluacion-demo-recepcion.txt\">Descargar checklist editable →</a></div><h2 id=\"alcance\">Qué debe resolver</h2>\n<p>Un asistente virtual para consultorios puede ayudar a recoger solicitudes de citas, orientar sobre el proceso administrativo y dirigir al paciente al siguiente paso. Para elegirlo, conviene evaluar qué ocurre después de la conversación: dónde queda la solicitud, quién la confirma y cómo se prepara la visita.</p><p>Por ejemplo, una paciente pregunta por un horario mientras recepción atiende a otra persona. El asistente recoge la solicitud y el equipo la revisa en la agenda. Si la paciente necesita hablar con alguien, la conversación debe pasar a una persona con un pendiente visible.</p><p>La inteligencia artificial puede interpretar lenguaje; las reglas de disponibilidad y las decisiones de confirmación deben seguir siendo verificables. Un calendario no necesita inventar una respuesta cuando no hay espacio.</p>\n<h2 id=\"tareas\">Qué automatizar primero</h2>\n<ol><li><strong>Solicitudes de citas.</strong> Recoger fecha y horario, consultar disponibilidad y distinguir una solicitud de una confirmación.</li><li><strong>Preparación de documentos.</strong> Entregar el enlace al paquete que recepción seleccionó para esa visita, con el contacto revisado.</li><li><strong>Datos compartidos.</strong> Reutilizar identificación en campos correspondientes de documentos configurados, dejando la revisión al equipo.</li><li><strong>Cancelaciones.</strong> Actualizar la agenda y, si existe una lista de espera autorizada, evaluar a quién ofrecer el horario.</li></ol><p>Empieza con la tarea que más interrumpe a tu equipo. Mide cuántas solicitudes llegan completas y cuántas requieren corrección, además del tiempo dedicado.</p>\n<h2 id=\"personas\">Cuándo interviene recepción</h2>\n<p>El equipo necesita una forma clara de tomar el relevo cuando el paciente pide hablar con alguien, no puede abrir sus documentos o plantea algo que el flujo no resuelve. Define quién revisa esas conversaciones y cómo se entregan al cambiar de turno.</p><p>Diagnóstico, interpretación de síntomas e indicaciones de tratamiento corresponden al profesional. La automatización administrativa debe tener un límite explícito y seguir el procedimiento de escalamiento de la clínica.</p><p>Un mensaje enviado tampoco demuestra que el paciente lo recibió o que aceptó una cita. Pide ver esos estados por separado.</p>\n<h2 id=\"prueba\">Checklist para la demo</h2>\n<p>Usa datos ficticios y pide al proveedor que muestre estas situaciones, sin preparar únicamente el caso ideal:</p><ul><li>Un paciente solicita un horario ocupado: el sistema evita confirmar una cita incompatible.</li><li>La persona pide atención humana: queda una conversación que el equipo puede encontrar y responder.</li><li>El teléfono de contacto es incorrecto: recepción puede corregirlo antes del envío.</li><li>El envío falla: aparece el error y una alternativa para continuar.</li><li>Dos personas gestionan el mismo horario: el resultado mantiene una sola reserva válida.</li><li>Un paciente ya tiene cita: intentar adelantarla no borra la original antes de completar el cambio.</li></ul><p>Anota para cada prueba: resultado observado, persona responsable y qué falta configurar. Para comparar proveedores, utiliza también nuestra <a href=\"/recursos/elegir-software-clinica/\">hoja de evaluación de software para clínicas</a>.</p>\n<h2 id=\"kensa\">Cómo encaja Kensa</h2>\n<p>En Kensa, las solicitudes rutinarias se consultan en Agenda y las conversaciones derivadas a atención humana aparecen en Mensajes. Esa bandeja no representa todas las conversaciones del bot.</p><figure class=\"guide-product-image\"><img alt=\"Vista de marketing de Mensajes de Kensa en español con una conversación de ejemplo\" height=\"1440\" loading=\"lazy\" src=\"/img/combo-conecta.webp\" width=\"1920\"/><figcaption>Vista de marketing del producto · Datos ficticios. La presentación puede variar según la versión.</figcaption></figure><p>Recepción prepara los documentos y el paciente completa lo que le corresponde. Después, el equipo revisa el paquete. Consulta la <a href=\"/recursos/preconsulta-digital/\">guía de preparación antes de la consulta</a> para ver ese recorrido.</p><p>Para ofrecer cancelaciones, Kensa incorpora una lista de espera con autorización del paciente y ofertas secuenciales aprobadas por recepción. El envío requiere activación para la clínica, WhatsApp configurado y una plantilla específica aprobada. <a href=\"/funciones/lista-de-espera/\">Ver requisitos de recuperación de horarios</a>.</p><p>Antes de conectar tu número, revisa <a href=\"/funciones/asistente-de-whatsapp/#conexion-numero\">qué cambia en WhatsApp</a>. La coexistencia con la app depende de elegibilidad y validación; no debe darse por hecha.</p>\n<h2 id=\"contexto\">Por qué evaluar este tema ahora</h2>\n<p>La documentación con IA y la automatización administrativa aparecen en las ofertas actuales de proveedores de software médico. <a href=\"https://www.nimbo-x.com/modulos/ai\" rel=\"noopener\" target=\"_blank\">Nimbo describe herramientas para preparar y documentar consultas</a>, mientras <a href=\"https://saludtotal.mx/es/blog/\" rel=\"noopener\" target=\"_blank\">SaludTotal publica guías de agenda, preconsulta y atención automatizada</a>. Son ejemplos de actividad del sector, no evidencia de que cualquier asistente funcione bien en tu clínica.</p><p>La prueba importante sigue siendo una visita completa: solicitud, confirmación, documentos y revisión, con tu equipo entendiendo qué sucede en cada paso.</p><p><a href=\"/recursos/cubrir-cancelaciones-citas-medicas/\">Organiza una lista de espera para cubrir cancelaciones →</a></p>",
+ "related": "<p>DE LA GUÍA A TU OPERACIÓN</p><h2>Así se ve<br/><em>en Kensa.</em></h2><p>Revisa el flujo del producto y qué necesita tu clínica para ponerlo en práctica.</p><a class=\"button\" href=\"/funciones/asistente-de-whatsapp/\">Ver WhatsApp y recepción en Kensa →</a>"
+}

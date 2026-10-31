@@ -1,0 +1,49 @@
+{
+ "slug": "checklist-teleconsulta",
+ "label": "Recepción a distancia",
+ "title": "Cómo preparar una teleconsulta: checklist administrativa para recepción",
+ "lead": "Una cita en línea también necesita horario claro, datos verificados y una persona que resuelva los pendientes de conexión.",
+ "description": "Prepara citas en línea con una checklist administrativa gratuita en PDF: horario, conexión, formularios y seguimiento de pendientes para recepción.",
+ "dates": [
+  {
+   "iso": "2026-09-29",
+   "text": "Publicado el 29 de septiembre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía administrativa"
+ ],
+ "toc": [
+  [
+   "#descarga",
+   "Checklist gratis"
+  ],
+  [
+   "#antes",
+   "Antes de la cita"
+  ],
+  [
+   "#conexion",
+   "Al conectarse"
+  ],
+  [
+   "#fallos",
+   "Si falla la conexión"
+  ],
+  [
+   "#cierre",
+   "Después de la visita"
+  ],
+  [
+   "#mensaje",
+   "Mensaje de preparación"
+  ],
+  [
+   "#kensa",
+   "Dónde ayuda Kensa"
+  ]
+ ],
+ "actions": "",
+ "body": "<div class=\"resource-download\" id=\"descarga\"><strong>Checklist de preparación de teleconsulta</strong><p>Una hoja imprimible para coordinar tareas administrativas, responsable y estado. Descarga gratuita, sin registro.</p><a class=\"button\" download=\"\" href=\"/recursos/descargas/checklist-teleconsulta.pdf\">Descargar checklist PDF</a></div><p>Esta guía ayuda a recepción a preparar una cita remota. No determina si la teleconsulta es adecuada para una persona, no sustituye protocolos clínicos y no es un formato de consentimiento informado. Esas decisiones corresponden al profesional y a los procedimientos de la clínica.</p><h2 id=\"antes\">Antes de la cita: confirma el proceso, no solo la hora</h2><ul><li><strong>Horario:</strong> confirma fecha, hora y zona horaria, especialmente si paciente y profesional están en ciudades distintas.</li><li><strong>Canal:</strong> informa qué plataforma usará la clínica y si necesita aplicación, cuenta o navegador. No publiques enlaces privados en listas compartidas.</li><li><strong>Contacto:</strong> verifica cómo podrá pedir ayuda si no logra entrar y quién atenderá ese mensaje.</li><li><strong>Preparación administrativa:</strong> identifica los formularios que corresponden y cómo entregarlos por el canal autorizado.</li><li><strong>Indicaciones clínicas:</strong> comparte únicamente las que haya autorizado el profesional, sin añadir recomendaciones propias.</li></ul><p>Si hay pagos, cancelaciones o requisitos previos, explica las condiciones que tu clínica haya establecido. No confirmes una cita solo porque se envió un enlace.</p><h2 id=\"conexion\">Al conectarse: verifica el pendiente correcto</h2><ul><li>Comprueba que la solicitud de ayuda corresponde a la cita y persona correctas mediante el procedimiento de tu clínica.</li><li>Pregunta si puede abrir la plataforma y usar micrófono o cámara, sin pedir capturas con datos clínicos.</li><li>Comunica al profesional que el paciente está listo o que existe una incidencia técnica.</li><li>Actualiza el estado administrativo; no marques la consulta como realizada solo porque alguien entró al enlace.</li></ul><h2 id=\"fallos\">Si falla la conexión: deja un siguiente paso</h2><p>Evita una cadena de mensajes sin responsable. Identifica si el problema es el enlace, el acceso a la plataforma o la conexión, y aplica las instrucciones de soporte de la clínica.</p><ol><li>Registra la incidencia técnica de forma breve, sin información clínica.</li><li>Informa al profesional y confirma con él si corresponde esperar, reagendar o utilizar una alternativa autorizada.</li><li>Comunica al paciente la decisión confirmada y actualiza la agenda.</li><li>Deja responsable y siguiente acción si el problema continúa al cambiar el turno.</li></ol><p>Recepción no debe sustituir una valoración clínica por una solución técnica. Si el paciente plantea una necesidad urgente o síntomas, sigue el procedimiento de escalamiento definido por la clínica.</p><h2 id=\"cierre\">Después de la visita: cierra lo administrativo</h2><ul><li>Confirma con el equipo el estado de la cita antes de cerrarla.</li><li>Da seguimiento a documentos administrativos pendientes por los canales establecidos.</li><li>Registra un nuevo horario solo si fue acordado.</li><li>Entrega pendientes con responsable y fecha de revisión en la <a href=\"/recursos/checklist-recepcion-clinica/#bitacora\">bitácora de recepción</a>.</li></ul><h2 id=\"mensaje\">Mensaje de preparación para adaptar</h2><section class=\"message-example\"><blockquote id=\"mensaje-teleconsulta\">Hola, [nombre]. Tu cita en línea con [clínica] está programada para el [fecha] a las [hora y zona horaria]. Usaremos [plataforma]. Te compartiremos el acceso por [canal acordado]. Si necesitas ayuda para conectarte, comunícate con [contacto de recepción]. ¿Nos confirmas que recibiste la información?</blockquote></section><p>Verifica los campos antes de enviarlo. Para cambios y cancelaciones, consulta los <a href=\"/recursos/mensajes-confirmar-citas-whatsapp/\">mensajes de recepción por WhatsApp</a>.</p><h2 id=\"kensa\">Dónde puede ayudar Kensa</h2><p>Kensa permite revisar conversaciones, organizar la agenda y preparar documentos configurados. Puedes evaluar esas tareas alrededor de una consulta remota, manteniendo la plataforma de videollamada que tu clínica haya elegido.</p><p>No ofrecemos aquí una videollamada integrada ni prometemos conexión automática con otras plataformas. En la <a href=\"/como-funciona/\">demo del flujo</a> revisamos qué tareas encajan, cuáles requieren configuración y cuáles quedan fuera.</p>",
+ "related": "<p>CON TU EQUIPO</p><h2>Una visita común.<br/><em>Una demo concreta.</em></h2><p>Revisemos en 15 minutos cómo encaja Kensa en tu recepción. Si tiene sentido, acordamos el alcance de un piloto de 45 días sin costo para clínicas fundadoras.</p><a class=\"button\" href=\"/contacto/\">Verlo con mi clínica →</a>"
+}

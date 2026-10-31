@@ -1,0 +1,49 @@
+{
+ "slug": "ficha-identificacion-paciente",
+ "label": "Formato descargable",
+ "title": "Ficha de identificación del paciente: formato en Word y PDF",
+ "lead": "Descarga gratis el Word editable o el PDF para imprimir. Incluye datos de identificación, contacto y revisión, con un ejemplo ficticio para orientarte.",
+ "description": "Descarga gratis una ficha de identificación del paciente en Word editable y PDF para imprimir. Sin registro, con campos y ejemplo de llenado ficticio.",
+ "dates": [
+  {
+   "iso": "2026-09-17",
+   "text": "Publicado el 17 de septiembre de 2026"
+  },
+  {
+   "iso": "2026-10-21",
+   "text": "Actualizado el 21 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Recurso práctico"
+ ],
+ "toc": [
+  [
+   "#campos",
+   "Qué incluye"
+  ],
+  [
+   "#ejemplo",
+   "Ejemplo de llenado"
+  ],
+  [
+   "#revision",
+   "Cómo revisar los datos"
+  ],
+  [
+   "#alcance",
+   "Alcance de la ficha"
+  ],
+  [
+   "#reutilizar",
+   "Evitar la recaptura"
+  ],
+  [
+   "#preguntas",
+   "Preguntas frecuentes"
+  ]
+ ],
+ "actions": "<div class=\"resource-hero-actions\"><a class=\"button\" href=\"#descargar-ficha\">Descargar Word o PDF ↓</a><span>Gratis · Sin registro</span></div>",
+ "body": "<div class=\"resource-download resource-download--preview\" id=\"descargar-ficha\"><div class=\"resource-download__copy\"><strong>Descarga la ficha de identificación del paciente</strong><p>Formato administrativo en blanco, editable en Word o listo para imprimir en PDF. Descarga directa, sin registro.</p><div class=\"resource-download__actions\"><a class=\"button\" download=\"\" href=\"/recursos/descargas/ficha-identificacion-paciente.docx\">Descargar Word</a><a class=\"text-link\" download=\"\" href=\"/recursos/descargas/ficha-identificacion-paciente.pdf\">Descargar PDF ↓</a></div></div><figure><img alt=\"Vista previa de la ficha descargable en blanco, con campos de identificación, contacto y revisión.\" height=\"1210\" loading=\"lazy\" src=\"/recursos/descargas/ficha-identificacion-paciente-preview.webp\" width=\"935\"/><figcaption>Vista previa del PDF descargable</figcaption></figure></div><p>La ficha de identificación reúne los datos que recepción necesita para reconocer al paciente y preparar su visita. Separarla del contenido clínico facilita revisar nombres, fechas y medios de contacto antes de reutilizarlos en otros documentos.</p><p>Esta plantilla es un punto de partida administrativo. No es una historia clínica completa ni un consentimiento informado. Adapta sus campos a tu operación y solicita únicamente la información necesaria.</p><h2 id=\"campos\">¿Qué lleva una ficha de identificación del paciente?</h2><ul><li><strong>Consultorio y referencia interna:</strong> nombre del establecimiento, domicilio, fecha de registro y número de expediente.</li><li><strong>Identificación:</strong> nombre completo, fecha de nacimiento, edad, sexo y domicilio.</li><li><strong>Contacto:</strong> teléfono y correo electrónico, si corresponde al proceso del consultorio.</li><li><strong>Revisión:</strong> persona que verificó los datos y fecha de actualización.</li></ul><p>El Word permite quitar, agregar o renombrar campos. El PDF conserva la misma estructura para imprimir. Ninguno contiene datos precargados de pacientes.</p><h2 id=\"ejemplo\">Ejemplo de llenado con datos ficticios</h2><div class=\"resource-example\"><dl><dt>Nombre completo</dt><dd>María López García</dd><dt>Fecha de nacimiento</dt><dd>04/03/1992</dd><dt>Fecha de registro</dt><dd>17/09/2026</dd><dt>Edad a la fecha de registro</dt><dd>34 años</dd><dt>Referencia interna</dt><dd>DEMO-001</dd></dl><p>Ejemplo ficticio. No corresponde a una paciente real.</p></div><p><a href=\"/funciones/biblioteca-de-documentos/#autofill-demo-title\">¿Capturas estos datos en varios formatos? Mira cómo reutilizarlos.</a></p><p>Escribe el nombre como lo confirmó la persona, incluyendo ambos apellidos cuando correspondan. Aclara el formato de fecha: en esta plantilla usamos día/mes/año. Si tu sistema calcula la edad, confirma que lo haga respecto a la fecha de la visita.</p><section class=\"resource-next-step\"><p>DEL RECURSO AL TRABAJO DE RECEPCIÓN</p><h2 id=\"resource-next-title\">¿Tu recepción vuelve a escribir estos datos?</h2><p>Prueba con datos ficticios cómo una captura llena los campos compartidos de tres documentos configurados. Los datos clínicos y las firmas siguen a cargo de quienes corresponda.</p><a class=\"button\" href=\"/funciones/biblioteca-de-documentos/#autofill-demo-title\">Probar el llenado automático →</a><a class=\"text-link\" href=\"/contacto/\">Verlo con los formatos de mi clínica ↗</a></section><h2 id=\"revision\">Cómo revisarla en recepción</h2><ol><li>Busca primero si ya existe un registro. Un nombre parecido no basta para confirmar la identidad.</li><li>Verifica con la persona el nombre y la fecha de nacimiento antes de preparar documentos.</li><li>Comprueba que el número de teléfono esté completo y que sea el medio de contacto acordado.</li><li>Registra quién revisó la ficha y cuándo. Si un dato cambió, sigue el procedimiento de actualización del consultorio.</li></ol><p>Evita pedirle a recepción que deduzca datos faltantes. Es mejor dejar una pregunta pendiente que completar un campo con una suposición.</p><h2 id=\"alcance\">Ficha de identificación e historia clínica: la diferencia</h2><p>Esta ficha contiene información administrativa de identificación y contacto. La historia clínica incorpora la evaluación y los registros que corresponden al personal de salud. No uses la ficha descargable como sustituto de esos documentos.</p><p>Si necesitas revisar la relación con la documentación en México, consulta nuestra <a href=\"/recursos/llenado-formatos-nom-004/\">guía sobre llenado de formatos y NOM-004</a>, con enlaces a las fuentes oficiales. El aviso de privacidad de tu clínica debe corresponder al tratamiento real de la información; esta descarga no incluye un aviso universal.</p><section class=\"resource-workflow\"><h2 id=\"capture-example\">Una captura, varios documentos</h2><p>Ejemplo ficticio: Ana Torres · 14/03/1988. Los campos compartidos se reutilizan solo en documentos configurados con campos correspondientes.</p><ol class=\"resource-flow\"><li><strong>1. Captura verificada</strong><span>Nombre y fecha de nacimiento</span></li><li><strong>2. Campos correspondientes</strong><span>Ficha de identificación · encabezado de historia clínica · encabezado de consentimiento</span></li><li><strong>3. Revisión del equipo</strong><span>El contenido clínico y las firmas se completan por separado.</span></li></ol><a class=\"text-link\" href=\"/funciones/biblioteca-de-documentos/#autofill-demo-title\">Probar el ejemplo de llenado →</a></section><h2 id=\"reutilizar\">Cómo evitar capturar estos datos varias veces</h2><p>Marca en tus documentos dónde se repiten el nombre, la fecha de nacimiento y la referencia del paciente. No todos los campos deben aparecer en todos los formatos: define el destino de cada dato.</p><p>El <a href=\"/funciones/biblioteca-de-documentos/\">llenado automático de Kensa</a> lleva los datos compartidos a los campos correspondientes de los documentos configurados. El equipo revisa los PDFs y completa el contenido específico de la visita. Puedes ver un ejemplo con información ficticia antes de solicitar el piloto.</p><h2 id=\"preguntas\">Preguntas frecuentes</h2><h3>¿Puedo editar el archivo?</h3><p>Sí. El archivo .docx está pensado para personalizarlo en un editor compatible con Word. Conserva una copia en blanco para no sobrescribir el formato original.</p><h3>¿El PDF es rellenable?</h3><p>Es una versión para imprimir. Para modificar el diseño o escribir digitalmente en la plantilla, utiliza el Word.</p><h3>¿Dónde guardo las fichas completadas?</h3><p>En el lugar y con los permisos definidos por tu clínica. La plantilla no incorpora controles de acceso ni un sistema de resguardo.</p><nav aria-label=\"Recursos para completar la visita\" class=\"resource-companions\"><strong>Completa tu kit de recepción</strong><a href=\"/recursos/agenda-citas-medicas-excel/\">Agenda de citas médicas en Excel gratis →</a><a href=\"/recursos/mensajes-confirmar-citas-whatsapp/\">8 mensajes de WhatsApp para confirmar citas →</a></nav>",
+ "related": "<p>DEL EJEMPLO A TU CONSULTORIO</p><h2>¿Lo probamos con tu recepción?<br/><em>Clínicas fundadoras.</em></h2><p>Clínicas fundadoras: un piloto de 45 días sin costo con Kensa completo. Después, un precio fundador reducido por sede, fijo mientras sigas con Kensa.</p><a class=\"button\" href=\"/precios/\">Conocer el piloto de 45 días →</a> <a class=\"text-link\" href=\"/contacto/\">Ver una demo de 15 minutos →</a>"
+}

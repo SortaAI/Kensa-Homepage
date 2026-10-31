@@ -227,7 +227,7 @@ export default class CostaNavegacion extends Logic {
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               {' '}
               <a
-                href={link('#')}
+                href={'https://app.holakensa.com'}
                 className={'hide-sm kn-trigger'}
                 style={{
                   textDecoration: 'none',
@@ -450,7 +450,7 @@ export default class CostaNavegacion extends Logic {
                   <li>
                     <a
                       className={'kn-item'}
-                      href={link('#')}
+                      href={'https://app.holakensa.com'}
                       style={{
                         display: 'block',
                         padding: '14px 12px',

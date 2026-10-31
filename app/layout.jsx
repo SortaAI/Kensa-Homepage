@@ -1,3 +1,5 @@
+import CookieBanner from '@/components/site/CookieBanner';
+
 export const metadata = {
   metadataBase: new URL('https://holakensa.com'),
   title: 'Kensa',
@@ -16,7 +18,10 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
       </head>
-      <body style={{ margin: 0 }}>{children}</body>
+      <body style={{ margin: 0 }}>
+        {children}
+        <CookieBanner />
+      </body>
     </html>
   );
 }

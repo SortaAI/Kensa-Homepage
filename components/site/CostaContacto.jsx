@@ -785,7 +785,7 @@ export default class CostaContacto extends Logic {
                       </div>{' '}
                       <p style={{ margin: '16px 0 0', fontSize: '13px', lineHeight: '1.55', color: '#5F707B' }}>
                         {'Comparte solo datos de contacto de tu equipo, sin información de pacientes. Consulta el '}
-                        <a href={link('#')} style={{ color: '#4B5D69' }}>
+                        <a href={'/privacidad/'} style={{ color: '#4B5D69' }}>
                           {'aviso de privacidad'}
                         </a>
                         {'.'}

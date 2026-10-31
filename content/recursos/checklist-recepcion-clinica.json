@@ -1,0 +1,53 @@
+{
+ "slug": "checklist-recepcion-clinica",
+ "label": "Herramienta para recepción",
+ "title": "Checklist de recepción para clínicas: antes, durante y después de la consulta",
+ "lead": "Un pendiente necesita un siguiente paso y una persona responsable. Esta lista ayuda a organizar el día y entregar el turno sin depender de la memoria.",
+ "description": "Descarga una checklist PDF y una bitácora Excel para recepción: tareas, responsables, estados y entrega de turno con ejemplos ficticios.",
+ "dates": [
+  {
+   "iso": "2026-09-25",
+   "text": "Publicado el 25 de septiembre de 2026"
+  },
+  {
+   "iso": "2026-10-06",
+   "text": "Actualizado el 6 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Recurso práctico"
+ ],
+ "toc": [
+  [
+   "#bitacora",
+   "Bitácora editable"
+  ],
+  [
+   "#descarga",
+   "Descargar la checklist"
+  ],
+  [
+   "#apertura",
+   "Antes de abrir"
+  ],
+  [
+   "#llegada",
+   "Cuando llega el paciente"
+  ],
+  [
+   "#documentos",
+   "Preparar documentos"
+  ],
+  [
+   "#cierre",
+   "Entregar el turno"
+  ],
+  [
+   "#ejemplo",
+   "Ejemplo de pendiente"
+  ]
+ ],
+ "actions": "",
+ "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Una rutina de recepción en tres momentos</h2><p>Antes de abrir, revisa citas y pendientes; durante la atención, actualiza estados y responsables; al cerrar, entrega cada pendiente con su siguiente acción.</p><a href=\"/recursos/agenda-citas-medicas-excel/\">Organiza las citas con la agenda Excel gratuita →</a></section><div class=\"resource-download\" id=\"descarga\"><strong>Una hoja para organizar la recepción</strong><p>Checklist administrativa con columnas de tarea, responsable y estado. PDF para imprimir, gratuito y sin registro.</p><div><a class=\"button\" download=\"\" href=\"/recursos/descargas/checklist-recepcion-clinica.pdf\">Descargar checklist PDF</a></div></div><p>En una clínica, confirmar una cita no termina al responder un mensaje. También hay que actualizar la agenda, comprobar qué información falta y dejar claro quién continúa si cambia el turno.</p><p>Adapta esta checklist al proceso de tu equipo. Es una guía administrativa: no sustituye protocolos clínicos ni indica cómo evaluar o priorizar pacientes. Las preguntas sobre síntomas, tratamientos o atención urgente corresponden al personal de salud y al procedimiento de la clínica.</p><section class=\"resource-workflow\"><h2 id=\"bitacora\">Bitácora de pendientes de recepción en Excel</h2><p>La checklist recuerda qué revisar. La bitácora deja constancia de qué sigue pendiente, quién lo retoma y a qué hora debe volver a revisarlo.</p><a class=\"button\" download=\"\" href=\"/recursos/descargas/bitacora-pendientes-recepcion.xlsx\">Descargar bitácora Excel</a><p>Sin registro. Incluye instrucciones, 100 filas en blanco y una hoja con tres ejemplos ficticios.</p><ol><li>Usa una referencia interna y describe la tarea administrativa sin copiar el expediente.</li><li>Asigna una persona responsable y una siguiente acción concreta.</li><li>Registra fecha y hora de revisión; el archivo no envía recordatorios.</li><li>Actualiza el estado y deja una nota breve al entregar el turno.</li></ol><p><strong>Ejemplo:</strong> DEMO-001 · confirmar disponibilidad para cambio de horario · responsable: turno de tarde · siguiente acción: revisar agenda a las 16:00 · estado: Pendiente.</p><p>Define quién puede acceder y dónde se conserva la versión vigente. No guardes diagnósticos, contraseñas ni enlaces privados de pacientes. Una referencia interna también puede ser identificable: aplica los controles de tu clínica. Excel no reemplaza un sistema de permisos ni resuelve ediciones simultáneas por sí solo.</p></section><h2 id=\"apertura\">Antes de abrir: revisar el día</h2><ul><li>Revisa la agenda y distingue solicitudes pendientes de citas confirmadas.</li><li>Comprueba horarios, profesional y lugar de atención; aclara cambios antes de compartirlos.</li><li>Revisa mensajes sin resolver y asigna quién responderá.</li><li>Identifica qué información administrativa falta para las próximas visitas.</li></ul><p>Una solicitud sin respuesta no es una cancelación. Mantén su estado explícito y sigue la política que la clínica haya comunicado. Puedes adaptar nuestros <a href=\"/recursos/mensajes-confirmar-citas-whatsapp/\">mensajes para confirmar y reagendar por WhatsApp</a>.</p><h2 id=\"llegada\">Cuando llega el paciente: verificar y orientar</h2><ul><li>Confirma la cita con la persona y busca si ya existe su registro.</li><li>Verifica los datos de identificación y contacto necesarios; no deduzcas información faltante.</li><li>Registra los cambios conforme al proceso interno y avisa al equipo correspondiente de la llegada.</li><li>Explica el siguiente paso sin prometer un tiempo de atención que no hayas confirmado.</li></ul><p>Para organizar los campos administrativos, usa la <a href=\"/recursos/ficha-identificacion-paciente/\">ficha de identificación del paciente en Word y PDF</a>. Recopila solo la información necesaria y sigue el aviso de privacidad y los permisos definidos por tu clínica.</p><h2 id=\"documentos\">Preparar los documentos de la visita</h2><ul><li>Selecciona las versiones vigentes de los formatos que corresponden a la visita.</li><li>Verifica que los datos compartidos pertenezcan al paciente correcto.</li><li>Deja el contenido clínico, las decisiones y las firmas a sus responsables.</li><li>Separa los documentos pendientes de revisión de los que ya están completos.</li></ul><p>Si el nombre o la fecha de nacimiento aparecen en varios documentos, el <a href=\"/funciones/biblioteca-de-documentos/#autofill-demo-title\">ejemplo de llenado automático de Kensa</a> muestra cómo compartir esos datos entre campos correspondientes de formatos configurados. El equipo sigue revisando el resultado.</p><h2 id=\"cierre\">Al cerrar o entregar el turno: dejar el siguiente paso</h2><ul><li>Comprueba que cancelaciones y cambios conversados estén reflejados en la agenda.</li><li>Entrega cada pendiente con responsable, estado y siguiente acción.</li><li>Señala qué documentos necesitan revisión y quién debe completarlos.</li><li>Guarda la información en los espacios autorizados y cierra las sesiones según el procedimiento interno.</li></ul><p>En una lista de tareas compartida, usa una referencia interna cuando haga falta. No copies diagnósticos ni otros datos sensibles que el equipo no necesita para resolver el pendiente.</p><h2 id=\"ejemplo\">Un pendiente que el siguiente turno puede retomar</h2><div class=\"resource-example\"><dl><dt>Tarea</dt><dd>Responder solicitud de cambio de horario</dd><dt>Responsable</dt><dd>Recepción, turno de la tarde</dd><dt>Estado</dt><dd>Pendiente de respuesta del paciente</dd><dt>Siguiente acción</dt><dd>Revisar disponibilidad antes de confirmar el cambio</dd></dl><p>Ejemplo ficticio. El cambio todavía no está confirmado.</p></div><p>La checklist es útil si se revisa y se mantiene al día. Prueba su uso en un turno, pregunta qué pasos sobran o faltan y adapta la versión antes de extenderla al resto del equipo.</p><h2>¿Cómo se relaciona con Kensa?</h2><p>La lista sirve con tus herramientas actuales. Si quieres reunir conversaciones, agenda y preparación de documentos, conoce <a href=\"/funciones/\">el flujo de Kensa para recepción</a>. Revisamos qué partes encajan con tu operación antes de acordar un piloto.</p><p>Para visitas a distancia, consulta la <a href=\"/recursos/checklist-teleconsulta/\">checklist administrativa de teleconsulta</a>.</p>",
+ "related": "<p>PARA TU EQUIPO</p><h2>Una vista clara.<br/><em>Un siguiente paso.</em></h2><p>Conoce cómo se conectan WhatsApp, agenda y formatos en el trabajo de recepción.</p><a class=\"button\" href=\"/funciones/\">Ver Kensa para recepción →</a>"
+}

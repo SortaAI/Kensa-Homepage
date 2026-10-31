@@ -1,0 +1,49 @@
+{
+ "slug": "automatizar-formatos-medicos-whatsapp",
+ "label": "WhatsApp en recepción",
+ "title": "Cómo automatizar formatos médicos por WhatsApp en tu consultorio",
+ "lead": "Una guía para clínicas y consultorios en México que quieren dejar de copiar los mismos datos entre documentos, conectando solicitudes por WhatsApp con un formulario de captura y la revisión en Kensa.",
+ "description": "Cómo automatizar formatos médicos por WhatsApp en un consultorio de México: prepara tus PDFs, confirma datos una vez y revisa el paquete antes de firmar.",
+ "dates": [
+  {
+   "iso": "2026-09-15",
+   "text": "15 de septiembre de 2026"
+  },
+  {
+   "iso": "2026-10-06",
+   "text": "Actualizado el 6 de octubre de 2026"
+  }
+ ],
+ "metaText": [
+  "Guía práctica"
+ ],
+ "toc": [
+  [
+   "#que-automatizar",
+   "Qué puedes automatizar"
+  ],
+  [
+   "#preparar",
+   "Qué preparar primero"
+  ],
+  [
+   "#flujo",
+   "El flujo de una visita"
+  ],
+  [
+   "#ejemplo",
+   "Un ejemplo en recepción"
+  ],
+  [
+   "#revisar",
+   "Qué revisar antes de firmar"
+  ],
+  [
+   "#empezar",
+   "Cómo empezar"
+  ]
+ ],
+ "actions": "",
+ "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Del mensaje a los documentos de la visita</h2><p>Confirma la cita, comparte el enlace de captura, revisa las respuestas y prepara los formatos configurados. El equipo valida el contenido antes de firmar.</p><a href=\"/recursos/mensajes-confirmar-citas-whatsapp/\">Copia un mensaje para confirmar o preparar la cita →</a></section><p>Usar WhatsApp en recepción no elimina por sí solo el papeleo. Si después de recibir un mensaje alguien vuelve a escribir el nombre del paciente en tres archivos, el trabajo repetido sigue ahí. La automatización empieza cuando una captura alimenta los formatos que el consultorio ya utiliza.</p>\n<p>Con Kensa, el flujo se configura sobre los PDFs del consultorio: recepción confirma la información, el sistema prepara los documentos y el equipo revisa el paquete antes de firmarlo o guardarlo. El objetivo es que el canal de comunicación y la preparación de formatos formen parte del mismo proceso.</p>\n<h2 id=\"que-automatizar\">Empieza por los datos que se repiten</h2>\n<p>Elige una visita frecuente y reúne los documentos que normalmente la acompañan. Pueden ser una historia clínica, un consentimiento, un aviso o una hoja de referencia, según la operación de tu consultorio. Compara los campos y marca cuáles aparecen más de una vez.</p>\n<ul><li><strong>Datos de identificación:</strong> los que el equipo necesita confirmar para encontrar a la persona correcta.</li><li><strong>Datos de la visita:</strong> la fecha y la información administrativa que debe quedar igual en todos los formatos.</li><li><strong>Contenido que requiere revisión:</strong> las respuestas o decisiones que una persona debe validar antes de terminar el paquete.</li></ul>\n<p>Completar un documento con datos disponibles no significa generar una decisión clínica. Tampoco equivale a firmarlo. Conserva esos pasos en manos de la persona responsable.</p>\n<h2 id=\"preparar\">Prepara el flujo antes de usar pacientes reales</h2>\n<p>Reúne las versiones vigentes de tus PDFs en blanco. Anota quién puede enviar información, quién revisa el resultado y dónde quedará el paquete terminado. Define con el consultorio qué datos pueden circular por WhatsApp y cuáles deben capturarse por otro medio.</p>\n<p>Haz la primera prueba con datos ficticios. Así puedes revisar los campos, el orden de las páginas y el resultado de impresión sin usar información de un paciente. Nuestra <a href=\"/recursos/checklist-formatos-consultorio/\">checklist para digitalizar formatos</a> ayuda a preparar esta revisión.</p>\n<div class=\"article-callout\"><div class=\"article-callout__icon\"><svg><use href=\"#document\"></use></svg></div><div><strong>WhatsApp es el canal; tus formatos son la base.</strong><p>La configuración depende de los documentos y del flujo de cada consultorio. Antes de empezar se acuerda qué información se procesa y quién puede acceder a ella.</p></div></div>\n<h2 id=\"flujo\">El flujo de una visita, paso a paso</h2>\n<ol><li><strong>Confirma al paciente.</strong> Recepción verifica que la información corresponde a la persona y visita correctas. Si hay datos de una visita anterior, confirma qué sigue vigente.</li><li><strong>Captura una vez.</strong> El paciente abre el enlace de captura o recepción completa el formulario en Kensa. Un mensaje de texto libre no se convierte automáticamente en un paquete PDF.</li><li><strong>Prepara el paquete.</strong> Kensa coloca la información en los campos acordados de los formatos existentes y devuelve los PDFs para revisión.</li><li><strong>Revisa y termina.</strong> El consultorio comprueba los datos, corrige lo necesario y firma, imprime o archiva conforme a su proceso.</li></ol>\n<p>Puedes ver cómo se conectan estos pasos en <a href=\"/como-funciona/\">cómo funciona la automatización de formatos con Kensa</a>. Antes de conectar WhatsApp, distingue Coexistencia de migración. Con Coexistencia, una cuenta elegible puede conservar su número y seguir usando la app WhatsApp Business junto con Kensa. La disponibilidad se revisa antes de conectar la cuenta. Estamos validando esta modalidad con un número real antes de ofrecer su activación en la clínica. Si la conexión requiere migración, el equipo responderá desde Kensa y dejará de usar la app con ese número; lo acordamos contigo antes de continuar. Mensajes muestra las conversaciones derivadas a atención humana, no todas las conversaciones del bot. Las solicitudes rutinarias de citas se consultan en Agenda.</p>\n<h2 id=\"ejemplo\">Un ejemplo sencillo para recepción</h2>\n<p><strong>Ejemplo ilustrativo con datos ficticios:</strong> María Sánchez llega a una consulta. Recepción confirma sus datos y prepara los formatos configurados para esa visita. El mismo nombre aparece en cada documento sin escribirlo de nuevo en cada hoja.</p>\n<p>Antes de imprimir, el equipo detecta que el apellido debe llevar un acento. Corrige el dato, revisa los documentos actualizados y comprueba que el paquete que se firma corresponde a esa versión. El ahorro de recaptura viene de mantener consistente la información, no de saltarse la revisión.</p>\n<h2 id=\"revisar\">Qué revisar antes de firmar o guardar</h2>\n<ul><li>Que el paquete corresponda al paciente y a la visita correctos.</li><li>Que estén todos los documentos previstos y en el orden adecuado.</li><li>Que los campos largos, acentos y saltos de página se vean bien.</li><li>Que una corrección aparezca en todos los formatos donde corresponde.</li><li>Que el equipo sepa dónde guardar la versión final y cómo distinguirla de las anteriores.</li></ul>\n<p>Kensa prepara y organiza el papeleo. No reemplaza el expediente clínico ni define qué documentos debe utilizar tu especialidad. Consulta el <a href=\"/seguridad/\">alcance del producto y el manejo de los documentos</a> antes de configurar el flujo.</p>\n<h2 id=\"empezar\">Prueba con un tipo de visita</h2>\n<p>No necesitas empezar con todos los formatos del consultorio. Elige una visita habitual, prepara sus PDFs y haz una prueba completa con recepción: desde confirmar los datos hasta revisar el paquete. Anota qué se repite, dónde hay correcciones y qué instrucciones necesita el equipo.</p>\n<p>Si ese flujo queda claro, puedes revisar el siguiente. Para identificar el mejor punto de partida, lee <a href=\"/recursos/reducir-papeleo-consultorio/\">cómo reducir el papeleo repetido en recepción</a> o <a href=\"/contacto/\">cuéntanos cómo trabaja tu consultorio</a>.</p>\n<p><a class=\"button\" href=\"https://wa.me/message/3JRJUFH6UNNLA1\" rel=\"noopener\" target=\"_blank\">Revisar nuestro flujo por WhatsApp <svg><use href=\"#arrow\"></use></svg></a></p>",
+ "related": "<p>El siguiente paso</p><h2 id=\"related-title\">Tus formatos de siempre.<br/><em>Una forma más sencilla de llenarlos.</em></h2><p>Conoce cómo Kensa prepara los documentos de la visita a partir de una sola captura.</p><a class=\"text-link\" href=\"/como-funciona/\">Cómo funciona Kensa <svg><use href=\"#arrow\"></use></svg></a>"
+}

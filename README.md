@@ -24,6 +24,10 @@ npm run build    # escribe el sitio completo en out/
 | `/contacto/` | Contacto (demo y clínicas fundadoras) |
 | `/quien-lo-hace/` | Quién lo hace |
 | `/funciones/lista-de-espera/` | Lista de espera |
+| `/recursos/` | Blog y recursos: guías y descargas gratuitas para recepción |
+| `/recursos/<guía>/` | Una página por guía (15), con sus descargas en `/recursos/descargas/` |
+| `/privacidad/` | Aviso de privacidad (borrador) |
+| `/terminos/` | Términos de servicio (borrador) |
 | `/funciones/<función>/` | Una página por función: asistente-de-whatsapp, mensajes, agenda, preparar-visitas, biblioteca-de-documentos, tus-propios-formatos, formatos-en-el-celular, autollenado, envios, firmar-y-bloquear, expedientes-sellados, hoy-y-pacientes, equipo-y-roles, configuracion-guiada |
 
 ## Cómo está hecho
@@ -33,6 +37,8 @@ npm run build    # escribe el sitio completo en out/
 - `lib/dc.js`: la clase base de las componentes y `link()`, que convierte los nombres de página del lienzo (por ejemplo `Precios.dc.html`) en rutas del sitio (`/precios/`). Para agregar una página, agrégala a `ROUTES`.
 - `app/`: una carpeta por ruta, con su título y descripción para buscadores.
 - `public/img/`: las capturas y mockups del producto.
+- `content/`: el texto del blog (`content/recursos/`) y de las páginas legales (`content/legal/`), traído del sitio anterior de Sorta México (repo `SortaAI/MX-Sorta`) con `scripts/import-mx-sorta.py`, que cambia la marca a Kensa, ajusta los enlaces y la oferta de clínicas fundadoras. Las páginas los leen al compilar (`components/site/Blog.jsx`, `components/site/LegalPage.jsx`).
+- `components/site/CookieBanner.jsx`: el aviso de cookies. Nada opcional se carga antes de aceptar. Los IDs de Google Analytics y Microsoft Clarity están vacíos: agrega los de Kensa ahí cuando existan.
 
 ## Diseño: paleta Costa
 
@@ -63,5 +69,6 @@ Colores tomados del logo nuevo:
 ## Pendiente antes de publicar
 
 - Los formularios (demo en Inicio y la solicitud en Contacto) todavía no envían datos a ningún lado: muestran "Recibimos tu solicitud", pero nada llega. Hay que conectarlos (por ejemplo, Formspree, un webhook o el backend de Kensa).
-- Enlaces sin destino (`#`): Iniciar sesión, Privacidad, Términos, Cookies, aviso de privacidad, Guías y ayuda, y Recursos para clínicas.
+- El aviso de privacidad y los términos son borradores: necesitan revisión de un abogado en México (y en Texas para Sorta LLC) y completar los recuadros [CONFIRMAR] y la fecha de vigencia.
+- Analítica: agregar los IDs de Kensa en `CookieBanner.jsx` si se va a medir el sitio.
 - El dominio en `app/layout.jsx` (`metadataBase`) asume `https://holakensa.com`.
