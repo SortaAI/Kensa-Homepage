@@ -286,7 +286,7 @@ class Logic extends DCLogic {
         },
         Ib(
           '/img/combo-recupera.webp',
-          'Ofrecer un horario libre a la lista de espera y la oferta en el celular del paciente',
+          'Ofrecer un horario libre a la lista de espera, la oferta que llega por WhatsApp y la página que abre',
           1880,
           1320,
         ),

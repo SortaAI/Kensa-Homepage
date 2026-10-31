@@ -83,8 +83,8 @@ class Logic extends DCLogic {
         verb: 'Conecta',
         line: 'El paciente escribe por WhatsApp. Lo que necesita a una persona llega a tu bandeja.',
         shot: img(
-          '/img/laptop-mensajes.webp',
-          'Kensa en una laptop: la bandeja de Mensajes con la conversación de una paciente abierta',
+          '/img/combo-conecta.webp',
+          'El paciente reagenda por WhatsApp con el asistente y la bandeja de Mensajes de Kensa en una laptop',
           1920,
           1440,
         ),
@@ -138,8 +138,8 @@ class Logic extends DCLogic {
         verb: 'Recupera',
         line: 'Si alguien cancela, ofreces el horario a tu lista de espera.',
         shot: img(
-          '/img/iphone-oferta.webp',
-          'Oferta de horario en el celular del paciente: se liberó un horario para ti',
+          '/img/iphone-oferta-whatsapp.webp',
+          'La oferta del horario llega por WhatsApp y abre la página para aceptarla',
           1920,
           1440,
         ),
