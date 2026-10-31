@@ -407,6 +407,8 @@ class Logic extends DCLogic {
         h: 943,
         alt: 'Enviar documentos por WhatsApp, correo o enlace',
         maxw: '100%',
+        phone: '/img/iphone-whatsapp-envio.webp',
+        phoneAlt: 'El paciente recibe por WhatsApp el enlace para completar sus documentos',
         h1: 'Manda los documentos como prefiera tu paciente.',
         sub: 'Por WhatsApp, correo o enlace, y ve en qué van.',
         facts: K([
@@ -764,23 +766,41 @@ export default class FuncionPlantilla extends Logic {
                 {v.v?.img ? (
                   <>
                     {' '}
-                    <img
-                      src={v.f?.src}
-                      width={v.f?.w}
-                      height={v.f?.h}
-                      fetchPriority={'high'}
-                      alt={v.f?.alt}
-                      style={{
-                        display: 'block',
-                        width: '100%',
-                        maxWidth: v.f?.maxw,
-                        height: 'auto',
-                        borderRadius: '14px',
-                        border: '1px solid #DED3CD',
-                        boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
-                        background: '#FFFFFF',
-                      }}
-                    />{' '}
+                    <div style={{ position: 'relative', width: '100%', maxWidth: v.f?.maxw }}>
+                      <img
+                        src={v.f?.src}
+                        width={v.f?.w}
+                        height={v.f?.h}
+                        fetchPriority={'high'}
+                        alt={v.f?.alt}
+                        style={{
+                          display: 'block',
+                          width: '100%',
+                          maxWidth: v.f?.maxw,
+                          height: 'auto',
+                          borderRadius: '14px',
+                          border: '1px solid #DED3CD',
+                          boxShadow: '0 18px 40px rgba(14,42,59,0.16)',
+                          background: '#FFFFFF',
+                        }}
+                      />
+                      {v.f?.phone ? (
+                        <img
+                          src={v.f?.phone}
+                          width={'1086'}
+                          height={'2234'}
+                          alt={v.f?.phoneAlt}
+                          style={{
+                            position: 'absolute',
+                            right: '-28px',
+                            bottom: '-120px',
+                            width: 'clamp(120px, 34%, 190px)',
+                            height: 'auto',
+                            filter: 'drop-shadow(0 24px 36px rgba(14,42,59,0.26))',
+                          }}
+                        />
+                      ) : null}
+                    </div>{' '}
                   </>
                 ) : null}{' '}
                 {v.v?.device ? (
@@ -804,129 +824,22 @@ export default class FuncionPlantilla extends Logic {
                 ) : null}{' '}
                 {v.v?.whatsapp ? (
                   <>
-                    {' '}
-                    <div
-                      role={'img'}
-                      aria-label={'Ejemplo: el paciente elige Reagendar en el menú de WhatsApp'}
+                    <img
+                      src={'/img/iphone-whatsapp-asistente.webp'}
+                      width={'1086'}
+                      height={'2234'}
+                      fetchPriority={'high'}
+                      alt={
+                        'Chat de WhatsApp con el asistente: la paciente toca Reagendar y elige el jueves 5 de noviembre'
+                      }
                       style={{
-                        width: '280px',
-                        background: '#FFFFFF',
-                        color: '#0E2A3B',
-                        border: '8px solid #0E2A3B',
-                        borderRadius: '36px',
-                        padding: '18px 14px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        gap: '9px',
-                        boxShadow: '0 20px 44px rgba(14,42,59,0.18)',
+                        display: 'block',
+                        width: '300px',
+                        maxWidth: '100%',
+                        height: 'auto',
+                        filter: 'drop-shadow(0 24px 40px rgba(14,42,59,0.22))',
                       }}
-                    >
-                      {' '}
-                      <div
-                        style={{
-                          fontSize: '13px',
-                          fontWeight: '600',
-                          paddingBottom: '8px',
-                          borderBottom: '1px solid #EEE6E2',
-                        }}
-                      >
-                        {'Clínica Vida'}
-                      </div>{' '}
-                      <span
-                        style={{
-                          alignSelf: 'flex-end',
-                          background: '#4B5D69',
-                          color: '#FFFFFF',
-                          borderRadius: '12px 12px 4px 12px',
-                          padding: '7px 10px',
-                          fontSize: '12px',
-                        }}
-                      >
-                        {'Hola, quiero cambiar mi cita'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          alignSelf: 'flex-start',
-                          maxWidth: '90%',
-                          background: '#F2E9E5',
-                          borderRadius: '12px 12px 12px 4px',
-                          padding: '7px 10px',
-                          fontSize: '12px',
-                          lineHeight: '1.45',
-                        }}
-                      >
-                        {'¡Hola! Soy el asistente de Clínica Vida. ¿Qué necesitas?'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          fontSize: '12px',
-                          textAlign: 'center',
-                          border: '1px solid #D6CBC4',
-                          borderRadius: '8px',
-                          padding: '6px',
-                        }}
-                      >
-                        {'Agendar'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          fontSize: '12px',
-                          textAlign: 'center',
-                          border: '1px solid #0E2A3B',
-                          borderRadius: '8px',
-                          padding: '6px',
-                          fontWeight: '600',
-                        }}
-                      >
-                        {'Reagendar'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          fontSize: '12px',
-                          textAlign: 'center',
-                          border: '1px solid #D6CBC4',
-                          borderRadius: '8px',
-                          padding: '6px',
-                        }}
-                      >
-                        {'Hablar con doctor'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          alignSelf: 'flex-start',
-                          maxWidth: '90%',
-                          background: '#F2E9E5',
-                          borderRadius: '12px 12px 12px 4px',
-                          padding: '7px 10px',
-                          fontSize: '12px',
-                        }}
-                      >
-                        {'Estos son los próximos días libres:'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          alignSelf: 'flex-start',
-                          fontSize: '12px',
-                          border: '1px solid #D6CBC4',
-                          borderRadius: '8px',
-                          padding: '6px 12px',
-                        }}
-                      >
-                        {'Ver días'}
-                      </span>{' '}
-                      <span
-                        style={{
-                          alignSelf: 'flex-end',
-                          background: '#4B5D69',
-                          color: '#FFFFFF',
-                          borderRadius: '12px 12px 4px 12px',
-                          padding: '7px 10px',
-                          fontSize: '12px',
-                        }}
-                      >
-                        {'Jueves · 10:30'}
-                      </span>{' '}
-                    </div>{' '}
+                    />
                   </>
                 ) : null}{' '}
                 {v.v?.prep ? (

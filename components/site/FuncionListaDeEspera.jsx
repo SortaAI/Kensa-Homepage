@@ -164,20 +164,37 @@ export default class FuncionListaDeEspera extends Logic {
               </div>{' '}
               <div style={{ flex: '1 1 320px', display: 'flex', justifyContent: 'center' }}>
                 {' '}
-                <img
-                  src={'/img/iphone-oferta-recorte.webp'}
-                  width={'543'}
-                  height={'1117'}
-                  loading={'lazy'}
-                  alt={'Oferta de horario en el celular del paciente: se liberó un horario para ti'}
-                  style={{
-                    display: 'block',
-                    width: '300px',
-                    maxWidth: '100%',
-                    height: 'auto',
-                    filter: 'drop-shadow(0 24px 40px rgba(14,42,59,0.22))',
-                  }}
-                />{' '}
+                <div style={{ position: 'relative', width: '100%', maxWidth: '470px' }}>
+                  <img
+                    src={'/img/iphone-oferta-recorte.webp'}
+                    width={'543'}
+                    height={'1117'}
+                    loading={'lazy'}
+                    alt={'Al abrir el enlace, la oferta: se liberó un horario para ti'}
+                    style={{
+                      display: 'block',
+                      width: '56%',
+                      marginLeft: 'auto',
+                      height: 'auto',
+                      filter: 'drop-shadow(0 24px 40px rgba(14,42,59,0.18))',
+                    }}
+                  />
+                  <img
+                    src={'/img/iphone-whatsapp-oferta.webp'}
+                    width={'1086'}
+                    height={'2234'}
+                    fetchPriority={'high'}
+                    alt={'Mensaje de WhatsApp con la oferta del horario y su enlace, que vence en 10 minutos'}
+                    style={{
+                      position: 'absolute',
+                      left: '0',
+                      top: '9%',
+                      width: '58%',
+                      height: 'auto',
+                      filter: 'drop-shadow(0 28px 44px rgba(14,42,59,0.26))',
+                    }}
+                  />
+                </div>{' '}
               </div>{' '}
             </section>{' '}
           </div>{' '}
