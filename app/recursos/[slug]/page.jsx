@@ -37,7 +37,7 @@ export default async function Page({ params }) {
     description: post.description || post.lead,
     url,
     mainEntityOfPage: url,
-    image: `${SITE}/og/recursos-${slug}.jpg`,
+    image: `${SITE}/og/recursos-${slug}.jpg?v=2`,
     datePublished: iso[0],
     dateModified: iso[iso.length - 1],
     inLanguage: 'es-MX',

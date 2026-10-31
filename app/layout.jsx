@@ -11,7 +11,7 @@ export const metadata = {
   publisher: 'Kensa',
   formatDetection: { telephone: false, email: false, address: false },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 } },
-  openGraph: { siteName: 'Kensa', locale: 'es_MX', type: 'website', images: [{ url: '/og/inicio.jpg', width: 1200, height: 630 }] },
+  openGraph: { siteName: 'Kensa', locale: 'es_MX', type: 'website', images: [{ url: '/og/inicio.jpg?v=2', width: 1200, height: 630 }] },
 };
 
 export const viewport = { width: 'device-width', initialScale: 1, themeColor: '#F9F4F0' };
