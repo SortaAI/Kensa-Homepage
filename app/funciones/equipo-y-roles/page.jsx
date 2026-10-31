@@ -1,10 +1,15 @@
 import FuncionEquipo from '@/components/site/FuncionEquipo';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Equipo y roles',
-  description: 'Cada quien con su acceso, y solo profesionales verificados firman.',
-};
+export const metadata = pageMeta('/funciones/equipo-y-roles/');
 
 export default function Page() {
-  return <FuncionEquipo />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/funciones/equipo-y-roles/', 'WebPage'), breadcrumbs([['Funciones', '/funciones/'], ['Equipo y roles', '/funciones/equipo-y-roles/']]))} />
+      <FuncionEquipo />
+    </>
+  );
 }

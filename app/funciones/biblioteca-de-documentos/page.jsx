@@ -1,10 +1,15 @@
 import FuncionBiblioteca from '@/components/site/FuncionBiblioteca';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Biblioteca de documentos',
-  description: '7 formatos médicos listos para usar, basados en la NOM-004 y la LFPDPPP. Tu clínica los revisa y los aprueba.',
-};
+export const metadata = pageMeta('/funciones/biblioteca-de-documentos/');
 
 export default function Page() {
-  return <FuncionBiblioteca />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/funciones/biblioteca-de-documentos/', 'WebPage'), breadcrumbs([['Funciones', '/funciones/'], ['Biblioteca de documentos', '/funciones/biblioteca-de-documentos/']]))} />
+      <FuncionBiblioteca />
+    </>
+  );
 }

@@ -40,6 +40,15 @@ npm run build    # escribe el sitio completo en out/
 - `content/`: el texto del blog (`content/recursos/`) y de las páginas legales (`content/legal/`), traído del sitio anterior de Sorta México (repo `SortaAI/MX-Sorta`) con `scripts/import-mx-sorta.py`, que cambia la marca a Kensa, ajusta los enlaces y la oferta de clínicas fundadoras. Las páginas los leen al compilar (`components/site/Blog.jsx`, `components/site/LegalPage.jsx`).
 - `components/site/CookieBanner.jsx`: el aviso de cookies. Nada opcional se carga antes de aceptar. Los IDs de Google Analytics y Microsoft Clarity están vacíos: agrega los de Kensa ahí cuando existan.
 
+## SEO
+
+- `content/seo/pages.json`: título (la búsqueda primero, termina en "| Kensa"), descripción, encabezado de la imagen para compartir y prioridad de cada página. `lib/seo.js` arma con eso los metadatos, la URL canónica (`https://www.holakensa.com`) y las etiquetas Open Graph/Twitter. Para una página nueva, agrégala aquí.
+- `app/sitemap.js`, `app/robots.js`, `app/manifest.js` y `app/llms.txt/route.js` generan `/sitemap.xml`, `/robots.txt`, `/manifest.webmanifest` y `/llms.txt` al compilar; el blog se agrega solo.
+- Datos estructurados (`lib/schema.js`): Organization, WebSite y SoftwareApplication en Inicio; FAQPage donde hay preguntas frecuentes (`lib/faqs.js`, el mismo texto que se ve en la página); BreadcrumbList en todas; BlogPosting en cada guía.
+- Imágenes para compartir de 1200×630 en `public/og/`, una por página. Para regenerarlas: `node scripts/og/og.cjs` (escribe PNG en `scripts/og/out/`; conviértelas a JPG en `public/og/`).
+- Íconos: `app/favicon.ico`, `app/icon.svg`, `app/apple-icon.png` (también en `/apple-touch-icon.png`) y `public/icons/`. Salen de la K del logo; si cambian los colores, vuelve a exportarlos.
+- Guías nuevas del blog: un JSON en `content/recursos/` y su entrada en `content/recursos/_nuevas.json`.
+
 ## Diseño: paleta Costa
 
 Colores tomados del logo nuevo:
@@ -71,4 +80,5 @@ Colores tomados del logo nuevo:
 - Los formularios (demo en Inicio y la solicitud en Contacto) todavía no envían datos a ningún lado: muestran "Recibimos tu solicitud", pero nada llega. Hay que conectarlos (por ejemplo, Formspree, un webhook o el backend de Kensa).
 - El aviso de privacidad y los términos son borradores: necesitan revisión de un abogado en México (y en Texas para Sorta LLC) y completar los recuadros [CONFIRMAR] y la fecha de vigencia.
 - Analítica: agregar los IDs de Kensa en `CookieBanner.jsx` si se va a medir el sitio.
-- El dominio en `app/layout.jsx` (`metadataBase`) asume `https://holakensa.com`.
+- El dominio canónico es `https://www.holakensa.com` (`lib/seo.js`). En el hosting, redirige `holakensa.com` a `www` con un 301.
+- Search Console: verifica el dominio y envía `https://www.holakensa.com/sitemap.xml`.

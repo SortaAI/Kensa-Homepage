@@ -1,10 +1,15 @@
 import CostaComoFunciona from '@/components/site/CostaComoFunciona';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Cómo funciona',
-  description: 'Cómo trabaja tu recepción con Kensa: la semana de una paciente, de su primer mensaje a su expediente firmado.',
-};
+export const metadata = pageMeta('/como-funciona/');
 
 export default function Page() {
-  return <CostaComoFunciona />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/como-funciona/', 'WebPage'), breadcrumbs([['Cómo funciona', '/como-funciona/']]))} />
+      <CostaComoFunciona />
+    </>
+  );
 }

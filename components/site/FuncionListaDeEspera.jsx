@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Funcion-ListaDeEspera-7vlu.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { FAQ_LISTA_DE_ESPERA } from '@/lib/faqs';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
@@ -45,28 +46,7 @@ class Logic extends DCLogic {
   }
   renderVals() {
     var self = this;
-    var data = [
-      [
-        '¿Manda ofertas sola?',
-        'No. Tu equipo elige a quién ofrecerle el horario y en qué orden. Kensa manda las ofertas una por una y agenda la cita cuando alguien acepta.',
-      ],
-      [
-        '¿El paciente tiene que aceptar recibir ofertas?',
-        'Sí. Solo reciben ofertas quienes aceptaron por WhatsApp, y pueden darse de baja cuando quieran.',
-      ],
-      [
-        '¿Se mandan ofertas en la noche o en fin de semana?',
-        'No. Solo salen dentro del horario de atención de tu clínica.',
-      ],
-      [
-        '¿Qué ve el paciente en la oferta?',
-        'Una página segura con la clínica, la hora y la duración. Nada de información clínica.',
-      ],
-      [
-        '¿Necesito algo de Meta para usarla?',
-        'Sí. El mensaje de oferta debe estar aprobado por Meta. Lo mandas a aprobación desde Kensa y normalmente tarda como un día.',
-      ],
-    ];
+    var data = FAQ_LISTA_DE_ESPERA;
     var faqs = data.map(function (f, i) {
       var open = self.state.faq === i;
       return {
@@ -578,25 +558,60 @@ export default class FuncionListaDeEspera extends Logic {
                         {f?.sign}
                       </span>
                     </button>{' '}
-                    {f?.open ? (
-                      <>
-                        <p
-                          style={{
-                            margin: '0',
-                            padding: '0 0 20px',
-                            fontSize: '15px',
-                            lineHeight: '1.6',
-                            color: '#4B5D69',
-                          }}
-                        >
-                          {f?.a}
-                        </p>
-                      </>
-                    ) : null}{' '}
+                    <p
+                      hidden={!f?.open}
+                      style={{
+                        margin: '0',
+                        padding: '0 0 20px',
+                        fontSize: '15px',
+                        lineHeight: '1.6',
+                        color: '#4B5D69',
+                      }}
+                    >
+                      {f?.a}
+                    </p>{' '}
                   </div>{' '}
                 </React.Fragment>
               ))}{' '}
             </div>{' '}
+          </section>{' '}
+          <section data-rv={'1'} className={'wrap'} style={{ paddingTop: '72px' }}>
+            <div style={{ maxWidth: '760px' }}>
+              <h2 style={{ margin: '0 0 6px', fontSize: '18px', fontWeight: '600' }}>{'Guías relacionadas'}</h2>
+              <ul style={{ margin: '0', padding: '0', listStyle: 'none' }}>
+                {[
+                  [
+                    'Cómo cubrir cancelaciones de citas con una lista de espera por WhatsApp',
+                    'cubrir-cancelaciones-citas-medicas',
+                  ],
+                  [
+                    'Cómo reducir las inasistencias a citas médicas en tu clínica',
+                    'reducir-inasistencias-citas-medicas',
+                  ],
+                  ['WhatsApp Business API para clínicas: qué permite y qué no', 'whatsapp-business-api-clinicas'],
+                ].map(([t, g]) => (
+                  <li key={g} style={{ borderTop: '1px solid #E8DFDA' }}>
+                    <a
+                      href={'/recursos/' + g + '/'}
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        gap: '16px',
+                        padding: '14px 0',
+                        color: '#0E2A3B',
+                        textDecoration: 'none',
+                        fontSize: '15px',
+                      }}
+                    >
+                      <span>{t}</span>
+                      <span aria-hidden={'true'} style={{ color: '#18648A' }}>
+                        {'→'}
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </section>{' '}
           <section
             data-rv={'1'}

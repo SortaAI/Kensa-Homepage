@@ -1,10 +1,15 @@
 import CostaFunciones from '@/components/site/CostaFunciones';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Funciones',
-  description: 'Los 6 pasos de Kensa: conecta, agenda, prepara, llena, firma y recupera citas canceladas.',
-};
+export const metadata = pageMeta('/funciones/');
 
 export default function Page() {
-  return <CostaFunciones />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/funciones/', 'CollectionPage'), breadcrumbs([['Funciones', '/funciones/']]))} />
+      <CostaFunciones />
+    </>
+  );
 }

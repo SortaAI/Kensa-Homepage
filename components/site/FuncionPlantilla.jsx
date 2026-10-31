@@ -8,6 +8,80 @@ import CostaPiePagina from './CostaPiePagina';
 const CSS =
   'body{margin:0}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}';
 
+// Guides from the blog that go deeper on each feature (internal links for readers and search).
+const GUIDES = {
+  asistente: [
+    ['WhatsApp Business API para clínicas: qué permite y qué no', 'whatsapp-business-api-clinicas'],
+    ['8 mensajes para confirmar y reagendar citas médicas por WhatsApp', 'mensajes-confirmar-citas-whatsapp'],
+    [
+      'Asistente virtual para consultorios: qué automatizar y cuándo debe intervenir recepción',
+      'asistente-virtual-consultorios',
+    ],
+  ],
+  mensajes: [
+    ['WhatsApp Business API para clínicas: qué permite y qué no', 'whatsapp-business-api-clinicas'],
+    ['8 mensajes para confirmar y reagendar citas médicas por WhatsApp', 'mensajes-confirmar-citas-whatsapp'],
+    ['Checklist de recepción para clínicas: antes, durante y después de la consulta', 'checklist-recepcion-clinica'],
+  ],
+  agenda: [
+    ['Cómo reducir las inasistencias a citas médicas en tu clínica', 'reducir-inasistencias-citas-medicas'],
+    ['Agenda de citas médicas en Excel: plantilla gratis para recepción', 'agenda-citas-medicas-excel'],
+    ['8 mensajes para confirmar y reagendar citas médicas por WhatsApp', 'mensajes-confirmar-citas-whatsapp'],
+  ],
+  preparar: [
+    ['Preconsulta digital: qué puede completar el paciente antes de llegar', 'preconsulta-digital'],
+    ['Checklist de recepción para clínicas: antes, durante y después de la consulta', 'checklist-recepcion-clinica'],
+    ['Cómo reducir las inasistencias a citas médicas en tu clínica', 'reducir-inasistencias-citas-medicas'],
+  ],
+  biblioteca: [
+    ['Llenado de formatos médicos. Qué aporta frente a la NOM-004.', 'llenado-formatos-nom-004'],
+    ['Ficha de identificación del paciente: formato en Word y PDF', 'ficha-identificacion-paciente'],
+    ['Checklist para digitalizar los formatos de tu consultorio', 'checklist-formatos-consultorio'],
+  ],
+  tusformatos: [
+    ['Cómo digitalizar formatos médicos sin cambiar de sistema', 'digitalizar-formatos-medicos'],
+    ['Checklist para digitalizar los formatos de tu consultorio', 'checklist-formatos-consultorio'],
+    ['Cómo reducir el papeleo repetido en la recepción de un consultorio', 'reducir-papeleo-consultorio'],
+  ],
+  celular: [
+    ['Preconsulta digital: qué puede completar el paciente antes de llegar', 'preconsulta-digital'],
+    ['Cómo digitalizar formatos médicos sin cambiar de sistema', 'digitalizar-formatos-medicos'],
+    ['Cómo automatizar formatos médicos por WhatsApp en tu consultorio', 'automatizar-formatos-medicos-whatsapp'],
+  ],
+  autollenado: [
+    ['Cómo reducir el papeleo repetido en la recepción de un consultorio', 'reducir-papeleo-consultorio'],
+    ['Ficha de identificación del paciente: formato en Word y PDF', 'ficha-identificacion-paciente'],
+    ['Cómo digitalizar formatos médicos sin cambiar de sistema', 'digitalizar-formatos-medicos'],
+  ],
+  envios: [
+    ['Cómo automatizar formatos médicos por WhatsApp en tu consultorio', 'automatizar-formatos-medicos-whatsapp'],
+    ['Preconsulta digital: qué puede completar el paciente antes de llegar', 'preconsulta-digital'],
+    ['WhatsApp Business API para clínicas: qué permite y qué no', 'whatsapp-business-api-clinicas'],
+  ],
+  firmar: [
+    ['Llenado de formatos médicos. Qué aporta frente a la NOM-004.', 'llenado-formatos-nom-004'],
+    ['Software médico en la nube: qué pedir antes de subir datos de pacientes', 'seguridad-software-medico-nube'],
+  ],
+  sellados: [
+    ['Software médico en la nube: qué pedir antes de subir datos de pacientes', 'seguridad-software-medico-nube'],
+    ['Llenado de formatos médicos. Qué aporta frente a la NOM-004.', 'llenado-formatos-nom-004'],
+  ],
+  recepcion: [
+    ['Checklist de recepción para clínicas: antes, durante y después de la consulta', 'checklist-recepcion-clinica'],
+    ['Cómo reducir las inasistencias a citas médicas en tu clínica', 'reducir-inasistencias-citas-medicas'],
+    ['Agenda de citas médicas en Excel: plantilla gratis para recepción', 'agenda-citas-medicas-excel'],
+  ],
+  equipo: [
+    ['Checklist de recepción para clínicas: antes, durante y después de la consulta', 'checklist-recepcion-clinica'],
+    ['Software médico en la nube: qué pedir antes de subir datos de pacientes', 'seguridad-software-medico-nube'],
+  ],
+  configuracion: [
+    ['Cómo elegir software para una clínica: qué probar antes de contratar', 'elegir-software-clinica'],
+    ['Checklist para digitalizar los formatos de tu consultorio', 'checklist-formatos-consultorio'],
+    ['WhatsApp Business API para clínicas: qué permite y qué no', 'whatsapp-business-api-clinicas'],
+  ],
+};
+
 class Logic extends DCLogic {
   // Sections below the fold ease in as they enter. Visible by default; skipped under reduced motion.
   knReveal() {
@@ -616,6 +690,7 @@ class Logic extends DCLogic {
       icon: I(order[idx][3]),
       hasNote: !!f.note,
       links: f.links.map(L),
+      guides: (GUIDES[slug] || []).map(([t, g]) => ({ title: t, href: '/recursos/' + g + '/' })),
       maxw: f.maxw || '100%',
       // the logo's coral period on the headline
       h1Body: /\.$/.test(f.h1) ? f.h1.slice(0, -1) : f.h1,
@@ -1662,6 +1737,34 @@ export default class FuncionPlantilla extends Logic {
                 </React.Fragment>
               ))}{' '}
             </div>{' '}
+            {(v.f?.guides || []).length ? (
+              <div style={{ marginTop: '40px', maxWidth: '760px' }}>
+                <h2 style={{ margin: '0 0 6px', fontSize: '18px', fontWeight: '600' }}>{'Guías relacionadas'}</h2>
+                <ul style={{ margin: '0', padding: '0', listStyle: 'none' }}>
+                  {v.f.guides.map((g) => (
+                    <li key={g.href} style={{ borderTop: '1px solid #E8DFDA' }}>
+                      <a
+                        href={g.href}
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          gap: '16px',
+                          padding: '14px 0',
+                          color: '#0E2A3B',
+                          textDecoration: 'none',
+                          fontSize: '15px',
+                        }}
+                      >
+                        <span>{g.title}</span>
+                        <span aria-hidden={'true'} style={{ color: '#18648A' }}>
+                          {'→'}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}{' '}
           </section>{' '}
           <nav
             aria-label={'Más funciones'}

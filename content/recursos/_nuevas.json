@@ -1,0 +1,20 @@
+{
+ "entries": [
+  {
+   "group": "recepcion",
+   "slug": "reducir-inasistencias-citas-medicas",
+   "title": "Cómo reducir las inasistencias a citas médicas en tu clínica",
+   "summary": "Confirmaciones y recordatorios por WhatsApp, reagendar fácil, lista de espera y cómo medir la tasa de inasistencia sin culpar al paciente.",
+   "meta": "Publicado · 31/10/2026",
+   "iso": "2026-10-31"
+  },
+  {
+   "group": "recepcion",
+   "slug": "whatsapp-business-api-clinicas",
+   "title": "WhatsApp Business API para clínicas: qué permite y qué no",
+   "summary": "La diferencia entre la app y la plataforma, cómo conservar tu número, la ventana de 24 horas, plantillas aprobadas por Meta y costos.",
+   "meta": "Publicado · 31/10/2026",
+   "iso": "2026-10-31"
+  }
+ ]
+}

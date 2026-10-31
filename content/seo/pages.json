@@ -1,0 +1,152 @@
+{
+  "/": {
+    "title": "Software para clínicas con WhatsApp, agenda y expediente | Kensa",
+    "description": "Kensa conecta el WhatsApp, la agenda, la lista de espera y los formatos médicos de tu clínica en México: el paciente agenda, llena y firma desde su celular. Piloto de 45 días sin costo.",
+    "og": "Del primer mensaje al expediente firmado",
+    "priority": 1
+  },
+  "/funciones/": {
+    "title": "Funciones de software médico para clínicas en México | Kensa",
+    "description": "Asistente de WhatsApp, agenda médica, lista de espera, formatos digitales, firma y expedientes sellados: todo lo que hace Kensa por la recepción de tu clínica, en seis pasos.",
+    "og": "Seis pasos. Una sola herramienta",
+    "priority": 0.9
+  },
+  "/como-funciona/": {
+    "title": "Cómo digitalizar la recepción de tu clínica, paso a paso | Kensa",
+    "description": "Así trabaja una clínica con Kensa: la paciente reagenda por WhatsApp, recepción confirma, llena sus formatos en el celular y el doctor firma un expediente sellado.",
+    "og": "Tu recepción hace 5 trabajos a la vez",
+    "priority": 0.8
+  },
+  "/precios/": {
+    "title": "Precio de software para clínicas: piloto de 45 días sin costo | Kensa",
+    "description": "Clínicas fundadoras: usa Kensa completo 45 días sin costo y después paga un precio fundador reducido por sede, fijo mientras sigas con Kensa. Calcula cuánto recuperas.",
+    "og": "45 días sin costo para clínicas fundadoras",
+    "priority": 0.9
+  },
+  "/seguridad/": {
+    "title": "Seguridad y privacidad de los datos de tus pacientes | Kensa",
+    "description": "Datos separados por clínica, enlaces que vencen, WhatsApp cifrado, respaldos y aviso de privacidad con consentimiento registrado. Tu clínica sigue siendo responsable de sus datos.",
+    "og": "Los datos de tus pacientes, con el cuidado que requieren",
+    "priority": 0.7
+  },
+  "/contacto/": {
+    "title": "Agenda una demo de software para tu clínica | Kensa",
+    "description": "Cuéntanos cómo trabaja tu recepción y agenda una demostración de Kensa. Si hay encaje y lugar, arranca tu piloto de 45 días sin costo como clínica fundadora.",
+    "og": "Agenda una demostración",
+    "priority": 0.8
+  },
+  "/quien-lo-hace/": {
+    "title": "Quién hace Kensa: hecho del otro lado del mostrador | Kensa",
+    "description": "Kensa empezó del otro lado del mostrador. Conoce a Emiliano Rodríguez, su fundador, y por qué construye software para la recepción de clínicas en México.",
+    "og": "Hecho del otro lado del mostrador",
+    "priority": 0.5
+  },
+  "/funciones/asistente-de-whatsapp/": {
+    "title": "Asistente de WhatsApp para consultorios y clínicas | Kensa",
+    "description": "Un menú automático de WhatsApp para que tus pacientes agenden, reagenden o pidan hablar con el doctor de día y de noche, y que pasa el chat a tu equipo cuando hace falta.",
+    "og": "Tu clínica contesta por WhatsApp, de día y de noche",
+    "priority": 0.8
+  },
+  "/funciones/mensajes/": {
+    "title": "Bandeja de WhatsApp compartida para la recepción médica | Kensa",
+    "description": "Los chats de WhatsApp que necesitan a una persona llegan a una sola bandeja que todo tu equipo ve, con el motivo de cada chat y aviso cuando se cierra la ventana de 24 horas.",
+    "og": "Cada chat que necesita a una persona, en una sola bandeja",
+    "priority": 0.7
+  },
+  "/funciones/agenda/": {
+    "title": "Agenda médica en línea con avisos por WhatsApp | Kensa",
+    "description": "Agenda para clínicas que evita empalmes, respeta tus días cerrados y le avisa al paciente por WhatsApp cuando confirmas su cita. Vista de día, semana y mes.",
+    "og": "Agenda médica con avisos por WhatsApp",
+    "priority": 0.8
+  },
+  "/funciones/lista-de-espera/": {
+    "title": "Lista de espera para citas médicas por WhatsApp | Kensa",
+    "description": "Cuando alguien cancela, ofrece el horario a quien quiere venir antes, uno por uno y por WhatsApp. Cubre cancelaciones sin llamar a toda tu lista.",
+    "og": "Una cancelación ya no es una silla vacía",
+    "priority": 0.8
+  },
+  "/funciones/preparar-visitas/": {
+    "title": "Prepara las citas de mañana con sus documentos listos | Kensa",
+    "description": "Revisa las citas del día siguiente, el estado de sus documentos y manda a cada paciente lo que debe llenar antes de llegar a consulta.",
+    "og": "Las visitas de mañana, listas en minutos",
+    "priority": 0.7
+  },
+  "/funciones/biblioteca-de-documentos/": {
+    "title": "Formatos médicos digitales basados en la NOM-004 | Kensa",
+    "description": "Ficha de identificación, antecedentes, historia clínica, nota de evolución, consentimiento y aviso de privacidad: una biblioteca de formatos médicos lista para usar.",
+    "og": "Formatos médicos listos para usar",
+    "priority": 0.8
+  },
+  "/funciones/tus-propios-formatos/": {
+    "title": "Digitaliza tus formatos médicos desde un PDF o una foto | Kensa",
+    "description": "Sube el PDF o una foto de tus formatos de papel, Kensa detecta los campos y tu equipo los revisa. Tus formatos de siempre, ahora digitales.",
+    "og": "Tus formatos de siempre, ahora digitales",
+    "priority": 0.7
+  },
+  "/funciones/formatos-en-el-celular/": {
+    "title": "Formatos médicos que el paciente llena en su celular | Kensa",
+    "description": "El paciente llena y firma sus formatos desde el celular, sin descargar nada. Se acabaron el papel, el escáner y la recaptura en recepción.",
+    "og": "Del papel al celular del paciente",
+    "priority": 0.7
+  },
+  "/funciones/autollenado/": {
+    "title": "Autollenado de formatos médicos con datos del paciente | Kensa",
+    "description": "El paciente escribe sus datos una sola vez y Kensa los acomoda en cada formato de su visita. Menos recaptura y menos errores en recepción.",
+    "og": "Escribe sus datos una vez",
+    "priority": 0.7
+  },
+  "/funciones/envios/": {
+    "title": "Envía documentos al paciente por WhatsApp o correo | Kensa",
+    "description": "Manda los formatos de cada cita por WhatsApp, correo o enlace, con enlaces personales que vencen, y ve en qué va cada envío.",
+    "og": "Manda los documentos como prefiera tu paciente",
+    "priority": 0.7
+  },
+  "/funciones/firmar-y-bloquear/": {
+    "title": "Firma de notas médicas y expediente que no se altera | Kensa",
+    "description": "El doctor firma la nota de la visita y el expediente queda bloqueado. Las correcciones se agregan como notas posteriores firmadas; el original no cambia.",
+    "og": "Firma y el expediente queda bloqueado",
+    "priority": 0.7
+  },
+  "/funciones/expedientes-sellados/": {
+    "title": "Expediente clínico sellado contra alteraciones | Kensa",
+    "description": "Cada documento firmado queda sellado con su huella digital y un historial de quién lo vio. Comprueba en segundos que un PDF no cambió.",
+    "og": "Expedientes sellados, listos para una auditoría",
+    "priority": 0.7
+  },
+  "/funciones/hoy-y-pacientes/": {
+    "title": "Panel de recepción con los pacientes del día | Kensa",
+    "description": "Hoy reúne las citas, los pendientes y lo que requiere atención; Pacientes guarda a cada paciente con sus visitas y documentos.",
+    "og": "Empieza el día sabiendo qué falta",
+    "priority": 0.6
+  },
+  "/funciones/equipo-y-roles/": {
+    "title": "Roles y permisos para el equipo de tu clínica | Kensa",
+    "description": "Invita a recepción, médicos y dirección con el rol que les toca y verifica las cédulas profesionales de quienes firman.",
+    "og": "Cada quien con el acceso que le toca",
+    "priority": 0.6
+  },
+  "/funciones/configuracion-guiada/": {
+    "title": "Configura tu clínica en días, con modo de prueba | Kensa",
+    "description": "Una guía de primera configuración: clínica, equipo, documentos, WhatsApp, horarios y activación. Practica con datos de prueba antes de recibir pacientes reales.",
+    "og": "En marcha en días, no en meses",
+    "priority": 0.6
+  },
+  "/recursos/": {
+    "title": "Blog para clínicas en México: guías y plantillas gratis | Kensa",
+    "description": "Plantillas gratuitas en Word, PDF y Excel, guías de recepción, mensajes de WhatsApp para citas y criterios para elegir software para tu clínica o consultorio.",
+    "og": "Ideas para tu clínica. Herramientas para hoy",
+    "priority": 0.8
+  },
+  "/privacidad/": {
+    "title": "Aviso de privacidad | Kensa",
+    "description": "Qué información trata Kensa, para qué la usa, con quién la comparte y cómo ejercer tus derechos ARCO.",
+    "og": "Aviso de privacidad",
+    "priority": 0.3
+  },
+  "/terminos/": {
+    "title": "Términos de servicio | Kensa",
+    "description": "El acuerdo entre Kensa y la clínica que usa la plataforma: qué ofrece el servicio, las responsabilidades de cada parte y las reglas de uso.",
+    "og": "Términos de servicio",
+    "priority": 0.3
+  }
+}

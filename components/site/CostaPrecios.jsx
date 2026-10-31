@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Precios-cs04.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { FAQ_PRECIOS } from '@/lib/faqs';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
@@ -47,26 +48,7 @@ class Logic extends DCLogic {
     var self = this,
       st = this.state;
     var hf = "'Poppins', system-ui, sans-serif";
-    var data = [
-      ['¿Mis pacientes tienen que descargar algo?', 'No. Usan WhatsApp y el navegador de su celular.'],
-      [
-        '¿Puedo seguir usando mi número de WhatsApp?',
-        'Sí. Puedes conectar el mismo número y seguir usando WhatsApp Business en tu celular, o usar uno dedicado.',
-      ],
-      [
-        '¿Puedo usar mis propios formatos?',
-        'Sí. Sube un PDF o una foto y Kensa detecta los campos para que tu equipo los revise. O empieza con nuestra biblioteca de siete formatos.',
-      ],
-      [
-        '¿Qué pasa si hay que corregir un expediente firmado?',
-        'Agregas una nota posterior firmada. El original no cambia.',
-      ],
-      ['¿Podemos probarlo sin datos reales?', 'Sí. El modo de prueba con datos de práctica siempre está disponible.'],
-      [
-        '¿La firma es una firma electrónica certificada?',
-        'No. Es una firma en pantalla ligada al expediente. Kensa todavía no ofrece firma electrónica certificada.',
-      ],
-    ];
+    var data = FAQ_PRECIOS;
     var faqs = data.map(function (f, i) {
       var open = st.faq === i;
       return {
@@ -756,21 +738,18 @@ export default class CostaPrecios extends Logic {
                         {f?.q}
                         <span aria-hidden={'true'}>{f?.sign}</span>
                       </button>{' '}
-                      {f?.open ? (
-                        <>
-                          <p
-                            style={{
-                              margin: '0',
-                              padding: '0 0 20px',
-                              fontSize: '15px',
-                              lineHeight: '1.6',
-                              color: '#4B5D69',
-                            }}
-                          >
-                            {f?.a}
-                          </p>
-                        </>
-                      ) : null}{' '}
+                      <p
+                        hidden={!f?.open}
+                        style={{
+                          margin: '0',
+                          padding: '0 0 20px',
+                          fontSize: '15px',
+                          lineHeight: '1.6',
+                          color: '#4B5D69',
+                        }}
+                      >
+                        {f?.a}
+                      </p>{' '}
                     </div>{' '}
                   </React.Fragment>
                 ))}{' '}

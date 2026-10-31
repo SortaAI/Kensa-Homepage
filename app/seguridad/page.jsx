@@ -1,10 +1,15 @@
 import CostaSeguridad from '@/components/site/CostaSeguridad';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Seguridad y privacidad',
-  description: 'Cómo cuida Kensa los datos de tus pacientes: datos separados por clínica, expedientes sellados y comprobables.',
-};
+export const metadata = pageMeta('/seguridad/');
 
 export default function Page() {
-  return <CostaSeguridad />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/seguridad/', 'WebPage'), breadcrumbs([['Seguridad y privacidad', '/seguridad/']]))} />
+      <CostaSeguridad />
+    </>
+  );
 }

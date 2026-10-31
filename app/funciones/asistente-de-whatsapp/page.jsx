@@ -1,10 +1,15 @@
 import FuncionAsistente from '@/components/site/FuncionAsistente';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Asistente de WhatsApp',
-  description: 'Un menú sencillo para agendar, reagendar o hablar con el doctor. Cuando tu equipo entra, el asistente se hace a un lado.',
-};
+export const metadata = pageMeta('/funciones/asistente-de-whatsapp/');
 
 export default function Page() {
-  return <FuncionAsistente />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/funciones/asistente-de-whatsapp/', 'WebPage'), breadcrumbs([['Funciones', '/funciones/'], ['Asistente de WhatsApp', '/funciones/asistente-de-whatsapp/']]))} />
+      <FuncionAsistente />
+    </>
+  );
 }

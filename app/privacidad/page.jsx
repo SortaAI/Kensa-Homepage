@@ -1,11 +1,16 @@
 import LegalPage from '@/components/site/LegalPage';
 import { readContent } from '@/lib/content';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Aviso de privacidad',
-  description: 'Qué información trata Kensa, para qué la usa, con quién la comparte y cómo ejercer tus derechos ARCO.',
-};
+export const metadata = pageMeta('/privacidad/');
 
 export default function Page() {
-  return <LegalPage doc={readContent('legal', 'privacidad.json')} />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/privacidad/', 'WebPage'), breadcrumbs([['Aviso de privacidad', '/privacidad/']]))} />
+      <LegalPage doc={readContent('legal', 'privacidad.json')} />
+    </>
+  );
 }

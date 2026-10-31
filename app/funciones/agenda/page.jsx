@@ -1,10 +1,15 @@
 import FuncionAgenda from '@/components/site/FuncionAgenda';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Agenda',
-  description: 'Evita empalmes, respeta tus días cerrados y le avisa al paciente cuando confirmas.',
-};
+export const metadata = pageMeta('/funciones/agenda/');
 
 export default function Page() {
-  return <FuncionAgenda />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/funciones/agenda/', 'WebPage'), breadcrumbs([['Funciones', '/funciones/'], ['Agenda', '/funciones/agenda/']]))} />
+      <FuncionAgenda />
+    </>
+  );
 }

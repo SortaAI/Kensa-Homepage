@@ -1,10 +1,15 @@
 import CostaContacto from '@/components/site/CostaContacto';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Contacto',
-  description: 'Agenda una demostración de Kensa o solicita tu lugar como clínica fundadora.',
-};
+export const metadata = pageMeta('/contacto/');
 
 export default function Page() {
-  return <CostaContacto />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/contacto/', 'ContactPage'), breadcrumbs([['Contacto', '/contacto/']]))} />
+      <CostaContacto />
+    </>
+  );
 }

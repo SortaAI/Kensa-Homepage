@@ -1,0 +1,279 @@
+{
+ "pages": [
+  "/",
+  "/contacto/",
+  "/como-funciona/",
+  "/seguridad/",
+  "/precios/",
+  "/recursos/",
+  "/funciones/expedientes-sellados/",
+  "/quien-lo-hace/",
+  "/funciones/asistente-de-whatsapp/",
+  "/funciones/lista-de-espera/",
+  "/funciones/formatos-en-el-celular/",
+  "/funciones/",
+  "/funciones/agenda/",
+  "/funciones/biblioteca-de-documentos/",
+  "/privacidad/",
+  "/terminos/",
+  "/recursos/cubrir-cancelaciones-citas-medicas/",
+  "/recursos/ficha-identificacion-paciente/",
+  "/recursos/agenda-citas-medicas-excel/",
+  "/recursos/mensajes-confirmar-citas-whatsapp/",
+  "/recursos/checklist-recepcion-clinica/",
+  "/recursos/checklist-formatos-consultorio/",
+  "/recursos/checklist-teleconsulta/",
+  "/recursos/reducir-inasistencias-citas-medicas/",
+  "/recursos/whatsapp-business-api-clinicas/",
+  "/recursos/asistente-virtual-consultorios/",
+  "/recursos/preconsulta-digital/",
+  "/recursos/automatizar-formatos-medicos-whatsapp/",
+  "/recursos/reducir-papeleo-consultorio/",
+  "/recursos/digitalizar-formatos-medicos/",
+  "/recursos/llenado-formatos-nom-004/",
+  "/recursos/elegir-software-clinica/",
+  "/recursos/seguridad-software-medico-nube/",
+  "/funciones/firmar-y-bloquear/",
+  "/funciones/equipo-y-roles/",
+  "/funciones/mensajes/",
+  "/funciones/envios/",
+  "/funciones/autollenado/",
+  "/funciones/tus-propios-formatos/",
+  "/funciones/preparar-visitas/",
+  "/funciones/hoy-y-pacientes/",
+  "/funciones/configuracion-guiada/",
+  "/recursos/descargas/ficha-identificacion-paciente.docx",
+  "/recursos/descargas/ficha-identificacion-paciente.pdf",
+  "/recursos/descargas/agenda-citas-medicas.xlsx",
+  "/recursos/descargas/checklist-recepcion-clinica.pdf",
+  "/recursos/descargas/bitacora-pendientes-recepcion.xlsx",
+  "/recursos/descargas/checklist-formatos-consultorio.txt",
+  "/recursos/descargas/checklist-teleconsulta.pdf",
+  "/recursos/descargas/evaluacion-demo-recepcion.txt",
+  "/recursos/descargas/checklist-preconsulta.txt",
+  "/recursos/descargas/checklist-revision-nom-004.pdf",
+  "/recursos/descargas/evaluar-software-clinica.pdf",
+  "/recursos/descargas/evaluacion-seguridad-software.txt"
+ ],
+ "dead": {},
+ "ext": {
+  "https://app.holakensa.com | Iniciar sesión": [
+   "/",
+   "/contacto/",
+   "/como-funciona/",
+   "/seguridad/",
+   "/precios/",
+   "/recursos/",
+   "/funciones/expedientes-sellados/",
+   "/quien-lo-hace/",
+   "/funciones/asistente-de-whatsapp/",
+   "/funciones/lista-de-espera/",
+   "/funciones/formatos-en-el-celular/",
+   "/funciones/",
+   "/funciones/agenda/",
+   "/funciones/biblioteca-de-documentos/",
+   "/privacidad/",
+   "/terminos/",
+   "/recursos/cubrir-cancelaciones-citas-medicas/",
+   "/recursos/ficha-identificacion-paciente/",
+   "/recursos/agenda-citas-medicas-excel/",
+   "/recursos/mensajes-confirmar-citas-whatsapp/",
+   "/recursos/checklist-recepcion-clinica/",
+   "/recursos/checklist-formatos-consultorio/",
+   "/recursos/checklist-teleconsulta/",
+   "/recursos/reducir-inasistencias-citas-medicas/",
+   "/recursos/whatsapp-business-api-clinicas/",
+   "/recursos/asistente-virtual-consultorios/",
+   "/recursos/preconsulta-digital/",
+   "/recursos/automatizar-formatos-medicos-whatsapp/",
+   "/recursos/reducir-papeleo-consultorio/",
+   "/recursos/digitalizar-formatos-medicos/",
+   "/recursos/llenado-formatos-nom-004/",
+   "/recursos/elegir-software-clinica/",
+   "/recursos/seguridad-software-medico-nube/",
+   "/funciones/firmar-y-bloquear/",
+   "/funciones/equipo-y-roles/",
+   "/funciones/mensajes/",
+   "/funciones/envios/",
+   "/funciones/autollenado/",
+   "/funciones/tus-propios-formatos/",
+   "/funciones/preparar-visitas/",
+   "/funciones/hoy-y-pacientes/",
+   "/funciones/configuracion-guiada/"
+  ],
+  "https://wa.me/message/3JRJUFH6UNNLA1 | WhatsApp": [
+   "/",
+   "/contacto/",
+   "/como-funciona/",
+   "/seguridad/",
+   "/precios/",
+   "/recursos/",
+   "/funciones/expedientes-sellados/",
+   "/quien-lo-hace/",
+   "/funciones/asistente-de-whatsapp/",
+   "/funciones/lista-de-espera/",
+   "/funciones/formatos-en-el-celular/",
+   "/funciones/",
+   "/funciones/agenda/",
+   "/funciones/biblioteca-de-documentos/",
+   "/privacidad/",
+   "/terminos/",
+   "/recursos/cubrir-cancelaciones-citas-medicas/",
+   "/recursos/ficha-identificacion-paciente/",
+   "/recursos/agenda-citas-medicas-excel/",
+   "/recursos/mensajes-confirmar-citas-whatsapp/",
+   "/recursos/checklist-recepcion-clinica/",
+   "/recursos/checklist-formatos-consultorio/",
+   "/recursos/checklist-teleconsulta/",
+   "/recursos/reducir-inasistencias-citas-medicas/",
+   "/recursos/whatsapp-business-api-clinicas/",
+   "/recursos/asistente-virtual-consultorios/",
+   "/recursos/preconsulta-digital/",
+   "/recursos/automatizar-formatos-medicos-whatsapp/",
+   "/recursos/reducir-papeleo-consultorio/",
+   "/recursos/digitalizar-formatos-medicos/",
+   "/recursos/llenado-formatos-nom-004/",
+   "/recursos/elegir-software-clinica/",
+   "/recursos/seguridad-software-medico-nube/",
+   "/funciones/firmar-y-bloquear/",
+   "/funciones/equipo-y-roles/",
+   "/funciones/mensajes/",
+   "/funciones/envios/",
+   "/funciones/autollenado/",
+   "/funciones/tus-propios-formatos/",
+   "/funciones/preparar-visitas/",
+   "/funciones/hoy-y-pacientes/",
+   "/funciones/configuracion-guiada/"
+  ],
+  "mailto:contacto@holakensa.com | contacto@holakensa.com": [
+   "/",
+   "/contacto/",
+   "/como-funciona/",
+   "/seguridad/",
+   "/precios/",
+   "/recursos/",
+   "/funciones/expedientes-sellados/",
+   "/quien-lo-hace/",
+   "/funciones/asistente-de-whatsapp/",
+   "/funciones/lista-de-espera/",
+   "/funciones/formatos-en-el-celular/",
+   "/funciones/",
+   "/funciones/agenda/",
+   "/funciones/biblioteca-de-documentos/",
+   "/privacidad/",
+   "/terminos/",
+   "/recursos/cubrir-cancelaciones-citas-medicas/",
+   "/recursos/ficha-identificacion-paciente/",
+   "/recursos/agenda-citas-medicas-excel/",
+   "/recursos/mensajes-confirmar-citas-whatsapp/",
+   "/recursos/checklist-recepcion-clinica/",
+   "/recursos/checklist-formatos-consultorio/",
+   "/recursos/checklist-teleconsulta/",
+   "/recursos/reducir-inasistencias-citas-medicas/",
+   "/recursos/whatsapp-business-api-clinicas/",
+   "/recursos/asistente-virtual-consultorios/",
+   "/recursos/preconsulta-digital/",
+   "/recursos/automatizar-formatos-medicos-whatsapp/",
+   "/recursos/reducir-papeleo-consultorio/",
+   "/recursos/digitalizar-formatos-medicos/",
+   "/recursos/llenado-formatos-nom-004/",
+   "/recursos/elegir-software-clinica/",
+   "/recursos/seguridad-software-medico-nube/",
+   "/funciones/firmar-y-bloquear/",
+   "/funciones/equipo-y-roles/",
+   "/funciones/mensajes/",
+   "/funciones/envios/",
+   "/funciones/autollenado/",
+   "/funciones/tus-propios-formatos/",
+   "/funciones/preparar-visitas/",
+   "/funciones/hoy-y-pacientes/",
+   "/funciones/configuracion-guiada/"
+  ],
+  "https://wa.me/message/3JRJUFH6UNNLA1 | Abrir WhatsApp": [
+   "/contacto/"
+  ],
+  "https://wa.me/message/3JRJUFH6UNNLA1 | Escríbeme por WhatsApp": [
+   "/quien-lo-hace/"
+  ],
+  "https://holakensa.com | holakensa.com": [
+   "/privacidad/"
+  ],
+  "https://app.holakensa.com | app.holakensa.com": [
+   "/privacidad/"
+  ],
+  "mailto:privacidad@holakensa.com | [privacidad@holakensa.com]": [
+   "/privacidad/",
+   "/terminos/"
+  ],
+  "mailto:legal@holakensa.com | [legal@holakensa.com]": [
+   "/terminos/"
+  ],
+  "https://business.whatsapp.com/policy | política oficial de WhatsApp": [
+   "/recursos/cubrir-cancelaciones-citas-medicas/"
+  ],
+  "https://business.whatsapp.com/policy | política de WhatsApp Business": [
+   "/recursos/whatsapp-business-api-clinicas/"
+  ],
+  "https://developers.facebook.com/docs/whatsapp/pricing | página de precios de Meta": [
+   "/recursos/whatsapp-business-api-clinicas/"
+  ],
+  "https://www.nimbo-x.com/modulos/ai | Nimbo describe herramientas para preparar y documentar consultas": [
+   "/recursos/asistente-virtual-consultorios/"
+  ],
+  "https://saludtotal.mx/es/blog/ | SaludTotal publica guías de agenda, preconsulta y atención automatizad": [
+   "/recursos/asistente-virtual-consultorios/"
+  ],
+  "https://wa.me/message/3JRJUFH6UNNLA1 | Revisar nuestro flujo por WhatsApp": [
+   "/recursos/automatizar-formatos-medicos-whatsapp/"
+  ],
+  "https://wa.me/message/3JRJUFH6UNNLA1 | Cuéntanos cómo trabajan hoy": [
+   "/recursos/reducir-papeleo-consultorio/"
+  ],
+  "https://wa.me/message/3JRJUFH6UNNLA1 | Revisar tus formatos con nosotros": [
+   "/recursos/digitalizar-formatos-medicos/"
+  ],
+  "https://sidof.segob.gob.mx/notas/docFuente/5272787 | Consulta la NOM-004": [
+   "/recursos/llenado-formatos-nom-004/"
+  ],
+  "https://sidof.segob.gob.mx/notas/docFuente/5272787 | NOM-004, apartado 10.1": [
+   "/recursos/llenado-formatos-nom-004/"
+  ],
+  "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf | Consulta la ley vigente": [
+   "/recursos/llenado-formatos-nom-004/"
+  ],
+  "https://sidof.segob.gob.mx/notas/docFuente/5272787 | Fuente: NOM-004-SSA3-2012": [
+   "/recursos/llenado-formatos-nom-004/"
+  ],
+  "https://pro.doctoralia.com.mx/blog/especialistas/funciones-doctoralia-crecimiento | Doctoralia: funciones de visibilidad, reservas y comunicación": [
+   "/recursos/elegir-software-clinica/"
+  ],
+  "https://pro.doctoralia.com.mx/blog/especialistas/tutorial-agenda-docplanner-mx | Doctoralia: agenda y registro histórico": [
+   "/recursos/elegir-software-clinica/"
+  ],
+  "https://www.nimbo-x.com/agenda | Nimbo: agenda, portal y recordatorios": [
+   "/recursos/elegir-software-clinica/"
+  ],
+  "https://www.nimbo-x.com/modulos/plantillas-medicas | Nimbo: plantillas médicas": [
+   "/recursos/elegir-software-clinica/"
+  ],
+  "mailto:contacto@holakensa.com | escríbenos": [
+   "/recursos/elegir-software-clinica/"
+  ],
+  "https://sidof.segob.gob.mx/notas/docFuente/5272787 | norma oficial": [
+   "/recursos/seguridad-software-medico-nube/"
+  ],
+  "https://www.diputados.gob.mx/LeyesBiblio/pdf/LFPDPPP.pdf | texto vigente": [
+   "/recursos/seguridad-software-medico-nube/"
+  ]
+ },
+ "forms": [
+  [
+   "/",
+   1
+  ],
+  [
+   "/contacto/",
+   1
+  ]
+ ]
+}

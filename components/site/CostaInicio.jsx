@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Inicio-cs01.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { FAQ_INICIO } from '@/lib/faqs';
 import { G } from '@/lib/gradients';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
@@ -161,18 +162,7 @@ class Logic extends DCLogic {
         },
       };
     });
-    var faqData = [
-      ['¿Mis pacientes tienen que descargar algo?', 'No. Usan WhatsApp y el navegador de su celular.'],
-      [
-        '¿Puedo seguir usando mi número de WhatsApp?',
-        'Sí. Conectas el mismo número y sigues usando WhatsApp Business en tu celular, o usas uno dedicado.',
-      ],
-      [
-        '¿Puedo usar mis propios formatos?',
-        'Sí. Subes un PDF o una foto, Kensa detecta los campos y tu equipo los revisa. También puedes empezar con la biblioteca de 7 formatos.',
-      ],
-      ['¿Podemos probarlo sin datos reales?', 'Sí. El modo de prueba con datos de práctica siempre está disponible.'],
-    ];
+    var faqData = FAQ_INICIO;
     var faqs = faqData.map(function (f, i) {
       var open = st.faq === i;
       return {
@@ -1183,21 +1173,18 @@ export default class CostaInicio extends Logic {
                           {f?.sign}
                         </span>
                       </button>{' '}
-                      {f?.open ? (
-                        <>
-                          <p
-                            style={{
-                              margin: '0',
-                              padding: '0 0 20px',
-                              fontSize: '15px',
-                              lineHeight: '1.6',
-                              color: '#4B5D69',
-                            }}
-                          >
-                            {f?.a}
-                          </p>
-                        </>
-                      ) : null}{' '}
+                      <p
+                        hidden={!f?.open}
+                        style={{
+                          margin: '0',
+                          padding: '0 0 20px',
+                          fontSize: '15px',
+                          lineHeight: '1.6',
+                          color: '#4B5D69',
+                        }}
+                      >
+                        {f?.a}
+                      </p>{' '}
                     </div>{' '}
                   </React.Fragment>
                 ))}{' '}

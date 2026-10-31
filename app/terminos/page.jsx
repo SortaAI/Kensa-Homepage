@@ -1,11 +1,16 @@
 import LegalPage from '@/components/site/LegalPage';
 import { readContent } from '@/lib/content';
+import { pageMeta } from '@/lib/seo';
+import JsonLd from '@/components/site/JsonLd';
+import { graph, webPage, breadcrumbs } from '@/lib/schema';
 
-export const metadata = {
-  title: 'Kensa · Términos de servicio',
-  description: 'El acuerdo entre Kensa y la clínica que usa la plataforma: qué ofrece el servicio, responsabilidades y reglas de uso.',
-};
+export const metadata = pageMeta('/terminos/');
 
 export default function Page() {
-  return <LegalPage doc={readContent('legal', 'terminos.json')} />;
+  return (
+    <>
+      <JsonLd data={graph(webPage('/terminos/', 'WebPage'), breadcrumbs([['Términos de servicio', '/terminos/']]))} />
+      <LegalPage doc={readContent('legal', 'terminos.json')} />
+    </>
+  );
 }
