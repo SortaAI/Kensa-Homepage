@@ -1,12 +1,12 @@
 'use client';
 // Cookie consent, ported from the old Sorta México site. Nothing optional loads before
-// the visitor accepts. The analytics IDs are empty until Kensa has its own accounts;
-// with none set, accepting only records the choice.
+// the visitor accepts: Google Analytics and Microsoft Clarity load only after "Aceptar",
+// and only on holakensa.com (never on previews or localhost).
 import React from 'react';
 
 const KEY = 'kensa_cookie_consent_v1';
-const GA_ID = ''; // Google Analytics 4, e.g. 'G-XXXXXXX'
-const CLARITY_ID = ''; // Microsoft Clarity project id
+const GA_ID = 'G-8TMPZ18FTY'; // Google Analytics 4, holakensa.com stream
+const CLARITY_ID = 'z68d2oodee'; // Microsoft Clarity project
 const PRODUCTION = ['www.holakensa.com', 'holakensa.com'];
 
 function read() {

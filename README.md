@@ -39,7 +39,7 @@ npm run build    # escribe el sitio completo en out/
 - `public/img/`: las capturas y mockups del producto.
 - `content/`: el texto del blog (`content/recursos/`) y de las páginas legales (`content/legal/`), traído del sitio anterior de Sorta México (repo `SortaAI/MX-Sorta`) con `scripts/import-mx-sorta.py`, que cambia la marca a Kensa, ajusta los enlaces y la oferta de clínicas fundadoras. Las páginas los leen al compilar (`components/site/Blog.jsx`, `components/site/LegalPage.jsx`).
 - Formularios: el de la portada de Inicio y la solicitud de Contacto se envían a Formspree (`lib/forms.js`). Solo muestran "Listo" cuando Formspree confirma; si falla, el visitante ve un aviso y conserva lo que escribió. Incluyen un campo trampa (`_gotcha`) contra spam.
-- `components/site/CookieBanner.jsx`: el aviso de cookies. Nada opcional se carga antes de aceptar. Los IDs de Google Analytics y Microsoft Clarity están vacíos: agrega los de Kensa ahí cuando existan.
+- `components/site/CookieBanner.jsx`: el aviso de cookies. Nada opcional se carga antes de aceptar. Google Analytics (`G-8TMPZ18FTY`) y Microsoft Clarity (`z68d2oodee`) se cargan solo después de "Aceptar" y solo en holakensa.com.
 
 ## SEO
 
@@ -79,6 +79,5 @@ Colores tomados del logo nuevo:
 ## Pendiente antes de publicar
 
 - El aviso de privacidad y los términos son borradores: necesitan revisión de un abogado en México (y en Texas para Sorta LLC) y completar los recuadros [CONFIRMAR] y la fecha de vigencia.
-- Analítica: agregar los IDs de Kensa en `CookieBanner.jsx` si se va a medir el sitio.
 - El dominio canónico es `https://www.holakensa.com` (`lib/seo.js`). En el hosting, redirige `holakensa.com` a `www` con un 301.
 - Search Console: verifica el dominio y envía `https://www.holakensa.com/sitemap.xml`.
