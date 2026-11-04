@@ -6,7 +6,7 @@ import CostaMegaMenu from './CostaMegaMenu';
 import CostaDropdown from './CostaDropdown';
 
 const CSS =
-  'body{margin:0}\n@keyframes kn-drop{from{opacity:0;transform:translateY(-6px)}}\n#menu-funciones,#menu-recursos,#menu-movil{animation:kn-drop .22s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){#menu-funciones,#menu-recursos,#menu-movil{animation:none}}';
+  'body{margin:0}\n@keyframes kn-drop{from{opacity:0;transform:translateY(-6px)}}\n#menu-funciones,#menu-recursos,#menu-movil{animation:kn-drop .22s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){#menu-funciones,#menu-recursos,#menu-movil{animation:none}}\n@media (max-width:600px){.kn-nav{padding:6px 6px 6px 16px !important;gap:8px !important}.kn-navdemo{padding:10px 14px !important;font-size:14px !important}}';
 
 class Logic extends DCLogic {
   constructor(props) {
@@ -66,6 +66,7 @@ export default class CostaNavegacion extends Logic {
           {' '}
           <nav
             aria-label={'Principal'}
+            className={'kn-nav'}
             onKeyDown={v.onKey}
             style={{
               display: 'flex',
@@ -240,7 +241,7 @@ export default class CostaNavegacion extends Logic {
                 {'Iniciar sesión'}
               </a>{' '}
               <a
-                className={'kn-btn'}
+                className={'kn-btn kn-navdemo'}
                 href={link('Costa-Contacto-cs06.dc.html')}
                 style={{
                   textDecoration: 'none',

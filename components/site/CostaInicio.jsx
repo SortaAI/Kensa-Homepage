@@ -9,7 +9,7 @@ import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
 
 const CSS =
-  'body{margin:0;background:#F9F4F0}\n:root{color-scheme:light}\n[id]{scroll-margin-top:24px}\nh1,h2,h3{text-wrap:balance}\np{text-wrap:pretty}\na,button,input,label{touch-action:manipulation;-webkit-tap-highlight-color:rgba(14,42,59,0.08)}\na,button{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out}\nnav a:not([style*="background: #18648A"]):hover{text-decoration:underline}\n:is(a,button)[style*="background: #18648A"]:hover{background:#114E6C !important}\na[style*="border: 1px solid #D6CBC4"]:hover,a[style*="border: 1px solid #E3D9D3"]:hover{background:#F2E9E5 !important;border-color:#0E2A3B !important}\nbutton[aria-expanded]:hover{color:#4B5D69 !important}\nbutton[aria-pressed="false"]:hover{background:#E8DFDA !important}\nli a:hover > span > span:first-child{text-decoration:underline}\n.skip{position:absolute;left:-9999px;top:12px;z-index:10;background:#0E2A3B;color:#FFFFFF;padding:10px 16px;border-radius:999px;text-decoration:none}\n.skip:focus{left:16px}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}\na{color:#0E2A3B;text-underline-offset:3px}a:hover{color:#4B5D69}\n*{box-sizing:border-box}\n::selection{background:#0E2A3B;color:#FFFFFF}\n:focus-visible{outline:2px solid #0E2A3B;outline-offset:3px;border-radius:6px}\ninput{caret-color:#0E2A3B}\ninput::placeholder{color:#6B6B72}\nbutton{font:inherit;cursor:pointer}\n.wrap{width:100%;max-width:1200px;margin:0 auto;padding-left:clamp(16px,4vw,40px);padding-right:clamp(16px,4vw,40px)}\n@media (max-width:820px){.hide-sm{display:none !important}.navlinks{display:none !important}}\n.kn-item:hover,.kn-trigger:hover{background:#F2E9E5 !important}\n.show-sm{display:none}\n@media (max-width:820px){.navlinks,.hide-sm{display:none !important}.show-sm{display:flex !important}}\n.orbit{position:absolute;display:flex;align-items:center;gap:10px;background:#FFFFFF;border:1px solid #E8DFDA;border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.35;color:#0E2A3B;text-align:left;box-shadow:0 14px 32px rgba(14,42,59,0.08);white-space:nowrap}\n.orbit small{display:block;font-size:11px;color:#5F707B}\n.orbit i{flex:0 0 28px;height:28px;border-radius:9px;display:grid;place-items:center;font-style:normal}\n@media (max-width:1360px){.orbit{display:none !important}}\n@media (max-width:1100px){.arc{display:none !important}}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}\n@keyframes kn-arrive{from{opacity:0;transform:translateY(12px) scale(.97)}}\n.orbit{animation:kn-arrive .7s cubic-bezier(.16,1,.3,1) both}\n.kn-job{transform-origin:left center;transition:color .4s ease-out,transform .5s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){.orbit{animation:none}.kn-job{transition:color .2s ease-out}}';
+  'body{margin:0;background:#F9F4F0}\n:root{color-scheme:light}\n[id]{scroll-margin-top:24px}\nh1,h2,h3{text-wrap:balance}\np{text-wrap:pretty}\na,button,input,label{touch-action:manipulation;-webkit-tap-highlight-color:rgba(14,42,59,0.08)}\na,button{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out}\nnav a:not([style*="background: #18648A"]):hover{text-decoration:underline}\n:is(a,button)[style*="background: #18648A"]:hover{background:#114E6C !important}\na[style*="border: 1px solid #D6CBC4"]:hover,a[style*="border: 1px solid #E3D9D3"]:hover{background:#F2E9E5 !important;border-color:#0E2A3B !important}\nbutton[aria-expanded]:hover{color:#4B5D69 !important}\nbutton[aria-pressed="false"]:hover{background:#E8DFDA !important}\nli a:hover > span > span:first-child{text-decoration:underline}\n.skip{position:absolute;left:-9999px;top:12px;z-index:10;background:#0E2A3B;color:#FFFFFF;padding:10px 16px;border-radius:999px;text-decoration:none}\n.skip:focus{left:16px}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}\na{color:#0E2A3B;text-underline-offset:3px}a:hover{color:#4B5D69}\n*{box-sizing:border-box}\n::selection{background:#0E2A3B;color:#FFFFFF}\n:focus-visible{outline:2px solid #0E2A3B;outline-offset:3px;border-radius:6px}\ninput{caret-color:#0E2A3B}\ninput::placeholder{color:#6B6B72}\nbutton{font:inherit;cursor:pointer}\n.wrap{width:100%;max-width:1200px;margin:0 auto;padding-left:clamp(16px,4vw,40px);padding-right:clamp(16px,4vw,40px)}\n@media (max-width:820px){.hide-sm{display:none !important}.navlinks{display:none !important}}\n.kn-item:hover,.kn-trigger:hover{background:#F2E9E5 !important}\n.show-sm{display:none}\n@media (max-width:820px){.navlinks,.hide-sm{display:none !important}.show-sm{display:flex !important}}\n.orbit{position:absolute;display:flex;align-items:center;gap:10px;background:#FFFFFF;border:1px solid #E8DFDA;border-radius:14px;padding:10px 14px;font-size:13px;line-height:1.35;color:#0E2A3B;text-align:left;box-shadow:0 14px 32px rgba(14,42,59,0.08);white-space:nowrap}\n.orbit small{display:block;font-size:11px;color:#5F707B}\n.orbit i{flex:0 0 28px;height:28px;border-radius:9px;display:grid;place-items:center;font-style:normal}\n@media (max-width:1360px){.orbit{display:none !important}}\n@media (max-width:1100px){.arc{display:none !important}}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}\n@keyframes kn-arrive{from{opacity:0;transform:translateY(12px) scale(.97)}}\n.orbit{animation:kn-arrive .7s cubic-bezier(.16,1,.3,1) both}\n.kn-job{transform-origin:left center;transition:color .4s ease-out,transform .5s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){.orbit{animation:none}.kn-job{transition:color .2s ease-out}}\n@media (max-width:600px){.kn-hero{padding-top:32px !important}.kn-h1{font-size:34px !important;line-height:1.08 !important}.kn-lead{font-size:16px !important;margin-top:14px !important;max-width:330px !important}.kn-form{flex-direction:column;margin-top:24px !important;gap:0 !important}.kn-form label{flex:none !important;border-left:0 !important;padding:10px 14px !important}.kn-form label + label{border-top:1px solid #EEE6E2}.kn-form button{width:100%;margin-top:6px}.kn-note{font-size:12.5px !important}.kn-shot{margin-top:36px !important}}';
 
 class Logic extends DCLogic {
   // Sections below the fold ease in as they enter. Visible by default; skipped under reduced motion.
@@ -242,6 +242,7 @@ export default class CostaInicio extends Logic {
           <div id={'contenido'} className={'wrap'} style={{ paddingTop: '16px' }}>
             {' '}
             <section
+              className={'kn-hero'}
               style={{
                 position: 'relative',
                 padding: 'clamp(48px,7vw,96px) 0 0',
@@ -447,6 +448,7 @@ export default class CostaInicio extends Logic {
                 </span>
               </div>{' '}
               <h1
+                className={'kn-h1'}
                 style={{
                   position: 'relative',
                   margin: '0',
@@ -465,6 +467,7 @@ export default class CostaInicio extends Logic {
                 </span>
               </h1>{' '}
               <p
+                className={'kn-lead'}
                 style={{
                   margin: '20px 0 0',
                   fontSize: 'clamp(16px,1.5vw,18px)',
@@ -481,6 +484,7 @@ export default class CostaInicio extends Logic {
                   <>
                     {' '}
                     <form
+                      className={'kn-form'}
                       onSubmit={v.submit}
                       style={{
                         position: 'relative',
@@ -591,7 +595,7 @@ export default class CostaInicio extends Logic {
                         {v.error}
                       </p>
                     ) : null}{' '}
-                    <p style={{ margin: '12px 0 0', fontSize: '13px', color: '#5F707B' }}>
+                    <p className={'kn-note'} style={{ margin: '12px 0 0', fontSize: '13px', color: '#5F707B' }}>
                       {'Recibes un WhatsApp para coordinar. Sin compromiso.'}
                     </p>
                   </>
@@ -654,7 +658,7 @@ export default class CostaInicio extends Logic {
                     </span>
                   </div>
                 )}
-                <div style={{ position: 'relative', marginTop: '64px', width: '100%', maxWidth: '1040px' }}>
+                <div className={'kn-shot'} style={{ position: 'relative', marginTop: '64px', width: '100%', maxWidth: '1040px' }}>
                   {' '}
                   <div style={{ boxSizing: 'border-box', paddingBottom: '40px' }}>
                     <img
