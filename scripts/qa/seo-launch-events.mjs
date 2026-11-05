@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+const uri = (source) => 'data:text/javascript;base64,' + Buffer.from(source).toString('base64');
+const analytics = uri(await fs.readFile(new URL('../../lib/analytics.js', import.meta.url), 'utf8'));
+const { trackEvent } = await import(analytics);
+const source = (await fs.readFile(new URL('../../lib/forms.js', import.meta.url), 'utf8')).replace("'./analytics'", JSON.stringify(analytics));
+const { sendForm, FORMS } = await import(uri(source));
+const events=[];
+let consent=null;
+globalThis.window={location:{hostname:'www.holakensa.com'},localStorage:{getItem:()=>consent},gtag:(...args)=>events.push(args)};
+const copy=()=>trackEvent('resource_copy',{resource:'mensajes-confirmar-citas-whatsapp',message_id:'mensaje-1',patient:'must never leak'});
+copy();consent='denied';copy();assert.equal(events.length,0);
+consent='granted';copy();assert.deepEqual(events.pop(),['event','resource_copy',{resource:'mensajes-confirmar-citas-whatsapp',message_id:'mensaje-1'}]);
+window.location.hostname='localhost';copy();assert.equal(events.length,0);window.location.hostname='www.holakensa.com';
+window.localStorage.getItem=()=>{throw new Error('storage unavailable')};copy();assert.equal(events.length,0);window.localStorage.getItem=()=>consent;
+trackEvent('resource_copy',{resource:'unknown',message_id:'mensaje-1'});trackEvent('generate_lead',{form_id:'unknown'});assert.equal(events.length,0);
+for (const endpoint of [FORMS.contacto,FORMS.demoInicio]) {
+ let request;
+ globalThis.fetch=async(url,init)=>{request={url,init};return {ok:true}};
+ await sendForm(endpoint,{clinica:'Synthetic test',_gotcha:''});
+ assert.equal(request.url,endpoint);assert.equal(request.init.method,'POST');
+ assert.deepEqual(events.pop(),['event','generate_lead',{form_id:endpoint===FORMS.contacto?'contacto':'inicio'}]);
+ globalThis.fetch=async()=>({ok:false});await assert.rejects(sendForm(endpoint,{}),/No pudimos enviar/);assert.equal(events.length,0);
+ globalThis.fetch=async()=>{throw new Error('offline')};await assert.rejects(sendForm(endpoint,{}),/Revisa tu conexión/);assert.equal(events.length,0);
+ globalThis.fetch=async()=>({ok:true});await sendForm(endpoint,{_gotcha:'bot'});assert.equal(events.length,0);
+ consent='denied';await sendForm(endpoint,{});assert.equal(events.length,0);consent='granted';
+}
+window.gtag=()=>{throw new Error('analytics unavailable')};globalThis.fetch=async()=>({ok:true});await sendForm(FORMS.contacto,{});
+delete globalThis.window;
+console.log('PASS: consent/host gating, payload privacy, confirmed form success, failures, honeypot, and analytics isolation.');

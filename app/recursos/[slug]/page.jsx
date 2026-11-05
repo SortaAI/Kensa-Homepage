@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
   const iso = post.dates.map((d) => d.iso).filter(Boolean).sort();
   return buildMeta({
     path: `/recursos/${slug}/`,
-    title: `${post.title} | Kensa`,
+    title: post.seoTitle || `${post.title} | Kensa`,
     description: post.description || post.lead,
     type: 'article',
     extra: { publishedTime: iso[0], modifiedTime: iso[iso.length - 1], authors: ['Equipo de Kensa'], section: post.label },

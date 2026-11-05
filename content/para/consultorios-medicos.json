@@ -1,0 +1,40 @@
+{
+  "slug": "consultorios-medicos",
+  "label": "Consultorios médicos",
+  "title": "Recepción para consultorios médicos, del mensaje al documento",
+  "lead": "Cuando una cita comienza en WhatsApp, cambia en la agenda y termina en varios formatos, recepción necesita saber qué sigue. Kensa conecta esos pasos para que tu equipo dé seguimiento sin reconstruir cada visita entre conversaciones y documentos.",
+  "intro": "Mira el flujo con datos de ejemplo y revisa si encaja con la operación de tu consultorio.",
+  "body": "<h2 id=\"una-cita-necesita-mas-que-una-hora-disponible\">Una cita necesita más que una hora disponible</h2>\n<p>El paciente pregunta por un horario, alguien responde, recepción confirma y después llega la preparación de la visita. Si no está claro quién sigue cada pendiente, el equipo vuelve a revisar el chat o pregunta a otra persona.</p>\n<p>Kensa reúne la agenda, las solicitudes pendientes, los formatos y el seguimiento de recepción. La idea no es quitarle el control a tu equipo, sino darle un lugar más claro para trabajar.</p>\n<h2 id=\"whatsapp-con-una-ruta-hacia-recepcion\">WhatsApp con una ruta hacia recepción</h2>\n<p>El asistente presenta opciones para agendar, reagendar o pedir atención de una persona. Las solicitudes normales de cita requieren confirmación del equipo; no es un chatbot que interpreta cualquier consulta ni una herramienta de diagnóstico. (<a href=\"/funciones/asistente-de-whatsapp/\">Asistente de WhatsApp</a>)</p>\n<p>Cuando hace falta intervención humana, la conversación pasa a Mensajes. Así puedes separar el menú inicial de la atención que debe revisar tu equipo. (<a href=\"/funciones/asistente-de-whatsapp/\">Asistente</a>)</p>\n<h2 id=\"conserva-los-formatos-con-los-que-ya-trabajas\">Conserva los formatos con los que ya trabajas</h2>\n<p>Puedes partir de un PDF, escaneo o foto de hasta 20 páginas y revisar los campos detectados sobre el documento. La configuración es asistida: el equipo debe revisar los campos antes de usar el formato con pacientes. (<a href=\"/funciones/tus-propios-formatos/\">Tus propios formatos</a>)</p>\n<p>Los datos compartidos pueden completarse entre los formatos del paquete de esa visita. No se copian automáticamente respuestas de consultas anteriores ni entre pacientes. (<a href=\"/funciones/autollenado/\">Autollenado</a>)</p>\n<h2 id=\"da-seguimiento-a-un-espacio-que-se-libero\">Da seguimiento a un espacio que se liberó</h2>\n<p>La lista de espera permite que recepción ordene hasta cinco candidatos y envíe ofertas una por una, con diez minutos para responder durante el horario de la clínica. Es un proceso administrativo controlado, no una garantía de ocupar todas las cancelaciones. (<a href=\"/funciones/lista-de-espera/\">Lista de espera</a>)</p>\n<h2 id=\"para-quien-puede-encajar\">¿Para quién puede encajar?</h2>\n<p>Puede ser útil si tu equipo coordina citas por WhatsApp, usa formatos propios y necesita un seguimiento más claro entre recepción y profesionales. Si buscas reemplazar todo tu sistema clínico, revisa primero el alcance: no deberías asumir que una herramienta de recepción sustituye todas las funciones de un expediente o sistema administrativo.</p>\n<p>Durante la demo, muestra el recorrido que necesitas y pregunta qué está disponible hoy. Usa formatos en blanco, no expedientes reales.</p>\n<h2 id=\"que-revisar-en-la-demostracion\">Qué revisar en la demostración</h2>\n<ul><li><strong>La solicitud:</strong> Qué recibe recepción y quién confirma.</li><li><strong>La visita:</strong> Cómo se ve el pendiente y qué información falta.</li><li><strong>El formato:</strong> Cómo se revisan los campos antes del envío.</li><li><strong>La cancelación:</strong> Cómo se eligen candidatos y se detiene una oferta.</li><li><strong>El documento:</strong> Qué puede revisar y exportar el equipo.</li></ul>\n<p>La oferta pública para clínicas fundadoras incluye 45 días sin costo y después un precio fundador por sede más IVA, reducido mientras continúes con Kensa. El importe y las condiciones se confirman por escrito durante la demostración. (<a href=\"/precios/\">Precios</a>)</p>",
+  "cta": "Solicitar una demo para mi consultorio",
+  "microcopy": "Comparte únicamente datos de contacto de tu clínica. No incluyas nombres, expedientes ni información de pacientes.",
+  "links": [
+    [
+      "Cómo funciona",
+      "/como-funciona/"
+    ],
+    [
+      "Agenda",
+      "/funciones/agenda/"
+    ],
+    [
+      "Tus propios formatos",
+      "/funciones/tus-propios-formatos/"
+    ],
+    [
+      "Formatos en el celular",
+      "/funciones/formatos-en-el-celular/"
+    ],
+    [
+      "Lista de espera",
+      "/funciones/lista-de-espera/"
+    ],
+    [
+      "Precios",
+      "/precios/"
+    ],
+    [
+      "Recepción con varios médicos",
+      "/recursos/organizar-recepcion-varios-medicos/"
+    ]
+  ]
+}

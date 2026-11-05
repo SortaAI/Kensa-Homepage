@@ -15,6 +15,22 @@
    "summary": "La diferencia entre la app y la plataforma, cómo conservar tu número, la ventana de 24 horas, plantillas aprobadas por Meta y costos.",
    "meta": "Publicado · 31/10/2026",
    "iso": "2026-10-31"
+  },
+  {
+   "group": "recepcion",
+   "slug": "migrar-agenda-excel-consultorio",
+   "title": "Cómo pasar de Excel a una agenda médica sin improvisar el cambio",
+   "summary": "Prepara el cambio de Excel a una agenda médica: responsables, datos mínimos, prueba con ejemplos y fecha de corte. Sin prometer una importación automática.",
+   "meta": "Publicado · 05/11/2026",
+   "iso": "2026-11-05"
+  },
+  {
+   "group": "recepcion",
+   "slug": "organizar-recepcion-varios-medicos",
+   "title": "Cómo organizar recepción cuando trabajan varios médicos",
+   "summary": "Define responsables, horarios y pendientes cuando recepción coordina a varios médicos. Incluye un ejemplo ficticio y una tabla para empezar.",
+   "meta": "Publicado · 05/11/2026",
+   "iso": "2026-11-05"
   }
  ]
 }

@@ -1,0 +1,50 @@
+{
+  "slug": "organizar-recepcion-varios-medicos",
+  "label": "Equipo de recepción",
+  "title": "Cómo organizar recepción cuando trabajan varios médicos",
+  "seoTitle": "Recepción con varios médicos: guía práctica | Kensa",
+  "lead": "Cuando recepción coordina a varios profesionales, necesita saber quién atiende, cuánto dura cada visita y qué pendiente sigue abierto. Una conversación atendida no siempre significa una cita confirmada.",
+  "description": "Define responsables, horarios y pendientes cuando recepción coordina a varios médicos. Incluye un ejemplo ficticio y una tabla para empezar.",
+  "dates": [
+    {
+      "iso": "2026-11-05",
+      "text": "Publicado el 5 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#define-una-fuente-principal-para-la-agenda",
+      "Define una fuente principal para la agenda"
+    ],
+    [
+      "#separa-solicitudes-de-citas-confirmadas",
+      "Separa solicitudes de citas confirmadas"
+    ],
+    [
+      "#asigna-responsables-por-etapa",
+      "Asigna responsables por etapa"
+    ],
+    [
+      "#usa-un-ejemplo-ficticio-para-revisar-el-proceso",
+      "Usa un ejemplo ficticio para revisar el proceso"
+    ],
+    [
+      "#manten-la-informacion-clinica-fuera-de-la-coordinacion-innecesaria",
+      "Mantén la información clínica fuera de la coordinación innecesaria"
+    ],
+    [
+      "#revisa-el-cierre-del-dia",
+      "Revisa el cierre del día"
+    ],
+    [
+      "#que-preguntar-al-evaluar-software",
+      "Qué preguntar al evaluar software"
+    ]
+  ],
+  "actions": "",
+  "body": "<p>El primer paso es acordar reglas que todo el equipo pueda seguir. Después puedes evaluar si tus herramientas permiten mantenerlas sin duplicar trabajo.</p>\n<h2 id=\"define-una-fuente-principal-para-la-agenda\">Define una fuente principal para la agenda</h2>\n<p>Decide dónde se considera válido el horario y quién puede cambiarlo. Si alguien ofrece una hora desde un chat, debe saber cómo comprobar que sigue disponible.</p>\n<p>No basta con que cada profesional tenga su propio calendario. Recepción necesita una forma autorizada de revisar el espacio que está ofreciendo.</p>\n<h2 id=\"separa-solicitudes-de-citas-confirmadas\">Separa solicitudes de citas confirmadas</h2>\n<p>Usa estados comprensibles y evita que “ya le respondí” se convierta en “ya quedó”. Una solicitud puede seguir pendiente aunque el paciente haya recibido un mensaje.</p>\n<p>Define qué respuesta o acción termina cada estado. Si un caso necesita revisión del profesional, registra quién debe responder y cuándo se revisará.</p>\n<h2 id=\"asigna-responsables-por-etapa\">Asigna responsables por etapa</h2>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Tabla de referencia\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Etapa</th><th scope=\"col\">Responsable sugerido</th><th scope=\"col\">Evidencia de cierre</th></tr></thead><tbody><tr><td>Solicitud recibida</td><td>Recepción</td><td>Contacto identificado y siguiente acción</td></tr><tr><td>Disponibilidad revisada</td><td>Persona autorizada</td><td>Horario compatible</td></tr><tr><td>Confirmación</td><td>Recepción</td><td>Acuerdo y agenda coincidentes</td></tr><tr><td>Formato preparado</td><td>Responsable designado</td><td>Documento correcto y revisado</td></tr><tr><td>Cambio de horario</td><td>Recepción + quien autoriza</td><td>Nuevo acuerdo y registro actualizado</td></tr></tbody></table></div>\n<p>Es una propuesta de organización, no una distribución universal de funciones. Adáptala al tamaño del equipo y a los permisos que correspondan.</p>\n<h2 id=\"usa-un-ejemplo-ficticio-para-revisar-el-proceso\">Usa un ejemplo ficticio para revisar el proceso</h2>\n<p>Imagina que Ana solicita un cambio para una visita con el doctor A, mientras otra persona pregunta por el mismo espacio con el doctor B. El equipo debe revisar tanto profesional como duración y disponibilidad, no solo una hora en el calendario.</p>\n<p>Pide a dos integrantes que expliquen qué harían sin corregirse entre sí. Si sus respuestas difieren, ajusta la regla antes de implementar una automatización.</p>\n<h2 id=\"manten-la-informacion-clinica-fuera-de-la-coordinacion-innecesaria\">Mantén la información clínica fuera de la coordinación innecesaria</h2>\n<p>Para organizar el horario, recepción no siempre necesita conocer el detalle clínico de una consulta. Define qué información administrativa es suficiente y quién tiene acceso a cada documento.</p>\n<p>Evita usar chats de grupo como archivo de expedientes. La coordinación y la documentación clínica necesitan procedimientos adecuados a su finalidad y a las obligaciones de la clínica.</p>\n<h2 id=\"revisa-el-cierre-del-dia\">Revisa el cierre del día</h2>\n<p>Antes de terminar el turno, identifica solicitudes sin resolver, cambios incompletos y documentos pendientes. Asigna una siguiente acción, no solo una marca de “visto”.</p>\n<p>Puedes apoyarte en la checklist y bitácora que Kensa ya ofrece para recepción. Son recursos gratuitos publicados, no evidencia de que tu operación deba tener un número específico de pendientes. (<a href=\"/recursos/checklist-recepcion-clinica/\">Checklist de recepción</a>)</p>\n<h2 id=\"que-preguntar-al-evaluar-software\">Qué preguntar al evaluar software</h2>\n<p>Comprueba cómo se ven los pendientes y qué permisos tiene cada persona. Pide que te enseñen el recorrido de una solicitud, un cambio y un documento, no únicamente una captura de pantalla.</p>\n<p>Kensa describe un flujo que conecta WhatsApp, agenda y formatos, con confirmación normal de citas a cargo del equipo. Antes de adoptarlo, valida que el alcance y los permisos se ajustan a tu operación. (<a href=\"/como-funciona/\">Cómo funciona</a>, <a href=\"/funciones/asistente-de-whatsapp/\">asistente</a>, <a href=\"/funciones/equipo-y-roles/\">equipo y roles</a>)</p>\n<p><a href=\"/contacto/\">Revisar mi flujo en una demo</a>. Usa un caso ficticio y un formato en blanco para comenzar.</p><p>También puedes revisar <a href=\"/para/consultorios-medicos/\">Kensa para consultorios médicos</a> y <a href=\"/para/clinicas-dentales/\">Kensa para clínicas dentales</a>.</p>",
+  "related": "<h2>Revisa el flujo de tu recepción</h2><p>Usa esta guía con las herramientas que ya tienes. Si necesitas conectar conversaciones, agenda y formatos en un mismo recorrido, podemos mostrarte Kensa con un caso ficticio.</p><a class=\"button\" href=\"/contacto/\">Solicitar una demo para mi clínica</a><p>No compartas información de pacientes. Confirmaremos el alcance y las condiciones antes de comenzar.</p>"
+}

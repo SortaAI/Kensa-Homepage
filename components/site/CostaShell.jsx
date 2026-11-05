@@ -2,6 +2,7 @@
 // Page frame for the hand-built pages (legal, blog): header, footer, the shared Costa CSS,
 // section reveals, and copy buttons for the message examples in the guides.
 import React from 'react';
+import { trackEvent } from '@/lib/analytics';
 import { SITE_CSS } from '@/lib/siteCss';
 import { PROSE_CSS } from '@/lib/proseCss';
 import CostaEncabezado from './CostaEncabezado';
@@ -34,24 +35,32 @@ function useReveal() {
 function useCopyButtons() {
   React.useEffect(() => {
     const added = [];
+    const timers = [];
     document.querySelectorAll('.kn-prose .message-example blockquote').forEach((q) => {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'kn-copy';
       b.textContent = 'Copiar mensaje';
+      b.setAttribute('aria-label', `Copiar mensaje ${q.id.replace('mensaje-', '')}`);
+      const status = document.createElement('span');
+      status.setAttribute('role', 'status');
+      status.style.cssText = 'display:block;font-size:13px;margin-top:8px';
       b.addEventListener('click', async () => {
         try {
           await navigator.clipboard.writeText(q.innerText.trim());
           b.textContent = 'Copiado';
+          status.textContent = 'Mensaje copiado.';
+          trackEvent('resource_copy', { resource: 'mensajes-confirmar-citas-whatsapp', message_id: q.id });
         } catch {
           b.textContent = 'Selecciona y copia el texto';
+          status.textContent = 'No se pudo copiar. Selecciona y copia el texto del mensaje.';
         }
-        setTimeout(() => (b.textContent = 'Copiar mensaje'), 2000);
+        timers.push(setTimeout(() => { b.textContent = 'Copiar mensaje'; status.textContent = ''; }, 2000));
       });
-      q.after(b);
-      added.push(b);
+      q.after(b, status);
+      added.push(b, status);
     });
-    return () => added.forEach((b) => b.remove());
+    return () => { added.forEach((b) => b.remove()); timers.forEach(clearTimeout); };
   }, []);
 }
 

@@ -148,5 +148,17 @@
     "description": "El acuerdo entre Kensa y la clínica que usa la plataforma: qué ofrece el servicio, las responsabilidades de cada parte y las reglas de uso.",
     "og": "Términos de servicio",
     "priority": 0.3
+  },
+  "/para/consultorios-medicos/": {
+    "title": "Recepción para consultorios médicos | Kensa",
+    "description": "Conecta WhatsApp, agenda y formatos en la recepción de tu consultorio. Mantén el seguimiento en manos de tu equipo. Solicita una demo de Kensa.",
+    "og": "Recepción para consultorios médicos, del mensaje al documento",
+    "priority": 0.8
+  },
+  "/para/clinicas-dentales/": {
+    "title": "Recepción dental con WhatsApp y formatos | Kensa",
+    "description": "Organiza WhatsApp, citas, lista de espera y formatos en la recepción de tu clínica dental. Revisa el alcance de Kensa en una demostración.",
+    "og": "Conecta la recepción de tu clínica dental",
+    "priority": 0.8
   }
 }

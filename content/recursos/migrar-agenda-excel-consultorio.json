@@ -1,0 +1,50 @@
+{
+  "slug": "migrar-agenda-excel-consultorio",
+  "label": "Agenda y recepción",
+  "title": "Cómo pasar de Excel a una agenda médica sin improvisar el cambio",
+  "seoTitle": "De Excel a una agenda médica: qué revisar | Kensa",
+  "lead": "Cambiar una agenda de Excel por un software no consiste únicamente en copiar filas. Primero necesitas saber qué representa cada estado, quién confirma los horarios y dónde quedarán los pendientes durante la transición.",
+  "description": "Prepara el cambio de Excel a una agenda médica: responsables, datos mínimos, prueba con ejemplos y fecha de corte. Sin prometer una importación automática.",
+  "dates": [
+    {
+      "iso": "2026-11-05",
+      "text": "Publicado el 5 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#decide-que-problema-quieres-resolver",
+      "Decide qué problema quieres resolver"
+    ],
+    [
+      "#ordena-el-archivo-de-origen",
+      "Ordena el archivo de origen"
+    ],
+    [
+      "#confirma-como-se-transferira-la-informacion",
+      "Confirma cómo se transferirá la información"
+    ],
+    [
+      "#prueba-con-datos-ficticios",
+      "Prueba con datos ficticios"
+    ],
+    [
+      "#define-una-fecha-de-corte",
+      "Define una fecha de corte"
+    ],
+    [
+      "#revisa-el-primer-dia-de-uso",
+      "Revisa el primer día de uso"
+    ],
+    [
+      "#si-todavia-no-necesitas-cambiar-de-herramienta",
+      "Si todavía no necesitas cambiar de herramienta"
+    ]
+  ],
+  "actions": "",
+  "body": "<p>Esta guía propone un cambio controlado. No describe una función de importación automática de Kensa ni garantiza que cualquier sistema pueda recibir tus archivos.</p>\n<h2 id=\"decide-que-problema-quieres-resolver\">Decide qué problema quieres resolver</h2>\n<p>Escribe el motivo del cambio antes de evaluar herramientas. Por ejemplo: “dos personas actualizan versiones diferentes” o “las solicitudes del chat no llegan a la agenda”.</p>\n<p>Una descripción concreta ayuda a probar el sistema. “Queremos digitalizarnos” es demasiado amplio para decidir si el nuevo flujo funciona.</p>\n<h2 id=\"ordena-el-archivo-de-origen\">Ordena el archivo de origen</h2>\n<p>Revisa fechas, horas, duración y estados. Localiza duplicados y define qué significa pendiente, confirmada, cancelada y reagendada.</p>\n<p>No cambies información clínica ni borres registros solo para que el archivo se vea limpio. El responsable de la clínica debe establecer conservación, acceso y tratamiento de los documentos.</p>\n<h2 id=\"confirma-como-se-transferira-la-informacion\">Confirma cómo se transferirá la información</h2>\n<p>Pregunta al proveedor qué puede importar, qué campos admite y quién hará la revisión. Distingue la agenda futura del archivo histórico y de los documentos clínicos.</p>\n<p>Si no existe importación, evalúa una captura manual controlada para las citas próximas. Que un producto tenga agenda no demuestra que pueda importar un Excel o integrarse con otro sistema.</p>\n<h2 id=\"prueba-con-datos-ficticios\">Prueba con datos ficticios</h2>\n<p>Crea una visita de primera vez, una cita de seguimiento, una cancelación y una solicitud de cambio. Usa nombres y contactos ficticios, sin expedientes ni documentos reales.</p>\n<p>Pide a recepción que siga el recorrido completo. Anota dónde necesita ayuda y qué información no encuentra.</p>\n<h2 id=\"define-una-fecha-de-corte\">Define una fecha de corte</h2>\n<p>Decide desde cuándo se registrarán las nuevas citas en el sistema elegido. Durante la transición, deja claro cuál es la fuente principal y quién puede modificarla.</p>\n<p>Mantener dos agendas activas sin una regla aumenta la posibilidad de versiones incompatibles. Si necesitas un periodo de comparación, define su duración y responsable antes de comenzar.</p>\n<h2 id=\"revisa-el-primer-dia-de-uso\">Revisa el primer día de uso</h2>\n<p>Compara las citas próximas y los pendientes. Comprueba que cada profesional y recepción conocen su función y que existe un procedimiento para un cambio de último momento.</p>\n<p>Registra los problemas antes de decidir que todo se resolvió o que la herramienta no sirve. A veces el fallo está en una regla que nadie acordó.</p>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Tabla de referencia\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Pregunta</th><th scope=\"col\">Evidencia que conviene pedir</th></tr></thead><tbody><tr><td>¿Qué información se transfiere?</td><td>Lista de campos y muestra revisada</td></tr><tr><td>¿Qué no se transfiere?</td><td>Exclusiones explícitas</td></tr><tr><td>¿Quién valida?</td><td>Responsable y fecha</td></tr><tr><td>¿Qué pasa con el histórico?</td><td>Procedimiento de acceso y conservación</td></tr><tr><td>¿Qué hará recepción si hay un problema?</td><td>Contacto y ruta de contingencia</td></tr></tbody></table></div>\n<h2 id=\"si-todavia-no-necesitas-cambiar-de-herramienta\">Si todavía no necesitas cambiar de herramienta</h2>\n<p>Puedes empezar mejorando el proceso actual. Kensa publica una agenda de Excel gratuita y una checklist de recepción que pueden usarse independientemente del producto. (<a href=\"/recursos/agenda-citas-medicas-excel/\">Agenda Excel</a>, <a href=\"/recursos/checklist-recepcion-clinica/\">checklist</a>)</p>\n<p>Si lo que necesitas es conectar agenda, conversaciones y formatos, pide una demostración del recorrido completo. La propuesta de Kensa incluye esos pasos, pero la transferencia de tu información y cualquier integración deben confirmarse de forma específica. (<a href=\"/como-funciona/\">Cómo funciona</a>)</p>\n<p><a href=\"/contacto/\">Solicitar una demo con datos de ejemplo</a>. No envíes tu agenda con datos de pacientes por un formulario comercial.</p><p>Consulta el recorrido de <a href=\"/para/consultorios-medicos/\">recepción para consultorios médicos</a>.</p>",
+  "related": "<h2>Revisa el flujo de tu recepción</h2><p>Usa esta guía con las herramientas que ya tienes. Si necesitas conectar conversaciones, agenda y formatos en un mismo recorrido, podemos mostrarte Kensa con un caso ficticio.</p><a class=\"button\" href=\"/contacto/\">Solicitar una demo para mi clínica</a><p>No compartas información de pacientes. Confirmaremos el alcance y las condiciones antes de comenzar.</p>"
+}

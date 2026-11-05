@@ -1,0 +1,40 @@
+{
+  "slug": "clinicas-dentales",
+  "label": "Clínicas dentales",
+  "title": "Conecta la recepción de tu clínica dental",
+  "lead": "Una solicitud de cita no termina cuando alguien responde el WhatsApp. Falta confirmar el horario, preparar los formatos y dejar claro qué debe revisar recepción antes de la visita.",
+  "intro": "Kensa conecta ese recorrido para que tu equipo dé seguimiento al mensaje, la cita y los documentos.",
+  "body": "<h2 id=\"una-herramienta-de-recepcion-no-una-promesa-de-reemplazarlo-todo\">Una herramienta de recepción, no una promesa de reemplazarlo todo</h2>\n<p>Si ya trabajas con un sistema dental, primero revisa qué parte del proceso quieres resolver. Esta propuesta se concentra en recepción, agenda y documentos; no afirma que Kensa incluya odontograma, facturación, inventario o todas las funciones de una suite odontológica.</p>\n<p>Tampoco presupone una integración automática con tu sistema actual. En la demostración, confirma cómo funcionaría el flujo y qué trabajo seguiría haciendo el equipo.</p>\n<h2 id=\"trabaja-con-documentos-que-tu-clinica-reconoce\">Trabaja con documentos que tu clínica reconoce</h2>\n<p>Puedes preparar tus formatos a partir de un PDF, escaneo o foto y revisar los campos antes de usarlos. Esto permite evaluar el proceso con un formato en blanco de la clínica, sin compartir información real de pacientes. (<a href=\"/funciones/tus-propios-formatos/\">Tus propios formatos</a>)</p>\n<p>La configuración de un documento no sustituye la revisión clínica o legal de su contenido. Antes de enviar consentimientos o formularios, la clínica debe comprobar que corresponden al procedimiento, al paciente y a sus obligaciones.</p>\n<h2 id=\"solicitudes-y-conversaciones-con-intervencion-del-equipo\">Solicitudes y conversaciones con intervención del equipo</h2>\n<p>El menú de WhatsApp ofrece rutas para agendar, reagendar y pedir atención humana. Las solicitudes normales no se convierten en citas sin confirmación del equipo; no se trata de una recepcionista de IA que resuelve cualquier conversación clínica. (<a href=\"/funciones/asistente-de-whatsapp/\">Asistente</a>)</p>\n<h2 id=\"un-proceso-ordenado-para-ofrecer-una-cancelacion\">Un proceso ordenado para ofrecer una cancelación</h2>\n<p>Recepción puede seleccionar y ordenar candidatos de la lista de espera. Kensa ofrece el espacio de forma secuencial, con un tiempo definido para responder; no envía la misma promesa de disponibilidad a todos al mismo tiempo. (<a href=\"/funciones/lista-de-espera/\">Lista de espera</a>)</p>\n<p>Aceptar un horario anterior puede significar mover una cita que ya existía. Por eso conviene distinguir “espacio ocupado” de “visita adicional completada” al evaluar resultados.</p>\n<h2 id=\"prueba-el-recorrido-antes-de-decidir\">Prueba el recorrido antes de decidir</h2>\n<p>Lleva a la demo un ejemplo ficticio: una solicitud de primera visita, un formato en blanco y una cancelación. Revisa quién confirma, qué ve recepción y cómo se comparte o conserva el documento.</p>\n<p>La oferta actual se cotiza por sede, incluye al equipo de esa ubicación y se confirma por escrito. El piloto publicado para clínicas fundadoras es de 45 días sin costo, seguido de un precio fundador reducido mientras continúen con Kensa. (<a href=\"/precios/\">Precios</a>)</p>",
+  "cta": "Quiero revisar el flujo de mi recepción",
+  "microcopy": "Sin información de pacientes. Trabajaremos con datos de ejemplo.",
+  "links": [
+    [
+      "Cómo funciona",
+      "/como-funciona/"
+    ],
+    [
+      "Agenda",
+      "/funciones/agenda/"
+    ],
+    [
+      "Tus propios formatos",
+      "/funciones/tus-propios-formatos/"
+    ],
+    [
+      "Formatos en el celular",
+      "/funciones/formatos-en-el-celular/"
+    ],
+    [
+      "Lista de espera",
+      "/funciones/lista-de-espera/"
+    ],
+    [
+      "Precios",
+      "/precios/"
+    ],
+    [
+      "Recepción con varios médicos",
+      "/recursos/organizar-recepcion-varios-medicos/"
+    ]
+  ]
+}

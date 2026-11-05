@@ -91,6 +91,11 @@ export function BlogIndex({ index }) {
         </nav>
       </section>
 
+      <section className="wrap kn-prose" style={{ paddingTop: '40px' }} aria-label="Kensa para tu clínica">
+        <h2>Kensa para tu clínica</h2>
+        <p>Explora el flujo de recepción para <a href="/para/consultorios-medicos/">consultorios médicos</a> y <a href="/para/clinicas-dentales/">clínicas dentales</a>.</p>
+      </section>
+
       <section className="wrap" style={{ paddingTop: '48px' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', gap: '24px' }}>
           <PostCard e={featured} big />
