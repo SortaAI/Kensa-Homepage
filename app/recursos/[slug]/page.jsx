@@ -1,6 +1,6 @@
 import { BlogPost } from '@/components/site/Blog';
 import { readContent, postSlugs, readIndex } from '@/lib/content';
-import { buildMeta, SITE } from '@/lib/seo';
+import { buildMeta, shareImage, SITE } from '@/lib/seo';
 import JsonLd from '@/components/site/JsonLd';
 import { graph, breadcrumbs } from '@/lib/schema';
 
@@ -37,7 +37,7 @@ export default async function Page({ params }) {
     description: post.description || post.lead,
     url,
     mainEntityOfPage: url,
-    image: `${SITE}/og/recursos-${slug}.jpg?v=2`,
+    image: `${SITE}${shareImage(`/recursos/${slug}/`)}`,
     datePublished: iso[0],
     dateModified: iso[iso.length - 1],
     inLanguage: 'es-MX',

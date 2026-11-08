@@ -1,22 +1,17 @@
 import CostaShell from './CostaShell';
 import { G } from '@/lib/gradients';
+import resourceIcons from '@/lib/resourceIcons.json';
 
 // The resource library ("Recursos"): guides and free tools for clinic reception teams,
 // ported from the old Sorta México library and rebranded.
 
-const ICONS = {
-  herramientas: 'M21 15v1.2c0 1.68 0 2.52-.327 3.162a3 3 0 0 1-1.311 1.311C18.72 21 17.88 21 16.2 21H7.8c-1.68 0-2.52 0-3.162-.327a3 3 0 0 1-1.311-1.311C3 18.72 3 17.88 3 16.2V15m14-5-5 5m0 0-5-5m5 5V3',
-  recepcion: 'M21 10H3m13-8v4M8 2v4m-.2 16h8.4c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.311-1.311C21 19.72 21 18.88 21 17.2V8.8c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311C18.72 4 17.88 4 16.2 4H7.8c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.311 1.311C3 6.28 3 7.12 3 8.8v8.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C5.28 22 6.12 22 7.8 22Z',
-  documentos: 'M14 2.27V6.4c0 .56 0 .84.109 1.054a1 1 0 0 0 .437.437c.214.11.494.11 1.054.11h4.13M16 13H8m8 4H8m2-8H8m6-7H8.8c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.311 1.311C4 4.28 4 5.12 4 6.8v10.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311C6.28 22 7.12 22 8.8 22h6.4c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.311-1.311C20 19.72 20 18.88 20 17.2V8l-6-6Z',
-  evaluacion: 'm9 11.5 2 2L15.5 9m4.5 3c0 4.908-5.354 8.478-7.302 9.615-.221.129-.332.194-.488.227a1.137 1.137 0 0 1-.42 0c-.156-.034-.267-.098-.488-.227C9.354 20.478 4 16.908 4 12V7.217c0-.799 0-1.199.13-1.542a2 2 0 0 1 .548-.79c.276-.243.65-.383 1.398-.664l5.362-2.01c.208-.078.312-.117.419-.133a1 1 0 0 1 .286 0c.107.016.21.055.419.133l5.362 2.01c.748.28 1.123.421 1.398.664a2 2 0 0 1 .547.79c.131.343.131.743.131 1.542V12Z',
-};
-
 const FEATURED = 'cubrir-cancelaciones-citas-medicas';
 
-function Icon({ d, size = 22 }) {
+function ResourceIcon({ slug, size = 64 }) {
+  const paths = resourceIcons.articles[slug] || resourceIcons.fallback;
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d={d} />
+    <svg data-resource-icon={slug} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
+      {paths.map((d, i) => <path key={i} d={d} />)}
     </svg>
   );
 }
@@ -37,12 +32,12 @@ export function flatEntries(index) {
 function PostCard({ e, big = false }) {
   return (
     <a href={`/recursos/${e.slug}/`} className="kn-post-card kn-card">
-      <div className="kn-post-art" style={{ background: e.bg, aspectRatio: big ? '16 / 10' : '16 / 9' }}>
+      <div className="kn-post-art" style={{ background: e.bg, aspectRatio: big ? '16 / 10' : '16 / 9', alignItems: 'center', justifyContent: 'center' }}>
         <span
           style={{
-            width: big ? '56px' : '44px',
-            height: big ? '56px' : '44px',
-            borderRadius: '14px',
+            width: big ? '144px' : '112px',
+            height: big ? '144px' : '112px',
+            borderRadius: big ? '36px' : '28px',
             background: '#FFFFFF',
             color: '#18648A',
             display: 'flex',
@@ -51,7 +46,7 @@ function PostCard({ e, big = false }) {
             boxShadow: '0 8px 20px rgba(14,42,59,0.08)',
           }}
         >
-          <Icon d={ICONS[e.group]} size={big ? 26 : 22} />
+          <ResourceIcon slug={e.slug} size={big ? 80 : 64} />
         </span>
       </div>
       <div style={{ padding: big ? '26px 28px 28px' : '20px 22px 24px', display: 'flex', flexDirection: 'column', gap: '10px', flex: 1 }}>
@@ -224,9 +219,12 @@ export function BlogPost({ post, index }) {
           ) : null}
         </nav>
         <div style={{ marginTop: '28px', borderRadius: '28px', background: me?.bg || G[0], padding: 'clamp(28px,5vw,64px)' }}>
-          <span className="kn-pill" style={{ background: '#FFFFFF' }}>
-            {label(post.label)}
-          </span>
+          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', color: '#18648A' }}>
+            <span style={{ display: 'inline-flex', padding: '14px', borderRadius: '20px', background: '#FFFFFF' }}>
+              <ResourceIcon slug={post.slug} size={36} />
+            </span>
+            <span className="kn-pill" style={{ background: '#FFFFFF' }}>{label(post.label)}</span>
+          </div>
           <h1 style={{ margin: '20px 0 0', fontSize: 'clamp(32px,4.6vw,56px)', lineHeight: 1.06, letterSpacing: '-0.03em', fontWeight: 600, maxWidth: '900px' }}>
             {post.title}
           </h1>

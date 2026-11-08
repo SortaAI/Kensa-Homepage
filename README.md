@@ -47,6 +47,7 @@ npm run build    # escribe el sitio completo en out/
 - `app/sitemap.js`, `app/robots.js`, `app/manifest.js` y `app/llms.txt/route.js` generan `/sitemap.xml`, `/robots.txt`, `/manifest.webmanifest` y `/llms.txt` al compilar; el blog se agrega solo.
 - Datos estructurados (`lib/schema.js`): Organization, WebSite y SoftwareApplication en Inicio; FAQPage donde hay preguntas frecuentes (`lib/faqs.js`, el mismo texto que se ve en la página); BreadcrumbList en todas; BlogPosting en cada guía.
 - Imágenes para compartir de 1200×630 en `public/og/`, una por página. Para regenerarlas: `node scripts/og/og.cjs` (escribe PNG en `scripts/og/out/`; conviértelas a JPG en `public/og/`).
+- Los artículos usan un icono propio de `lib/resourceIcons.json` en las tarjetas, la cabecera y la imagen para compartir. Después de agregar una guía, añade su icono y ejecuta `node scripts/og/resources.cjs` con Playwright y Chrome disponibles (o indica la instalación de Playwright con `QA_PLAYWRIGHT_PATH`). Este generador actualiza únicamente los JPG del blog; ejecútalo después del generador general si regeneras todo el sitio.
 - Íconos: `app/favicon.ico`, `app/icon.svg`, `app/apple-icon.png` (también en `/apple-touch-icon.png`) y `public/icons/`. Salen de la K del logo; si cambian los colores, vuelve a exportarlos.
 - Guías nuevas del blog: un JSON en `content/recursos/` y su entrada en `content/recursos/_nuevas.json`.
 
