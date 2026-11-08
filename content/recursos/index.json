@@ -37,8 +37,8 @@
      "slug": "checklist-formatos-consultorio",
      "title": "Checklist para digitalizar formatos",
      "summary": "Checklist para digitalizar formatos de consultorio: inventario, versiones, campos compartidos, responsables y prueba. Descarga gratis la lista en texto.",
-     "meta": "Revisado · 06/10/2026",
-     "iso": "2026-10-06"
+     "meta": "Actualizado · 08/11/2026",
+     "iso": "2026-11-08"
     },
     {
      "slug": "checklist-teleconsulta",
@@ -93,8 +93,8 @@
   },
   {
    "id": "documentos",
-   "title": "Documentos y revisión",
-   "intro": "Organiza la captura y conserva la revisión profesional.",
+   "title": "Expediente clínico y NOM-004",
+   "intro": "La norma explicada, formatos descargables y cómo firmar y conservar el expediente.",
    "entries": [
     {
      "slug": "digitalizar-formatos-medicos",

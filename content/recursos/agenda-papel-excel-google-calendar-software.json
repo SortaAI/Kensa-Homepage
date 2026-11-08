@@ -1,0 +1,68 @@
+{
+  "slug": "agenda-papel-excel-google-calendar-software",
+  "label": "Agenda",
+  "title": "Agenda en papel, Excel, Google Calendar o software: cuál conviene a tu clínica",
+  "seoTitle": "Agenda en papel, Excel o software: cuál conviene | Kensa",
+  "lead": "No todas las clínicas necesitan software desde el primer día. Comparamos las cuatro formas de llevar la agenda, con las señales que indican que ya es hora de cambiar.",
+  "description": "Agenda de consultorio en papel, Excel, Google Calendar o software médico: ventajas, límites, costos y señales de que es momento de cambiar. Con plantilla de Excel gratis.",
+  "dates": [
+    {
+      "iso": "2026-11-08",
+      "text": "Publicado el 8 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#comparativa",
+      "Comparativa"
+    ],
+    [
+      "#papel",
+      "Agenda en papel"
+    ],
+    [
+      "#excel",
+      "Agenda en Excel"
+    ],
+    [
+      "#google-calendar",
+      "Google Calendar"
+    ],
+    [
+      "#software",
+      "Software de agenda médica"
+    ],
+    [
+      "#senales",
+      "Siete señales de que ya es hora de cambiar"
+    ],
+    [
+      "#como-cambiar",
+      "Cómo hacer el cambio sin caos"
+    ]
+  ],
+  "actions": "",
+  "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Resumen</h2><p>Papel y Excel funcionan para un médico con pocas citas y una sola persona agendando. Google Calendar suma acceso desde el celular. El software se justifica cuando hay varias personas o médicos, mucho WhatsApp, cancelaciones frecuentes o formatos que llenar.</p><a href=\"/recursos/agenda-citas-medicas-excel/\">Descarga la agenda de citas en Excel →</a></section>\n<h2 id=\"comparativa\">Comparativa</h2>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Formas de llevar la agenda\" tabindex=\"0\"><table><thead><tr><th scope=\"col\"></th><th scope=\"col\">Papel</th><th scope=\"col\">Excel</th><th scope=\"col\">Google Calendar</th><th scope=\"col\">Software médico</th></tr></thead><tbody><tr><td>Costo</td><td>Libreta</td><td>Licencia de Office o gratis</td><td>Gratis</td><td>Desde unos $300 al mes</td></tr><tr><td>Acceso desde varios lugares</td><td>No</td><td>Limitado</td><td>Sí</td><td>Sí</td></tr><tr><td>Evita empalmes</td><td>Depende de quien anota</td><td>No</td><td>Avisa, no bloquea</td><td>Sí</td></tr><tr><td>Confirmaciones al paciente</td><td>Llamadas</td><td>Llamadas o WhatsApp manual</td><td>Manual</td><td>Automáticas</td></tr><tr><td>Historial de cambios</td><td>Tachones</td><td>No</td><td>Básico</td><td>Sí</td></tr><tr><td>Formatos y expediente</td><td>Aparte</td><td>Aparte</td><td>Aparte</td><td>Según el software</td></tr></tbody></table></div>\n<h2 id=\"papel\">Agenda en papel</h2>\n<p><strong>Funciona si</strong> una sola persona agenda, desde el mismo escritorio, con pocas citas al día. <strong>Falla cuando</strong> el doctor quiere ver su agenda desde fuera, alguien reagenda por teléfono mientras otra persona contesta WhatsApp, o la libreta se pierde. Además, los tachones no dejan saber quién cambió una cita.</p>\n<h2 id=\"excel\">Agenda en Excel</h2>\n<p><strong>Funciona si</strong> quieres orden y colores sin pagar software. Nuestra <a href=\"/recursos/agenda-citas-medicas-excel/\">plantilla de agenda en Excel</a> trae columnas de estado y confirmación. <strong>Falla cuando</strong> dos personas abren el archivo a la vez, cuando hay que mandar recordatorios uno por uno o cuando el archivo vive en una sola computadora.</p>\n<h2 id=\"google-calendar\">Google Calendar</h2>\n<p><strong>Funciona si</strong> el médico agenda sus propias citas y quiere verlas en el celular. <strong>Falla cuando</strong> recepción tiene que ver la disponibilidad de varios médicos, cuando un paciente pide confirmar o cancelar (no recibe un enlace para hacerlo) y cuando quieres saber cuántas citas se cancelaron este mes.</p>\n<h2 id=\"software\">Software de agenda médica</h2>\n<p><strong>Funciona si</strong> hay varias personas agendando o varios médicos, si buena parte de las citas llegan por WhatsApp, si las cancelaciones de último minuto te cuestan y si el paciente tiene que llenar formatos. <strong>Considera</strong> el costo mensual, el tiempo de configuración y que el equipo tiene que aprender a usarlo. Compara opciones en <a href=\"/recursos/mejores-apps-agenda-consultorio-medico/\">las 9 mejores apps de agenda</a> y precios en <a href=\"/recursos/cuanto-cuesta-software-clinica-mexico/\">cuánto cuesta un software para clínicas</a>.</p>\n<h2 id=\"senales\">Siete señales de que ya es hora de cambiar</h2>\n<div class=\"article-checklist\"><div><span>✓</span><p>Más de una persona agenda citas.</p></div><div><span>✓</span><p>Atiendes con más de un médico o en más de un consultorio.</p></div><div><span>✓</span><p>Un mensaje de WhatsApp se quedó sin respuesta esta semana.</p></div><div><span>✓</span><p>Te pasó un empalme o una cita “perdida” este mes.</p></div><div><span>✓</span><p>Las cancelaciones de último minuto dejan huecos que no recuperas.</p></div><div><span>✓</span><p>Recepción pasa más de una hora al día confirmando citas.</p></div><div><span>✓</span><p>Los pacientes llenan formatos en papel en la sala de espera.</p></div></div>\n<p>Si marcaste tres o más, el costo de seguir igual probablemente ya es mayor que el de un software.</p>\n<h2 id=\"como-cambiar\">Cómo hacer el cambio sin caos</h2>\n<p>Elige una fecha de corte, decide quién captura las citas futuras y prueba con datos ficticios antes. Lo explicamos paso a paso en <a href=\"/recursos/migrar-agenda-excel-consultorio/\">cómo pasar de Excel a una agenda médica</a>.</p>\n<p>Con Kensa, las solicitudes que llegan por WhatsApp esperan en “Por confirmar”, la <a href=\"/funciones/agenda/\">agenda</a> evita empalmes y respeta tus días cerrados, y al confirmar el paciente recibe el aviso por WhatsApp. Puedes probarlo con datos de práctica antes de usarlo con pacientes reales.</p>",
+  "related": "<h2>Una agenda que conoce tus horarios</h2><p>Evita empalmes, respeta tus días cerrados y avisa al paciente por WhatsApp cuando confirmas.</p><a class=\"button\" href=\"/funciones/agenda/\">Ver la agenda de Kensa</a>",
+  "faqs": [
+    [
+      "¿Puedo llevar la agenda de mi consultorio en Excel?",
+      "Sí, si una sola persona agenda y tienes pocas citas. Excel no evita empalmes, no manda recordatorios y es difícil de compartir entre varias personas a la vez."
+    ],
+    [
+      "¿Google Calendar sirve como agenda médica?",
+      "Sirve para un médico que agenda sus propias citas. No manda confirmaciones con enlace al paciente, no tiene formatos ni expediente y es limitado para recepción con varios médicos."
+    ],
+    [
+      "¿Cuándo conviene un software de agenda médica?",
+      "Cuando agendan varias personas, atiendes con varios médicos, recibes muchas citas por WhatsApp, las cancelaciones te cuestan o el paciente tiene que llenar formatos."
+    ],
+    [
+      "¿Hay plantilla de agenda médica en Excel gratis?",
+      "Sí. Kensa publica una agenda de citas médicas en Excel con columnas de estado y confirmación, sin registro."
+    ]
+  ]
+}

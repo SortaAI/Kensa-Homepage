@@ -1,0 +1,64 @@
+{
+  "slug": "lista-espera-citas-medicas",
+  "label": "Agenda",
+  "title": "Lista de espera en clínicas: cómo llenar cancelaciones de último minuto",
+  "seoTitle": "Lista de espera de citas médicas: llena cancelaciones | Kensa",
+  "lead": "Una cancelación con dos horas de aviso no tiene por qué ser una silla vacía. Así se arma una lista de espera que funciona: a quién incluir, qué datos pedir, en qué orden ofrecer y qué mensaje mandar.",
+  "description": "Cómo armar una lista de espera de citas médicas para llenar cancelaciones de último minuto: qué datos pedir, en qué orden ofrecer el horario y qué mensaje mandar.",
+  "dates": [
+    {
+      "iso": "2026-11-08",
+      "text": "Publicado el 8 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#a-quien",
+      "A quién incluir"
+    ],
+    [
+      "#datos",
+      "Qué datos pedir"
+    ],
+    [
+      "#orden",
+      "En qué orden ofrecer"
+    ],
+    [
+      "#mensaje",
+      "El mensaje para ofrecer el horario"
+    ],
+    [
+      "#medir",
+      "Cómo medir si funciona"
+    ],
+    [
+      "#kensa",
+      "La lista de espera en Kensa"
+    ]
+  ],
+  "actions": "",
+  "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">La idea en una línea</h2><p>Cuando se libera un horario, ofrécelo primero a quien ya pidió venir antes y puede llegar con ese aviso. Uno por uno, con un tiempo corto para responder, nunca a todos a la vez.</p><a href=\"/recursos/cubrir-cancelaciones-citas-medicas/\">Lee también: cómo cubrir cancelaciones →</a></section>\n<p>Las cancelaciones de último minuto son inevitables. Lo que sí se puede cambiar es cuánto tiempo queda vacío ese horario. Una lista de espera bien llevada convierte una parte de esas cancelaciones en citas recuperadas y, de paso, adelanta la atención de pacientes que la necesitan. Para reducir las cancelaciones en primer lugar, lee <a href=\"/recursos/reducir-inasistencias-citas-medicas/\">cómo reducir las inasistencias</a>.</p>\n<h2 id=\"a-quien\">A quién incluir</h2>\n<ul><li>Pacientes con cita lejana que pidieron venir antes.</li><li>Pacientes nuevos que no encontraron lugar en la semana.</li><li>Seguimientos que el médico pidió “en cuanto haya espacio”.</li></ul>\n<p>Pide su autorización para contactarlos por WhatsApp cuando se libere un horario. Es un mensaje que no esperan, así que debe estar acordado.</p>\n<h2 id=\"datos\">Qué datos pedir</h2>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Datos para la lista de espera\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Dato</th><th scope=\"col\">Para qué sirve</th></tr></thead><tbody><tr><td>Médico o servicio</td><td>Ofrecer solo horarios que le sirven</td></tr><tr><td>Días y horas en que puede venir</td><td>No molestar con horarios imposibles</td></tr><tr><td>Con cuánto aviso puede llegar</td><td>Distinguir a quien puede venir en 1 hora de quien necesita un día</td></tr><tr><td>Si ya tiene una cita</td><td>Adelantarla en lugar de duplicarla</td></tr><tr><td>Fecha en que entró a la lista</td><td>Respetar el orden</td></tr><tr><td>Consentimiento para contactarlo</td><td>Mandar la oferta sin sorpresas</td></tr></tbody></table></div>\n<h2 id=\"orden\">En qué orden ofrecer</h2>\n<ol><li>Filtra a quien puede venir a esa hora, con ese médico y con ese aviso.</li><li>Ordena por prioridad clínica si el médico la definió y, después, por antigüedad en la lista.</li><li>Ofrece el horario a <strong>una persona a la vez</strong>, con un plazo corto para responder (por ejemplo, 10 minutos).</li><li>Si no responde o no puede, pasa al siguiente.</li><li>Cuando alguien acepta, confirma la cita y libera su horario anterior, que puede servirle a otra persona.</li></ol>\n<p>Mandar el mismo horario a diez personas a la vez parece más rápido, pero obliga a decirle a nueve que “ya se ocupó” y genera molestia.</p>\n<h2 id=\"mensaje\">El mensaje para ofrecer el horario</h2>\n<div class=\"message-example\"><blockquote id=\"mensaje-lista\">Hola, Ana. Se liberó un horario con la Dra. Pérez hoy a las 17:30 (30 min). ¿Lo quieres? Responde SÍ en los próximos 10 minutos y te lo confirmamos. Si no puedes, no pasa nada: sigues en la lista.</blockquote></div>\n<p>Incluye médico, día, hora, duración, el plazo para responder y que seguir en la lista no depende de aceptar. No incluyas datos clínicos. Más plantillas en <a href=\"/recursos/mensajes-confirmar-citas-whatsapp/\">mensajes para confirmar y reagendar citas por WhatsApp</a>.</p>\n<h2 id=\"medir\">Cómo medir si funciona</h2>\n<ul><li><strong>Citas recuperadas:</strong> horarios cancelados que se volvieron a agendar.</li><li><strong>Tasa de aceptación:</strong> ofertas aceptadas entre ofertas enviadas.</li><li><strong>Tiempo para cubrir:</strong> minutos desde la cancelación hasta la nueva cita.</li></ul>\n<p>Ojo: “recuperada” significa agendada, no que el paciente asistió. Mide también la asistencia de esas citas.</p>\n<h2 id=\"kensa\">La lista de espera en Kensa</h2>\n<p>En Kensa, cada paciente entra a la <a href=\"/funciones/lista-de-espera/\">lista de espera</a> con su consentimiento, los días y horas en que puede venir y con cuánto aviso. Cuando se abre un horario, Kensa te muestra quién puede venir y por qué; tú eliges a quién ofrecerlo. La oferta sale por WhatsApp a hasta 5 pacientes, uno por uno, cada una dura 10 minutos y solo dentro del horario de la clínica. Si el paciente ya tenía cita, se adelanta en lugar de duplicarse. Ves en tu panel las citas recuperadas, la tasa de aceptación y los minutos promedio para cubrir un horario.</p>",
+  "related": "<h2>Una cancelación ya no es una silla vacía</h2><p>Ofrece el horario a quien quiere venir antes, uno por uno, por WhatsApp.</p><a class=\"button\" href=\"/funciones/lista-de-espera/\">Ver la lista de espera</a>",
+  "faqs": [
+    [
+      "¿Cómo funciona una lista de espera de citas médicas?",
+      "Registras a pacientes que quieren venir antes, con sus horarios posibles y con cuánto aviso pueden llegar. Cuando se libera un horario, se lo ofreces a uno a la vez, en orden, hasta que alguien lo acepta."
+    ],
+    [
+      "¿Debo ofrecer el horario a todos a la vez?",
+      "No es recomendable. Ofrecerlo a una persona a la vez, con un plazo corto para responder, evita que varios pacientes acepten el mismo horario y se molesten."
+    ],
+    [
+      "¿Cuánto tiempo darle al paciente para responder?",
+      "Un plazo corto, como 10 minutos, permite recorrer la lista rápido cuando la cancelación es de último minuto."
+    ],
+    [
+      "¿Necesito el consentimiento del paciente para ofrecerle horarios por WhatsApp?",
+      "Es lo recomendable: pide su autorización al incluirlo en la lista y menciona el contacto por WhatsApp en tu aviso de privacidad."
+    ]
+  ]
+}

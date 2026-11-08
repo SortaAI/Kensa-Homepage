@@ -1,0 +1,68 @@
+{
+  "slug": "expediente-clinico-electronico-nom-024",
+  "label": "Expediente clínico",
+  "title": "Expediente clínico electrónico: ¿es válido en México? NOM-004 y NOM-024",
+  "seoTitle": "¿Es válido el expediente clínico electrónico? NOM-024 | Kensa",
+  "lead": "Sí puedes llevar el expediente en digital. La pregunta útil es otra: qué tiene que cumplir el sistema y qué tiene que hacer tu consultorio para que ese expediente se sostenga.",
+  "description": "Si el expediente clínico electrónico es válido en México, qué piden la NOM-004 y la NOM-024, qué es la certificación DGIS y qué preguntar a tu proveedor.",
+  "dates": [
+    {
+      "iso": "2026-11-08",
+      "text": "Publicado el 8 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#que-dice-la-nom-004",
+      "Qué dice la NOM-004 sobre el formato digital"
+    ],
+    [
+      "#que-es-la-nom-024",
+      "Qué es la NOM-024"
+    ],
+    [
+      "#certificacion",
+      "¿El software tiene que estar certificado?"
+    ],
+    [
+      "#que-hace-valido",
+      "Lo que hace que un expediente digital se sostenga"
+    ],
+    [
+      "#riesgos",
+      "Riesgos comunes al digitalizar"
+    ],
+    [
+      "#kensa",
+      "Cómo lo resuelve Kensa"
+    ]
+  ],
+  "actions": "",
+  "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Respuesta corta</h2><p>Sí. La NOM-004 reconoce documentos electrónicos y firma electrónica o digital. La NOM-024 fija cómo deben funcionar los sistemas de registro electrónico para la salud. Lo que importa es poder demostrar quién escribió cada nota, cuándo, y que nadie la cambió después.</p></section>\n<p>Muchos médicos siguen imprimiendo “por si acaso”. La duda es razonable: un PDF se edita en segundos y una nota en un procesador de textos no deja rastro. Pero la norma no exige papel. Exige que el expediente esté completo, sea confidencial, se conserve y se pueda atribuir a quien lo elaboró. Esta guía resume la norma para organizar el trabajo del consultorio. No es asesoría legal ni sustituye la lectura del texto oficial.</p>\n<h2 id=\"que-dice-la-nom-004\">Qué dice la NOM-004 sobre el formato digital</h2>\n<p>La <a href=\"https://sidof.segob.gob.mx/notas/docFuente/5272787\" rel=\"noopener\">NOM-004-SSA3-2012</a> define el expediente clínico como un conjunto de documentos que pueden ser “escritos, gráficos, imagenológicos, electrónicos, magnéticos, electromagnéticos, ópticos, magneto-ópticos y de cualquier otra índole”. Y al pedir la firma de cada nota (apartado 5.10) acepta la firma “autógrafa, electrónica o digital”.</p>\n<p>Es decir: un expediente en una computadora o en la nube es un expediente clínico. Debe cumplir los mismos requisitos de contenido que uno en papel. Los repasamos en <a href=\"/recursos/nom-004-expediente-clinico/\">la NOM-004 explicada</a>.</p>\n<h2 id=\"que-es-la-nom-024\">Qué es la NOM-024</h2>\n<p>La <a href=\"https://sidof.segob.gob.mx/notas/docFuente/5280847\" rel=\"noopener\">NOM-024-SSA3-2012</a> regula los <strong>Sistemas de Información de Registro Electrónico para la Salud (SIRES)</strong>: el software que guarda e intercambia información clínica. Pide, entre otras cosas:</p>\n<ul><li>Identificar de forma única a cada paciente y a cada profesional que registra información.</li><li>Controlar el acceso por perfiles y registrar quién consulta o modifica cada registro.</li><li>Conservar la integridad de la información: lo firmado no se altera sin dejar evidencia.</li><li>Usar catálogos y estándares comunes (por ejemplo, para diagnósticos) que permitan intercambiar información entre sistemas.</li><li>Proteger la confidencialidad con medidas de seguridad técnicas.</li></ul>\n<h2 id=\"certificacion\">¿El software tiene que estar certificado?</h2>\n<p>La Dirección General de Información en Salud (DGIS) evalúa la conformidad de los SIRES con la NOM-024 y publica qué sistemas la tienen. La certificación es importante sobre todo para instituciones que intercambian información con el Sistema Nacional de Salud, y algunos proveedores la usan como sello de confianza.</p>\n<p>Para un consultorio privado, lo práctico es:</p>\n<div class=\"article-checklist\"><div><span>✓</span><p>Pregunta a tu proveedor, a cualquiera, incluido Kensa, si su sistema tiene certificación NOM-024 vigente y pide la constancia.</p></div><div><span>✓</span><p>Si no la tiene, pide que te muestre cómo cumple lo esencial: usuarios únicos, bitácora de accesos, notas firmadas que no se editan y respaldos.</p></div><div><span>✓</span><p>Confirma en el sitio de la DGIS el estado de la certificación que te muestren.</p></div><div><span>✓</span><p>Revisa con tu asesor si tu operación (por ejemplo, convenios con aseguradoras o instituciones) exige un sistema certificado.</p></div></div>\n<h2 id=\"que-hace-valido\">Lo que hace que un expediente digital se sostenga</h2>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Expediente en papel y en digital\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Requisito</th><th scope=\"col\">En papel</th><th scope=\"col\">En digital</th></tr></thead><tbody><tr><td>Autoría</td><td>Nombre completo y firma autógrafa</td><td>Usuario único por persona y firma ligada al profesional</td></tr><tr><td>Fecha y hora</td><td>Escrita a mano</td><td>Registrada por el sistema al guardar y al firmar</td></tr><tr><td>Sin alteraciones</td><td>Sin tachaduras ni enmendaduras</td><td>Nota firmada bloqueada; correcciones como nota nueva</td></tr><tr><td>Confidencialidad</td><td>Archivero con llave</td><td>Permisos por rol, historial de accesos, cifrado</td></tr><tr><td>Conservación</td><td>Archivo físico 5 años</td><td>Respaldos y exportación en formato legible (PDF)</td></tr></tbody></table></div>\n<h2 id=\"riesgos\">Riesgos comunes al digitalizar</h2>\n<ul><li><strong>Cuentas compartidas.</strong> Si toda la recepción entra con el mismo usuario, no hay forma de saber quién hizo qué.</li><li><strong>PDF editables.</strong> Un PDF firmado con una imagen de rúbrica no demuestra que el contenido no cambió.</li><li><strong>Expedientes en WhatsApp o correo.</strong> Sirven para coordinar, no como archivo clínico.</li><li><strong>Sin salida.</strong> Si el sistema no exporta tus expedientes completos, dependes de él para cumplir los 5 años de conservación.</li></ul>\n<p>Antes de contratar, usa nuestra guía <a href=\"/recursos/seguridad-software-medico-nube/\">software médico en la nube: qué pedir antes de subir datos de pacientes</a>.</p>\n<h2 id=\"kensa\">Cómo lo resuelve Kensa</h2>\n<p>En Kensa cada persona entra con su usuario y su rol, y solo firman los profesionales cuya cédula verificó un administrador. Al <a href=\"/funciones/firmar-y-bloquear/\">firmar y bloquear</a> la visita, nada se puede editar; una aclaración se agrega como nota posterior firmada. Cada expediente bloqueado lleva una <a href=\"/funciones/expedientes-sellados/\">huella SHA-256</a> que permite comprobar que un PDF coincide con el original, y el historial registra quién vio o descargó cada documento.</p>\n<p>Es un expediente sellado y comprobable, no un sello de tiempo certificado por un tercero. Si tu operación necesita certificación NOM-024, pregúntanos por su estado en la demo y pide la constancia por escrito.</p>",
+  "related": "<h2>Expedientes que se pueden comprobar</h2><p>Firma con cédula verificada, bloqueo permanente, huella SHA-256 e historial de accesos.</p><a class=\"button\" href=\"/funciones/expedientes-sellados/\">Ver expedientes sellados</a>",
+  "faqs": [
+    [
+      "¿Es legal llevar el expediente clínico solo en digital?",
+      "Sí. La NOM-004 incluye los documentos electrónicos en la definición de expediente clínico y acepta la firma electrónica o digital en las notas. El sistema debe permitir identificar al autor, la fecha y que la nota no se alteró."
+    ],
+    [
+      "¿Qué es la NOM-024-SSA3-2012?",
+      "Es la norma que fija los requisitos de los Sistemas de Información de Registro Electrónico para la Salud (SIRES): identificación de pacientes y usuarios, control de acceso, integridad, seguridad e intercambio de información."
+    ],
+    [
+      "¿Mi software de consultorio debe estar certificado en NOM-024?",
+      "La certificación la evalúa la DGIS y es especialmente relevante si intercambias información con instituciones del Sistema Nacional de Salud. Pide a tu proveedor la constancia vigente y revisa con tu asesor si tu operación la exige."
+    ],
+    [
+      "¿Tengo que imprimir el expediente digital?",
+      "No es obligatorio imprimirlo. Sí conviene poder exportarlo completo en un formato legible, como PDF, para entregarlo a una autoridad o conservarlo si cambias de sistema."
+    ],
+    [
+      "¿Un PDF escaneado con firma cuenta como expediente electrónico?",
+      "Puede formar parte del expediente, pero por sí solo no demuestra quién lo elaboró ni que no cambió. Un sistema con usuarios, firma y bloqueo da más evidencia."
+    ]
+  ]
+}

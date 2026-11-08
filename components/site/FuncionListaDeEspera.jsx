@@ -580,6 +580,7 @@ export default class FuncionListaDeEspera extends Logic {
               <h2 style={{ margin: '0 0 6px', fontSize: '18px', fontWeight: '600' }}>{'Guías relacionadas'}</h2>
               <ul style={{ margin: '0', padding: '0', listStyle: 'none' }}>
                 {[
+                  ['Lista de espera en clínicas: cómo llenar cancelaciones de último minuto', 'lista-espera-citas-medicas'],
                   [
                     'Cómo cubrir cancelaciones de citas con una lista de espera por WhatsApp',
                     'cubrir-cancelaciones-citas-medicas',

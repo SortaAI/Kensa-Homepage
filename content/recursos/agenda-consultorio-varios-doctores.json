@@ -1,0 +1,72 @@
+{
+  "slug": "agenda-consultorio-varios-doctores",
+  "label": "Agenda",
+  "title": "Cómo organizar la agenda de un consultorio con varios doctores",
+  "seoTitle": "Agenda de clínica con varios médicos: cómo organizarla | Kensa",
+  "lead": "Cuando comparten consultorio dos, tres o diez médicos, la agenda deja de ser un calendario y se vuelve un sistema de reglas. Así se organiza para que nadie empalme, nadie espere y recepción no adivine.",
+  "description": "Cómo organizar la agenda de una clínica con varios médicos: duración por servicio, consultorios compartidos, colores, reglas de reagenda y quién confirma. Con ejemplo.",
+  "dates": [
+    {
+      "iso": "2026-11-08",
+      "text": "Publicado el 8 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#una-agenda",
+      "1. Una agenda principal, una columna por médico"
+    ],
+    [
+      "#horarios",
+      "2. Horario de cada médico por escrito"
+    ],
+    [
+      "#duraciones",
+      "3. Duración por servicio, no por médico"
+    ],
+    [
+      "#consultorios",
+      "4. Si comparten consultorios, agenda también el espacio"
+    ],
+    [
+      "#estados",
+      "5. Estados claros para cada cita"
+    ],
+    [
+      "#reglas",
+      "6. Reglas de reagenda y cancelación"
+    ],
+    [
+      "#ejemplo",
+      "Ejemplo ficticio"
+    ],
+    [
+      "#kensa",
+      "Cómo lo hace Kensa"
+    ]
+  ],
+  "actions": "",
+  "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">La regla de oro</h2><p>Una sola agenda principal donde se ve a todos los médicos, y reglas escritas que cualquier persona de recepción pueda aplicar igual. Si cada médico lleva su propio calendario, los empalmes son cuestión de tiempo.</p></section>\n<p>Esta guía se enfoca en la agenda. Para repartir el trabajo de recepción (quién contesta, quién confirma, quién prepara formatos) lee <a href=\"/recursos/organizar-recepcion-varios-medicos/\">cómo organizar recepción cuando trabajan varios médicos</a>.</p>\n<h2 id=\"una-agenda\">1. Una agenda principal, una columna por médico</h2>\n<p>Recepción debe ver a todos los médicos en una misma vista del día, cada uno en su columna o color. Los médicos pueden ver su propia agenda en el celular, pero las citas se crean y cambian en un solo lugar.</p>\n<h2 id=\"horarios\">2. Horario de cada médico por escrito</h2>\n<p>Días y horas de consulta, bloques de comida, días que no atiende y vacaciones. Cada cambio de horario se avisa a recepción con anticipación y se refleja en la agenda antes de ofrecer citas.</p>\n<h2 id=\"duraciones\">3. Duración por servicio, no por médico</h2>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Ejemplo de duraciones por servicio\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Servicio</th><th scope=\"col\">Duración sugerida</th><th scope=\"col\">Nota</th></tr></thead><tbody><tr><td>Primera vez</td><td>40 a 60 min</td><td>Incluye historia clínica</td></tr><tr><td>Seguimiento</td><td>20 a 30 min</td><td></td></tr><tr><td>Procedimiento</td><td>Según el procedimiento</td><td>Considera preparación y limpieza</td></tr><tr><td>Resultados</td><td>15 min</td><td>Puede ser teleconsulta</td></tr></tbody></table></div>\n<p>Con duraciones definidas, recepción ya no pregunta “¿cuánto tiempo le doy?” y la agenda deja de retrasarse a media tarde. Las duraciones son un ejemplo: cada especialidad define las suyas.</p>\n<h2 id=\"consultorios\">4. Si comparten consultorios, agenda también el espacio</h2>\n<p>Dos médicos pueden estar libres a las 5 de la tarde pero tener un solo consultorio disponible. Asigna cada médico a un consultorio por turno o registra el consultorio en cada cita.</p>\n<h2 id=\"estados\">5. Estados claros para cada cita</h2>\n<p>Solicitada, confirmada, reagendada, cancelada, llegó, no asistió. Así se distingue una solicitud de WhatsApp de una cita que el médico ya tiene. “Ya le contesté” no es lo mismo que “ya quedó”.</p>\n<h2 id=\"reglas\">6. Reglas de reagenda y cancelación</h2>\n<ul><li>¿Con cuánta anticipación se puede cambiar sin penalización?</li><li>¿Quién puede mover una cita de un médico a otro?</li><li>¿Qué pasa con el horario que se libera? Idealmente, se ofrece a la <a href=\"/recursos/lista-espera-citas-medicas/\">lista de espera</a>.</li><li>¿Cuándo se marca “no asistió” y qué se le dice al paciente?</li></ul>\n<h2 id=\"ejemplo\">Ejemplo ficticio</h2>\n<p>Clínica con tres médicos: una médica general (lunes a viernes, 9 a 14 h), un pediatra (lunes, miércoles y viernes, 16 a 20 h) y una dermatóloga (martes y jueves, 10 a 18 h), con dos consultorios. Recepción ve las tres columnas. La dermatóloga usa el consultorio 2 siempre; los otros dos se alternan en el 1 porque no coinciden en horario. Las primeras visitas de pediatría duran 45 minutos y los seguimientos 20. Un paciente que cancela el martes a las 11 libera un espacio que se ofrece primero a quien está en la lista de espera de dermatología.</p>\n<h2 id=\"kensa\">Cómo lo hace Kensa</h2>\n<p>En Kensa, cada médico y cada persona de recepción tiene su usuario y su <a href=\"/funciones/equipo-y-roles/\">rol</a>. La <a href=\"/funciones/agenda/\">agenda</a> tiene vista de día, semana y mes, valida el horario al agendar y evita empalmes. Las solicitudes que llegan por WhatsApp esperan en “Por confirmar” hasta que recepción las revisa, y si alguien cancela, Kensa te ofrece cubrir el horario con tu lista de espera.</p>",
+  "related": "<h2>Toda tu clínica en una agenda</h2><p>Varios médicos, vista de día, semana y mes, y avisos por WhatsApp al confirmar.</p><a class=\"button\" href=\"/funciones/agenda/\">Ver la agenda de Kensa</a>",
+  "faqs": [
+    [
+      "¿Cómo organizo la agenda de una clínica con varios médicos?",
+      "Con una agenda principal donde recepción vea a todos los médicos, horarios por escrito, duraciones por tipo de servicio, consultorios asignados y reglas claras de confirmación, reagenda y cancelación."
+    ],
+    [
+      "¿Cada médico debe tener su propio calendario?",
+      "Cada médico puede ver su agenda, pero las citas deben crearse y cambiarse en una sola agenda principal para evitar empalmes."
+    ],
+    [
+      "¿Cuánto debe durar una cita médica?",
+      "Depende del servicio y la especialidad. Una primera vez suele necesitar más tiempo que un seguimiento porque incluye la historia clínica."
+    ],
+    [
+      "¿Qué hago con los horarios que se liberan por cancelaciones?",
+      "Ofrécelos a pacientes en lista de espera que puedan venir con poco aviso, en orden y uno por uno."
+    ]
+  ]
+}

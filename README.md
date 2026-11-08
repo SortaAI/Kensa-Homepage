@@ -25,7 +25,7 @@ npm run build    # escribe el sitio completo en out/
 | `/quien-lo-hace/` | Quién lo hace |
 | `/funciones/lista-de-espera/` | Lista de espera |
 | `/recursos/` | Blog y recursos: guías y descargas gratuitas para recepción |
-| `/recursos/<guía>/` | Una página por guía (15), con sus descargas en `/recursos/descargas/` |
+| `/recursos/<guía>/` | Una página por guía (33), con sus descargas en `/recursos/descargas/` |
 | `/privacidad/` | Aviso de privacidad (borrador) |
 | `/terminos/` | Términos de servicio (borrador) |
 | `/funciones/<función>/` | Una página por función: asistente-de-whatsapp, mensajes, agenda, preparar-visitas, biblioteca-de-documentos, tus-propios-formatos, formatos-en-el-celular, autollenado, envios, firmar-y-bloquear, expedientes-sellados, hoy-y-pacientes, equipo-y-roles, configuracion-guiada |
@@ -49,7 +49,7 @@ npm run build    # escribe el sitio completo en out/
 - Imágenes para compartir de 1200×630 en `public/og/`, una por página. Para regenerarlas: `node scripts/og/og.cjs` (escribe PNG en `scripts/og/out/`; conviértelas a JPG en `public/og/`).
 - Los artículos usan un icono propio de `lib/resourceIcons.json` en las tarjetas, la cabecera y la imagen para compartir. Después de agregar una guía, añade su icono y ejecuta `node scripts/og/resources.cjs` con Playwright y Chrome disponibles (o indica la instalación de Playwright con `QA_PLAYWRIGHT_PATH`). Este generador actualiza únicamente los JPG del blog; ejecútalo después del generador general si regeneras todo el sitio.
 - Íconos: `app/favicon.ico`, `app/icon.svg`, `app/apple-icon.png` (también en `/apple-touch-icon.png`) y `public/icons/`. Salen de la K del logo; si cambian los colores, vuelve a exportarlos.
-- Guías nuevas del blog: un JSON en `content/recursos/` y su entrada en `content/recursos/_nuevas.json`.
+- Guías nuevas del blog: un JSON en `content/recursos/` y su entrada en `content/recursos/_nuevas.json`. Una guía puede llevar `faqs` (`[[pregunta, respuesta], ...]`), que se muestran al final y generan FAQPage, y `howto` (`{ name, steps: [[paso, texto], ...] }`), que genera HowTo.
 
 ## Diseño: paleta Costa
 

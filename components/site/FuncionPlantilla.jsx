@@ -24,9 +24,9 @@ const GUIDES = {
     ['Checklist de recepción para clínicas: antes, durante y después de la consulta', 'checklist-recepcion-clinica'],
   ],
   agenda: [
+    ['Las 9 mejores apps de agenda para consultorios médicos en México (2026)', 'mejores-apps-agenda-consultorio-medico'],
+    ['Cómo organizar la agenda de un consultorio con varios doctores', 'agenda-consultorio-varios-doctores'],
     ['Cómo reducir las inasistencias a citas médicas en tu clínica', 'reducir-inasistencias-citas-medicas'],
-    ['Agenda de citas médicas en Excel: plantilla gratis para recepción', 'agenda-citas-medicas-excel'],
-    ['8 mensajes para confirmar y reagendar citas médicas por WhatsApp', 'mensajes-confirmar-citas-whatsapp'],
   ],
   preparar: [
     ['Preconsulta digital: qué puede completar el paciente antes de llegar', 'preconsulta-digital'],
@@ -34,9 +34,10 @@ const GUIDES = {
     ['Cómo reducir las inasistencias a citas médicas en tu clínica', 'reducir-inasistencias-citas-medicas'],
   ],
   biblioteca: [
+    ['NOM-004-SSA3-2012 explicada: qué debe tener un expediente clínico', 'nom-004-expediente-clinico'],
+    ['Historia clínica: formato descargable según la NOM-004', 'historia-clinica-formato-nom-004'],
+    ['Consentimiento informado: formato y plantilla gratis', 'consentimiento-informado-formato'],
     ['Llenado de formatos médicos. Qué aporta frente a la NOM-004.', 'llenado-formatos-nom-004'],
-    ['Ficha de identificación del paciente: formato en Word y PDF', 'ficha-identificacion-paciente'],
-    ['Checklist para digitalizar los formatos de tu consultorio', 'checklist-formatos-consultorio'],
   ],
   tusformatos: [
     ['Cómo digitalizar formatos médicos sin cambiar de sistema', 'digitalizar-formatos-medicos'],
@@ -44,9 +45,9 @@ const GUIDES = {
     ['Cómo reducir el papeleo repetido en la recepción de un consultorio', 'reducir-papeleo-consultorio'],
   ],
   celular: [
+    ['Firma electrónica de pacientes: ¿tiene validez en un consultorio?', 'firma-electronica-pacientes-consultorio'],
     ['Preconsulta digital: qué puede completar el paciente antes de llegar', 'preconsulta-digital'],
-    ['Cómo digitalizar formatos médicos sin cambiar de sistema', 'digitalizar-formatos-medicos'],
-    ['Cómo automatizar formatos médicos por WhatsApp en tu consultorio', 'automatizar-formatos-medicos-whatsapp'],
+    ['Consentimiento informado: formato y plantilla gratis', 'consentimiento-informado-formato'],
   ],
   autollenado: [
     ['Cómo reducir el papeleo repetido en la recepción de un consultorio', 'reducir-papeleo-consultorio'],
@@ -59,12 +60,14 @@ const GUIDES = {
     ['WhatsApp Business API para clínicas: qué permite y qué no', 'whatsapp-business-api-clinicas'],
   ],
   firmar: [
-    ['Llenado de formatos médicos. Qué aporta frente a la NOM-004.', 'llenado-formatos-nom-004'],
-    ['Software médico en la nube: qué pedir antes de subir datos de pacientes', 'seguridad-software-medico-nube'],
+    ['Firma electrónica de pacientes: ¿tiene validez en un consultorio?', 'firma-electronica-pacientes-consultorio'],
+    ['Expediente clínico electrónico: ¿es válido en México? NOM-004 y NOM-024', 'expediente-clinico-electronico-nom-024'],
+    ['NOM-004-SSA3-2012 explicada: qué debe tener un expediente clínico', 'nom-004-expediente-clinico'],
   ],
   sellados: [
-    ['Software médico en la nube: qué pedir antes de subir datos de pacientes', 'seguridad-software-medico-nube'],
-    ['Llenado de formatos médicos. Qué aporta frente a la NOM-004.', 'llenado-formatos-nom-004'],
+    ['NOM-004-SSA3-2012 explicada: qué debe tener un expediente clínico', 'nom-004-expediente-clinico'],
+    ['¿Cuántos años guardar un expediente clínico en México?', 'cuantos-anos-guardar-expediente-clinico'],
+    ['Qué revisa COFEPRIS o una auditoría en tu consultorio: checklist', 'verificacion-sanitaria-consultorio-checklist'],
   ],
   recepcion: [
     ['Checklist de recepción para clínicas: antes, durante y después de la consulta', 'checklist-recepcion-clinica'],

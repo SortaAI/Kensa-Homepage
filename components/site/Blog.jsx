@@ -5,7 +5,7 @@ import resourceIcons from '@/lib/resourceIcons.json';
 // The resource library ("Recursos"): guides and free tools for clinic reception teams,
 // ported from the old Sorta México library and rebranded.
 
-const FEATURED = 'cubrir-cancelaciones-citas-medicas';
+const FEATURED = 'nom-004-expediente-clinico';
 
 function ResourceIcon({ slug, size = 64 }) {
   const paths = resourceIcons.articles[slug] || resourceIcons.fallback;
@@ -196,7 +196,11 @@ export function BlogPost({ post, index }) {
   const all = flatEntries(index);
   const me = all.find((e) => e.slug === post.slug);
   const more = all.filter((e) => e.slug !== post.slug && e.group === me?.group).concat(all.filter((e) => e.group !== me?.group)).slice(0, 3);
-  const toc = post.toc.map(([href, label]) => (
+  // Guides can carry FAQs (post.faqs: [[question, answer], ...]); they are shown at the end
+  // and repeated as FAQPage structured data by the page, so both always match.
+  const faqs = post.faqs || [];
+  const tocItems = faqs.length ? [...post.toc, ['#preguntas-frecuentes', 'Preguntas frecuentes']] : post.toc;
+  const toc = tocItems.map(([href, label]) => (
     <a key={href} href={href}>
       {label}
     </a>
@@ -258,6 +262,17 @@ export function BlogPost({ post, index }) {
               <nav>{toc}</nav>
             </details>
             <article className="kn-prose" dangerouslySetInnerHTML={{ __html: post.body }} />
+            {faqs.length ? (
+              <section className="kn-prose kn-faq" aria-labelledby="preguntas-frecuentes" style={{ marginTop: '56px' }}>
+                <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
+                {faqs.map(([q, a]) => (
+                  <details key={q}>
+                    <summary>{q}</summary>
+                    <p>{a}</p>
+                  </details>
+                ))}
+              </section>
+            ) : null}
             {related ? (
               <div
                 className="kn-prose kn-related"
