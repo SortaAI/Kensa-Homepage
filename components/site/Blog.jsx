@@ -1,6 +1,7 @@
 import CostaShell from './CostaShell';
 import { G } from '@/lib/gradients';
 import resourceIcons from '@/lib/resourceIcons.json';
+import BlogBrowser from './BlogBrowser';
 
 // The resource library ("Recursos"): guides and free tools for clinic reception teams,
 // ported from the old Sorta México library and rebranded.
@@ -62,95 +63,74 @@ function PostCard({ e, big = false }) {
   );
 }
 
+// Free templates, shown with their file formats so readers find downloads fast.
+const DOWNLOADS = [
+  ['historia-clinica-formato-nom-004', 'Historia clínica NOM-004', 'Word · PDF'],
+  ['consentimiento-informado-formato', 'Consentimiento informado', 'Word · PDF'],
+  ['aviso-privacidad-consultorio-medico', 'Aviso de privacidad para consultorio', 'Word · PDF'],
+  ['ficha-identificacion-paciente', 'Ficha de identificación del paciente', 'Word · PDF'],
+  ['agenda-citas-medicas-excel', 'Agenda de citas médicas', 'Excel'],
+  ['verificacion-sanitaria-consultorio-checklist', 'Checklist de verificación sanitaria', 'PDF'],
+  ['mensajes-confirmar-citas-whatsapp', 'Mensajes para confirmar citas', 'Copiar'],
+];
+
 export function BlogIndex({ index }) {
   const all = flatEntries(index);
   const featured = all.find((e) => e.slug === FEATURED) || all[0];
+  const groups = index.groups.map((g, i) => ({ id: g.id, title: g.title, intro: g.intro, count: g.entries.length, bg: G[(i * 3 + 1) % G.length] }));
+  const downloads = DOWNLOADS.filter(([slug]) => all.some((e) => e.slug === slug));
   return (
     <CostaShell>
-      <section className="wrap" style={{ paddingTop: '80px' }}>
+      <section className="wrap" style={{ paddingTop: '64px' }}>
         <span className="kn-pill">Blog y recursos</span>
-        <h1 style={{ margin: '20px 0 0', fontSize: 'clamp(40px,6vw,72px)', lineHeight: 1.02, letterSpacing: '-0.035em', fontWeight: 600, maxWidth: '900px' }}>
-          Ideas para tu clínica. <span style={{ color: '#18648A' }}>Herramientas para hoy</span>
+        <h1 style={{ margin: '18px 0 0', fontSize: 'clamp(36px,5.2vw,64px)', lineHeight: 1.04, letterSpacing: '-0.035em', fontWeight: 600, maxWidth: '880px' }}>
+          Guías y plantillas para <span style={{ color: '#18648A' }}>tu clínica</span>
           <span style={{ color: '#E0987A' }}>.</span>
         </h1>
-        <p style={{ margin: '20px 0 0', fontSize: '18px', lineHeight: 1.6, color: '#4B5D69', maxWidth: '620px' }}>
-          Plantillas gratuitas, guías de recepción y criterios para elegir software. Empieza por el pendiente que quieres resolver.
+        <p style={{ margin: '16px 0 28px', fontSize: '18px', lineHeight: 1.6, color: '#4B5D69', maxWidth: '640px' }}>
+          Expediente y NOM-004, agenda, WhatsApp y cómo elegir software. Encuentra lo que necesitas en segundos.
         </p>
-        <nav aria-label="Categorías" style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginTop: '32px' }}>
-          {index.groups.map((g) => (
-            <a key={g.id} href={`#${g.id}`} className="kn-chip">
-              {g.title}
-              <span>{g.entries.length}</span>
+        <BlogBrowser groups={groups} entries={all} downloadsCount={downloads.length} featured={
+          <div className="kn-feature-grid">
+            <a href={`/recursos/${featured.slug}/`} className="kn-feature kn-card" style={{ background: featured.bg }}>
+              <span className="kn-feature-tag">Guía destacada</span>
+              <span className="kn-feature-icon">
+                <ResourceIcon slug={featured.slug} size={44} />
+              </span>
+              <span className="kn-feature-title">{featured.title}</span>
+              <span className="kn-feature-sum">{featured.summary}</span>
+              <span className="kn-feature-cta">
+                Leer la guía <span aria-hidden="true">→</span>
+              </span>
             </a>
-          ))}
-        </nav>
-      </section>
-
-      <section className="wrap kn-prose" style={{ paddingTop: '40px' }} aria-label="Kensa para tu clínica">
-        <h2>Kensa para tu clínica</h2>
-        <p>Explora el flujo de recepción para <a href="/para/consultorios-medicos/">consultorios médicos</a> y <a href="/para/clinicas-dentales/">clínicas dentales</a>.</p>
-      </section>
-
-      <section className="wrap" style={{ paddingTop: '48px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))', gap: '24px' }}>
-          <PostCard e={featured} big />
-          <div
-            style={{
-              borderRadius: '24px',
-              background: '#0E2A3B',
-              color: '#DCE6EC',
-              padding: 'clamp(26px,3vw,40px)',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'space-between',
-              gap: '28px',
-            }}
-          >
-            <div>
-              <h2 style={{ margin: 0, color: '#FFFFFF', fontSize: 'clamp(26px,3vw,36px)', lineHeight: 1.12, letterSpacing: '-0.02em', fontWeight: 600 }}>
-                Descargas gratis, sin registro<span style={{ color: '#E0987A' }}>.</span>
+            <div className="kn-downloads">
+              <h2>
+                Descargas gratis<span style={{ color: '#E0987A' }}>.</span>
               </h2>
-              <p style={{ margin: '14px 0 0', fontSize: '16px', lineHeight: 1.6 }}>
-                Formatos en Word y PDF, agendas en Excel y checklists listas para imprimir. Úsalas hoy, con o sin Kensa.
-              </p>
+              <p>Formatos y plantillas listos para usar hoy, con o sin Kensa. Sin registro.</p>
+              <ul>
+                {downloads.map(([slug, name, fmt]) => (
+                  <li key={slug}>
+                    <a href={`/recursos/${slug}/`}>
+                      <span>{name}</span>
+                      <span className="kn-fmt">{fmt}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <ul style={{ listStyle: 'none', margin: 0, padding: 0, display: 'flex', flexDirection: 'column' }}>
-              {(index.groups.find((g) => g.id === 'herramientas')?.entries || []).slice(0, 4).map((e) => (
-                <li key={e.slug} style={{ borderTop: '1px solid rgba(255,255,255,0.14)' }}>
-                  <a
-                    href={`/recursos/${e.slug}/`}
-                    style={{ display: 'flex', justifyContent: 'space-between', gap: '16px', padding: '14px 0', color: '#FFFFFF', textDecoration: 'none', fontSize: '15px' }}
-                  >
-                    <span>{e.title}</span>
-                    <span aria-hidden="true" style={{ color: '#9DB4C2' }}>
-                      →
-                    </span>
-                  </a>
-                </li>
-              ))}
-            </ul>
           </div>
+        } />
+      </section>
+
+      <section className="wrap" style={{ paddingTop: '72px' }} aria-label="Kensa para tu clínica">
+        <div className="kn-for">
+          <p>
+            <strong>¿Quieres ver cómo se resuelve en tu clínica?</strong> Explora el flujo de recepción para{' '}
+            <a href="/para/consultorios-medicos/">consultorios médicos</a> y <a href="/para/clinicas-dentales/">clínicas dentales</a>.
+          </p>
         </div>
       </section>
-
-      {index.groups.map((g) => (
-        <section key={g.id} id={g.id} data-rv="1" className="wrap" style={{ paddingTop: '88px' }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'flex-end', justifyContent: 'space-between', gap: '12px 40px' }}>
-            <h2 style={{ margin: 0, fontSize: 'clamp(28px,3.4vw,40px)', letterSpacing: '-0.03em', fontWeight: 600 }}>
-              {g.title}
-              <span style={{ color: '#E0987A' }}>.</span>
-            </h2>
-            <p style={{ margin: 0, fontSize: '16px', color: '#4B5D69', maxWidth: '440px' }}>{g.intro}</p>
-          </div>
-          <div style={{ marginTop: '28px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(100%, 300px), 1fr))', gap: '20px' }}>
-            {all
-              .filter((e) => e.group === g.id)
-              .map((e) => (
-                <PostCard key={e.slug} e={e} />
-              ))}
-          </div>
-        </section>
-      ))}
 
       <Cierre />
     </CostaShell>
