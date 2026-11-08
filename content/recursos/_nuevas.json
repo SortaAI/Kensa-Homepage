@@ -1,6 +1,118 @@
 {
  "entries": [
   {
+   "group": "documentos",
+   "slug": "nom-004-expediente-clinico",
+   "title": "NOM-004-SSA3-2012 explicada: qué debe tener un expediente clínico (guía 2026)",
+   "summary": "Qué exige la norma al expediente de un consultorio: identificación, historia clínica, notas de evolución, consentimientos, firmas y 5 años de conservación.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "expediente-clinico-electronico-nom-024",
+   "title": "Expediente clínico electrónico: ¿es válido en México? NOM-004 y NOM-024",
+   "summary": "Qué dicen la NOM-004 y la NOM-024 sobre el expediente digital, qué significa estar certificado y qué preguntar antes de dejar el papel.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "consentimiento-informado-formato",
+   "title": "Consentimiento informado: formato y plantilla gratis (PDF y digital)",
+   "summary": "Carta de consentimiento informado en Word y PDF con los 10 elementos mínimos de la NOM-004, cuándo es obligatoria y cómo firmarla en digital.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "historia-clinica-formato-nom-004",
+   "title": "Historia clínica: formato descargable según la NOM-004",
+   "summary": "Formato de historia clínica para consulta externa en Word y PDF, con cada sección que pide el apartado 6.1 de la NOM-004 y cómo adaptarlo a tu especialidad.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "cuantos-anos-guardar-expediente-clinico",
+   "title": "¿Cuántos años guardar un expediente clínico en México?",
+   "summary": "Mínimo 5 años desde el último acto médico. Cómo contar el plazo, cuándo conviene guardar más y cómo conservarlo o destruirlo en papel y en digital.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "firma-electronica-pacientes-consultorio",
+   "title": "Firma electrónica de pacientes: ¿tiene validez en un consultorio?",
+   "summary": "Qué dicen la NOM-004, el Código Civil y el Código de Comercio sobre firmar en digital, la diferencia entre firma simple y avanzada, y qué evidencia guardar.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "aviso-privacidad-consultorio-medico",
+   "title": "Aviso de privacidad para consultorio médico: plantilla y requisitos (LFPDPPP)",
+   "summary": "Plantilla de aviso de privacidad integral en Word y PDF, con la ley de datos de 2025: qué debe incluir, cuándo entregarlo y cómo recabar el consentimiento.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "documentos",
+   "slug": "verificacion-sanitaria-consultorio-checklist",
+   "title": "Qué revisa COFEPRIS o una auditoría en tu consultorio: checklist",
+   "summary": "Avisos, expedientes, privacidad, recetas e instalaciones: lo que suele revisar una verificación sanitaria, en una checklist descargable para tu equipo.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "evaluacion",
+   "slug": "mejores-apps-agenda-consultorio-medico",
+   "title": "Las 9 mejores apps de agenda para consultorios médicos en México (2026)",
+   "summary": "Nueve agendas médicas comparadas con precios verificados en noviembre de 2026: recordatorios por WhatsApp, expediente, lista de espera y para quién conviene cada una.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "evaluacion",
+   "slug": "kensa-vs-doctoralia-agendapro-nimbo",
+   "title": "Kensa vs Doctoralia vs AgendaPro vs Nimbo: comparativa honesta",
+   "summary": "Precios verificados, WhatsApp, agenda, expediente y para quién conviene cada una. Incluye los casos en que otra opción te conviene más que Kensa.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "evaluacion",
+   "slug": "cuanto-cuesta-software-clinica-mexico",
+   "title": "Cuánto cuesta un software para clínicas en México (precios 2026)",
+   "summary": "Precios publicados de seis software médicos, verificados en noviembre de 2026, los costos que no aparecen en la tabla y cómo calcular si te conviene.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "recepcion",
+   "slug": "agenda-papel-excel-google-calendar-software",
+   "title": "Agenda en papel, Excel, Google Calendar o software: cuál conviene a tu clínica",
+   "summary": "Ventajas y límites de cada forma de llevar la agenda, cuánto cuesta cada una y las señales de que tu consultorio ya necesita cambiar.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "recepcion",
+   "slug": "agenda-consultorio-varios-doctores",
+   "title": "Cómo organizar la agenda de un consultorio con varios doctores",
+   "summary": "Duraciones por servicio, consultorios compartidos, reglas de reagenda y quién confirma: cómo armar la agenda de una clínica con varios médicos.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
+   "group": "recepcion",
+   "slug": "lista-espera-citas-medicas",
+   "title": "Lista de espera en clínicas: cómo llenar cancelaciones de último minuto",
+   "summary": "A quién incluir, qué datos pedir, en qué orden ofrecer el horario y qué mensaje mandar para recuperar cancelaciones de último minuto.",
+   "meta": "Publicado · 08/11/2026",
+   "iso": "2026-11-08"
+  },
+  {
    "group": "recepcion",
    "slug": "reducir-inasistencias-citas-medicas",
    "title": "Cómo reducir las inasistencias a citas médicas en tu clínica",

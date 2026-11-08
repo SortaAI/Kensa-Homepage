@@ -1,0 +1,64 @@
+{
+  "slug": "firma-electronica-pacientes-consultorio",
+  "label": "Expediente clínico",
+  "title": "Firma electrónica de pacientes: ¿tiene validez en un consultorio?",
+  "seoTitle": "Firma electrónica de pacientes en consultorio: ¿es válida? | Kensa",
+  "lead": "Que el paciente firme con el dedo en su celular es legal en México, pero no todas las firmas electrónicas pesan lo mismo como evidencia. Te explicamos los tipos de firma, qué dice la ley y qué debe registrar tu sistema.",
+  "description": "Si la firma electrónica del paciente es válida en México: NOM-004, Código Civil, Código de Comercio, firma simple vs. avanzada y qué evidencia guardar.",
+  "dates": [
+    {
+      "iso": "2026-11-08",
+      "text": "Publicado el 8 de noviembre de 2026"
+    }
+  ],
+  "metaText": [
+    "Guía práctica"
+  ],
+  "toc": [
+    [
+      "#marco-legal",
+      "Qué dice la ley"
+    ],
+    [
+      "#tipos",
+      "Tipos de firma y cuánto pesan"
+    ],
+    [
+      "#evidencia",
+      "Qué evidencia debe guardar tu sistema"
+    ],
+    [
+      "#errores",
+      "Errores que restan validez"
+    ],
+    [
+      "#consentimiento",
+      "El caso del consentimiento informado"
+    ],
+    [
+      "#kensa",
+      "Cómo funciona la firma en Kensa"
+    ]
+  ],
+  "actions": "",
+  "body": "<section class=\"resource-summary\"><h2 id=\"summary-title\">Respuesta corta</h2><p>Sí, la firma electrónica tiene validez en México y la NOM-004 la acepta en el expediente. Su fuerza como prueba depende de la evidencia que la acompaña: quién firmó, cuándo, sobre qué documento y si el documento cambió después.</p></section>\n<p>Los consentimientos y avisos de privacidad que el paciente firma con el dedo en su celular ya son comunes. La pregunta de muchos médicos es si “sirven” igual que una firma en papel. Esta guía es informativa y no sustituye la asesoría legal para tu caso.</p>\n<h2 id=\"marco-legal\">Qué dice la ley</h2>\n<ul><li><strong>NOM-004 (apartado 5.10):</strong> las notas del expediente llevan firma “autógrafa, electrónica o digital, según sea el caso”.</li><li><strong>Código Civil Federal (artículo 1803):</strong> el consentimiento es expreso cuando se manifiesta verbalmente, por escrito, por medios electrónicos, ópticos o por cualquier otra tecnología.</li><li><strong>Código Civil Federal (artículo 1834 bis):</strong> cuando la ley exige forma escrita, se cumple con medios electrónicos si la información es atribuible a las personas obligadas y accesible para su consulta posterior.</li><li><strong>Código de Comercio (artículos 89 y siguientes):</strong> regula la firma electrónica y la firma electrónica avanzada, con certificados emitidos por prestadores acreditados.</li></ul>\n<h2 id=\"tipos\">Tipos de firma y cuánto pesan</h2>\n<div class=\"launch-table\" role=\"region\" aria-label=\"Tipos de firma electrónica\" tabindex=\"0\"><table><thead><tr><th scope=\"col\">Tipo</th><th scope=\"col\">Ejemplo</th><th scope=\"col\">Evidencia que aporta</th></tr></thead><tbody><tr><td>Firma electrónica simple</td><td>Firma con el dedo, casilla de “acepto”, código por SMS</td><td>Depende de lo que el sistema registre: identidad, fecha, documento, integridad</td></tr><tr><td>Firma electrónica avanzada</td><td>e.firma del SAT, certificados de un prestador acreditado</td><td>Alta: liga la firma a una persona identificada y detecta cambios en el documento</td></tr><tr><td>Constancia NOM-151</td><td>Sello de tiempo de un prestador de servicios de certificación</td><td>Prueba que el documento existía en esa fecha y no cambió</td></tr></tbody></table></div>\n<p>Para la mayoría de los documentos de un consultorio (aviso de privacidad, ficha de identificación, consentimientos de procedimientos menores) una firma electrónica simple bien documentada es una opción práctica. Para procedimientos de alto riesgo o situaciones con alta probabilidad de disputa, valora con tu asesor una firma avanzada, testigos presenciales o una firma autógrafa además de la digital.</p>\n<h2 id=\"evidencia\">Qué evidencia debe guardar tu sistema</h2>\n<div class=\"article-checklist\"><div><span>✓</span><p>A quién se envió el documento y por qué medio.</p></div><div><span>✓</span><p>Fecha y hora en que se abrió, se llenó y se firmó.</p></div><div><span>✓</span><p>La firma ligada a ese documento, no una imagen que se pueda pegar en otro.</p></div><div><span>✓</span><p>Que el documento no cambió después de firmado (por ejemplo, con una huella digital del archivo).</p></div><div><span>✓</span><p>Que el enlace para firmar era personal y se cerró al terminar.</p></div><div><span>✓</span><p>Un PDF final con el contenido y la firma, que puedas entregar si te lo piden.</p></div></div>\n<h2 id=\"errores\">Errores que restan validez</h2>\n<ul><li>Pegar la imagen de una firma en un PDF editable.</li><li>Firmar en una tableta de recepción compartida sin registrar quién firmó.</li><li>Mandar por WhatsApp una foto del documento firmado como único respaldo.</li><li>Cambiar el texto de un consentimiento después de firmado.</li><li>Usar un formato genérico que no describe el procedimiento.</li></ul>\n<h2 id=\"consentimiento\">El caso del consentimiento informado</h2>\n<p>La NOM-004 pide que el consentimiento informado lleve la firma del paciente, la del médico y la de dos testigos. Si lo firmas en digital, define cómo recabar las firmas de los testigos y que el paciente reciba la explicación del médico, no solo el documento. Descarga la <a href=\"/recursos/consentimiento-informado-formato/\">plantilla de consentimiento informado</a>.</p>\n<h2 id=\"kensa\">Cómo funciona la firma en Kensa</h2>\n<p>El paciente recibe un enlace personal por WhatsApp, correo o enlace directo, que vence a los 7 días. Llena sus documentos <a href=\"/funciones/formatos-en-el-celular/\">en su celular</a>, firma con el dedo y, al enviar, el enlace se cierra. El profesional revisa, completa y <a href=\"/funciones/firmar-y-bloquear/\">firma con su cédula verificada y su contraseña</a>. Al bloquear, el expediente queda <a href=\"/funciones/expedientes-sellados/\">sellado con una huella SHA-256</a> que permite comprobar que el PDF no cambió.</p>\n<p>Lo decimos claro: la firma en pantalla del paciente queda ligada al expediente, pero no es una firma electrónica avanzada ni certificada, y Kensa todavía no agrega una constancia NOM-151 de un tercero.</p>",
+  "related": "<h2>Que firmen desde su celular</h2><p>Enlace personal, firma con el dedo y expediente sellado al terminar.</p><a class=\"button\" href=\"/funciones/formatos-en-el-celular/\">Ver formatos en el celular</a>",
+  "faqs": [
+    [
+      "¿Es válida la firma del paciente en una tableta o celular?",
+      "Sí. La ley mexicana reconoce el consentimiento por medios electrónicos y la NOM-004 acepta firma electrónica en el expediente. Su fuerza como prueba depende de la evidencia que registre el sistema."
+    ],
+    [
+      "¿Qué diferencia hay entre firma electrónica simple y avanzada?",
+      "La simple es cualquier método electrónico para manifestar la voluntad, como firmar con el dedo. La avanzada usa un certificado emitido por un prestador acreditado, como la e.firma del SAT, que identifica a la persona y detecta cambios en el documento."
+    ],
+    [
+      "¿El consentimiento informado se puede firmar en digital?",
+      "Sí, si el paciente recibió la información, la firma queda ligada al documento y este no cambia después. La NOM-004 también pide la firma de dos testigos."
+    ],
+    [
+      "¿Qué es la NOM-151?",
+      "La NOM-151-SCFI-2016 regula la conservación de mensajes de datos con constancias emitidas por prestadores de servicios de certificación, que prueban que un documento existía en cierta fecha y no cambió."
+    ]
+  ]
+}

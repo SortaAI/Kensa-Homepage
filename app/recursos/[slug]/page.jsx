@@ -2,7 +2,7 @@ import { BlogPost } from '@/components/site/Blog';
 import { readContent, postSlugs, readIndex } from '@/lib/content';
 import { buildMeta, shareImage, SITE } from '@/lib/seo';
 import JsonLd from '@/components/site/JsonLd';
-import { graph, breadcrumbs } from '@/lib/schema';
+import { graph, breadcrumbs, faqPage } from '@/lib/schema';
 
 export const dynamicParams = false;
 
@@ -45,10 +45,21 @@ export default async function Page({ params }) {
     author: { '@type': 'Organization', name: 'Equipo de Kensa', url: `${SITE}/quien-lo-hace/` },
     publisher: { '@id': `${SITE}/#organization` },
   };
+  // HowTo for step-by-step guides (post.howto: { name, steps: [[name, text], ...] }).
+  const howto = post.howto
+    ? {
+        '@type': 'HowTo',
+        '@id': `${url}#howto`,
+        name: post.howto.name,
+        inLanguage: 'es-MX',
+        step: post.howto.steps.map(([name, text], i) => ({ '@type': 'HowToStep', position: i + 1, name, text })),
+      }
+    : null;
+  const faq = post.faqs && post.faqs.length ? faqPage(`/recursos/${slug}/`, post.faqs) : null;
   const crumbs = [['Blog y recursos', '/recursos/'], [post.title, `/recursos/${slug}/`]];
   return (
     <>
-      <JsonLd data={graph(article, breadcrumbs(crumbs))} />
+      <JsonLd data={graph(article, faq, howto, breadcrumbs(crumbs))} />
       <BlogPost post={post} index={index} />
     </>
   );
