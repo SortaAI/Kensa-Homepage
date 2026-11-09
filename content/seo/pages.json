@@ -18,9 +18,9 @@
     "priority": 0.8
   },
   "/precios/": {
-    "title": "Precio de software para clínicas: piloto de 45 días sin costo | Kensa",
-    "description": "Clínicas fundadoras: usa Kensa completo 45 días sin costo y después paga un precio fundador reducido por sede, fijo mientras sigas con Kensa. Calcula cuánto recuperas.",
-    "og": "45 días sin costo para clínicas fundadoras",
+    "title": "Precios de Kensa: $999 fundador / $1,499 estándar + IVA",
+    "description": "Kensa por consultorio al mes: $999 MXN + IVA para las primeras 10 ubicaciones fundadoras o $1,499 estándar. Piloto de 45 días o prueba de 14. Meta cobra WhatsApp aparte.",
+    "og": "Todo Kensa. $999 fundador · $1,499 estándar + IVA",
     "priority": 0.9
   },
   "/seguridad/": {

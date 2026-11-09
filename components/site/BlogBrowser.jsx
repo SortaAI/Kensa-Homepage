@@ -54,10 +54,12 @@ function Row({ e, hidden, isNew }) {
 export default function BlogBrowser({ groups, entries, downloadsCount, featured }) {
   const [group, setGroup] = React.useState('todas');
   const [q, setQ] = React.useState('');
+  const [interactive, setInteractive] = React.useState(false);
   const listRef = React.useRef(null);
 
   // Old links like /recursos/#documentos open that topic.
   React.useEffect(() => {
+    setInteractive(true);
     const h = window.location.hash.slice(1);
     if (groups.some((g) => g.id === h)) setGroup(h);
   }, [groups]);
@@ -151,7 +153,7 @@ export default function BlogBrowser({ groups, entries, downloadsCount, featured 
         {groups.map((g) => {
           const items = entries.filter((e) => e.group === g.id);
           const visible = items.filter(matches).length;
-          const capped = browsing && items.length > PREVIEW;
+          const capped = interactive && browsing && items.length > PREVIEW;
           return (
             <section key={g.id} id={g.id} hidden={visible === 0} aria-labelledby={`t-${g.id}`} style={{ marginTop: '36px', scrollMarginTop: '24px' }}>
               <h3 id={`t-${g.id}`} className="kn-group-h">

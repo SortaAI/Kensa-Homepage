@@ -1,7 +1,6 @@
 import CostaShell from './CostaShell';
 
-// Privacy notice and terms. The text is still a draft awaiting legal review, so the
-// draft notice and its [CONFIRMAR] markers stay visible.
+// Privacy notice and terms. Show a draft notice only when the document supplies one.
 export default function LegalPage({ doc }) {
   const toc = doc.toc.map(([href, label]) => (
     <a key={href} href={href}>

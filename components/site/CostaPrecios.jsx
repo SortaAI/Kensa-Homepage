@@ -123,390 +123,56 @@ export default class CostaPrecios extends Logic {
             {'Saltar al contenido'}
           </a>{' '}
           <CostaEncabezado />{' '}
-          <section id={'contenido'} className={'wrap'} style={{ paddingTop: '88px' }}>
-            {' '}
-            <h1
-              style={{
-                margin: '0',
-                textAlign: 'center',
-                fontSize: 'clamp(38px,5.6vw,65px)',
-                lineHeight: '1.04',
-                letterSpacing: '-0.03em',
-                fontWeight: '600',
-              }}
-            >
-              {'Precio por sede. '}
-              <span style={{ color: '#18648A' }}>
-                {'Sin costos ocultos'}
-                <span style={{ color: '#E0987A' }}>{'.'}</span>
-              </span>
-            </h1>{' '}
-            <div
-              style={{
-                marginTop: '56px',
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
-                gap: '16px',
-              }}
-            >
-              {' '}
-              <div
-                className={'kn-card'}
-                style={{
-                  border: '1px solid #E8DFDA',
-                  borderRadius: '24px',
-                  padding: '28px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '16px',
-                }}
-              >
-                {' '}
-                <span style={{ fontSize: '15px', fontWeight: '600' }}>{'Una sede'}</span>{' '}
-                <div>
-                  <span style={{ fontSize: '30px', fontWeight: '600', letterSpacing: '-0.02em', lineHeight: '1.15' }}>
-                    {'Precio por sede'}
-                  </span>
-                  <span style={{ display: 'block', marginTop: '6px', fontSize: '13px', color: '#4B5D69' }}>
-                    {'MXN al mes + IVA. Te lo damos en la demo, por escrito.'}
-                  </span>
-                </div>{' '}
-                <span style={{ fontSize: '14px', color: '#4B5D69' }}>
-                  {'Para un consultorio o clínica con una sola ubicación.'}
-                </span>{' '}
-                <ul
-                  style={{
-                    margin: '0',
-                    padding: '16px 0 0',
-                    listStyle: 'none',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '10px',
-                    borderTop: '1px solid #DED3CD',
-                  }}
-                >
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Todo Kensa, sin módulos aparte'}
-                  </li>
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Todo tu equipo dentro de la sede'}
-                  </li>
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Citas incluidas por sede: te las confirmamos por escrito antes de empezar'}
-                  </li>
-                </ul>{' '}
-                <a
-                  className={'kn-ghost'}
-                  href={link('Costa-Contacto-cs06.dc.html')}
-                  style={{
-                    marginTop: 'auto',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                    fontSize: '15px',
-                    fontWeight: '500',
-                    padding: '13px',
-                    borderRadius: '999px',
-                    border: '1px solid #D6CBC4',
-                  }}
-                >
-                  {'Agenda una demo'}
-                </a>{' '}
-              </div>{' '}
-              <div
-                className={'kn-card'}
-                style={{
-                  background: '#F2E9E5',
-                  border: '1px solid #D6CBC4',
-                  borderRadius: '24px',
-                  padding: '28px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '16px',
-                }}
-              >
-                {' '}
-                <span style={{ fontSize: '15px', fontWeight: '600' }}>{'Clínica fundadora'}</span>{' '}
-                <div>
-                  <span style={{ fontSize: '30px', fontWeight: '600', letterSpacing: '-0.02em', lineHeight: '1.15' }}>
-                    {'45 días sin costo'}
-                  </span>
-                  <span style={{ display: 'block', marginTop: '6px', fontSize: '13px', color: '#4B5D69' }}>
-                    {'Piloto completo. Después, precio fundador por sede + IVA.'}
-                  </span>
-                </div>{' '}
-                <span style={{ fontSize: '14px', color: '#4B5D69' }}>
-                  {'Para las primeras clínicas. Lugares limitados.'}
-                </span>{' '}
-                <ul
-                  style={{
-                    margin: '0',
-                    padding: '16px 0 0',
-                    listStyle: 'none',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '10px',
-                    borderTop: '1px solid #DED3CD',
-                  }}
-                >
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Acceso completo durante el piloto'}
-                  </li>
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Precio fundador reducido mientras sigas con Kensa'}
-                  </li>
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Acompañamiento en tu primer envío real'}
-                  </li>
-                </ul>{' '}
-                <a
-                  className={'kn-btn'}
-                  href={link('Costa-Contacto-cs06.dc.html')}
-                  style={{
-                    marginTop: 'auto',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                    fontSize: '15px',
-                    fontWeight: '500',
-                    padding: '13px',
-                    borderRadius: '999px',
-                    background: '#18648A',
-                    color: '#FFFFFF',
-                  }}
-                >
-                  {'Solicita tu lugar'}
-                </a>{' '}
-              </div>{' '}
-              <div
-                className={'kn-card'}
-                style={{
-                  border: '1px solid #E8DFDA',
-                  borderRadius: '24px',
-                  padding: '28px',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '16px',
-                }}
-              >
-                {' '}
-                <span style={{ fontSize: '15px', fontWeight: '600' }}>{'Varias sedes'}</span>{' '}
-                <div>
-                  <span style={{ fontSize: '30px', fontWeight: '600', letterSpacing: '-0.02em', lineHeight: '1.15' }}>
-                    {'Hablemos'}
-                  </span>
-                  <span style={{ display: 'block', marginTop: '6px', fontSize: '13px', color: '#4B5D69' }}>
-                    {'Precio por sede + IVA.'}
-                  </span>
-                </div>{' '}
-                <span style={{ fontSize: '14px', color: '#4B5D69' }}>{'Para grupos con dos o más ubicaciones.'}</span>{' '}
-                <ul
-                  style={{
-                    margin: '0',
-                    padding: '16px 0 0',
-                    listStyle: 'none',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '10px',
-                    borderTop: '1px solid #DED3CD',
-                  }}
-                >
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Cada sede con su agenda y su equipo'}
-                  </li>
-                  <li style={{ display: 'flex', gap: '10px', fontSize: '14px', lineHeight: '1.45' }}>
-                    <svg
-                      aria-hidden={'true'}
-                      width={'18'}
-                      height={'18'}
-                      viewBox={'0 0 24 24'}
-                      fill={'none'}
-                      stroke={'currentColor'}
-                      strokeWidth={'2'}
-                      strokeLinecap={'round'}
-                      strokeLinejoin={'round'}
-                      style={{ flexShrink: '0', marginTop: '1px' }}
-                    >
-                      <path d={'M20 6 9 17l-5-5'} />
-                    </svg>
-                    {'Un solo acompañamiento para arrancar'}
-                  </li>
-                </ul>{' '}
-                <a
-                  className={'kn-ghost'}
-                  href={link('Costa-Contacto-cs06.dc.html')}
-                  style={{
-                    marginTop: 'auto',
-                    textDecoration: 'none',
-                    textAlign: 'center',
-                    fontSize: '15px',
-                    fontWeight: '500',
-                    padding: '13px',
-                    borderRadius: '999px',
-                    border: '1px solid #D6CBC4',
-                  }}
-                >
-                  {'Escríbenos'}
-                </a>{' '}
-              </div>{' '}
-            </div>{' '}
-            <p style={{ margin: '16px 0 0', textAlign: 'center', fontSize: '13px', color: '#5F707B' }}>
-              {
-                'Precios en pesos mexicanos, más IVA. Todos incluyen modo de prueba y acompañamiento en tu primer envío real.'
-              }
-            </p>{' '}
-          </section>{' '}
-          <section data-rv={'1'} className={'wrap'} style={{ paddingTop: '96px' }}>
-            {' '}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '32px 72px' }}>
-              {' '}
-              <h2
-                style={{
-                  flex: '1 1 300px',
-                  margin: '0',
-                  fontSize: 'clamp(28px,3.4vw,40px)',
-                  lineHeight: '1.12',
-                  letterSpacing: '-0.03em',
-                  fontWeight: '600',
-                }}
-              >
-                {'Lo que incluye Kensa'}
-              </h2>{' '}
-              <ul
-                style={{
-                  flex: '1.6 1 480px',
-                  margin: '0',
-                  padding: '0',
-                  listStyle: 'none',
-                  display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-                  columnGap: '32px',
-                }}
-              >
-                {' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Asistente de WhatsApp y bandeja compartida'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Agenda y solicitudes por confirmar'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Lista de espera'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Biblioteca de 7 formatos y tus propios PDF'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Autollenado y firma en el celular'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Expedientes firmados y sellados'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Modo de prueba'}
-                </li>{' '}
-                <li style={{ borderTop: '1px solid #E8DFDA', padding: '14px 0', fontSize: '15px' }}>
-                  {'Acompañamiento en tu primer envío'}
-                </li>{' '}
-              </ul>{' '}
-            </div>{' '}
-          </section>{' '}
+          <section id="contenido" className="wrap" style={{ paddingTop: '72px' }}>
+            <h1 style={{ margin: 0, textAlign: 'center', fontSize: 'clamp(36px,5.6vw,65px)', lineHeight: '1.06', letterSpacing: '-0.03em', fontWeight: 600 }}>
+              Un precio simple. <span style={{ color: '#18648A' }}>Todo Kensa incluido<span style={{ color: '#E0987A' }}>.</span></span>
+            </h1>
+            <p style={{ maxWidth: '720px', margin: '24px auto 0', textAlign: 'center', color: '#4B5D69', fontSize: '18px', lineHeight: 1.6 }}>
+              Sin plazo forzoso, sin cobro por usuario y sin límite de citas. Pagas por consultorio o sucursal y tu equipo completo usa todo Kensa. Los cargos de Meta por WhatsApp se pagan aparte.
+            </p>
+            <div style={{ maxWidth: '1000px', margin: '40px auto 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '24px' }}>
+              {[
+                { name: 'Clínicas fundadoras', price: '$999', founder: true, description: 'Para las primeras clínicas que construyen Kensa con nosotros.', features: ['Todo Kensa, sin límites de citas ni cobro por usuario', '45 días gratis, contados desde que tu clínica está lista', 'Precio de fundador fijo mientras tu suscripción siga activa', 'Configuración personal: dejamos tus formatos y tu agenda listos', 'Línea directa con Emiliano, el fundador', 'Voz en lo que construimos después'], cta: 'Quiero ser clínica fundadora' },
+                { name: 'Estándar', price: '$1,499', founder: false, description: 'Todo lo que tu recepción necesita, en un solo lugar.', features: ['Todo Kensa, sin límites de citas ni cobro por usuario', '14 días gratis, contados desde que tu clínica está lista', 'Todo tu equipo, sin cobro por usuario', 'Soporte por WhatsApp y correo', 'Sin plazo forzoso: cancela cuando quieras'], cta: 'Empezar prueba gratis' },
+              ].map((plan) => (
+                <section key={plan.name} className="kn-card" aria-label={plan.name} style={{ background: plan.founder ? '#F2E9E5' : '#FFFFFF', border: '1px solid #D6CBC4', borderRadius: '24px', padding: 'clamp(24px,4vw,36px)', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
+                    <h2 style={{ margin: 0, fontSize: '22px', fontWeight: 600 }}>{plan.name}</h2>
+                    {plan.founder ? <span style={{ background: '#0E2A3B', color: '#FFFFFF', borderRadius: '999px', padding: '6px 12px', fontSize: '12px' }}>Solo 10 lugares</span> : null}
+                  </div>
+                  <p style={{ margin: 0 }}><strong style={{ fontSize: 'clamp(42px,5vw,56px)', fontWeight: 600, letterSpacing: '-0.04em' }}>{plan.price}</strong> <span style={{ fontSize: '15px' }}>MXN + IVA</span><span style={{ display: 'block', color: '#4B5D69', fontSize: '15px' }}>por consultorio, al mes</span></p>
+                  <p style={{ margin: 0, color: '#4B5D69', lineHeight: 1.6 }}>{plan.description}</p>
+                  <ul style={{ margin: 0, padding: '20px 0', listStyle: 'none', borderTop: '1px solid #DED3CD', display: 'grid', gap: '14px' }}>
+                    {plan.features.map((feature) => <li key={feature} style={{ display: 'flex', gap: '10px', fontSize: '15px', lineHeight: 1.5 }}><span aria-hidden="true" style={{ color: '#18648A' }}>✓</span><span>{feature}</span></li>)}
+                  </ul>
+                  <a className={plan.founder ? 'kn-btn' : 'kn-ghost'} href="/contacto/" style={{ marginTop: 'auto', textDecoration: 'none', textAlign: 'center', fontSize: '15px', fontWeight: 500, padding: '14px 20px', borderRadius: '999px', background: plan.founder ? '#18648A' : '#FFFFFF', color: plan.founder ? '#FFFFFF' : '#0E2A3B', border: '1px solid ' + (plan.founder ? '#18648A' : '#D6CBC4') }}>{plan.cta}</a>
+                  {plan.founder ? <p style={{ margin: 0, fontSize: '13px', color: '#4B5D69', lineHeight: 1.5 }}>Disponible para las primeras 10 ubicaciones que continúen con una suscripción de pago después de su piloto. El precio se mantiene mientras la suscripción siga activa.</p> : null}
+                </section>
+              ))}
+            </div>
+            <p style={{ maxWidth: '760px', margin: '24px auto 0', textAlign: 'center', fontSize: '15px', lineHeight: 1.6, color: '#4B5D69' }}>Cada consultorio o sucursal es una ubicación física. Dos sucursales en Estándar pagan $2,998 MXN al mes + IVA. Todo el equipo de cada ubicación está incluido.</p>
+          </section>
+          <section className="wrap" aria-labelledby="cargos-whatsapp" style={{ paddingTop: '40px' }}>
+            <div style={{ background: '#0E2A3B', color: '#FFFFFF', borderRadius: '24px', padding: 'clamp(24px,4vw,36px)', maxWidth: '1000px', margin: '0 auto' }}>
+              <h2 id="cargos-whatsapp" style={{ margin: '0 0 16px', fontSize: 'clamp(24px,3vw,30px)', lineHeight: 1.2, fontWeight: 600 }}>Los mensajes de WhatsApp los cobra Meta directamente.</h2>
+              <p style={{ margin: 0, lineHeight: 1.7 }}>Meta cobra por algunos mensajes de WhatsApp Business y lo paga tu clínica con su propio método de pago. Kensa no cobra comisión ni pone intermediarios. Los cargos de Meta están separados de la suscripción y también pueden aplicarse durante la prueba de 14 días o el piloto de 45 días.</p>
+              <p style={{ margin: '16px 0 0', color: '#DCE6EC', lineHeight: 1.7 }}>Como estimación orientativa de Kensa, una clínica con unas 350 visitas al mes puede gastar entre $175 y $550 MXN al mes en mensajes. No es una tarifa fija: el total depende de los mensajes que envíes y las tarifas vigentes de Meta. Tu equipo puede seguir usando la app de WhatsApp Business como siempre.</p>
+            </div>
+          </section>
+          <section className="wrap" aria-labelledby="incluye-kensa" style={{ paddingTop: '80px' }}>
+            <h2 id="incluye-kensa" style={{ margin: '0 0 32px', fontSize: 'clamp(28px,3.4vw,40px)', fontWeight: 600, letterSpacing: '-0.03em' }}>Lo que incluye todo Kensa</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '28px 40px' }}>
+              {[
+                ['WhatsApp con tu mismo número', 'Tus pacientes agendan, reagendan o piden hablar con el doctor desde un menú automático. Tu equipo contesta todo desde una sola bandeja.'],
+                ['Agenda sin empalmes', 'Horarios, días cerrados y solicitudes por confirmar. Las confirmaciones salen por WhatsApp.'],
+                ['Lista de espera para cubrir cancelaciones', 'Cuando alguien cancela, tu equipo elige a quién ofrecerle el horario. Kensa envía las ofertas por WhatsApp, una por una, para ayudarte a recuperar ese espacio.'],
+                ['Formatos que se llenan solos', 'El paciente escribe sus datos una vez y salen en todos los formatos de la visita. Usa nuestra biblioteca de 7 formatos o sube los tuyos.'],
+                ['Firma desde el celular', 'Envía los formatos por WhatsApp, correo o enlace. El paciente llena y firma en su teléfono, sin descargar nada.'],
+                ['Expediente sellado', 'El doctor firma con su cédula verificada. El expediente queda bloqueado, con fecha, historial de acceso y página de verificación.'],
+                ['Equipo y roles', 'Recepción, doctores y administración, cada quien con su acceso.'],
+              ].map(([title, description]) => <div key={title} style={{ borderTop: '1px solid #DED3CD', paddingTop: '20px' }}><h3 style={{ margin: '0 0 10px', fontSize: '20px', fontWeight: 600 }}>{title}</h3><p style={{ margin: 0, color: '#4B5D69', fontSize: '16px', lineHeight: 1.7 }}>{description}</p></div>)}
+            </div>
+          </section>
           <div data-rv={'1'} className={'wrap'} style={{ paddingTop: '96px' }}>
             {' '}
             <section
