@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-PiePagina-cs12.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { whatsapp } from '@/lib/contact';
 
 const CSS = 'body{margin:0}';
 
@@ -31,17 +32,17 @@ class Logic extends DCLogic {
         {
           title: 'Kensa',
           links: [
-            { t: 'Clínicas fundadoras', href: 'Costa-Contacto-cs06.dc.html' },
+            { t: 'Clínicas fundadoras', href: '/precios/#planes' },
             { t: 'Quién lo hace', href: 'Costa-QuienLoHace-cs07.dc.html' },
             { t: 'Recursos para clínicas', href: '/recursos/' },
-            { t: 'Preguntas frecuentes', href: 'Costa-Precios-cs04.dc.html' },
+            { t: 'Preguntas frecuentes', href: '/precios/#preguntas' },
           ],
         },
         {
           title: 'Conversemos',
           links: [
             { t: 'Contacto', href: 'Costa-Contacto-cs06.dc.html' },
-            { t: 'WhatsApp', href: 'https://wa.me/message/3JRJUFH6UNNLA1', ext: true },
+            { t: 'WhatsApp', href: whatsapp('general'), ext: true },
             { t: 'contacto@holakensa.com', href: 'mailto:contacto@holakensa.com' },
           ],
         },

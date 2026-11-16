@@ -5,6 +5,8 @@ import { DCLogic, link } from '@/lib/dc';
 import { FAQ_PRECIOS } from '@/lib/faqs';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
+import WaNote from './WaNote';
+import { CONTACT } from '@/lib/contact';
 
 const CSS =
   'body{margin:0;background:#F9F4F0}\n:root{color-scheme:light}\n[id]{scroll-margin-top:24px}\nh1,h2,h3{text-wrap:balance}\np{text-wrap:pretty}\na,button,input,label{touch-action:manipulation;-webkit-tap-highlight-color:rgba(14,42,59,0.08)}\na,button{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out}\nnav a:not([style*="background: #18648A"]):hover{text-decoration:underline}\n:is(a,button)[style*="background: #18648A"]:hover{background:#114E6C !important}\na[style*="border: 1px solid #D6CBC4"]:hover{background:#F2E9E5 !important;border-color:#0E2A3B !important}\nbutton[aria-expanded]:hover{color:#4B5D69 !important}\n.skip{position:absolute;left:-9999px;top:12px;z-index:10;background:#0E2A3B;color:#FFFFFF;padding:10px 16px;border-radius:999px;text-decoration:none}\n.skip:focus{left:16px}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}\n::selection{background:#0E2A3B;color:#FFFFFF}\n:focus-visible{outline:2px solid #0E2A3B;outline-offset:3px;border-radius:6px}\ninput{caret-color:#0E2A3B}\na{color:#0E2A3B}a:hover{color:#4B5D69}\n*{box-sizing:border-box}\nbutton{font:inherit;cursor:pointer}\n.wrap{width:100%;max-width:1200px;margin:0 auto;padding-left:clamp(16px,4vw,40px);padding-right:clamp(16px,4vw,40px)}\n@media (max-width:820px){.hide-sm{display:none !important}.navlinks{display:none !important}}\n.kn-item:hover,.kn-trigger:hover{background:#F2E9E5 !important}\n.show-sm{display:none}\n@media (max-width:820px){.navlinks,.hide-sm{display:none !important}.show-sm{display:flex !important}}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}';
@@ -130,7 +132,7 @@ export default class CostaPrecios extends Logic {
             <p style={{ maxWidth: '720px', margin: '24px auto 0', textAlign: 'center', color: '#4B5D69', fontSize: '18px', lineHeight: 1.6 }}>
               Sin plazo forzoso, sin cobro por usuario y sin límite de citas. Pagas por consultorio o sucursal y tu equipo completo usa todo Kensa. Los cargos de Meta por WhatsApp se pagan aparte.
             </p>
-            <div style={{ maxWidth: '1000px', margin: '40px auto 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '24px' }}>
+            <div id="planes" style={{ scrollMarginTop: '24px', maxWidth: '1000px', margin: '40px auto 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '24px' }}>
               {[
                 { name: 'Clínicas fundadoras', price: '$999', founder: true, description: 'Para las primeras clínicas que construyen Kensa con nosotros.', features: ['Todo Kensa, sin límites de citas ni cobro por usuario', '45 días gratis, contados desde que tu clínica está lista', 'Precio de fundador fijo mientras tu suscripción siga activa', 'Configuración personal: dejamos tus formatos y tu agenda listos', 'Línea directa con Emiliano, el fundador', 'Voz en lo que construimos después'], cta: 'Quiero ser clínica fundadora' },
                 { name: 'Estándar', price: '$1,499', founder: false, description: 'Todo lo que tu recepción necesita, en un solo lugar.', features: ['Todo Kensa, sin límites de citas ni cobro por usuario', '14 días gratis, contados desde que tu clínica está lista', 'Todo tu equipo, sin cobro por usuario', 'Soporte por WhatsApp y correo', 'Sin plazo forzoso: cancela cuando quieras'], cta: 'Empezar prueba gratis' },
@@ -145,7 +147,7 @@ export default class CostaPrecios extends Logic {
                   <ul style={{ margin: 0, padding: '20px 0', listStyle: 'none', borderTop: '1px solid #DED3CD', display: 'grid', gap: '14px' }}>
                     {plan.features.map((feature) => <li key={feature} style={{ display: 'flex', gap: '10px', fontSize: '15px', lineHeight: 1.5 }}><span aria-hidden="true" style={{ color: '#18648A' }}>✓</span><span>{feature}</span></li>)}
                   </ul>
-                  <a className={plan.founder ? 'kn-btn' : 'kn-ghost'} href="/contacto/" style={{ marginTop: 'auto', textDecoration: 'none', textAlign: 'center', fontSize: '15px', fontWeight: 500, padding: '14px 20px', borderRadius: '999px', background: plan.founder ? '#18648A' : '#FFFFFF', color: plan.founder ? '#FFFFFF' : '#0E2A3B', border: '1px solid ' + (plan.founder ? '#18648A' : '#D6CBC4') }}>{plan.cta}</a>
+                  <a className={plan.founder ? 'kn-btn' : 'kn-ghost'} href={plan.founder ? CONTACT.fundadora : CONTACT.prueba} style={{ marginTop: 'auto', textDecoration: 'none', textAlign: 'center', fontSize: '15px', fontWeight: 500, padding: '14px 20px', borderRadius: '999px', background: plan.founder ? '#18648A' : '#FFFFFF', color: plan.founder ? '#FFFFFF' : '#0E2A3B', border: '1px solid ' + (plan.founder ? '#18648A' : '#D6CBC4') }}>{plan.cta}</a>
                   {plan.founder ? <p style={{ margin: 0, fontSize: '13px', color: '#4B5D69', lineHeight: 1.5 }}>Disponible para las primeras 10 ubicaciones que continúen con una suscripción de pago después de su piloto. El precio se mantiene mientras la suscripción siga activa.</p> : null}
                 </section>
               ))}
@@ -361,7 +363,7 @@ export default class CostaPrecios extends Logic {
               </div>{' '}
             </section>{' '}
           </div>{' '}
-          <section data-rv={'1'} className={'wrap'} style={{ paddingTop: '96px' }}>
+          <section id="preguntas" data-rv={'1'} className={'wrap'} style={{ paddingTop: '96px' }}>
             {' '}
             <div style={{ maxWidth: '820px', margin: '0 auto' }}>
               {' '}
@@ -458,6 +460,7 @@ export default class CostaPrecios extends Logic {
               >
                 {'Agenda una demostración'}
               </a>{' '}
+            <WaNote k="precios" where="precios-cierre" />
             </section>{' '}
           </div>{' '}
           <CostaPiePagina />{' '}

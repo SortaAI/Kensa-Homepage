@@ -2,6 +2,7 @@
 // Generated from the design canvas, Costa palette (Costa-Dropdown-cs11.dc.html), then edited by hand where noted.
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
+import { whatsapp } from '@/lib/contact';
 
 const CSS = 'body{margin:0}';
 
@@ -123,7 +124,10 @@ export default class CostaDropdown extends Logic {
             ))}{' '}
           </ul>{' '}
           <a
-            href={link('Costa-Contacto-cs06.dc.html')}
+            href={whatsapp('general')}
+            target="_blank"
+            rel="noopener"
+            data-wa="menu-recursos"
             style={{
               margin: '6px 4px 4px',
               display: 'flex',

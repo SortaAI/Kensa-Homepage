@@ -2,6 +2,10 @@ import CostaShell from './CostaShell';
 import { G } from '@/lib/gradients';
 import resourceIcons from '@/lib/resourceIcons.json';
 import BlogBrowser from './BlogBrowser';
+import { whatsapp } from '@/lib/contact';
+
+// Guides link to WhatsApp with #whatsapp-<message key>; the number lives in lib/contact.js.
+const withWhatsApp = (html) => html.replace(/href="#whatsapp-([a-z]+)"/g, (_, k) => `href="${whatsapp(k)}" data-wa="guia"`);
 
 // The resource library ("Recursos"): guides and free tools for clinic reception teams,
 // ported from the old Sorta México library and rebranded.
@@ -153,11 +157,14 @@ function Cierre() {
             Agenda una demostración
           </a>
           <a
-            href="/funciones/"
+            href={whatsapp('recursos')}
+            target="_blank"
+            rel="noopener"
+            data-wa="blog-cierre"
             className="kn-ghost"
             style={{ textDecoration: 'none', fontWeight: 500, fontSize: '16px', padding: '15px 26px', borderRadius: '999px', border: '1px solid #D6CBC4', color: '#0E2A3B', background: '#FFFFFF' }}
           >
-            Todas las funciones
+            Pregúntanos por WhatsApp
           </a>
         </div>
       </div>
@@ -241,7 +248,7 @@ export function BlogPost({ post, index }) {
               <summary>En esta guía</summary>
               <nav>{toc}</nav>
             </details>
-            <article className="kn-prose" dangerouslySetInnerHTML={{ __html: post.body }} />
+            <article className="kn-prose" dangerouslySetInnerHTML={{ __html: withWhatsApp(post.body) }} />
             {faqs.length ? (
               <section className="kn-prose kn-faq" aria-labelledby="preguntas-frecuentes" style={{ marginTop: '56px' }}>
                 <h2 id="preguntas-frecuentes">Preguntas frecuentes</h2>
@@ -257,7 +264,7 @@ export function BlogPost({ post, index }) {
               <div
                 className="kn-prose kn-related"
                 style={{ marginTop: '56px', borderRadius: '24px', background: '#0E2A3B', color: '#DCE6EC', padding: 'clamp(26px,4vw,40px)', maxWidth: '720px' }}
-                dangerouslySetInnerHTML={{ __html: related }}
+                dangerouslySetInnerHTML={{ __html: withWhatsApp(related) }}
               />
             ) : null}
           </div>

@@ -1,5 +1,6 @@
 import CostaShell from './CostaShell';
 import { G } from '@/lib/gradients';
+import { whatsapp } from '@/lib/contact';
 
 export default function AudiencePage({ page }) {
   return (
@@ -30,6 +31,7 @@ export default function AudiencePage({ page }) {
               <h2>Revisa el flujo de tu recepción</h2>
               <a className="button" href="/contacto/">{page.cta}</a>
               <p>{page.microcopy}</p>
+              <p>¿Prefieres escribir? <a href={whatsapp('funciones')} target="_blank" rel="noopener" data-wa="para" style={{ color: '#FFFFFF' }}>Pregúntanos por WhatsApp</a></p>
             </div>
           </div>
         </div>
