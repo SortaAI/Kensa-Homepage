@@ -200,6 +200,34 @@ class Logic extends DCLogic {
       var has = !!(r[1] && String(r[1]).trim());
       return { k: r[0], v: r[1], has: has, empty: !has };
     });
+    // Heading, intro, button and confirmation follow the option the visitor picked.
+    var COPY = {
+      demo: {
+        h1a: 'Conoce Kensa para tu clínica. ',
+        h1b: 'Empieza con una demo',
+        intro: 'En 15 minutos te enseñamos Kensa con ejemplos de tu clínica. Llena la solicitud y te escribimos por WhatsApp para agendarla.',
+        send: 'Pedir mi demo',
+        done: ' para agendar tu demo. Si prefieres, escríbenos tú primero.',
+        wa: 'contacto',
+      },
+      fundadora: {
+        h1a: 'Sé una de las 10 clínicas fundadoras. ',
+        h1b: 'Aparta tu lugar',
+        intro: '45 días gratis desde que tu clínica está lista y después $999 MXN + IVA al mes, fijo mientras sigas con Kensa. Revisamos si hay lugar y te escribimos por WhatsApp.',
+        send: 'Solicitar mi lugar',
+        done: ' para confirmar si hay lugar y arrancar tu piloto. Si prefieres, escríbenos tú primero.',
+        wa: 'fundadora',
+      },
+      prueba: {
+        h1a: 'Prueba Kensa 14 días gratis. ',
+        h1b: 'Empieza con tu clínica',
+        intro: 'Plan Estándar: $1,499 MXN + IVA al mes, sin plazo forzoso. Los 14 días empiezan cuando tu clínica está lista; te escribimos por WhatsApp para configurarla contigo.',
+        send: 'Empezar mi prueba',
+        done: ' para configurar tu clínica y empezar la prueba. Si prefieres, escríbenos tú primero.',
+        wa: 'prueba',
+      },
+    };
+    var copy = COPY[v.interes] || COPY.demo;
     var names = ['Interés', 'Tu clínica', 'Formatos'];
     var steps = names.map(function (t, i) {
       var n = i + 1,
@@ -215,6 +243,7 @@ class Logic extends DCLogic {
       };
     });
     return {
+      copy: copy,
       steps: steps,
       interests: interests,
       fields: fields,
@@ -226,7 +255,7 @@ class Logic extends DCLogic {
       is3: st.step === 3,
       canBack: st.step > 1,
       noBack: st.step === 1,
-      cta: st.step === 3 ? (st.sending ? 'Enviando…' : 'Enviar solicitud') : 'Continuar',
+      cta: st.step === 3 ? (st.sending ? 'Enviando…' : copy.send) : 'Continuar',
       sending: st.sending,
       error: st.error,
       badFormatos: !!(st.tried[3] && errs.formatos),
@@ -326,16 +355,14 @@ export default class CostaContacto extends Logic {
                   fontWeight: '600',
                 }}
               >
-                {'Conoce Kensa para tu clínica. '}
+                {v.copy.h1a}
                 <span style={{ color: '#18648A' }}>
-                  {'Empieza con una demo'}
+                  {v.copy.h1b}
                   <span style={{ color: '#E0987A' }}>{'.'}</span>
                 </span>
               </h1>{' '}
               <p style={{ margin: '0', flex: '0 1 380px', fontSize: '16px', lineHeight: '1.6', color: '#4B5D69' }}>
-                {
-                  'Llena tu solicitud una vez y mira cómo se arma sola, igual que los formatos de tus pacientes en Kensa.'
-                }
+                {v.copy.intro}
               </p>{' '}
             </div>{' '}
             <section
@@ -863,13 +890,13 @@ export default class CostaContacto extends Logic {
                       <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6', color: '#4B5D69' }}>
                         {'Te escribimos por WhatsApp al '}
                         {v.v?.whatsapp}
-                        {' para coordinar la plática. Si prefieres, escríbenos tú primero.'}
+                        {v.copy.done}
                       </p>{' '}
                       <div style={{ marginTop: 'auto', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                         {' '}
                         <a
                           className={'kn-btn'}
-                          href={whatsapp('contacto')}
+                          href={whatsapp(v.copy.wa)}
                     data-wa="contacto"
                     target="_blank"
                     rel="noopener"
