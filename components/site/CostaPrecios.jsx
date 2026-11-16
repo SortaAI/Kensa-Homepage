@@ -154,13 +154,11 @@ export default class CostaPrecios extends Logic {
             </div>
             <p style={{ maxWidth: '760px', margin: '24px auto 0', textAlign: 'center', fontSize: '15px', lineHeight: 1.6, color: '#4B5D69' }}>Cada consultorio o sucursal es una ubicación física. Dos sucursales en Estándar pagan $2,998 MXN al mes + IVA. Todo el equipo de cada ubicación está incluido.</p>
           </section>
-          <section className="wrap" aria-labelledby="cargos-whatsapp" style={{ paddingTop: '20px' }}>
-            <div style={{ maxWidth: '760px', margin: '0 auto', borderTop: '1px solid #DED3CD', paddingTop: '18px', fontSize: '14px', lineHeight: 1.6, color: '#5F707B', textAlign: 'center' }}>
-              <h2 id="cargos-whatsapp" style={{ margin: '0 0 6px', fontSize: '14px', fontWeight: 600, color: '#0E2A3B' }}>Los mensajes de WhatsApp los cobra Meta directamente.</h2>
-              <p style={{ margin: 0 }}>Meta cobra por algunos mensajes de WhatsApp Business y lo paga tu clínica con su propio método de pago. Kensa no cobra comisión ni pone intermediarios. Los cargos de Meta están separados de la suscripción y también pueden aplicarse durante la prueba de 14 días o el piloto de 45 días.</p>
-              <p style={{ margin: '8px 0 0' }}>Como estimación orientativa de Kensa, una clínica con unas 350 visitas al mes puede gastar entre $175 y $550 MXN al mes en mensajes. No es una tarifa fija: el total depende de los mensajes que envíes y las tarifas vigentes de Meta. Tu equipo puede seguir usando la app de WhatsApp Business como siempre.</p>
-            </div>
-          </section>
+          <p id="cargos-whatsapp" className="wrap" style={{ maxWidth: '760px', margin: '10px auto 0', textAlign: 'center', fontSize: '13px', lineHeight: 1.5, color: '#5F707B' }}>
+            <span aria-hidden="true" style={{ marginRight: '6px' }}>ⓘ</span>
+            Los mensajes de WhatsApp los cobra Meta aparte, directo a tu clínica: unos $175–$550 MXN al mes con 350 visitas. Kensa no cobra comisión.{' '}
+            <a href="#preguntas" style={{ color: '#18648A', textUnderlineOffset: '3px' }}>Más detalles</a>
+          </p>
           <div id="calculadora" className={'wrap'} style={{ paddingTop: '48px', scrollMarginTop: '24px' }}>
             {' '}
             <section
