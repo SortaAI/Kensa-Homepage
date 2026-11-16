@@ -154,28 +154,14 @@ export default class CostaPrecios extends Logic {
             </div>
             <p style={{ maxWidth: '760px', margin: '24px auto 0', textAlign: 'center', fontSize: '15px', lineHeight: 1.6, color: '#4B5D69' }}>Cada consultorio o sucursal es una ubicación física. Dos sucursales en Estándar pagan $2,998 MXN al mes + IVA. Todo el equipo de cada ubicación está incluido.</p>
           </section>
-          <section className="wrap" aria-labelledby="cargos-whatsapp" style={{ paddingTop: '40px' }}>
-            <div style={{ background: '#0E2A3B', color: '#FFFFFF', borderRadius: '24px', padding: 'clamp(24px,4vw,36px)', maxWidth: '1000px', margin: '0 auto' }}>
-              <h2 id="cargos-whatsapp" style={{ margin: '0 0 16px', fontSize: 'clamp(24px,3vw,30px)', lineHeight: 1.2, fontWeight: 600 }}>Los mensajes de WhatsApp los cobra Meta directamente.</h2>
-              <p style={{ margin: 0, lineHeight: 1.7 }}>Meta cobra por algunos mensajes de WhatsApp Business y lo paga tu clínica con su propio método de pago. Kensa no cobra comisión ni pone intermediarios. Los cargos de Meta están separados de la suscripción y también pueden aplicarse durante la prueba de 14 días o el piloto de 45 días.</p>
-              <p style={{ margin: '16px 0 0', color: '#DCE6EC', lineHeight: 1.7 }}>Como estimación orientativa de Kensa, una clínica con unas 350 visitas al mes puede gastar entre $175 y $550 MXN al mes en mensajes. No es una tarifa fija: el total depende de los mensajes que envíes y las tarifas vigentes de Meta. Tu equipo puede seguir usando la app de WhatsApp Business como siempre.</p>
+          <section className="wrap" aria-labelledby="cargos-whatsapp" style={{ paddingTop: '20px' }}>
+            <div style={{ maxWidth: '760px', margin: '0 auto', borderTop: '1px solid #DED3CD', paddingTop: '18px', fontSize: '14px', lineHeight: 1.6, color: '#5F707B', textAlign: 'center' }}>
+              <h2 id="cargos-whatsapp" style={{ margin: '0 0 6px', fontSize: '14px', fontWeight: 600, color: '#0E2A3B' }}>Los mensajes de WhatsApp los cobra Meta directamente.</h2>
+              <p style={{ margin: 0 }}>Meta cobra por algunos mensajes de WhatsApp Business y lo paga tu clínica con su propio método de pago. Kensa no cobra comisión ni pone intermediarios. Los cargos de Meta están separados de la suscripción y también pueden aplicarse durante la prueba de 14 días o el piloto de 45 días.</p>
+              <p style={{ margin: '8px 0 0' }}>Como estimación orientativa de Kensa, una clínica con unas 350 visitas al mes puede gastar entre $175 y $550 MXN al mes en mensajes. No es una tarifa fija: el total depende de los mensajes que envíes y las tarifas vigentes de Meta. Tu equipo puede seguir usando la app de WhatsApp Business como siempre.</p>
             </div>
           </section>
-          <section className="wrap" aria-labelledby="incluye-kensa" style={{ paddingTop: '80px' }}>
-            <h2 id="incluye-kensa" style={{ margin: '0 0 32px', fontSize: 'clamp(28px,3.4vw,40px)', fontWeight: 600, letterSpacing: '-0.03em' }}>Lo que incluye todo Kensa</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '28px 40px' }}>
-              {[
-                ['WhatsApp con tu mismo número', 'Tus pacientes agendan, reagendan o piden hablar con el doctor desde un menú automático. Tu equipo contesta todo desde una sola bandeja.'],
-                ['Agenda sin empalmes', 'Horarios, días cerrados y solicitudes por confirmar. Las confirmaciones salen por WhatsApp.'],
-                ['Lista de espera para cubrir cancelaciones', 'Cuando alguien cancela, tu equipo elige a quién ofrecerle el horario. Kensa envía las ofertas por WhatsApp, una por una, para ayudarte a recuperar ese espacio.'],
-                ['Formatos que se llenan solos', 'El paciente escribe sus datos una vez y salen en todos los formatos de la visita. Usa nuestra biblioteca de 7 formatos o sube los tuyos.'],
-                ['Firma desde el celular', 'Envía los formatos por WhatsApp, correo o enlace. El paciente llena y firma en su teléfono, sin descargar nada.'],
-                ['Expediente sellado', 'El doctor firma con su cédula verificada. El expediente queda bloqueado, con fecha, historial de acceso y página de verificación.'],
-                ['Equipo y roles', 'Recepción, doctores y administración, cada quien con su acceso.'],
-              ].map(([title, description]) => <div key={title} style={{ borderTop: '1px solid #DED3CD', paddingTop: '20px' }}><h3 style={{ margin: '0 0 10px', fontSize: '20px', fontWeight: 600 }}>{title}</h3><p style={{ margin: 0, color: '#4B5D69', fontSize: '16px', lineHeight: 1.7 }}>{description}</p></div>)}
-            </div>
-          </section>
-          <div data-rv={'1'} className={'wrap'} style={{ paddingTop: '96px' }}>
+          <div id="calculadora" className={'wrap'} style={{ paddingTop: '48px', scrollMarginTop: '24px' }}>
             {' '}
             <section
               style={{
@@ -363,6 +349,20 @@ export default class CostaPrecios extends Logic {
               </div>{' '}
             </section>{' '}
           </div>{' '}
+          <section className="wrap" aria-labelledby="incluye-kensa" style={{ paddingTop: '80px' }}>
+            <h2 id="incluye-kensa" style={{ margin: '0 0 32px', fontSize: 'clamp(28px,3.4vw,40px)', fontWeight: 600, letterSpacing: '-0.03em' }}>Lo que incluye todo Kensa</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '28px 40px' }}>
+              {[
+                ['WhatsApp con tu mismo número', 'Tus pacientes agendan, reagendan o piden hablar con el doctor desde un menú automático. Tu equipo contesta todo desde una sola bandeja.'],
+                ['Agenda sin empalmes', 'Horarios, días cerrados y solicitudes por confirmar. Las confirmaciones salen por WhatsApp.'],
+                ['Lista de espera para cubrir cancelaciones', 'Cuando alguien cancela, tu equipo elige a quién ofrecerle el horario. Kensa envía las ofertas por WhatsApp, una por una, para ayudarte a recuperar ese espacio.'],
+                ['Formatos que se llenan solos', 'El paciente escribe sus datos una vez y salen en todos los formatos de la visita. Usa nuestra biblioteca de 7 formatos o sube los tuyos.'],
+                ['Firma desde el celular', 'Envía los formatos por WhatsApp, correo o enlace. El paciente llena y firma en su teléfono, sin descargar nada.'],
+                ['Expediente sellado', 'El doctor firma con su cédula verificada. El expediente queda bloqueado, con fecha, historial de acceso y página de verificación.'],
+                ['Equipo y roles', 'Recepción, doctores y administración, cada quien con su acceso.'],
+              ].map(([title, description]) => <div key={title} style={{ borderTop: '1px solid #DED3CD', paddingTop: '20px' }}><h3 style={{ margin: '0 0 10px', fontSize: '20px', fontWeight: 600 }}>{title}</h3><p style={{ margin: 0, color: '#4B5D69', fontSize: '16px', lineHeight: 1.7 }}>{description}</p></div>)}
+            </div>
+          </section>
           <section id="preguntas" data-rv={'1'} className={'wrap'} style={{ paddingTop: '96px' }}>
             {' '}
             <div style={{ maxWidth: '820px', margin: '0 auto' }}>
