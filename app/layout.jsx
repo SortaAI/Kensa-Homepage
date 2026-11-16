@@ -1,4 +1,5 @@
 import CookieBanner from '@/components/site/CookieBanner';
+import WhatsAppButton from '@/components/site/WhatsAppButton';
 import { SITE } from '@/lib/seo';
 
 export const metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       </head>
       <body style={{ margin: 0 }}>
         {children}
+        <WhatsAppButton />
         <CookieBanner />
       </body>
     </html>

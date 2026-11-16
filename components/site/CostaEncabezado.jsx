@@ -3,6 +3,7 @@
 import React from 'react';
 import { DCLogic, link } from '@/lib/dc';
 import CostaNavegacion from './CostaNavegacion';
+import { CONTACT } from '@/lib/contact';
 
 const CSS =
   'body{margin:0}\n.kn-promo .kn-short{display:none}\n@media (max-width:600px){.kn-promo{font-size:12.5px !important;padding:9px 12px !important}.kn-promo .kn-long{display:none}.kn-promo .kn-short{display:inline}}';
@@ -47,7 +48,7 @@ export default class CostaEncabezado extends Logic {
             <span className={'kn-long'}>{'Clínicas fundadoras: piloto de 45 días sin costo y precio fundador reducido.'}</span>
             <span className={'kn-short'}>{'Piloto de 45 días sin costo.'}</span>{' '}
             <a
-              href={link('Costa-Contacto-cs06.dc.html')}
+              href={CONTACT.fundadora}
               style={{ color: '#FFFFFF', fontWeight: '500', textUnderlineOffset: '3px' }}
             >
               {'Solicita tu lugar'}

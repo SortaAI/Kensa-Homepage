@@ -5,6 +5,7 @@ import { DCLogic, link } from '@/lib/dc';
 import { FORMS, sendForm } from '@/lib/forms';
 import CostaEncabezado from './CostaEncabezado';
 import CostaPiePagina from './CostaPiePagina';
+import { whatsapp } from '@/lib/contact';
 
 const CSS =
   'body{margin:0;background:#F9F4F0}\n*{box-sizing:border-box}\na{color:#0E2A3B;text-underline-offset:3px}a:hover{color:#4B5D69}\n:root{color-scheme:light}\n::selection{background:#0E2A3B;color:#FFFFFF}\n:focus-visible{outline:2px solid #0E2A3B;outline-offset:3px;border-radius:6px}\n[id]{scroll-margin-top:24px}\nh1,h2,h3{text-wrap:balance}\np{text-wrap:pretty}\ninput,textarea{caret-color:#0E2A3B}\ninput::placeholder,textarea::placeholder{color:#6B6B72}\ninput:focus,textarea:focus{border-color:#0E2A3B !important}\nbutton{font:inherit;cursor:pointer}\na,button,input,label,textarea{touch-action:manipulation;-webkit-tap-highlight-color:rgba(14,42,59,0.08)}\na,button,label{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,box-shadow .15s ease-out}\n:is(a,button)[style*="background: #18648A"]:hover{background:#114E6C !important}\n:is(a,button)[style*="border: 1px solid #D6CBC4"]:hover{background:#F2E9E5 !important;border-color:#0E2A3B !important}\nlabel[data-choice]:hover{border-color:#0E2A3B !important}\n.kn-item:hover,.kn-trigger:hover{background:#F2E9E5 !important}\n.skip{position:absolute;left:-9999px;top:12px;z-index:60;background:#0E2A3B;color:#FFFFFF;padding:10px 16px;border-radius:999px;text-decoration:none}\n.skip:focus{left:16px}\n.show-sm{display:none}\n@media (max-width:820px){.navlinks,.hide-sm{display:none !important}.show-sm{display:flex !important}}\n@media (prefers-reduced-motion:reduce){*{transition:none !important}}\n/* motion */\n.kn-btn,.kn-ghost{transition:background-color .15s ease-out,border-color .15s ease-out,color .15s ease-out,transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s ease-out}\n.kn-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(24,100,138,0.22)}\n.kn-btn:active{transform:translateY(0);box-shadow:0 2px 6px rgba(24,100,138,0.18);transition-duration:.08s}\n.kn-ghost:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(14,42,59,0.08)}\nli a > span[aria-hidden] svg{transition:transform .2s cubic-bezier(.16,1,.3,1)}\nli a:hover > span[aria-hidden] svg,li a:focus-visible > span[aria-hidden] svg{transform:translateX(3px)}\n.kn-card{transition:transform .25s cubic-bezier(.16,1,.3,1),box-shadow .25s ease-out}\n.kn-card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(14,42,59,0.10)}\nbutton[aria-expanded="true"] + *{animation:kn-open .3s cubic-bezier(.16,1,.3,1)}\n@keyframes kn-open{from{opacity:0;transform:translateY(-4px)}}\n[data-rv="pre"]{opacity:0;transform:translateY(14px)}\n[data-rv="in"]{opacity:1;transform:none;transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}\n@media (prefers-reduced-motion:reduce){[data-rv]{opacity:1 !important;transform:none !important}.kn-card:hover,.kn-btn:hover,.kn-ghost:hover,li a:hover > span[aria-hidden] svg{transform:none !important}button[aria-expanded="true"] + *{animation:none}}';
@@ -36,6 +37,18 @@ class Logic extends DCLogic {
 
   componentDidMount() {
     this.knReveal();
+    // Buttons elsewhere link here with ?interes=demo|fundadora|prueba to preselect the option,
+    // and we keep the page the visitor came from so the team knows which button they used.
+    var interes = '';
+    var origen = '';
+    try {
+      interes = new URLSearchParams(window.location.search).get('interes') || '';
+      var ref = document.referrer ? new URL(document.referrer) : null;
+      if (ref && ref.host === window.location.host && ref.pathname !== window.location.pathname) origen = ref.pathname;
+    } catch (e) {}
+    var nv = Object.assign({}, this.state.v);
+    if (['demo', 'fundadora', 'prueba'].indexOf(interes) >= 0) nv.interes = interes;
+    this.setState({ v: nv, origen: origen });
   }
   componentWillUnmount() {
     if (this.knIo) this.knIo.disconnect();
@@ -83,6 +96,7 @@ class Logic extends DCLogic {
       return true;
     };
     var I = {
+      check: ['M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z', 'm8 12 3 3 5-6'],
       play: [
         'M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z',
         'M9.5 8.965c0-.477 0-.716.1-.849a.5.5 0 0 1 .364-.199c.166-.012.367.117.769.375l4.72 3.035c.349.224.523.336.583.478a.5.5 0 0 1 0 .39c-.06.142-.234.254-.583.478l-4.72 3.035c-.402.258-.603.387-.769.375a.5.5 0 0 1-.364-.2c-.1-.132-.1-.371-.1-.848v-6.07Z',
@@ -97,9 +111,10 @@ class Logic extends DCLogic {
       [
         'fundadora',
         'Ser clínica fundadora',
-        'Piloto de 45 días sin costo y precio fundador, si hay lugar.',
+        '45 días gratis y precio fundador de $999 al mes, si hay lugar.',
         'building',
       ],
+      ['prueba', 'Empezar la prueba gratis', 'Plan Estándar: 14 días gratis, sin plazo forzoso.', 'check'],
     ];
     var interests = interestList.map(function (o) {
       var sel = v.interes === o[0];
@@ -240,6 +255,7 @@ class Logic extends DCLogic {
         rowsSrc.forEach(function (r) {
           payload[r[0]] = r[1] || '';
         });
+        payload['Página de origen'] = st.origen || '(directo)';
         payload._gotcha = gotcha;
         self.setState({ sending: true, error: '', tried: tried });
         sendForm(FORMS.contacto, payload).then(
@@ -853,7 +869,10 @@ export default class CostaContacto extends Logic {
                         {' '}
                         <a
                           className={'kn-btn'}
-                          href={link('https://wa.me/message/3JRJUFH6UNNLA1')}
+                          href={whatsapp('contacto')}
+                    data-wa="contacto"
+                    target="_blank"
+                    rel="noopener"
                           style={{
                             textDecoration: 'none',
                             fontWeight: '500',
@@ -1142,7 +1161,10 @@ export default class CostaContacto extends Logic {
                   {' '}
                   <a
                     className={'kn-btn'}
-                    href={link('https://wa.me/message/3JRJUFH6UNNLA1')}
+                    href={whatsapp('contacto')}
+                    data-wa="contacto"
+                    target="_blank"
+                    rel="noopener"
                     style={{
                       textDecoration: 'none',
                       fontWeight: '500',
